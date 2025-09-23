@@ -2,9 +2,9 @@ package client_download
 
 import (
 	"context"
+	"errors"
 	"net/http"
 	"r3/bruteforce"
-	"r3/cache"
 	"r3/config"
 	"r3/handler"
 	"r3/login/login_auth"
@@ -44,28 +44,17 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Header().Set("Content-Type", r.Header.Get("Content-Type"))
-
+	// Client distribution files have been removed to reduce repository size
+	// Return appropriate error message
 	switch requestedOs {
-	case "amd64_windows":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.exe")
-		_, err = w.Write(cache.Client_amd64_win)
-	case "amd64_linux":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.bin")
-		_, err = w.Write(cache.Client_amd64_linux)
-	case "arm64_linux":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.bin")
-		_, err = w.Write(cache.Client_arm64_linux)
-	case "amd64_mac":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.dmg")
-		_, err = w.Write(cache.Client_amd64_mac)
+	case "amd64_windows", "amd64_linux", "arm64_linux", "amd64_mac":
+		// Valid OS types but files not available
 	default:
-		handler.AbortRequest(w, handler.ContextClientDownload, err, handler.ErrGeneral)
+		handler.AbortRequest(w, handler.ContextClientDownload, errors.New("unsupported OS"), handler.ErrGeneral)
 		return
 	}
 
-	if err != nil {
-		handler.AbortRequest(w, handler.ContextClientDownload, err, handler.ErrGeneral)
-		return
-	}
+	// Return error indicating client files are not available
+	err = errors.New("client distribution files have been removed to reduce repository size - please build clients separately or contact administrator")
+	handler.AbortRequest(w, handler.ContextClientDownload, err, handler.ErrGeneral)
 }
