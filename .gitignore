@@ -10,3 +10,17 @@ r3.exe
 *.dmg
 cache/clients/
 !cache/.gitkeep
+
+# Release build artifacts
+r3_linux_amd64
+r3_linux_arm64
+r3_windows_amd64.exe
+*.tar.gz
+*.zip
+release_package/
+
+# Docker build artifacts
+.dockerignore
+
+# Test builds
+test_build

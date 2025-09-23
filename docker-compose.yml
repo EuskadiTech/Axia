@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: rei3
+      POSTGRES_USER: rei3
+      POSTGRES_PASSWORD: rei3
+      POSTGRES_ENCODING: UTF8
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rei3"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  tallarin:
+    build:
+      context: .
+      args:
+        VERSION: dev
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./config_template.json:/app/config.json:ro
+    environment:
+      - REI3_DB_HOST=postgres
+      - REI3_DB_PORT=5432
+      - REI3_DB_NAME=rei3
+      - REI3_DB_USER=rei3
+      - REI3_DB_PASS=rei3
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  postgres_data:
