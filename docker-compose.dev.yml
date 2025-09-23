@@ -1,0 +1,40 @@
+version: '3.8'
+
+# Development override for docker-compose.yml
+# Use with: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+services:
+  tallarin:
+    build:
+      context: .
+      args:
+        VERSION: dev-${USER:-unknown}-$(date +%s)
+    volumes:
+      # Mount config as writable for development
+      - ./config_template.json:/app/config.json
+      # Mount source code for hot reload (if supported)
+      - .:/src:ro
+    environment:
+      # Development environment variables
+      - REI3_DEBUG=true
+      - REI3_LOG_LEVEL=debug
+    ports:
+      # Map additional ports for debugging
+      - "8080:80"
+      - "8443:443"
+
+  postgres:
+    # Use a named volume for development data persistence
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+      # Optionally mount init scripts
+      # - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    environment:
+      # More permissive settings for development
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      # Expose postgres for external tools
+      - "5432:5432"
+
+volumes:
+  postgres_dev_data:
