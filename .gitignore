@@ -1,3 +1,12 @@
 r3_arm64_linux.bin
 r3_amd64_linux.bin
 r3_amd64_win.exe
+
+# Distribution files and executables
+r3
+r3.exe
+*.bin
+*.exe
+*.dmg
+cache/clients/
+!cache/.gitkeep
