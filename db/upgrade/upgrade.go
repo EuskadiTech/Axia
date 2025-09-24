@@ -101,6 +101,11 @@ var upgradeFunctions = map[string]func(ctx context.Context, tx pgx.Tx) (string, 
 			TYPE app.field_flag[] USING flags::CHARACTER VARYING(12)[]::app.field_flag[];
 	*/
 
+	"3.11": func(ctx context.Context, tx pgx.Tx) (string, error) {
+		// No database changes needed for 3.11 -> 4.0 upgrade
+		// This upgrade function exists to provide a path from 3.11 to 4.0
+		return "4.0", nil
+	},
 	"3.10": func(ctx context.Context, tx pgx.Tx) (string, error) {
 		_, err := tx.Exec(ctx, `
 			-- cleanup from last release

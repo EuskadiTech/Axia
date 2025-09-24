@@ -1,0 +1,2 @@
+# This file ensures the database_template directory is preserved in version control
+# The directory structure is required for the Windows embedded PostgreSQL deployment

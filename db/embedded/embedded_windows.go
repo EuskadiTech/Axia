@@ -10,6 +10,7 @@ import (
 	"io"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"r3/config"
 	"r3/log"
 	"r3/tools"
@@ -26,12 +27,22 @@ func Start() error {
 		return err
 	}
 	if !exists {
-
-		// get database from template
-		if err := tools.FileMove(strings.Replace(dbData, "database", "database_template", 1),
-			dbData, false); err != nil {
-
+		templatePath := strings.Replace(dbData, "database", "database_template", 1)
+		templateExists, err := tools.Exists(templatePath)
+		if err != nil {
 			return err
+		}
+
+		if templateExists {
+			// get database from template
+			if err := tools.FileMove(templatePath, dbData, false); err != nil {
+				return err
+			}
+		} else {
+			// initialize database using initdb if template doesn't exist
+			if err := initializeDatabase(); err != nil {
+				return err
+			}
 		}
 	}
 
@@ -76,6 +87,36 @@ func status() (bool, error) {
 	}
 	// returns true if DB server is running
 	return strings.Contains(foundLine, msgState1), nil
+}
+
+// initializeDatabase creates a new PostgreSQL database using initdb
+func initializeDatabase() error {
+	// Create initdb command
+	cmd := exec.Command(filepath.Join(dbBin, "initdb"),
+		"-D", dbData,
+		"-U", config.File.Db.User,
+		"--auth-local=trust", 
+		"--auth-host=md5",
+		"-E", "UTF8",
+		"--locale=C",
+		"--no-instructions")
+	
+	tools.CmdAddSysProgAttrs(cmd)
+	cmd.Env = append(os.Environ(), fmt.Sprintf("LC_MESSAGES=%s", locale))
+	
+	// Set up separate process group for clean shutdown
+	cmd.SysProcAttr = &syscall.SysProcAttr{
+		CreationFlags: syscall.CREATE_NEW_PROCESS_GROUP,
+	}
+	
+	// Run initdb and capture output
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return fmt.Errorf("failed to initialize database: %v, output: %s", err, string(output))
+	}
+	
+	log.Info(log.ContextServer, "Database initialized successfully with initdb")
+	return nil
 }
 
 // executes call and waits for specified lines to return
