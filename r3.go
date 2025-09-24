@@ -59,10 +59,10 @@ import (
 
 var (
 	// overwritten by build parameters
-	appName          string = "REI3"
-	appNameShort     string = "R3"
-	appVersion       string = "0.1.2.3"
-	appVersionClient string = "0.1.2.3"
+	appName          string = "Tallarin4"
+	appNameShort     string = "T4"
+	appVersion       string = "4.0.1.0"
+	appVersionClient string = "4.0.1.0"
 
 	// start parameters
 	cli struct {
