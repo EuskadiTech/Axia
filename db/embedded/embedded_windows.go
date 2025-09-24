@@ -115,7 +115,46 @@ func initializeDatabase() error {
 		return fmt.Errorf("failed to initialize database: %v, output: %s", err, string(output))
 	}
 	
-	log.Info(log.ContextServer, "Database initialized successfully with initdb")
+	log.Info(log.ContextServer, "Database cluster initialized successfully with initdb")
+	
+	// Now we need to start the database temporarily to create the application database and user
+	if err := createApplicationDatabaseAndUser(); err != nil {
+		return fmt.Errorf("failed to create application database and user: %v", err)
+	}
+	
+	return nil
+}
+
+// createApplicationDatabaseAndUser creates the application database and ensures proper user setup
+func createApplicationDatabaseAndUser() error {
+	// Start the database server temporarily to create the application database
+	_, err := execWaitFor(dbBinCtl, []string{"start", "-D", dbData,
+		fmt.Sprintf(`-o "-p %d"`, config.File.Db.Port)}, []string{msgStarted}, 30)
+	if err != nil {
+		return fmt.Errorf("failed to start database for setup: %v", err)
+	}
+	
+	// Ensure we stop the database when done, even if there's an error
+	defer func() {
+		execWaitFor(dbBinCtl, []string{"stop", "-D", dbData}, []string{msgStopped}, 10)
+	}()
+	
+	// Create the application database and user using psql
+	createDbCmd := exec.Command(filepath.Join(dbBin, "psql"),
+		"-p", fmt.Sprintf("%d", config.File.Db.Port),
+		"-U", config.File.Db.User,
+		"-d", "postgres", // Connect to the default postgres database first
+		"-c", fmt.Sprintf("CREATE DATABASE \"%s\";", config.File.Db.Name))
+	
+	tools.CmdAddSysProgAttrs(createDbCmd)
+	createDbCmd.Env = append(os.Environ(), fmt.Sprintf("LC_MESSAGES=%s", locale))
+	
+	output, err := createDbCmd.CombinedOutput()
+	if err != nil {
+		return fmt.Errorf("failed to create application database: %v, output: %s", err, string(output))
+	}
+	
+	log.Info(log.ContextServer, fmt.Sprintf("Application database '%s' created successfully", config.File.Db.Name))
 	return nil
 }
 
