@@ -221,24 +221,6 @@ func ActivateLicense() {
 		license = licFile.License
 	}
 
-
-	// verify signature
-	data, _ := pem.Decode([]byte(publicKeyPEM))
-	if data == nil {
-		log.Error(log.ContextServer, "could not decode public key", errors.New(""))
-		return
-	}
-	key, err := x509.ParsePKCS1PublicKey(data.Bytes)
-	if err != nil {
-		log.Error(log.ContextServer, "could not parse public key", errors.New(""))
-		return
-	}
-
-	if err := rsa.VerifyPKCS1v15(key, crypto.SHA256, hashed[:], signature); err != nil {
-		log.Error(log.ContextServer, "failed to verify license", err)
-		return
-	}
-
 	// fetch revoked licenses from activation server
 	log.Info(log.ContextServer, "checking license revocation status")
 	revocations, err := fetchRevokedLicenses()
