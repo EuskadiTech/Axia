@@ -15,6 +15,8 @@ import (
 	"r3/log"
 	"r3/types"
 	"slices"
+	"sort"
+	"strings"
 	"time"
 )
 
@@ -28,6 +30,41 @@ type PublicKeyResponse struct {
 
 type RevokedLicensesResponse struct {
 	RevokedLicenses []string `json:"revokedLicenses"`
+}
+
+// marshalLicenseJSON marshals license data in the same format as Python's
+// json.dumps(separators=(',', ':'), sort_keys=True) to ensure signature compatibility
+func marshalLicenseJSON(license types.License) ([]byte, error) {
+	// First marshal to get the data, then unmarshal to generic map
+	data, err := json.Marshal(license)
+	if err != nil {
+		return nil, err
+	}
+	
+	var jsonObj map[string]interface{}
+	if err := json.Unmarshal(data, &jsonObj); err != nil {
+		return nil, err
+	}
+	
+	// Get sorted keys
+	keys := make([]string, 0, len(jsonObj))
+	for k := range jsonObj {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	
+	// Build JSON with sorted keys and compact format (no spaces after separators)
+	var parts []string
+	for _, k := range keys {
+		v := jsonObj[k]
+		vBytes, err := json.Marshal(v)
+		if err != nil {
+			return nil, err
+		}
+		parts = append(parts, fmt.Sprintf(`"%s":%s`, k, strings.TrimSpace(string(vBytes))))
+	}
+	
+	return []byte("{" + strings.Join(parts, ",") + "}"), nil
 }
 
 // fetchPublicKey retrieves the public key from the activation server
@@ -104,7 +141,7 @@ func ActivateLicense() {
 		return
 	}
 
-	licenseJson, err := json.Marshal(licFile.License)
+	licenseJson, err := marshalLicenseJSON(licFile.License)
 	if err != nil {
 		log.Error(log.ContextServer, "could not marshal license data", err)
 		return
