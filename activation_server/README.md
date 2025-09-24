@@ -66,6 +66,23 @@ A Python Flask-based activation server for generating, validating, and managing 
 - **URL**: `GET /api/revoked-licenses`
 - **Response**: List of revoked license IDs
 
+## JSON Format Compatibility
+
+**Important**: The license verification process requires exact JSON marshaling compatibility between the activation server and the Go client.
+
+The activation server signs licenses using Python's `json.dumps(separators=(',', ':'), sort_keys=True)` which:
+- Sorts JSON keys alphabetically
+- Uses compact format with no spaces after separators
+
+The Go client must use the same format when verifying signatures. This is handled by the `marshalLicenseJSON()` function in `config/config_activation.go`.
+
+**Example JSON format**:
+```json
+{"clientId":"CUSTOMER_001","extensions":["premium","api"],"licenseId":"LI12345678","loginCount":100,"registeredFor":"Company Name","validUntil":1735689600}
+```
+
+Note the alphabetical key ordering: `clientId`, `extensions`, `licenseId`, `loginCount`, `registeredFor`, `validUntil`.
+
 ## Key Management
 
 The server automatically generates RSA key pairs on first run:
