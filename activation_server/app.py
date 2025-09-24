@@ -20,6 +20,7 @@ app = Flask(__name__)
 PRIVATE_KEY_PATH = "private_key.pem"
 PUBLIC_KEY_PATH = "public_key.pem"
 REVOKED_LICENSES_PATH = "revoked_licenses.json"
+LICENSES_FOLDER = "licenses"
 
 # Generate or load RSA keys
 def generate_or_load_keys():
@@ -81,6 +82,20 @@ def generate_license_id():
     """Generate a unique license ID"""
     import uuid
     return f"LI{uuid.uuid4().hex[:8].upper()}"
+
+def save_license_to_folder(license_file):
+    """Save license file to the licenses folder"""
+    if not os.path.exists(LICENSES_FOLDER):
+        os.makedirs(LICENSES_FOLDER)
+    
+    license_id = license_file['license']['licenseId']
+    filename = f"{license_id}.json"
+    filepath = os.path.join(LICENSES_FOLDER, filename)
+    
+    with open(filepath, 'w') as f:
+        json.dump(license_file, f, indent=2)
+    
+    return filepath
 
 def create_license_string(license_data):
     """Convert license data to new format string: client_id;registered_for;login_count_limit;valid_for_days;ext1,ext2,ext3"""
@@ -338,7 +353,15 @@ def generate_license():
             'signature': signature
         }
         
-        return jsonify(license_file)
+        # Save license to folder
+        filepath = save_license_to_folder(license_file)
+        
+        return jsonify({
+            'license': license_data,
+            'licenseKey': license_base64,
+            'signature': signature,
+            'saved_to': filepath
+        })
         
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -434,6 +457,54 @@ def get_public_key():
 def get_revoked_licenses():
     """Get list of revoked license IDs"""
     return jsonify({'revokedLicenses': load_revoked_licenses()})
+
+@app.route('/api/licenses', methods=['GET'])
+def list_licenses():
+    """Get list of all saved licenses in the folder"""
+    if not os.path.exists(LICENSES_FOLDER):
+        return jsonify({'licenses': []})
+    
+    licenses = []
+    try:
+        for filename in os.listdir(LICENSES_FOLDER):
+            if filename.endswith('.json'):
+                filepath = os.path.join(LICENSES_FOLDER, filename)
+                try:
+                    with open(filepath, 'r') as f:
+                        license_data = json.load(f)
+                        licenses.append({
+                            'licenseId': license_data['license']['licenseId'],
+                            'clientId': license_data['license']['clientId'], 
+                            'registeredFor': license_data['license']['registeredFor'],
+                            'validUntil': license_data['license']['validUntil'],
+                            'filename': filename
+                        })
+                except Exception as e:
+                    print(f"Error loading license file {filename}: {e}")
+                    continue
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+    return jsonify({'licenses': licenses})
+
+@app.route('/api/licenses/<license_id>', methods=['GET'])
+def get_license(license_id):
+    """Get a specific license by ID from the folder"""
+    if not os.path.exists(LICENSES_FOLDER):
+        return jsonify({'error': 'Licenses folder not found'}), 404
+    
+    filename = f"{license_id}.json"
+    filepath = os.path.join(LICENSES_FOLDER, filename)
+    
+    if not os.path.exists(filepath):
+        return jsonify({'error': 'License not found'}), 404
+    
+    try:
+        with open(filepath, 'r') as f:
+            license_data = json.load(f)
+        return jsonify(license_data)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     print("Tallarin Activation Server")

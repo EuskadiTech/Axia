@@ -1,0 +1,15 @@
+{
+  "license": {
+    "licenseId": "LIA2DEA07C",
+    "clientId": "TEST_CLIENT_001",
+    "extensions": [
+      "premium",
+      "api_access"
+    ],
+    "loginCount": 50,
+    "registeredFor": "Test Company Ltd.",
+    "validUntil": 1790279171
+  },
+  "licenseKey": "VEVTVF9DTElFTlRfMDAxO1Rlc3QgQ29tcGFueSBMdGQuOzUwOzM2NDtwcmVtaXVtLGFwaV9hY2Nlc3M=",
+  "signature": "Mojc__bXfuzojS3jZgn6hvF8koNUASrjBOM0YPgbKi9nzqc1TiMD5095vvi1p3GtB2SAD3eR3nrAklxE2kLvk4KuwaQjifDE-A5d7wTRX0ldYIWxl1XH-4wkKdlWBXIHHXjTnaFI187hri4Gm8NZ3BVA7nU0sZ-SX888VMEIQGCWs9l1soZXPx8J1A1CyMrj7lVoQCCGLoQtrm6IezkgFxxHYi9NjMNh-pqF5T0zIL_fV-BoENFG-mCBeFm1ZYgFCcKtG-8L_397aXdMsdm2Qew7wQHL5awhqBu3pLSW9ppf_iTzAEStNdtS8ow0tVPfD1yPfQWdUdGa1IFakTdVVsu5fg6bnk9UCpMyTIjmm5dvSp2uZlg3eGMj4yPTA3nbgDupcy7Zq4iVgIADslOrMZBfsSr9s899F4Z6DiZc8pD1cH2f3m-9MdyJM93bHOo7-lmpcYJArvKFLIqqvAPJrPG9sBB4oDyKyH7nDT43J50SZwprUNsV9zBufLB3kwegtNFW7-H5DcinLCrSUlycd1xRsO-3wJTWcBEvUdTNJg84qGFHCYA7p4uMAdJqEcCOqXWOsvKUIEHpu1SW_G8xiF-HIh9T17MlQDSWCYw-E_Xbf0sn1DUJv1ebJVm4yVt2t6FcNyBTbx9_xNP9vjyf2-gQdnBe4dTG0zfIeE0pVtg="
+}

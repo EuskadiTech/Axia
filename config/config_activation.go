@@ -1,14 +1,8 @@
 package config
 
 import (
-	"crypto"
-	"crypto/rsa"
-	"crypto/sha256"
-	"crypto/x509"
 	"encoding/base64"
 	"encoding/json"
-	"encoding/pem"
-	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -179,7 +173,85 @@ func fetchRevokedLicenses() ([]string, error) {
 	return revokedResp.RevokedLicenses, nil
 }
 
+// fetchLicenseFromServer retrieves a specific license from the activation server's folder
+func fetchLicenseFromServer(licenseId string) (*types.LicenseFile, error) {
+	client := &http.Client{
+		Timeout: 10 * time.Second,
+	}
+	
+	resp, err := client.Get(activationServerURL + "/api/licenses/" + licenseId)
+	if err != nil {
+		return nil, fmt.Errorf("failed to fetch license: %v", err)
+	}
+	defer resp.Body.Close()
+	
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("server returned status %d", resp.StatusCode)
+	}
+	
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read response body: %v", err)
+	}
+	
+	var licenseFile types.LicenseFile
+	if err := json.Unmarshal(body, &licenseFile); err != nil {
+		return nil, fmt.Errorf("failed to parse license response: %v", err)
+	}
+	
+	return &licenseFile, nil
+}
+
 func ActivateLicense() {
+	// Check if we should fetch license from server instead of local file
+	if licenseId := GetString("licenseId"); licenseId != "" {
+		log.Info(log.ContextServer, fmt.Sprintf("fetching license %s from activation server", licenseId))
+		
+		// Fetch license from server
+		licFilePtr, err := fetchLicenseFromServer(licenseId)
+		if err != nil {
+			log.Error(log.ContextServer, "failed to fetch license from server", err)
+			return
+		}
+		licFile := *licFilePtr
+		
+		var license types.License
+
+		// Check if we have the new licenseKey format
+		if licFile.LicenseKey != "" {
+			// Parse the license key to get license details
+			parsedLicense, err := parseLicenseKey(licFile.LicenseKey)
+			if err != nil {
+				log.Error(log.ContextServer, "could not parse license key", err)
+				return
+			}
+			license = *parsedLicense
+		} else {
+			// Use old format
+			license = licFile.License
+		}
+
+		// fetch revoked licenses from activation server
+		log.Info(log.ContextServer, "checking license revocation status")
+		revocations, err := fetchRevokedLicenses()
+		if err != nil {
+			log.Error(log.ContextServer, "failed to fetch revoked licenses from activation server", err)
+			return
+		}
+
+		// check if license has been revoked
+		if slices.Contains(revocations, license.LicenseId) {
+			log.Error(log.ContextServer, "failed to enable license", fmt.Errorf("license ID '%s' has been revoked", license.LicenseId))
+			return
+		}
+
+		// set license
+		log.Info(log.ContextServer, "setting license")
+		SetLicense(license)
+		return
+	}
+	
+	// Fall back to local license file processing
 	if GetString("licenseFile") == "" {
 		log.Info(log.ContextServer, "skipping activation check, no license installed")
 
@@ -195,14 +267,10 @@ func ActivateLicense() {
 		return
 	}
 
-	var messageToVerify []byte
 	var license types.License
 
 	// Check if we have the new licenseKey format
 	if licFile.LicenseKey != "" {
-		// Use new base64 license key format for signature verification
-		messageToVerify = []byte(licFile.LicenseKey)
-		
 		// Parse the license key to get license details
 		parsedLicense, err := parseLicenseKey(licFile.LicenseKey)
 		if err != nil {
@@ -211,13 +279,7 @@ func ActivateLicense() {
 		}
 		license = *parsedLicense
 	} else {
-		// Fall back to old JSON format for backward compatibility
-		licenseJson, err := marshalLicenseJSON(licFile.License)
-		if err != nil {
-			log.Error(log.ContextServer, "could not marshal license data", err)
-			return
-		}
-		messageToVerify = licenseJson
+		// Use old format
 		license = licFile.License
 	}
 

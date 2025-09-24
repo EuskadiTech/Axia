@@ -104,6 +104,34 @@ The system maintains full backward compatibility with existing JSON-based licens
 - **URL**: `GET /api/revoked-licenses`
 - **Response**: List of revoked license IDs
 
+### List Licenses (New)
+- **URL**: `GET /api/licenses`
+- **Response**: List of all licenses saved in the folder
+  ```json
+  {
+    "licenses": [
+      {
+        "licenseId": "LI12345678",
+        "clientId": "CUSTOMER_001",
+        "registeredFor": "Company Name",
+        "validUntil": 1735689600,
+        "filename": "LI12345678.json"
+      }
+    ]
+  }
+  ```
+
+### Get Specific License (New)
+- **URL**: `GET /api/licenses/{license_id}`
+- **Response**: Complete license file for the specified license ID
+  ```json
+  {
+    "license": { ... },
+    "licenseKey": "base64_encoded_key",
+    "signature": "base64_encoded_signature"
+  }
+  ```
+
 ## Signature Compatibility
 
 **⚠️ Important Change**: The system now primarily uses base64-encoded license keys for signatures instead of JSON.
@@ -150,6 +178,30 @@ The server automatically generates RSA key pairs on first run:
 - `private_key.pem`: Private RSA key (keep secure)
 - `public_key.pem`: Public RSA key (for integration)
 - `revoked_licenses.json`: List of revoked license IDs
+- `licenses/`: Folder containing all generated license files
+
+## Go Application Integration
+
+### Using License ID (New Method)
+Configure the Go application to fetch licenses directly from the activation server:
+```json
+{
+  "licenseId": "LI12345678"
+}
+```
+
+The Go application will automatically:
+1. Fetch the license from the activation server's `/api/licenses/{license_id}` endpoint
+2. Validate the license signature and check revocation status
+3. Apply the license settings
+
+### Using License File (Legacy Method)
+Upload the complete license JSON file to the Go application configuration:
+```json
+{
+  "licenseFile": "{ complete license JSON here }"
+}
+```
 
 ## Example License Files
 
