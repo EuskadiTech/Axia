@@ -221,22 +221,6 @@ func ActivateLicense() {
 		license = licFile.License
 	}
 
-	hashed := sha256.Sum256(messageToVerify)
-
-	// get license signature
-	signature, err := base64.URLEncoding.DecodeString(licFile.Signature)
-	if err != nil {
-		log.Error(log.ContextServer, "could not decode license signature", err)
-		return
-	}
-
-	// fetch public key from activation server
-	log.Info(log.ContextServer, "fetching public key from activation server")
-	publicKeyPEM, err := fetchPublicKey()
-	if err != nil {
-		log.Error(log.ContextServer, "failed to fetch public key from activation server", err)
-		return
-	}
 
 	// verify signature
 	data, _ := pem.Decode([]byte(publicKeyPEM))
