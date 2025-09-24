@@ -24,3 +24,6 @@ release_package/
 
 # Test builds
 test_build
+
+# Runtime configuration files
+config.json
