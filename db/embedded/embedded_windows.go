@@ -147,8 +147,8 @@ func createApplicationDatabase() error {
 		"-p", fmt.Sprintf("%d", config.File.Db.Port),
 		"-U", config.File.Db.User,
 		"-d", "postgres", // Connect to the default postgres database first
-		"-c", "CREATE DATABASE app WITH OWNER = app TEMPLATE = template0 ENCODING = 'UTF8';"
-	
+		"-c", "CREATE DATABASE app WITH OWNER = app TEMPLATE = template0 ENCODING = 'UTF8'"
+	)
 	tools.CmdAddSysProgAttrs(createDbCmd)
 	createDbCmd.Env = append(os.Environ(), fmt.Sprintf("LC_MESSAGES=%s", locale))
 	
@@ -179,7 +179,8 @@ func createApplicationUser() error {
 		"-p", fmt.Sprintf("%d", config.File.Db.Port),
 		"-U", config.File.Db.User,
 		"-d", "postgres", // Connect to the default postgres database first
-		"-c", "CREATE ROLE app WITH LOGIN PASSWORD 'app!';"
+		"-c", "CREATE ROLE app WITH LOGIN PASSWORD 'app';"
+	)
 	
 	tools.CmdAddSysProgAttrs(createDbCmd)
 	createDbCmd.Env = append(os.Environ(), fmt.Sprintf("LC_MESSAGES=%s", locale))
