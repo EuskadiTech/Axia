@@ -89,7 +89,6 @@ func fetchLicenseFromServer(licenseId string) (*types.License, error) {
 	}
 	
 	return &response.License, nil
-}
 
 func ActivateLicense() {
 	if GetString("licenseFile") == "" {
