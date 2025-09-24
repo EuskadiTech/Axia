@@ -5,10 +5,28 @@ A Python Flask-based activation server for generating, validating, and managing 
 ## Features
 
 - **License Generation**: Create signed licenses with customizable parameters
+- **New License Format**: Uses base64-encoded license keys with semicolon-separated format
+- **Backward Compatibility**: Maintains support for legacy JSON-based licenses
 - **License Validation**: Verify license signatures and check revocation status
 - **License Revocation**: Maintain a revocation list for invalidated licenses
 - **Web Interface**: Simple HTML interface for license management
 - **REST API**: RESTful endpoints for programmatic access
+
+## License Format
+
+### New Format (Default)
+The server now generates licenses using a new base64-encoded format:
+
+**Format**: `client_id;registered_for;login_count_limit;valid_for_days;ext1,ext2,ext3`
+
+**Example**:
+```
+Original: "TEST_CLIENT_001;Test Company;100;365;premium,api_access"
+Base64: "VEVTVF9DTElFTlRfMDAxO1Rlc3QgQ29tcGFueTsxMDA7MzY1O3ByZW1pdW0sYXBpX2FjY2Vzcw=="
+```
+
+### Backward Compatibility
+The system maintains full backward compatibility with existing JSON-based licenses.
 
 ## Installation
 
@@ -27,7 +45,7 @@ A Python Flask-based activation server for generating, validating, and managing 
 
 ## API Endpoints
 
-### Generate License
+### Generate License (New Format)
 - **URL**: `POST /api/generate-license`
 - **Content-Type**: `application/json`
 - **Body**:
@@ -40,12 +58,32 @@ A Python Flask-based activation server for generating, validating, and managing 
     "extensions": ["extension1", "extension2"]
   }
   ```
-- **Response**: License file with signature
+- **Response**: License file with signature and new `licenseKey` field
+  ```json
+  {
+    "license": {
+      "licenseId": "LI12345678",
+      "clientId": "CUSTOMER_001",
+      "extensions": ["extension1", "extension2"],
+      "loginCount": 100,
+      "registeredFor": "Company Name",
+      "validUntil": 1735689600
+    },
+    "licenseKey": "Q1VTVE9NRVJfMDAxO0NvbXBhbnkgTmFtZTsxMDA7MzY1O2V4dGVuc2lvbjEsZXh0ZW5zaW9uMg==",
+    "signature": "base64_encoded_signature_here"
+  }
+  ```
+
+### Generate License (Old Format - for compatibility testing)
+- **URL**: `POST /api/generate-license-old`
+- **Content-Type**: `application/json`
+- **Body**: Same as new format
+- **Response**: License file without `licenseKey` field (JSON-based signature)
 
 ### Validate License
 - **URL**: `POST /api/validate-license`
 - **Content-Type**: `application/json`
-- **Body**: Complete license file JSON
+- **Body**: Complete license file JSON (supports both old and new formats)
 - **Response**: Validation result
 
 ### Revoke License
@@ -66,22 +104,25 @@ A Python Flask-based activation server for generating, validating, and managing 
 - **URL**: `GET /api/revoked-licenses`
 - **Response**: List of revoked license IDs
 
-## JSON Format Compatibility
+## Signature Compatibility
 
-**Important**: The license verification process requires exact JSON marshaling compatibility between the activation server and the Go client.
+**⚠️ Important Change**: The system now primarily uses base64-encoded license keys for signatures instead of JSON.
 
-The activation server signs licenses using Python's `json.dumps(separators=(',', ':'), sort_keys=True)` which:
-- Sorts JSON keys alphabetically
-- Uses compact format with no spaces after separators
+### New Format Signatures
+The new format signs the base64-encoded license key directly:
+- **Input**: `"CLIENT_001;Company Name;100;365;premium,api"`
+- **Base64**: `"Q0xJRU5UXzAwMTtDb21wYW55IE5hbWU7MTAwOzM2NTtwcmVtaXVtLGFwaQ=="`
+- **Signature**: Generated from the base64 string
 
-The Go client must use the same format when verifying signatures. This is handled by the `marshalLicenseJSON()` function in `config/config_activation.go`.
+### Backward Compatibility
+For old format licenses, the system still uses Python's `json.dumps(separators=(',', ':'), sort_keys=True)`:
 
 **Example JSON format**:
 ```json
 {"clientId":"CUSTOMER_001","extensions":["premium","api"],"licenseId":"LI12345678","loginCount":100,"registeredFor":"Company Name","validUntil":1735689600}
 ```
 
-Note the alphabetical key ordering: `clientId`, `extensions`, `licenseId`, `loginCount`, `registeredFor`, `validUntil`.
+The Go client automatically detects and handles both formats.
 
 ## Key Management
 
@@ -110,8 +151,25 @@ The server automatically generates RSA key pairs on first run:
 - `public_key.pem`: Public RSA key (for integration)
 - `revoked_licenses.json`: List of revoked license IDs
 
-## Example License File
+## Example License Files
 
+### New Format (with licenseKey)
+```json
+{
+  "license": {
+    "licenseId": "LI8A3B9C5F",
+    "clientId": "CUSTOMER_001", 
+    "extensions": ["premium", "api"],
+    "loginCount": 100,
+    "registeredFor": "Company Name",
+    "validUntil": 1735689600
+  },
+  "licenseKey": "Q1VTVE9NRVJfMDAxO0NvbXBhbnkgTmFtZTsxMDA7MzY1O3ByZW1pdW0sYXBp",
+  "signature": "base64_encoded_signature_here"
+}
+```
+
+### Old Format (backward compatibility)
 ```json
 {
   "license": {
@@ -131,3 +189,4 @@ The server automatically generates RSA key pairs on first run:
 1. **Key generation issues**: Ensure cryptography package is properly installed
 2. **Signature verification failures**: Check that the public key in the Go app matches the one generated by this server
 3. **Port conflicts**: Change the port in `app.py` if 5000 is already in use
+4. **License format issues**: The Go client automatically detects old vs new format licenses

@@ -104,24 +104,6 @@ def create_license_string(license_data):
     # Encode to base64
     return base64.b64encode(license_string.encode('utf-8')).decode('utf-8')
 
-def sign_license_old_format(license_data, private_key):
-    """Sign license data with private key using old JSON format"""
-    # Convert license to JSON and hash it
-    license_json = json.dumps(license_data, separators=(',', ':'), sort_keys=True)
-    message = license_json.encode('utf-8')
-    digest = hashes.Hash(hashes.SHA256(), backend=default_backend())
-    digest.update(message)
-    hashed = digest.finalize()
-    
-    # Sign the hash
-    signature = private_key.sign(
-        hashed,
-        padding.PKCS1v15(),
-        hashes.SHA256()
-    )
-    
-    return base64.urlsafe_b64encode(signature).decode('utf-8')
-
 def sign_license(license_data, private_key):
     """Sign license data with private key using new base64 format"""
     # Create the new license string format
@@ -315,47 +297,6 @@ def index():
 </body>
 </html>
     ''')
-
-@app.route('/api/generate-license-old', methods=['POST'])
-def generate_license_old():
-    """Generate a license using old JSON format for backward compatibility testing"""
-    try:
-        data = request.get_json()
-        
-        # Validate required fields
-        required_fields = ['clientId', 'registeredFor']
-        for field in required_fields:
-            if not data.get(field):
-                return jsonify({'error': f'Missing required field: {field}'}), 400
-        
-        # Calculate valid until timestamp
-        valid_days = data.get('validDays', 365)
-        valid_until = datetime.now() + timedelta(days=valid_days)
-        valid_until_timestamp = int(valid_until.timestamp())
-        
-        # Create license
-        license_data = {
-            'licenseId': generate_license_id(),
-            'clientId': data['clientId'],
-            'extensions': data.get('extensions', []),
-            'loginCount': data.get('loginCount', 100),
-            'registeredFor': data['registeredFor'],
-            'validUntil': valid_until_timestamp
-        }
-        
-        # Sign the license using old format
-        signature = sign_license_old_format(license_data, private_key)
-        
-        # Create license file (old format without licenseKey)
-        license_file = {
-            'license': license_data,
-            'signature': signature
-        }
-        
-        return jsonify(license_file)
-        
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/generate-license', methods=['POST'])
 def generate_license():
