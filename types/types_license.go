@@ -10,6 +10,7 @@ type License struct {
 }
 
 type LicenseFile struct {
-	License   License `json:"license"`
-	Signature string  `json:"signature"`
+	License    License `json:"license"`
+	LicenseKey string  `json:"licenseKey,omitempty"` // New base64 format
+	Signature  string  `json:"signature"`
 }
