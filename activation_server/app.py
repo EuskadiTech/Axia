@@ -56,7 +56,7 @@ def generate_or_load_keys():
         print("Loading existing RSA keys...")
         with open(PRIVATE_KEY_PATH, 'rb') as f:
             private_key = serialization.load_pem_private_key(
-                f.read(), ****** backend=default_backend()
+                f.read(), password=None, backend=default_backend()
             )
         with open(PUBLIC_KEY_PATH, 'rb') as f:
             public_key = serialization.load_pem_public_key(
@@ -82,11 +82,53 @@ def generate_license_id():
     import uuid
     return f"LI{uuid.uuid4().hex[:8].upper()}"
 
-def sign_license(license_data, private_key):
-    """Sign license data with private key"""
+def create_license_string(license_data):
+    """Convert license data to new format string: client_id;registered_for;login_count_limit;valid_for_days;ext1,ext2,ext3"""
+    client_id = license_data['clientId']
+    registered_for = license_data['registeredFor']
+    login_count = license_data['loginCount']
+    
+    # Calculate valid_for_days from validUntil timestamp
+    valid_until_timestamp = license_data['validUntil']
+    now = datetime.now()
+    valid_until_date = datetime.fromtimestamp(valid_until_timestamp)
+    valid_for_days = max(0, (valid_until_date - now).days)
+    
+    # Join extensions with commas
+    extensions = license_data.get('extensions', [])
+    extensions_str = ','.join(extensions) if extensions else ''
+    
+    # Create the semicolon-separated string
+    license_string = f"{client_id};{registered_for};{login_count};{valid_for_days};{extensions_str}"
+    
+    # Encode to base64
+    return base64.b64encode(license_string.encode('utf-8')).decode('utf-8')
+
+def sign_license_old_format(license_data, private_key):
+    """Sign license data with private key using old JSON format"""
     # Convert license to JSON and hash it
     license_json = json.dumps(license_data, separators=(',', ':'), sort_keys=True)
     message = license_json.encode('utf-8')
+    digest = hashes.Hash(hashes.SHA256(), backend=default_backend())
+    digest.update(message)
+    hashed = digest.finalize()
+    
+    # Sign the hash
+    signature = private_key.sign(
+        hashed,
+        padding.PKCS1v15(),
+        hashes.SHA256()
+    )
+    
+    return base64.urlsafe_b64encode(signature).decode('utf-8')
+
+def sign_license(license_data, private_key):
+    """Sign license data with private key using new base64 format"""
+    # Create the new license string format
+    license_base64 = create_license_string(license_data)
+    
+    # Hash the base64 string
+    message = license_base64.encode('utf-8')
     digest = hashes.Hash(hashes.SHA256(), backend=default_backend())
     digest.update(message)
     hashed = digest.finalize()
@@ -274,6 +316,47 @@ def index():
 </html>
     ''')
 
+@app.route('/api/generate-license-old', methods=['POST'])
+def generate_license_old():
+    """Generate a license using old JSON format for backward compatibility testing"""
+    try:
+        data = request.get_json()
+        
+        # Validate required fields
+        required_fields = ['clientId', 'registeredFor']
+        for field in required_fields:
+            if not data.get(field):
+                return jsonify({'error': f'Missing required field: {field}'}), 400
+        
+        # Calculate valid until timestamp
+        valid_days = data.get('validDays', 365)
+        valid_until = datetime.now() + timedelta(days=valid_days)
+        valid_until_timestamp = int(valid_until.timestamp())
+        
+        # Create license
+        license_data = {
+            'licenseId': generate_license_id(),
+            'clientId': data['clientId'],
+            'extensions': data.get('extensions', []),
+            'loginCount': data.get('loginCount', 100),
+            'registeredFor': data['registeredFor'],
+            'validUntil': valid_until_timestamp
+        }
+        
+        # Sign the license using old format
+        signature = sign_license_old_format(license_data, private_key)
+        
+        # Create license file (old format without licenseKey)
+        license_file = {
+            'license': license_data,
+            'signature': signature
+        }
+        
+        return jsonify(license_file)
+        
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/generate-license', methods=['POST'])
 def generate_license():
     """Generate a new signed license"""
@@ -304,9 +387,13 @@ def generate_license():
         # Sign the license
         signature = sign_license(license_data, private_key)
         
-        # Create license file
+        # Create the new license string format
+        license_base64 = create_license_string(license_data)
+        
+        # Create license file with both old and new formats for compatibility
         license_file = {
-            'license': license_data,
+            'license': license_data,  # Keep old format for compatibility
+            'licenseKey': license_base64,  # New base64 format
             'signature': signature
         }
         
@@ -333,10 +420,17 @@ def validate_license():
         if license_data.get('licenseId') in revoked_licenses:
             return jsonify({'valid': False, 'message': 'License has been revoked'})
         
-        # Verify signature
+        # Verify signature using new base64 format
         try:
-            license_json = json.dumps(license_data, separators=(',', ':'), sort_keys=True)
-            message = license_json.encode('utf-8')
+            # Try new format first (base64 license key)
+            if 'licenseKey' in data:
+                license_base64 = data['licenseKey']
+                message = license_base64.encode('utf-8')
+            else:
+                # Fall back to old format for backward compatibility
+                license_json = json.dumps(license_data, separators=(',', ':'), sort_keys=True)
+                message = license_json.encode('utf-8')
+            
             digest = hashes.Hash(hashes.SHA256(), backend=default_backend())
             digest.update(message)
             hashed = digest.finalize()

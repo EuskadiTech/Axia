@@ -16,6 +16,7 @@ import (
 	"r3/types"
 	"slices"
 	"sort"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -30,6 +31,59 @@ type PublicKeyResponse struct {
 
 type RevokedLicensesResponse struct {
 	RevokedLicenses []string `json:"revokedLicenses"`
+}
+
+// parseLicenseKey parses the new base64 license format: client_id;registered_for;login_count_limit;valid_for_days;ext1,ext2,ext3
+func parseLicenseKey(licenseKey string) (*types.License, error) {
+	// Decode base64
+	decoded, err := base64.StdEncoding.DecodeString(licenseKey)
+	if err != nil {
+		return nil, fmt.Errorf("failed to decode base64 license key: %v", err)
+	}
+	
+	// Split by semicolon
+	parts := strings.Split(string(decoded), ";")
+	if len(parts) != 5 {
+		return nil, fmt.Errorf("invalid license key format, expected 5 parts, got %d", len(parts))
+	}
+	
+	clientId := parts[0]
+	registeredFor := parts[1]
+	
+	// Parse login count
+	loginCount, err := strconv.ParseInt(parts[2], 10, 64)
+	if err != nil {
+		return nil, fmt.Errorf("invalid login count: %v", err)
+	}
+	
+	// Parse valid for days and calculate validUntil timestamp
+	validForDays, err := strconv.ParseInt(parts[3], 10, 64)
+	if err != nil {
+		return nil, fmt.Errorf("invalid valid for days: %v", err)
+	}
+	validUntil := time.Now().Add(time.Duration(validForDays) * 24 * time.Hour).Unix()
+	
+	// Parse extensions
+	var extensions []string
+	if parts[4] != "" {
+		extensions = strings.Split(parts[4], ",")
+		// Trim whitespace from each extension
+		for i, ext := range extensions {
+			extensions[i] = strings.TrimSpace(ext)
+		}
+	}
+	
+	// Generate a license ID based on client ID for consistency
+	licenseId := fmt.Sprintf("LK_%s_%d", clientId, time.Now().Unix())
+	
+	return &types.License{
+		LicenseId:     licenseId,
+		ClientId:      clientId,
+		Extensions:    extensions,
+		LoginCount:    loginCount,
+		RegisteredFor: registeredFor,
+		ValidUntil:    validUntil,
+	}, nil
 }
 
 // marshalLicenseJSON marshals license data in the same format as Python's
@@ -141,12 +195,33 @@ func ActivateLicense() {
 		return
 	}
 
-	licenseJson, err := marshalLicenseJSON(licFile.License)
-	if err != nil {
-		log.Error(log.ContextServer, "could not marshal license data", err)
-		return
+	var messageToVerify []byte
+	var license types.License
+
+	// Check if we have the new licenseKey format
+	if licFile.LicenseKey != "" {
+		// Use new base64 license key format for signature verification
+		messageToVerify = []byte(licFile.LicenseKey)
+		
+		// Parse the license key to get license details
+		parsedLicense, err := parseLicenseKey(licFile.LicenseKey)
+		if err != nil {
+			log.Error(log.ContextServer, "could not parse license key", err)
+			return
+		}
+		license = *parsedLicense
+	} else {
+		// Fall back to old JSON format for backward compatibility
+		licenseJson, err := marshalLicenseJSON(licFile.License)
+		if err != nil {
+			log.Error(log.ContextServer, "could not marshal license data", err)
+			return
+		}
+		messageToVerify = licenseJson
+		license = licFile.License
 	}
-	hashed := sha256.Sum256(licenseJson)
+
+	hashed := sha256.Sum256(messageToVerify)
 
 	// get license signature
 	signature, err := base64.URLEncoding.DecodeString(licFile.Signature)
@@ -189,12 +264,12 @@ func ActivateLicense() {
 	}
 
 	// check if license has been revoked
-	if slices.Contains(revocations, licFile.License.LicenseId) {
-		log.Error(log.ContextServer, "failed to enable license", fmt.Errorf("license ID '%s' has been revoked", licFile.License.LicenseId))
+	if slices.Contains(revocations, license.LicenseId) {
+		log.Error(log.ContextServer, "failed to enable license", fmt.Errorf("license ID '%s' has been revoked", license.LicenseId))
 		return
 	}
 
 	// set license
 	log.Info(log.ContextServer, "setting license")
-	SetLicense(licFile.License)
+	SetLicense(license)
 }
