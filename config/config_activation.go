@@ -1,22 +1,13 @@
 package config
 
 import (
-	"crypto"
-	"crypto/rsa"
-	"crypto/sha256"
-	"crypto/x509"
-	"encoding/base64"
 	"encoding/json"
-	"encoding/pem"
-	"errors"
 	"fmt"
 	"io"
 	"net/http"
 	"r3/log"
 	"r3/types"
-	"slices"
 	"sort"
-	"strconv"
 	"strings"
 	"time"
 )
@@ -68,6 +59,38 @@ func marshalLicenseJSON(license types.License) ([]byte, error) {
 	return []byte("{" + strings.Join(parts, ",") + "}"), nil
 }
 
+// fetchLicenseFromServer retrieves a specific license from the activation server's folder
+func fetchLicenseFromServer(licenseId string) (*types.License, error) {
+	client := &http.Client{
+		Timeout: 10 * time.Second,
+	}
+	
+	resp, err := client.Get(activationServerURL + "/api/licenses/" + licenseId)
+	if err != nil {
+		return nil, fmt.Errorf("failed to fetch license: %v", err)
+	}
+	defer resp.Body.Close()
+	
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("server returned status %d", resp.StatusCode)
+	}
+	
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read response body: %v", err)
+	}
+	
+	// The server returns a structure with "license" field containing the license data
+	var response struct {
+		License types.License `json:"license"`
+	}
+	if err := json.Unmarshal(body, &response); err != nil {
+		return nil, fmt.Errorf("failed to parse license response: %v", err)
+	}
+	
+	return &response.License, nil
+}
+
 func ActivateLicense() {
 	if GetString("licenseFile") == "" {
 		log.Info(log.ContextServer, "skipping activation check, no license installed")
@@ -84,10 +107,25 @@ func ActivateLicense() {
 		return
 	}
 
-	var messageToVerify []byte
 	var license types.License
 
-    // FIXME: fetch <licenseserver>/api/licenses/<LicenseId> and set license var on it's json output.
+	// Extract license ID from the license file to fetch from server
+	licenseId := licFile.LicenseId
+	if licenseId == "" {
+		log.Error(log.ContextServer, "license ID not found in license file", nil)
+		return
+	}
+
+	// fetch <licenseserver>/api/licenses/<LicenseId> and set license var on it's json output
+	log.Info(log.ContextServer, fmt.Sprintf("fetching license %s from activation server", licenseId))
+	fetchedLicense, err := fetchLicenseFromServer(licenseId)
+	if err != nil {
+		log.Error(log.ContextServer, "failed to fetch license from server", err)
+		return
+	}
+	
+	// Set license from fetched data
+	license = *fetchedLicense
 
 	// fetch revoked licenses from activation server
 	// set license
