@@ -186,77 +186,111 @@ export default {
 			
 			// default messages
 			language:'en_US',
-			languages:['de','en_US'],
+			languages:['de','en_US','es_es','eu_es'],
 			message:{
 				authExt:{
 					de:'Externe Anmeldung',
-					en_US:'External login'
+					en_US:'External login',
+					es_es:'Inicio de sesión externo',
+					eu_es:'Kanpoko saio-hasiera'
 				},
 				authInt:{
 					de:'Interne Anmeldung',
-					en_US:'Internal login'
+					en_US:'Internal login',
+					es_es:'Inicio de sesión interno',
+					eu_es:'Barne saio-hasiera'
 				},
 				clusterNode:{
 					de:'Verbunden mit: ',
-					en_US:'Connected with: '
+					en_US:'Connected with: ',
+					es_es:'Conectado con: ',
+					eu_es:'Honekin konektatuta: '
 				},
 				error:{
 					de:'Ein Fehler ist aufgetreten - bitte erneut versuchen',
-					en_US:'An error occurred - please try again'
+					en_US:'An error occurred - please try again',
+					es_es:'Ha ocurrido un error - por favor inténtalo de nuevo',
+					eu_es:'Errore bat gertatu da - saiatu berriro mesedez'
 				},
 				httpMode:{
 					de:'Verbindung ist nicht verschlüsselt',
-					en_US:'Connection is not encrypted'
+					en_US:'Connection is not encrypted',
+					es_es:'La conexión no está cifrada',
+					eu_es:'Konexioa ez dago zifratuta'
 				},
 				license:{
 					'{ERR_LIC_001}':{
 						de:'Systemaktivierung ist abgelaufen - bitte den Systemadministrator kontaktieren',
-						en_US:'System activation has expired - please contact your system administrator'
+						en_US:'System activation has expired - please contact your system administrator',
+						es_es:'La activación del sistema ha expirado - por favor contacta con tu administrador del sistema',
+						eu_es:'Sistemaren aktibazioa iraungita dago - jarri harremanetan sistema-administratzailearekin mesedez'
 					},
 					'{ERR_LIC_002}':{
 						de:'Anzahl gleichzeitiger Benutzer erreicht - bitte den Systemadministrator kontaktieren',
-						en_US:'Concurrent user count reached - please contact your system administrator'
+						en_US:'Concurrent user count reached - please contact your system administrator',
+						es_es:'Número de usuarios simultáneos alcanzado - por favor contacta con tu administrador del sistema',
+						eu_es:'Aldi bereko erabiltzaile kopuru maximoa lortu da - jarri harremanetan sistema-administratzailearekin mesedez'
 					}
 				},
 				loading:{
 					de:'Am Laden...',
-					en_US:'Loading...'
+					en_US:'Loading...',
+					es_es:'Cargando...',
+					eu_es:'Kargatzen...'
 				},
 				login:{
 					de:'Anmelden',
-					en_US:'Login'
+					en_US:'Login',
+					es_es:'Iniciar sesión',
+					eu_es:'Saioa hasi'
 				},
 				maintenanceMode:{
 					de:'Wartungsmodus ist aktiv',
-					en_US:'Maintenance mode is active'
+					en_US:'Maintenance mode is active',
+					es_es:'El modo de mantenimiento está activo',
+					eu_es:'Mantentze modua aktibo dago'
 				},
 				mfa:{
 					de:'Multi-Faktor-Anmeldung',
-					en_US:'Multi-factor login'
+					en_US:'Multi-factor login',
+					es_es:'Inicio de sesión multifactor',
+					eu_es:'Faktore anitzeko saio-hasiera'
 				},
 				mfaHint:{
 					de:'6-stelliger Validierungs-Code',
-					en_US:'6 digit validation code'
+					en_US:'6 digit validation code',
+					es_es:'Código de validación de 6 dígitos',
+					eu_es:'6 zifrako balidazio kodea'
 				},
 				password:{
 					de:'Passwort',
-					en_US:'Password'
+					en_US:'Password',
+					es_es:'Contraseña',
+					eu_es:'Pasahitza'
 				},
 				sessionExpired:{
 					de:'Sitzung abgelaufen - bitte erneut anmelden',
-					en_US:'Session expired - please login again'
+					en_US:'Session expired - please login again',
+					es_es:'Sesión expirada - por favor inicia sesión de nuevo',
+					eu_es:'Saioa iraungita - saioa hasi berriro mesedez'
 				},
 				stayLoggedIn:{
 					de:'Angemeldet bleiben',
-					en_US:'Stay logged in'
+					en_US:'Stay logged in',
+					es_es:'Mantener sesión iniciada',
+					eu_es:'Saioa irekita mantendu'
 				},
 				username:{
 					de:'Benutzername',
-					en_US:'Username'
+					en_US:'Username',
+					es_es:'Nombre de usuario',
+					eu_es:'Erabiltzaile-izena'
 				},
 				wsBroken:{
 					de:'Warten auf Serververbindung...',
-					en_US:'Waiting for server connection...'
+					en_US:'Waiting for server connection...',
+					es_es:'Esperando conexión al servidor...',
+					eu_es:'Zerbitzarira konexioaren zain...'
 				}
 			}
 		};
