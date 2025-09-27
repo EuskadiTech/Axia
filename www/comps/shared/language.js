@@ -48,6 +48,7 @@ export function getDictByLang() {
 		case 'de': dict = 'german';    break;
 		case 'en': dict = 'english';   break;
 		case 'es': dict = 'spanish';   break;
+		case 'eu': dict = 'spanish';   break; // Basque fallback to Spanish
 		case 'fr': dict = 'french';    break;
 		case 'hu': dict = 'hungarian'; break;
 		case 'it': dict = 'italian';   break;

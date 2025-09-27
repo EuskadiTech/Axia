@@ -37,7 +37,7 @@ const MyStore = Vuex.createStore({
 		constants:{                    // constant variables, codes/messages/IDs
 			kdfIterations:10000,       // number of iterations for PBKDF2 key derivation function
 			languageCodesOfficial:[    // officially supported language codes
-				'en_us','de_de'
+				'en_us','de_de','es_es','eu_es'
 			],
 			loginLimitedFactor:3,      // factor, how many limited logins are enabled for each full login
 			loginType:{                // all login types, as defined in the backend
