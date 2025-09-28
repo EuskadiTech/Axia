@@ -2445,7 +2445,7 @@
         "comma": "Coma (,)",
         "dot": "Punto (.)",
         "mdot": "Punto medio (·)",
-        "none": "I'm sorry, I need the text that you want translated. Could you please provide it?",
+        "none": "[sin separador]",
         "space": "Espacio ( )"
       }
     },
