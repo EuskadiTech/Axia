@@ -80,7 +80,7 @@
       "repoKeyManagement": "Konfiantza-gakoen kudeaketa",
       "repoPublicKeyAdd": "Gehitu gako publikoa",
       "repoPublicKeyInputNameHint": "Gakoaren izena",
-      "repoPublicKeyInputValueHint": "Adibidea:\n-----BEGIN RSA PUBLIC KEY-----\nCLAVE\n-----END RSA PUBLIC KEY-----",
+      "repoPublicKeyInputValueHint": "Adibidea:\n-----BEGIN RSA PUBLIC KEY-----\nKEY\n-----END RSA PUBLIC KEY-----",
       "repoPublicKeys": "Gako publikoak",
       "repoSkipVerify": "Onartutako ziurtagiriak onartzea",
       "repoUrl": "Biltegiaren URLa",
