@@ -14,9 +14,13 @@ upload:
     - path: "/www/langs/en_us"
       format: "single-language-json"
       language-key: "en"
+      options:
+        - WRITE_NESTED
 
 # Where we should commit translations files
 download:
   files:
     - path: "/www/langs/{lang}"
       format: "single-language-json"
+      options:
+        - WRITE_NESTED
