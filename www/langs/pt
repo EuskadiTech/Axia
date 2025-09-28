@@ -2185,7 +2185,7 @@
     "status": "Status",
     "systemModes": "Modos do sistema",
     "textSearch": "Pesquisa de texto",
-    "threeDots": "Por favor, forneça o texto que deseja traduzir do inglês para o português.",
+    "threeDots": "...",
     "tip": "Dica",
     "title": "Título",
     "token": "Token",

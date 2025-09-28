@@ -2185,7 +2185,7 @@
     "status": "Statut",
     "systemModes": "Modes du système",
     "textSearch": "Recherche de texte",
-    "threeDots": "I'm sorry, but it seems there's no text provided for translation. Could you please provide the text you would like translated from English to French?",
+    "threeDots": "...",
     "tip": "Conseil",
     "title": "Titre",
     "token": "Jeton",
