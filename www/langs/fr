@@ -2517,17 +2517,17 @@
   },
   "widgets": {
     "button": {
-      "groupAdd": "Add group"
+      "groupAdd": "Ajouter un groupe"
     },
     "flow": "Direction",
-    "groupNameNew": "New widget group",
+    "groupNameNew": "Nouveau groupe de widgets",
     "option": {
-      "filterModule": "Application widgets",
-      "filterSystem": "System widgets",
-      "flowColumn": "top-to-bottom",
-      "flowRow": "left-to-right"
+      "filterModule": "Widgets d'application",
+      "filterSystem": "Widgets système",
+      "flowColumn": "de haut en bas",
+      "flowRow": "de gauche à droite"
     },
-    "placeholder": "Drag & drop widgets to add to this group",
-    "width": "Width"
+    "placeholder": "Faites glisser et déposez les widgets pour les ajouter à ce groupe",
+    "width": "Largeur"
   }
 }
