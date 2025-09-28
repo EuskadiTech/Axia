@@ -38,7 +38,7 @@
 			"adminMailsHint": "Add receiver email address",
 			"adminMailsList": [
 				"Upcoming expiration of registered OAuth clients.",
-				"Upcoming expiration of an active REI3 Professional license."
+				"Upcoming expiration of an active Tallarin4 Professional license."
 			],
 			"adminMailsTitle": "Admin notifications",
 			"appVersion": "Platform verzió",
@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "Másodpercben",
 			"dbTimeoutIcs": "Adatbázis időtúllépés: Naptárfájl letöltés (ICS)",
 			"dialog": {
-				"builderMode": "A Builder a műveletek létrehozásához vagy módosításához szolgál.<br /><br />Az alkalmazások módosítása adatveszteséghez vezethet, és soha ne legyen <b>TERMELÉSIBEN</b> használva.<br /><br />A Builder biztonságos használatához használjon egy külön REI3 példányt; a kész és tesztelt alkalmazásokat később áthelyezheti a termelő rendszerbe.<br /><br />További információért olvassa el a <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">Builder dokumentációját</a>.",
+				"builderMode": "A Builder a műveletek létrehozásához vagy módosításához szolgál.<br /><br />Az alkalmazások módosítása adatveszteséghez vezethet, és soha ne legyen <b>TERMELÉSIBEN</b> használva.<br /><br />A Builder biztonságos használatához használjon egy külön Tallarin4 példányt; a kész és tesztelt alkalmazásokat később áthelyezheti a termelő rendszerbe.<br /><br />További információért olvassa el a <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">Builder dokumentációját</a>.",
 				"pleaseRead": "Kérjük, olvassa el a mentés előtt",
 				"productionMode": "A karbantartási mód az alkalmazások frissítéséhez, telepítéséhez vagy eltávolításához szolgál.<br /><br />A karbantartási mód aktiválásakor <b>MINDEN nem adminisztrátor felhasználót kijelentkeztet</b>."
 			},
@@ -104,9 +104,9 @@
 		},
 		"customizing": {
 			"appName": "Intézménynév",
-			"appNameHint": "A REI3 intézmény neve, amely a bejelentkező oldalon jelenik meg.",
+			"appNameHint": "A Tallarin4 intézmény neve, amely a bejelentkező oldalon jelenik meg.",
 			"appNameShort": "Rövid név",
-			"appNameShortHint": "Az intézmény nevének rövid változata, amelyet oldalcímként használnak, valamint az REI3 Progresszív Webalkalmazásként (PWA) való telepítés során.",
+			"appNameShortHint": "Az intézmény nevének rövid változata, amelyet oldalcímként használnak, valamint az Tallarin4 Progresszív Webalkalmazásként (PWA) való telepítés során.",
 			"companyColorHeader": "Címfej színe (Főmenü)",
 			"companyColorHeaderHint": "Rögzített szín a fejlécben, az egyes alkalmazások színeit figyelmen kívül hagyja.",
 			"companyColorLogin": "Címfej színe (Bejelentkezés)",
@@ -131,8 +131,8 @@
 			"iconPwa2Hint": "Kép, amelyet a Progressive Web App (PWA) ikonként használ. PNG fájl kell legyen legfeljebb 128 kB méretű, és pontosan 512x512 képpont méretű.",
 			"pwaDomain": "Közvetlen hozzáférés az alkalmazásokhoz",
 			"pwaDomainHint": "Csak a subdomain (pl. 'my-app' a 'my-app.my-domain.com' például).",
-			"pwaDomainHint1": "Az egyes alkalmazásokhoz közvetlenül lehet hozzáférni, és különféle PWA-ként telepíthetők az eszközökre. Az alkalmazásoknak saját kezdőoldaluk, ikonjaik és kizárólagos navigációjuk van. Ehhez minden alkalmazásnak saját aldomain DNS-bejegyzésre van szüksége, hogy a REI3 rendszer különböző domaineken érhető el. Emellett egy wildcard tanúsítványra is szükség van ahhoz, hogy a REI3 szerver helyesen válaszoljon az HTTPS kérésekre.<br /><br />Miután beállították a DNS-bejegyzéseket és a wildcard tanúsítványt, minden kívánt alkalmazáshoz be kell írni egy aldomaint.",
-			"pwaDomainHint2": "Kérjük, győződjön meg arról, hogy van egy olyan aldomain, amelyet itt nem hivatkoznak, így a REI3 rendszer általános hozzáférhetősége megmarad. Ellenkező esetben nincs hozzáférés az admin felülethez, mivel az alkalmazásokhoz tartozó aldomének csak a saját alkalmazásukhoz engednek hozzáférést.",
+			"pwaDomainHint1": "Az egyes alkalmazásokhoz közvetlenül lehet hozzáférni, és különféle PWA-ként telepíthetők az eszközökre. Az alkalmazásoknak saját kezdőoldaluk, ikonjaik és kizárólagos navigációjuk van. Ehhez minden alkalmazásnak saját aldomain DNS-bejegyzésre van szüksége, hogy a Tallarin4 rendszer különböző domaineken érhető el. Emellett egy wildcard tanúsítványra is szükség van ahhoz, hogy a Tallarin4 szerver helyesen válaszoljon az HTTPS kérésekre.<br /><br />Miután beállították a DNS-bejegyzéseket és a wildcard tanúsítványt, minden kívánt alkalmazáshoz be kell írni egy aldomaint.",
+			"pwaDomainHint2": "Kérjük, győződjön meg arról, hogy van egy olyan aldomain, amelyet itt nem hivatkoznak, így a Tallarin4 rendszer általános hozzáférhetősége megmarad. Ellenkező esetben nincs hozzáférés az admin felülethez, mivel az alkalmazásokhoz tartozó aldomének csak a saját alkalmazásukhoz engednek hozzáférést.",
 			"titleCaptions": "Feliratok",
 			"titleColors": "Színek",
 			"titleCss": "CSS szabályok",
@@ -140,7 +140,7 @@
 			"titleLogos": "Logók",
 			"titlePwas": "Progresszív Webalkalmazások (PWA-k)",
 			"tokenKeepEnable": "Allow users to stay logged in",
-			"tokenKeepEnableHint": "If switched off, the 'stay logged in' option on the login page is removed. Without this option, users are forced to authenticate every time they access the system. This setting does not affect device access, like calendar subscriptions or REI3 clients."
+			"tokenKeepEnableHint": "If switched off, the 'stay logged in' option on the login page is removed. Without this option, users are forced to authenticate every time they access the system. This setting does not affect device access, like calendar subscriptions or Tallarin4 clients."
 		},
 		"files": {
 			"deleteDate": "Fájl törlése",
@@ -200,11 +200,11 @@
 			"clientId": "Ügyfélazonosító",
 			"currentState": "Aktuális értékek",
 			"dialog": {
-				"delete": "Valóban eltávolítja a licencfájlt? A REI3 Professional újraaktiválásához érvényes licencfájlt kell feltöltenie."
+				"delete": "Valóban eltávolítja a licencfájlt? A Tallarin4 Professional újraaktiválásához érvényes licencfájlt kell feltöltenie."
 			},
-			"extCommunity": "REI3 Közösségi Fórum",
-			"extLicense": "REI3 Professional",
-			"intro": "A REI3 teljes mértékben <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">Open Source</a> és ingyenesen használható.<br /><br />Az Enterprise funkciókhoz vagy támogatáshoz elérhető a <b>REI3 Professional</b>. Árak oly módon alakítva, hogy minden méretű vállalat számára megfizethető legyen, gyakran jóval olcsóbb, mint a piacon elérhető hasonló Low-Code termékek.<br /><br />A REI3 Professional ügyfelek nem csak a folyamatos fejlesztést támogatják, hanem aktiválhatják az összes funkciót és professzionális támogatást kapnak a REI3 fő fejlesztőjétől, a Lean Softworks-től.",
+			"extCommunity": "Tallarin4 Közösségi Fórum",
+			"extLicense": "Tallarin4 Professional",
+			"intro": "A Tallarin4 teljes mértékben <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">Open Source</a> és ingyenesen használható.<br /><br />Az Enterprise funkciókhoz vagy támogatáshoz elérhető a <b>Tallarin4 Professional</b>. Árak oly módon alakítva, hogy minden méretű vállalat számára megfizethető legyen, gyakran jóval olcsóbb, mint a piacon elérhető hasonló Low-Code termékek.<br /><br />A Tallarin4 Professional ügyfelek nem csak a folyamatos fejlesztést támogatják, hanem aktiválhatják az összes funkciót és professzionális támogatást kapnak a Tallarin4 fő fejlesztőjétől, a Lean Softworks-től.",
 			"introMore": "További információk:",
 			"licenseExpired": "A licenc lejárt",
 			"licenseId": "Licencazonosító",
@@ -285,7 +285,7 @@
 			"noData": "No sessions available",
 			"option": {
 				"browser": "Browser session",
-				"fatClient": "REI3 Client"
+				"fatClient": "Tallarin4 Client"
 			},
 			"titles": {
 				"address": "Address",
@@ -457,7 +457,7 @@
 				"defaultOpenId": "Defaults: Open ID Connect"
 			},
 			"claimRoles": "Roles claim",
-			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, REI3 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
+			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, Tallarin4 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
 			"claimUsername": "Username claim",
 			"claimUsernameHint": "Name of the claim field, which contains the username. Must be filled. Usernames must be unique for an OAuth client.",
 			"clientId": "Client ID",
@@ -471,21 +471,21 @@
 			},
 			"flow": "OAuth flow",
 			"loginMetaMap": "Update user details via claims",
-			"nameHint": "An internal name to reference this OAuth client inside of REI3.",
+			"nameHint": "An internal name to reference this OAuth client inside of Tallarin4.",
 			"option": {
 				"flow": {
 					"authCodePkce": "Authentication Code with PKCE",
 					"clientCreds": "Client credentials"
 				},
 				"flowHint": {
-					"authCodePkce": "<p>This flow is used in REI3 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to REI3 with verification of identity and user meta data.</p>",
-					"clientCreds": "<p>This flow is used in REI3 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
+					"authCodePkce": "<p>This flow is used in Tallarin4 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to Tallarin4 with verification of identity and user meta data.</p>",
+					"clientCreds": "<p>This flow is used in Tallarin4 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which Tallarin4 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case Tallarin4) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
 				}
 			},
 			"providerUrl": "Provider URL",
 			"providerUrlHint": "URL of the chosen provider for its OAuth service discovery, often called 'Issuer URL'.",
 			"redirectUrl": "Redirect URL",
-			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of REI3. Must also be registered at the service provider.",
+			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of Tallarin4. Must also be registered at the service provider.",
 			"scopes": "Scopes",
 			"scopesHint": "Scopes tell the provider, what an OAuth client wishes to do or access. They are defined by the provider and must be assigned to the client to be usable - please refer to the provider´s documentation for a list of available scopes.",
 			"title": "OAuth client '{NAME}'",
@@ -1090,7 +1090,7 @@
 			"functionsFrontend": "Frontend függvények",
 			"helpJs": {
 				"block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Az összes bemenetet letiltja vagy engedélyezi az aktuális űrlapon.",
-				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a REI3 client, installed and running on the same computer as the REI3 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
+				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a Tallarin4 client, installed and running on the same computer as the Tallarin4 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
 				"collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Frissíti az adott gyűjtemény értékeit.",
 				"copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Másolja a szöveget a felhasználó vágólapjára.",
 				"dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Shows a dialog with the specified title and content. The title is a simple text string, while the content can be text or HTML.<br /><br />Buttons are defined by a list of strings. If none are defined, a simple OK button is shown.<br /><br />The returned value is the index of the clicked button. So if the first button is clicked, the value will be 0. If the second button is clicked, it´s 1 and so on.<br /><br /><b>Example</b><br />app.dialog_show(<blockquote>'Please confirm',<br />'Do you really want to delete this item?',<br />['Yes', 'Cancel action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1421,7 +1421,7 @@
 			"placeholderFncBackendHelp": "Helyőrzők a backend függvényekhez - vagy kifejezésként ('SELECT function_abc()') vagy közvetlenül hívva ('PERFORM function_abc()').",
 			"placeholderFncFrontend": "Funkciók (frontend)",
 			"placeholderFncInstance": "Funkciók (példány)",
-			"placeholderFncInstanceHelp": "Helyőrzők a REI3 példány függvényeihez - ezek lehetővé teszik a rendszerfunkciókhoz való hozzáférést, például fájl- vagy e-mailkezeléshez.",
+			"placeholderFncInstanceHelp": "Helyőrzők a Tallarin4 példány függvényeihez - ezek lehetővé teszik a rendszerfunkciókhoz való hozzáférést, például fájl- vagy e-mailkezeléshez.",
 			"placeholderPresets": "Preset record IDs",
 			"placeholderPresetsHelp": "Placeholders for the ID (as BIGINT) of the record that exists for the selected preset.<br /><br />If the preset is not protected, it could have been deleted by users. In this case 'null' is returned.",
 			"placeholderRelations": "Kapcsolatok",
@@ -1459,7 +1459,7 @@
 			"formOpen": "Megnyitandó űrlap",
 			"newLoginForm": "Új bejelentkezési űrlap",
 			"title": "Bejelentkezési űrlapok",
-			"titleDepr": "Login forms are deprecated as of REI3.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
+			"titleDepr": "Login forms are deprecated as of Tallarin4.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
 		},
 		"menu": {
 			"button": {
@@ -1486,7 +1486,7 @@
 				"repo": "Repository-ból telepítés",
 				"versionCreate": "Új verzió létrehozása"
 			},
-			"clientEventsHint": "REI3 has a client application, which users can install from their personal settings. When running, the REI3 client application can open files uploaded to REI3 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to REI3, either to update data by using backend functions or to interact with an open REI3 browser session by using frontend functions.",
+			"clientEventsHint": "Tallarin4 has a client application, which users can install from their personal settings. When running, the Tallarin4 client application can open files uploaded to Tallarin4 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to Tallarin4, either to update data by using backend functions or to interact with an open Tallarin4 browser session by using frontend functions.",
 			"color": "Szín",
 			"colorHint": "Az alap alkalmazásszín - látható a felső sávban és a menüben, ha nincs testreszabva vagy felhasználói beállításokkal felülbírálva. A rendszeres megjelenítés ki van optimalizálva a halványabb, sötétebb színekhez (sötét pasztell).",
 			"dependsOn": "Alapul",
@@ -1508,7 +1508,7 @@
 			"jsFunctionIdOnLogin": "Session start function",
 			"jsFunctionIdOnLoginHint": "This frontend function is called when a user logs into the system. It can be used to initialize variables or update logs.",
 			"keyCreate": "Átvitel - Új hitelesítő kulcspár létrehozása",
-			"keyCreateInfo": "Győződjön meg róla, hogy a privát kulcsot mindig biztonságosan tárolja. A nyilvános kulcsot importálni kell a REI3 cél példányokba, mielőtt az alkalmazásokat telepíteni lehet.",
+			"keyCreateInfo": "Győződjön meg róla, hogy a privát kulcsot mindig biztonságosan tárolja. A nyilvános kulcsot importálni kell a Tallarin4 cél példányokba, mielőtt az alkalmazásokat telepíteni lehet.",
 			"keyCreateLength": "Kulcshossz kiválasztása",
 			"languageCode": "Nyelvkód",
 			"languageCodeHint": "en_us, zh_cn, de_de, hu_hu ...",
@@ -1516,7 +1516,7 @@
 			"languageMainHint": "Ezt a nyelvet használjuk, ha az alkalmazás nem kínálja fel a kiválasztott felhasználói nyelvet.",
 			"languages": "Alkalmazás nyelvek",
 			"languagesHint": "Nyelvek, amelyekben az alkalmazás elérhető.",
-			"nameHint": "Referencianév ehhez az alkalmazáshoz. Ezt a nevet egyedinek kell lennie egy REI3 rendszerben, ezért érdemes lehet egy szervezeti név alapján előtagot használni.",
+			"nameHint": "Referencianév ehhez az alkalmazáshoz. Ezt a nevet egyedinek kell lennie egy Tallarin4 rendszerben, ezért érdemes lehet egy szervezeti név alapján előtagot használni.",
 			"nameHolder": "work_scheduler, inventory_planner, ...",
 			"namePwa": "Alkalmazás címe",
 			"namePwaHint": "A teljes alkalmazás címe, amely a telepített alkalmazások listájában látható. Akár 60 karakter hosszú is lehet. Nincs fordítás lehetséges.",
@@ -1529,7 +1529,7 @@
 			"position": "Alapértelmezett pozíció",
 			"positionHint": "Az alkalmazás pozíciója a fejlécben (a kisebb először). Rendszergazdák által felülírható.",
 			"pwa": "Progresszív webalkalmazás (PWA)",
-			"pwaHint": "Az REI3 alkalmazások progresszív webalkalmazásként (PWA) is telepíthetők asztali számítógépeken és mobil eszközökön a modern böngészők segítségével. Megjelennek a telepített alkalmazások között, saját ikonokkal és hivatkozásokkal rendelkeznek, és hasonlóan viselkednek a natív alkalmazásokhoz.",
+			"pwaHint": "Az Tallarin4 alkalmazások progresszív webalkalmazásként (PWA) is telepíthetők asztali számítógépeken és mobil eszközökön a modern böngészők segítségével. Megjelennek a telepített alkalmazások között, saját ikonokkal és hivatkozásokkal rendelkeznek, és hasonlóan viselkednek a natív alkalmazásokhoz.",
 			"release": "Kiadás",
 			"releaseBuild": "Alkalmazás verziója",
 			"releaseBuildApp": "Platformverzió",
@@ -1555,7 +1555,7 @@
 			"jsFunctionFormIdHint": "A hozzárendelt funkciók interakcióba léphetnek egy űrlappal, például olvashatják vagy írhatják az űrlapmezőket. Ha hozzárendelve, a funkciókat csak a kiválasztott űrlapon lehet kiválasztani, és más frontend funkciókban nem hívhatók meg. Ezt a beállítást később nem lehet megváltoztatni.",
 			"message": {
 				"api": "<p>Az API neve része az API hívásnak. Később módosítható.</p>",
-				"module": "<p>Kérjük, válasszon nevet az alkalmazásának. Ez a név az alkalmazás egyedi azonosításához szükséges az REI3 rendszerben. A felhasználók számára nem látható.</p><h3>Példák:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Mivel az alkalmazásnévnek egyedinek kell lennie, érdemes lehet a szervezetének neve alapján név előtagot megadni. Ha például a szervezete neve \"Modern Fashion GmbH\", akkor használhatja \"mfg\" előtagként (például \"mfg_shift_planner\").</p>",
+				"module": "<p>Kérjük, válasszon nevet az alkalmazásának. Ez a név az alkalmazás egyedi azonosításához szükséges az Tallarin4 rendszerben. A felhasználók számára nem látható.</p><h3>Példák:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Mivel az alkalmazásnévnek egyedinek kell lennie, érdemes lehet a szervezetének neve alapján név előtagot megadni. Ha például a szervezete neve \"Modern Fashion GmbH\", akkor használhatja \"mfg\" előtagként (például \"mfg_shift_planner\").</p>",
 				"relation": "<p>Az összefüggés neve azt kell kifejezze, hogy milyen adatokat tárol. Egy alkalmazásban egyedi kell legyen.</p><h3>Példák:</h3><ul><li>esemény</li><li>esemény_részvétel</li><li>helyszín</li><li>helyszín_esemény</li></ul>"
 			},
 			"module": "Új alkalmazás",
@@ -1767,8 +1767,8 @@
 			"checkStartForm": "Kezdő űrlap beállítva",
 			"checkStartFormOff": "Nincs kezdő űrlap beállítva",
 			"checks": "Rendszer-ellenőrzések",
-			"extCommunity": "REI3 Fórum",
-			"extDocs": "REI3 Dokumentáció",
+			"extCommunity": "Tallarin4 Fórum",
+			"extDocs": "Tallarin4 Dokumentáció",
 			"needHelp": "Segítségre van szükséged?",
 			"title": "Első lépések",
 			"titleForms": "Űrlapok létrehozása",
@@ -1913,7 +1913,7 @@
 			"moreInfo": "More information"
 		},
 		"info": {
-			"admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a> application) to manage application releases and receive internal feedback.",
+			"admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://t4-repo.tech.eus/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Tallarin4 Repository</a> application) to manage application releases and receive internal feedback.",
 			"data": [
 				"Feedback category (general, bug/issue, suggestion, praise)",
 				"Feedback text",
@@ -1925,7 +1925,7 @@
 			],
 			"personal": "No personal information is being sent. If you want to receive a response, you can add contact details to your feedback text.",
 			"repoUrl": "Feedback will be sent to",
-			"repoUrlDefault": "<i>(this system is operated by the <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a> developers)</i>",
+			"repoUrlDefault": "<i>(this system is operated by the <a href=\"https://tech.eus/t4/\" target=\"_blank\">Tallarin4</a> developers)</i>",
 			"what": "What is being sent?"
 		},
 		"moduleRelated": "Igényelt visszajelzés az aktuális alkalmazáshoz? ({NAME})",
@@ -2146,8 +2146,8 @@
 		},
 		"api": "API",
 		"apis": "API-k",
-		"appName": "REI3",
-		"appWebsite": "https://rei3.de",
+		"appName": "Tallarin4",
+		"appWebsite": "https://tech.eus/t4/",
 		"application": "Alkalmazás",
 		"applications": "Alkalmazások",
 		"arguments": "Arguments",
@@ -2419,7 +2419,7 @@
 		"inputPlaceholder": "Write out names, words or email addresses",
 		"modulesInactive": "Additional search options",
 		"tips": [
-			"A new search can be started from anywhere in REI3 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
+			"A new search can be started from anywhere in Tallarin4 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
 			"When searching for names, words or email addresses, write them out in full.",
 			"If multilingual content is searched, it is important to set the language of your search query (top right corner).",
 			"Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails."
@@ -2433,7 +2433,7 @@
 			"installBundle": "Alapvállalat telepítése"
 		},
 		"newVersion": "Frissítési értesítés",
-		"newVersionText": "Elérhető a REI3 új verziója.<br /><br /><a href=\"https://rei3.de/de/downloads\" target=\"_blank\">REI3 v{VERSION} letöltése</a>",
+		"newVersionText": "Elérhető a Tallarin4 új verziója.<br /><br /><a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Tallarin4 v{VERSION} letöltése</a>",
 		"noAccess": "Még nincs hozzáférés beállítva.<br />Kérjük, vegye fel a kapcsolatot rendszergazdájával.",
 		"noAccessAdmin": "To get access, assign roles to your user.",
 		"noAccessTitle": "Nincs hozzáférés az alkalmazásokhoz",
@@ -2442,10 +2442,10 @@
 			"installBundle": "Alapvállalat",
 			"installBundleDesc": "Telepítse az alapvállalat előre kiválasztott alkalmazásainak gyűjteményét szervezetek számára. Az „Alapvállalat” gyűjtemény tartalmazza a következőket:<ul><li>Hiányzáskezelés</li><li>Időkövetés</li><li>Projekt- és feladatkezelés</li><li>Levélkéréskezelés</li><li>Jelszókezelő</li><li>IT-eszközkezelés</li></ul>A telepítés után az egyes alkalmazások első beállítását segítik az alkalmazások saját súgó oldalai.",
 			"installFile": "Fájlból",
-			"installFileDesc": "Telepítse a helyi REI3-fájlokból. Offline rendszerekhez vagy saját alkalmazásokhoz.<br /><br />A nyilvános REI3-alkalmazások fájljait hivatalos <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Repository</a> oldalról lehet letölteni.",
+			"installFileDesc": "Telepítse a helyi Tallarin4-fájlokból. Offline rendszerekhez vagy saját alkalmazásokhoz.<br /><br />A nyilvános Tallarin4-alkalmazások fájljait hivatalos <a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Repository</a> oldalról lehet letölteni.",
 			"installRepo": "Repositoryból",
-			"installRepoDesc": "<b>Internet-hozzáférés szükséges</b><br /><br />Telepítse az alkalmazásokat a hivatalos REI3 Repositoryból. A Repository friss verziókat kínál a nyilvános REI3-alkalmazásokhoz.<br /><br />Minden alkalmazás ellenőrzött és digitálisan aláírt.",
-			"intro": "Üdvözöljük a REI3-ban<br /><br />Jelenleg nincsenek telepített alkalmazások. A REI3 használatához válasszon az alábbi telepítési lehetőségek közül.",
+			"installRepoDesc": "<b>Internet-hozzáférés szükséges</b><br /><br />Telepítse az alkalmazásokat a hivatalos Tallarin4 Repositoryból. A Repository friss verziókat kínál a nyilvános Tallarin4-alkalmazásokhoz.<br /><br />Minden alkalmazás ellenőrzött és digitálisan aláírt.",
+			"intro": "Üdvözöljük a Tallarin4-ban<br /><br />Jelenleg nincsenek telepített alkalmazások. A Tallarin4 használatához válasszon az alábbi telepítési lehetőségek közül.",
 			"title": "Beállítás"
 		}
 	},
@@ -2477,7 +2477,7 @@
 			"button": {
 				"copyHint": "Kijelölt fájlok másolása más fájlinputba való beillesztéshez.",
 				"downloadHint": "Fájl letöltése",
-				"fileRequestHint": "Fájl helyi számítógépen történő szerkesztése. A R3 kliensalkalmazás szükséges (telepíthető a felhasználói beállításoknál). Nem működik, ha a rendszer karbantartási módban van.",
+				"fileRequestHint": "Fájl helyi számítógépen történő szerkesztése. A T4 kliensalkalmazás szükséges (telepíthető a felhasználói beállításoknál). Nem működik, ha a rendszer karbantartási módban van.",
 				"pasteHint": "Másolja be a fájlokat ebbe a fájlbevitelbe."
 			},
 			"dropTarget": "Helyezze ide a fájlokat a feltöltéshez",
@@ -2588,8 +2588,8 @@
 			"logout": "Kijelentkezés"
 		},
 		"clientEvents": {
-			"intro": "If the REI3 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with REI3 as it runs in the background.",
-			"noEvents": "There are currently no REI3 applications accessible that offer hotkeys."
+			"intro": "If the Tallarin4 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with Tallarin4 as it runs in the background.",
+			"noEvents": "There are currently no Tallarin4 applications accessible that offer hotkeys."
 		},
 		"colorClassicMode": "Color scheme",
 		"colorClassicMode0": "Modern",
@@ -2674,23 +2674,23 @@
 				"loadCnf": "Konfigurációs fájl"
 			},
 			"context": {
-				"client": "REI3 kliens",
+				"client": "Tallarin4 kliens",
 				"ics": "Naptár alkalmazás",
 				"totp": "Több faktoros"
 			},
 			"device": {
-				"adminInfo": "<b>Info for admins:</b> The REI3 client application does not work while REI3 is in maintenance mode.",
+				"adminInfo": "<b>Info for admins:</b> The Tallarin4 client application does not work while Tallarin4 is in maintenance mode.",
 				"installStep1": "Choose a device name:",
 				"installStep2": "Download the application & config file to the same folder:",
 				"installStep3": "Start the application. It will install itself and then appear in your system tray.",
 				"installStep4": "You can now delete the downloaded application & config files.",
-				"intro0": "The REI3 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
-				"intro1": "Files uploaded to REI3 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
-				"intro2": "Global hotkeys can be used to execute actions in REI3 applications, while REI3 runs in the background.",
+				"intro0": "The Tallarin4 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
+				"intro1": "Files uploaded to Tallarin4 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
+				"intro2": "Global hotkeys can be used to execute actions in Tallarin4 applications, while Tallarin4 runs in the background.",
 				"nameHint": "'Munka PC-m'",
 				"os": "Operating system:",
-				"uninstallStep1": "Right-click on the REI3 client tray icon and choose the 'uninstall' option.",
-				"uninstallStep2": "The REI3 client application is now uninstalled.",
+				"uninstallStep1": "Right-click on the Tallarin4 client tray icon and choose the 'uninstall' option.",
+				"uninstallStep2": "The Tallarin4 client application is now uninstalled.",
 				"updateStep1": "Download the new application file:",
 				"updateStep2": "Start the application. It will execute the update and then appear in your system tray.",
 				"updateStep3": "You can now delete the downloaded application file."
@@ -2711,7 +2711,7 @@
 				"nameHint": "'Saját okostelefonom'",
 				"outro": "Használja a QR-kódot a fiókjának hozzáadásához az Authenticator alkalmazásához. Ha befejezte, zárja be ezt az ablakot. Ezt a folyamatot megismételheti, hogy több eszközön is aktiválja a Több Faktoros Hitelesítést (MFA)."
 			},
-			"titleAdd": "Manage REI3 client application",
+			"titleAdd": "Manage Tallarin4 client application",
 			"titleContext": "Használat",
 			"titleDateCreate": "Létrehozva",
 			"titleMfa": "Több Faktoros Hitelesítés hozzáadása",

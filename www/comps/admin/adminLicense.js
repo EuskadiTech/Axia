@@ -22,12 +22,12 @@ let MyAdminLicense = {
 				<h2>{{ capApp.introMore }}</h2>
 				<div class="row gap">
 					<my-button image="globe.png"
-						@trigger="open('https://rei3.de/en/services')"
+						@trigger="open('https://tech.eus/t4/professional.php')"
 						:caption="capApp.extLicense"
 						:large="true"
 					/>
 					<my-button image="globe.png"
-						@trigger="open('https://community.rei3.de/')"
+						@trigger="open('https://tech.eus/t4/community.php')"
 						:caption="capApp.extCommunity"
 						:large="true"
 					/>

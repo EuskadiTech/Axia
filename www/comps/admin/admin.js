@@ -108,7 +108,7 @@ let MyAdmin = {
 				<span>{{ capApp.navigationCaptionMap }}</span>
 			</router-link>
 			
-			<!-- REI3 Professional -->
+			<!-- Tallarin4 Professional -->
 			<div class="entry isTitle separator" tag="div">
 				<img src="images/icon_naked.png" />
 				<span>{{ licenseTitle }}</span>

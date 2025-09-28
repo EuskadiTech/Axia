@@ -38,7 +38,7 @@
 			"adminMailsHint": "إضافة عنوان البريد الإلكتروني للمستلم",
 			"adminMailsList": [
 				"انتهاء الصلاحية القادم لعملاء OAuth المسجلين.",
-				"انتهاء صلاحية ترخيص REI3 Professional النشط."
+				"انتهاء صلاحية ترخيص Tallarin4 Professional النشط."
 			],
 			"adminMailsTitle": "إشعارات المشرف",
 			"appVersion": "نسخة المنصة",
@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "في ثواني",
 			"dbTimeoutIcs": "مهلة قاعدة البيانات: تنزيلات التقويم (ICS)",
 			"dialog": {
-				"builderMode": "يتم استخدام Builder لإنشاء التطبيقات أو تغييرها.<br /><br />يمكن أن يؤدي تغيير التطبيقات إلى فقدان البيانات ويجب أن يحدث ذلك <b>أبداً</b> يمكن القيام بها في بيئات الإنتاج.<br /><br />لاستخدام Builder بأمان، يرجى استخدام نسخة مخصصة من REI3؛ <br /><br />يرجى الرجوع إلى <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">وثائق البناء</a> لمعرفة المزيد.",
+				"builderMode": "يتم استخدام Builder لإنشاء التطبيقات أو تغييرها.<br /><br />يمكن أن يؤدي تغيير التطبيقات إلى فقدان البيانات ويجب أن يحدث ذلك <b>أبداً</b> يمكن القيام بها في بيئات الإنتاج.<br /><br />لاستخدام Builder بأمان، يرجى استخدام نسخة مخصصة من Tallarin4؛ <br /><br />يرجى الرجوع إلى <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">وثائق البناء</a> لمعرفة المزيد.",
 				"pleaseRead": "يرجى القراءة قبل الحفظ",
 				"productionMode": "يتم استخدام وضع الصيانة لتحديث التطبيقات أو تثبيتها أو إزالتها من النظام.<br /><br />التبديل إلى وضع الصيانة سوف <b>تسجيل الخروج لجميع المستخدمين دون أذونات المسؤول</b>."
 			},
@@ -104,7 +104,7 @@
 		},
 		"customizing": {
 			"appName": "اسم المثيل",
-			"appNameHint": "اسم مثيل REI3، الموضح في صفحة تسجيل الدخول.",
+			"appNameHint": "اسم مثيل Tallarin4، الموضح في صفحة تسجيل الدخول.",
 			"appNameShort": "اسم قصير",
 			"appNameShortHint": "نسخة قصيرة من اسم المثيل، تظهر في عنوان الصفحة كتسمية إذا تم تثبيتها كتطبيق ويب تقدمي (PWA).",
 			"companyColorHeader": "لون العنوان (الرأس)",
@@ -132,7 +132,7 @@
 			"pwaDomain": "الوصول المباشر إلى التطبيق",
 			"pwaDomainHint": "النطاق الفرعي فقط (كما في \"my-app\" من \"my-app.my-domain.com\")",
 			"pwaDomainHint1": "يمكن الوصول إلى التطبيقات الفردية مباشرة وتثبيتها بشكل منفصل على الأجهزة مثل PWAs. <br /><br />بمجرد أن تصبح سجلات DNS وشهادة حرف البدل جاهزة، يرجى إدخال مجال فرعي لكل تطبيق مطلوب.",
-			"pwaDomainHint2": "تأكد من توفر نطاق فرعي واحد غير موجود في هذه القائمة، للوصول إلى نظام REI3 العام. ",
+			"pwaDomainHint2": "تأكد من توفر نطاق فرعي واحد غير موجود في هذه القائمة، للوصول إلى نظام Tallarin4 العام. ",
 			"titleCaptions": "التسميات التوضيحية",
 			"titleColors": "الألوان",
 			"titleCss": "قواعد CSS المخصصة",
@@ -202,9 +202,9 @@
 			"dialog": {
 				"delete": "هل أنت متأكد أنك تريد إزالة ملف الترخيص؟ "
 			},
-			"extCommunity": "منتدى مجتمع REI3",
-			"extLicense": "REI3 محترف",
-			"intro": "REI3 بالكامل <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">مفتوح المصدر</a> ويمكن استخدامها مجانا.<br /><br />بالنسبة لأولئك الذين يحتاجون إلى ميزات أو دعم مؤسسي، هناك <b>REI3 محترف</b>. <br /><br />أثناء دعم التطوير المستمر، يمكن لعملاء REI3 Professional أيضًا تنشيط مجموعة كاملة من الميزات والحصول على الدعم من Lean Softworks، المطور الرئيسي لـ REI3.",
+			"extCommunity": "منتدى مجتمع Tallarin4",
+			"extLicense": "Tallarin4 محترف",
+			"intro": "Tallarin4 بالكامل <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">مفتوح المصدر</a> ويمكن استخدامها مجانا.<br /><br />بالنسبة لأولئك الذين يحتاجون إلى ميزات أو دعم مؤسسي، هناك <b>Tallarin4 محترف</b>. <br /><br />أثناء دعم التطوير المستمر، يمكن لعملاء Tallarin4 Professional أيضًا تنشيط مجموعة كاملة من الميزات والحصول على الدعم من Lean Softworks، المطور الرئيسي لـ Tallarin4.",
 			"introMore": "مزيد من المعلومات:",
 			"licenseExpired": "انتهت صلاحية الترخيص",
 			"licenseId": "معرف الترخيص",
@@ -285,7 +285,7 @@
 			"noData": "No sessions available",
 			"option": {
 				"browser": "Browser session",
-				"fatClient": "REI3 Client"
+				"fatClient": "Tallarin4 Client"
 			},
 			"titles": {
 				"address": "Address",
@@ -457,7 +457,7 @@
 				"defaultOpenId": "Defaults: Open ID Connect"
 			},
 			"claimRoles": "Roles claim",
-			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, REI3 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
+			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, Tallarin4 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
 			"claimUsername": "Username claim",
 			"claimUsernameHint": "Name of the claim field, which contains the username. Must be filled. Usernames must be unique for an OAuth client.",
 			"clientId": "معرف العميل",
@@ -471,21 +471,21 @@
 			},
 			"flow": "OAuth flow",
 			"loginMetaMap": "Update user details via claims",
-			"nameHint": "اسم داخلي للإشارة إلى عميل OAuth داخل REI3.",
+			"nameHint": "اسم داخلي للإشارة إلى عميل OAuth داخل Tallarin4.",
 			"option": {
 				"flow": {
 					"authCodePkce": "Authentication Code with PKCE",
 					"clientCreds": "Client credentials"
 				},
 				"flowHint": {
-					"authCodePkce": "<p>This flow is used in REI3 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to REI3 with verification of identity and user meta data.</p>",
-					"clientCreds": "<p>This flow is used in REI3 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
+					"authCodePkce": "<p>This flow is used in Tallarin4 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to Tallarin4 with verification of identity and user meta data.</p>",
+					"clientCreds": "<p>This flow is used in Tallarin4 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which Tallarin4 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case Tallarin4) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
 				}
 			},
 			"providerUrl": "Provider URL",
 			"providerUrlHint": "URL of the chosen provider for its OAuth service discovery, often called 'Issuer URL'.",
 			"redirectUrl": "Redirect URL",
-			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of REI3. Must also be registered at the service provider.",
+			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of Tallarin4. Must also be registered at the service provider.",
 			"scopes": "النطاقات",
 			"scopesHint": "تخبر النطاقات الموفر بما يرغب عميل OAuth في فعله أو الوصول إليه. ",
 			"title": "عميل OAuth '{NAME}'",
@@ -1090,7 +1090,7 @@
 			"functionsFrontend": "وظائف الواجهة الأمامية",
 			"helpJs": {
 				"block_inputs": "app.block_inputs({ARGS}) => غير محدد<br /><br />حظر كافة المدخلات في النموذج الحالي أو إلغاء حظرها.",
-				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => غير محدد<br /><br />يرسل طلبًا إلى عميل REI3، المثبت والعامل على نفس الكمبيوتر مثل جلسة متصفح REI3، لتنفيذ قائمة بضغطات المفاتيح. <br /><br />بعض المفاتيح الخاصة (ALT-TAB، TAB، ENTER، ESCAPE) مدعومة أيضًا ويمكن استخدامها على هذا النحو:<br />\"مرحبًا،{ENTER}كيف حالك؟\"",
+				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => غير محدد<br /><br />يرسل طلبًا إلى عميل Tallarin4، المثبت والعامل على نفس الكمبيوتر مثل جلسة متصفح Tallarin4، لتنفيذ قائمة بضغطات المفاتيح. <br /><br />بعض المفاتيح الخاصة (ALT-TAB، TAB، ENTER، ESCAPE) مدعومة أيضًا ويمكن استخدامها على هذا النحو:<br />\"مرحبًا،{ENTER}كيف حالك؟\"",
 				"collection_update": "app.collection_update({ARGS}) => غير محدد<br /><br />يقوم بتحديث القيم للمجموعة المحددة.",
 				"copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => غير محدد<br /><br />نسخ النص إلى حافظة المستخدمين.",
 				"dialog_show": "app.dialog_show({ARGS}) => وعد<br /><br />يعرض مربع حوار بالعنوان والمحتوى المحددين. <br /><br />يتم تعريف الأزرار من خلال قائمة السلاسل. <br /><br />القيمة التي تم إرجاعها هي فهرس الزر الذي تم النقر عليه. <br /><br /><b>مثال</b><br />app.dialog_show(<blockquote>\"يرجى التأكيد\"،<br />\"هل تريد حقًا حذف هذا العنصر؟\"،<br />['نعم'، 'إلغاء الإجراء']</blockquote>).ثم(<blockquote>res => { if(res === 0) { console.log('تم النقر فوق نعم!'); </blockquote>);",
@@ -1421,7 +1421,7 @@
 			"placeholderFncBackendHelp": "العناصر النائبة لوظائف الواجهة الخلفية - تُستخدم إما كتعبير ('SELECT function_abc()') أو مباشرة ('PERFORM function_abc()').",
 			"placeholderFncFrontend": "الوظائف (الواجهة الأمامية)",
 			"placeholderFncInstance": "وظائف (مثال)",
-			"placeholderFncInstanceHelp": "العناصر النائبة للوظائف من مثيل REI3 - تتيح الوصول إلى ميزات النظام مثل معالجة الملفات أو البريد.",
+			"placeholderFncInstanceHelp": "العناصر النائبة للوظائف من مثيل Tallarin4 - تتيح الوصول إلى ميزات النظام مثل معالجة الملفات أو البريد.",
 			"placeholderPresets": "Preset record IDs",
 			"placeholderPresetsHelp": "Placeholders for the ID (as BIGINT) of the record that exists for the selected preset.<br /><br />If the preset is not protected, it could have been deleted by users. In this case 'null' is returned.",
 			"placeholderRelations": "العلاقات",
@@ -1459,7 +1459,7 @@
 			"formOpen": "النموذج لفتح",
 			"newLoginForm": "نموذج تسجيل دخول جديد",
 			"title": "نماذج تسجيل الدخول",
-			"titleDepr": "Login forms are deprecated as of REI3.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
+			"titleDepr": "Login forms are deprecated as of Tallarin4.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
 		},
 		"menu": {
 			"button": {
@@ -1486,7 +1486,7 @@
 				"repo": "التثبيت من المستودع",
 				"versionCreate": "إنشاء نسخة جديدة"
 			},
-			"clientEventsHint": "يحتوي REI3 على تطبيق عميل، يمكن للمستخدمين تثبيته من إعداداتهم الشخصية. ",
+			"clientEventsHint": "يحتوي Tallarin4 على تطبيق عميل، يمكن للمستخدمين تثبيته من إعداداتهم الشخصية. ",
 			"color": "لون",
 			"colorHint": "اللون الأساسي للتطبيق - يظهر في الرأس والقائمة إذا لم يتم استبداله عن طريق التخصيص و/أو إعدادات المستخدم. ",
 			"dependsOn": "يبني على",
@@ -1529,7 +1529,7 @@
 			"position": "الموضع الافتراضي",
 			"positionHint": "موضع التطبيق في الرأس (الأصغر منها أولاً). ",
 			"pwa": "تطبيق الويب التقدمي (PWA)",
-			"pwaHint": "يمكن تثبيت تطبيقات REI3 على أجهزة الكمبيوتر المكتبية والأجهزة المحمولة كتطبيقات ويب تقدمية (PWA) من داخل المتصفحات الحديثة. ",
+			"pwaHint": "يمكن تثبيت تطبيقات Tallarin4 على أجهزة الكمبيوتر المكتبية والأجهزة المحمولة كتطبيقات ويب تقدمية (PWA) من داخل المتصفحات الحديثة. ",
 			"release": "النشر",
 			"releaseBuild": "نسخة التطبيق",
 			"releaseBuildApp": "نسخة المنصة",
@@ -1767,8 +1767,8 @@
 			"checkStartForm": "يتم تعريف نموذج البداية",
 			"checkStartFormOff": "لم يتم تعريف نموذج البداية",
 			"checks": "فحوصات النظام",
-			"extCommunity": "منتدى REI3",
-			"extDocs": "وثائق REI3",
+			"extCommunity": "منتدى Tallarin4",
+			"extDocs": "وثائق Tallarin4",
 			"needHelp": "بحاجة الى مساعدة؟",
 			"title": "الخطوات الأولى",
 			"titleForms": "إنشاء النماذج",
@@ -1913,7 +1913,7 @@
 			"moreInfo": "مزيد من المعلومات"
 		},
 		"info": {
-			"admin": "<b>معلومات للمسؤولين:</b> يمكن تعطيل وظيفة التعليقات في لوحة الإدارة. <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">مستودع REI3</a> application) لإدارة إصدارات التطبيقات وتلقي التعليقات الداخلية.",
+			"admin": "<b>معلومات للمسؤولين:</b> يمكن تعطيل وظيفة التعليقات في لوحة الإدارة. <a href=\"https://t4-repo.tech.eus/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">مستودع Tallarin4</a> application) لإدارة إصدارات التطبيقات وتلقي التعليقات الداخلية.",
 			"data": [
 				"فئة التعليقات (عام، خطأ/مشكلة، اقتراح، مديح)",
 				"نص ردود الفعل",
@@ -1925,7 +1925,7 @@
 			],
 			"personal": "لا يتم إرسال أي معلومات شخصية. ",
 			"repoUrl": "سيتم إرسال ردود الفعل إلى",
-			"repoUrlDefault": "<i>(يتم تشغيل هذا النظام بواسطة <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a> المطورين)</i>",
+			"repoUrlDefault": "<i>(يتم تشغيل هذا النظام بواسطة <a href=\"https://tech.eus/t4/\" target=\"_blank\">Tallarin4</a> المطورين)</i>",
 			"what": "ما الذي يتم إرساله؟"
 		},
 		"moduleRelated": "هل هذه التعليقات للتطبيق المفتوح؟ ",
@@ -2146,8 +2146,8 @@
 		},
 		"api": "واجهة برمجة التطبيقات",
 		"apis": "واجهات برمجة التطبيقات",
-		"appName": "REI3",
-		"appWebsite": "https://rei3.de",
+		"appName": "Tallarin4",
+		"appWebsite": "https://tech.eus/t4/",
 		"application": "طلب",
 		"applications": "التطبيقات",
 		"arguments": "الحجج",
@@ -2419,7 +2419,7 @@
 		"inputPlaceholder": "Write out names, words or email addresses",
 		"modulesInactive": "Additional search options",
 		"tips": [
-			"A new search can be started from anywhere in REI3 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
+			"A new search can be started from anywhere in Tallarin4 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
 			"When searching for names, words or email addresses, write them out in full.",
 			"If multilingual content is searched, it is important to set the language of your search query (top right corner).",
 			"Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails."
@@ -2433,7 +2433,7 @@
 			"installBundle": "تثبيت الشركة الأساسية"
 		},
 		"newVersion": "تحديث الإخطار",
-		"newVersionText": "يتوفر إصدار جديد من REI3.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">تنزيل REI3 الإصدار {VERSION}</a>",
+		"newVersionText": "يتوفر إصدار جديد من Tallarin4.<br /><br /><a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">تنزيل Tallarin4 الإصدار {VERSION}</a>",
 		"noAccess": "لم يتم منح حق الوصول بعد.<br />الرجاء الاتصال بمسؤول النظام الخاص بك.",
 		"noAccessAdmin": "للحصول على حق الوصول، قم بتعيين الأدوار لتسجيل الدخول الخاص بك.",
 		"noAccessTitle": "لا يمكن الوصول إلى التطبيقات",
@@ -2442,10 +2442,10 @@
 			"installBundle": "الشركة الأساسية",
 			"installBundleDesc": "قم بتثبيت مجموعة معدة مسبقًا من التطبيقات الأساسية، المفيدة لأي مؤسسة. <ul><li>إدارة الغياب</li><li>تتبع الوقت</li><li>إدارة المشاريع والمهام</li><li>معالجة الطلب</li><li>كلمة مرور آمنة</li><li>إدارة أصول تكنولوجيا المعلومات</li></ul>بعد التثبيت، يرجى إلقاء نظرة على صفحات تعليمات التطبيق الفردية لمعرفة المزيد حول الإعداد الأولي لكل منها.",
 			"installFile": "من الملف",
-			"installFileDesc": "تثبيت التطبيقات من ملفات REI3 المحلية. <br /><br />يمكن تنزيل ملفات تطبيقات REI3 المعروضة للعامة من الموقع الرسمي <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">مستودع</a>.",
+			"installFileDesc": "تثبيت التطبيقات من ملفات Tallarin4 المحلية. <br /><br />يمكن تنزيل ملفات تطبيقات Tallarin4 المعروضة للعامة من الموقع الرسمي <a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">مستودع</a>.",
 			"installRepo": "من المستودع",
-			"installRepoDesc": "<b>الوصول إلى الإنترنت مطلوب</b><br /><br />قم بتثبيت التطبيقات من مستودع REI3 الرسمي. <br /><br />تتم مراجعة كافة الطلبات وتوقيعها رقميا.",
-			"intro": "مرحبا بكم في REI3<br /><br />لا يوجد حاليا أي تطبيقات مثبتة. ",
+			"installRepoDesc": "<b>الوصول إلى الإنترنت مطلوب</b><br /><br />قم بتثبيت التطبيقات من مستودع Tallarin4 الرسمي. <br /><br />تتم مراجعة كافة الطلبات وتوقيعها رقميا.",
+			"intro": "مرحبا بكم في Tallarin4<br /><br />لا يوجد حاليا أي تطبيقات مثبتة. ",
 			"title": "يثبت"
 		}
 	},
@@ -2588,8 +2588,8 @@
 			"logout": "تسجيل الخروج"
 		},
 		"clientEvents": {
-			"intro": "إذا تم تثبيت تطبيق عميل REI3 (راجع \"الأجهزة\")، فيمكنك تعيين مفاتيح الاختصار العامة. ",
-			"noEvents": "لا يوجد حاليًا أي تطبيقات REI3 يمكن الوصول إليها والتي توفر مفاتيح التشغيل السريع."
+			"intro": "إذا تم تثبيت تطبيق عميل Tallarin4 (راجع \"الأجهزة\")، فيمكنك تعيين مفاتيح الاختصار العامة. ",
+			"noEvents": "لا يوجد حاليًا أي تطبيقات Tallarin4 يمكن الوصول إليها والتي توفر مفاتيح التشغيل السريع."
 		},
 		"colorClassicMode": "نظام الألوان",
 		"colorClassicMode0": "حديث",
@@ -2674,23 +2674,23 @@
 				"loadCnf": "ملف التكوين"
 			},
 			"context": {
-				"client": "عميل REI3",
+				"client": "عميل Tallarin4",
 				"ics": "تطبيق التقويم",
 				"totp": "متعدد العوامل"
 			},
 			"device": {
-				"adminInfo": "<b>معلومات للمسؤولين:</b> لا يعمل تطبيق عميل REI3 أثناء وجود REI3 في وضع الصيانة.",
+				"adminInfo": "<b>معلومات للمسؤولين:</b> لا يعمل تطبيق عميل Tallarin4 أثناء وجود Tallarin4 في وضع الصيانة.",
 				"installStep1": "اختر اسم الجهاز:",
 				"installStep2": "قم بتنزيل ملف التطبيق والتكوين في نفس المجلد:",
 				"installStep3": "ابدأ التطبيق. ",
 				"installStep4": "يمكنك الآن حذف التطبيق وملفات التكوين التي تم تنزيلها.",
-				"intro0": "يعد تطبيق عميل REI3 جزءًا اختياريًا من البرامج التي توفر وظائف إضافية. ",
-				"intro1": "يمكن تحرير الملفات التي تم تحميلها إلى REI3 مباشرة باستخدام البرامج المحلية. ",
-				"intro2": "يمكن استخدام مفاتيح التشغيل السريع العالمية لتنفيذ الإجراءات في تطبيقات REI3، بينما يعمل REI3 في الخلفية.",
+				"intro0": "يعد تطبيق عميل Tallarin4 جزءًا اختياريًا من البرامج التي توفر وظائف إضافية. ",
+				"intro1": "يمكن تحرير الملفات التي تم تحميلها إلى Tallarin4 مباشرة باستخدام البرامج المحلية. ",
+				"intro2": "يمكن استخدام مفاتيح التشغيل السريع العالمية لتنفيذ الإجراءات في تطبيقات Tallarin4، بينما يعمل Tallarin4 في الخلفية.",
 				"nameHint": "\"كمبيوتر العمل الخاص بي\"",
 				"os": "نظام التشغيل:",
-				"uninstallStep1": "انقر بزر الماوس الأيمن على أيقونة علبة عميل REI3 واختر خيار \"إلغاء التثبيت\".",
-				"uninstallStep2": "تم الآن إلغاء تثبيت تطبيق عميل REI3.",
+				"uninstallStep1": "انقر بزر الماوس الأيمن على أيقونة علبة عميل Tallarin4 واختر خيار \"إلغاء التثبيت\".",
+				"uninstallStep2": "تم الآن إلغاء تثبيت تطبيق عميل Tallarin4.",
 				"updateStep1": "تحميل ملف التطبيق الجديد:",
 				"updateStep2": "ابدأ التطبيق. ",
 				"updateStep3": "يمكنك الآن حذف ملف التطبيق الذي تم تنزيله."
@@ -2711,7 +2711,7 @@
 				"nameHint": "\"هاتفي الذكي\"",
 				"outro": "استخدم رمز الاستجابة السريعة لإضافة هذا الحساب إلى تطبيق المصادقة الخاص بك. "
 			},
-			"titleAdd": "إدارة تطبيق عميل REI3",
+			"titleAdd": "إدارة تطبيق عميل Tallarin4",
 			"titleContext": "يستخدم",
 			"titleDateCreate": "مخلوق",
 			"titleMfa": "إعداد المصادقة متعددة العوامل",

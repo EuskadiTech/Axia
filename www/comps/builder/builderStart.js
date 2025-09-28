@@ -136,12 +136,12 @@ let MyBuilderStart = {
 			<h1>{{ capApp.needHelp }}</h1>
 			<div class="builder-start-box builder-start-resources">
 				<my-button image="globe.png"
-					@trigger="open('https://community.rei3.de/')"
+					@trigger="open('https://tech.eus/t4/community')"
 					:caption="capApp.extCommunity"
 					:large="true"
 				/>
 				<my-button image="globe.png"
-					@trigger="open('https://rei3.de/en/docs')"
+					@trigger="open('https://tech.eus/t4/docs.php')"
 					:caption="capApp.extDocs"
 					:large="true"
 				/>

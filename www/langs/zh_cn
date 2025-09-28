@@ -38,7 +38,7 @@
 			"adminMailsHint": "添加接收者电子邮件地址",
 			"adminMailsList": [
 				"注册的 OAuth 客户端即将过期。",
-				"REI3 专业版许可证即将过期。"
+				"Tallarin4 专业版许可证即将过期。"
 			],
 			"adminMailsTitle": "管理员通知",
 			"appVersion": "平台版本",
@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "以秒为单位",
 			"dbTimeoutIcs": "数据库超时：日历下载（ICS）",
 			"dialog": {
-				"builderMode": "构建器用于创建或更改应用程序。<br /><br />更改应用程序可能导致数据丢失，因此在生产环境中<b>绝对不应该</b>这样做。<br /><br />要安全地使用构建器，请使用专用的 REI3 实例；然后可以将准备好并经过测试的应用程序传输到生产系统。<br /><br />请参阅<a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">构建器文档</a>以了解更多信息。",
+				"builderMode": "构建器用于创建或更改应用程序。<br /><br />更改应用程序可能导致数据丢失，因此在生产环境中<b>绝对不应该</b>这样做。<br /><br />要安全地使用构建器，请使用专用的 Tallarin4 实例；然后可以将准备好并经过测试的应用程序传输到生产系统。<br /><br />请参阅<a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">构建器文档</a>以了解更多信息。",
 				"pleaseRead": "保存前请阅读",
 				"productionMode": "维护模式用于更新、安装或删除系统中的应用程序。<br /><br />切换到维护模式将<b>注销所有没有管理员权限的用户</b>。"
 			},
@@ -104,7 +104,7 @@
 		},
 		"customizing": {
 			"appName": "实例名称",
-			"appNameHint": "REI3 实例的名称，在登录页面上显示。",
+			"appNameHint": "Tallarin4 实例的名称，在登录页面上显示。",
 			"appNameShort": "简称",
 			"appNameShortHint": "实例名称的简短版本，在网页标题和作为渐进式 Web 应用（PWA）安装时显示。",
 			"companyColorHeader": "标题颜色（页头）",
@@ -131,8 +131,8 @@
 			"iconPwa2Hint": "用于渐进式 Web 应用图标的图像。必须是 PNG 文件，最大 128kb，精确尺寸为 512x512 像素。",
 			"pwaDomain": "直接应用访问",
 			"pwaDomainHint": "只有子域名（比如从 'my-app.my-domain.com' 中的 'my-app'）",
-			"pwaDomainHint1": "可单独访问个别应用，并将其安装为 PWAs 到设备上。它们将拥有自己的起始页面、图标和专属导航。这需要为每个应用程序设置子域 DNS 记录，以便通过不同的域名访问 REI3 系统。还需要在 REI3 服务器上设置通配符证书，以正确响应 HTTPS 请求。<br /><br />一旦 DNS 记录和通配符证书都准备就绪，请为每个所需应用程序输入一个子域名。",
-			"pwaDomainHint2": "确保有一个不在此列表中的子域可用，以访问通用的 REI3 系统。否则，您将无法访问管理员用户界面，因为每个应用程序子域仅允许访问特定的应用程序。",
+			"pwaDomainHint1": "可单独访问个别应用，并将其安装为 PWAs 到设备上。它们将拥有自己的起始页面、图标和专属导航。这需要为每个应用程序设置子域 DNS 记录，以便通过不同的域名访问 Tallarin4 系统。还需要在 Tallarin4 服务器上设置通配符证书，以正确响应 HTTPS 请求。<br /><br />一旦 DNS 记录和通配符证书都准备就绪，请为每个所需应用程序输入一个子域名。",
+			"pwaDomainHint2": "确保有一个不在此列表中的子域可用，以访问通用的 Tallarin4 系统。否则，您将无法访问管理员用户界面，因为每个应用程序子域仅允许访问特定的应用程序。",
 			"titleCaptions": "标题",
 			"titleColors": "颜色",
 			"titleCss": "自定义 CSS 规则",
@@ -140,7 +140,7 @@
 			"titleLogos": "标志",
 			"titlePwas": "渐进式 Web 应用（PWAs）",
 			"tokenKeepEnable": "允许用户保持登录状态",
-			"tokenKeepEnableHint": "如果关闭，登录页面上的“保持登录”选项将被移除。没有这个选项，用户每次访问系统时都必须进行身份验证。此设置不影响设备访问，如日历订阅或 REI3 客户端。"
+			"tokenKeepEnableHint": "如果关闭，登录页面上的“保持登录”选项将被移除。没有这个选项，用户每次访问系统时都必须进行身份验证。此设置不影响设备访问，如日历订阅或 Tallarin4 客户端。"
 		},
 		"files": {
 			"deleteDate": "文件已删除",
@@ -200,11 +200,11 @@
 			"clientId": "客户端 ID",
 			"currentState": "当前值",
 			"dialog": {
-				"delete": "您确定要删除许可文件吗？要重新激活 REI3 Professional，必须上传有效的许可文件。"
+				"delete": "您确定要删除许可文件吗？要重新激活 Tallarin4 Professional，必须上传有效的许可文件。"
 			},
-			"extCommunity": "REI3 社区论坛",
-			"extLicense": "REI3 专业版",
-			"intro": "REI3 是完全<a href=\"https://github.com/r3-team/r3\" target=\"_blank\">开源</a>，可免费使用。<br /><br />对于需要企业功能或支持的用户，有<b>REI3 专业版</b>。其价格定位是负担得起的，适用于任何规模的组织，通常比其他低代码产品的价格低得多。<br /><br />在支持持续发展的同时，REI3 专业版客户还可以激活完整的功能范围，并获得 Lean Softworks（REI3 的主要开发者）的支持。",
+			"extCommunity": "Tallarin4 社区论坛",
+			"extLicense": "Tallarin4 专业版",
+			"intro": "Tallarin4 是完全<a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">开源</a>，可免费使用。<br /><br />对于需要企业功能或支持的用户，有<b>Tallarin4 专业版</b>。其价格定位是负担得起的，适用于任何规模的组织，通常比其他低代码产品的价格低得多。<br /><br />在支持持续发展的同时，Tallarin4 专业版客户还可以激活完整的功能范围，并获得 Lean Softworks（Tallarin4 的主要开发者）的支持。",
 			"introMore": "更多信息：",
 			"licenseExpired": "许可已过期",
 			"licenseId": "许可 ID",
@@ -285,7 +285,7 @@
 			"noData": "No sessions available",
 			"option": {
 				"browser": "Browser session",
-				"fatClient": "REI3 Client"
+				"fatClient": "Tallarin4 Client"
 			},
 			"titles": {
 				"address": "Address",
@@ -457,7 +457,7 @@
 				"defaultOpenId": "Defaults: Open ID Connect"
 			},
 			"claimRoles": "Roles claim",
-			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, REI3 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
+			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, Tallarin4 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
 			"claimUsername": "Username claim",
 			"claimUsernameHint": "Name of the claim field, which contains the username. Must be filled. Usernames must be unique for an OAuth client.",
 			"clientId": "客户端 ID",
@@ -471,21 +471,21 @@
 			},
 			"flow": "OAuth flow",
 			"loginMetaMap": "Update user details via claims",
-			"nameHint": "用于在 REI3 中引用此 OAuth 客户端的内部名称。",
+			"nameHint": "用于在 Tallarin4 中引用此 OAuth 客户端的内部名称。",
 			"option": {
 				"flow": {
 					"authCodePkce": "Authentication Code with PKCE",
 					"clientCreds": "Client credentials"
 				},
 				"flowHint": {
-					"authCodePkce": "<p>This flow is used in REI3 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to REI3 with verification of identity and user meta data.</p>",
-					"clientCreds": "<p>This flow is used in REI3 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
+					"authCodePkce": "<p>This flow is used in Tallarin4 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to Tallarin4 with verification of identity and user meta data.</p>",
+					"clientCreds": "<p>This flow is used in Tallarin4 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which Tallarin4 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case Tallarin4) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
 				}
 			},
 			"providerUrl": "Provider URL",
 			"providerUrlHint": "URL of the chosen provider for its OAuth service discovery, often called 'Issuer URL'.",
 			"redirectUrl": "Redirect URL",
-			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of REI3. Must also be registered at the service provider.",
+			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of Tallarin4. Must also be registered at the service provider.",
 			"scopes": "范围",
 			"scopesHint": "范围告诉提供商 OAuth 客户端希望执行或访问什么。它们由提供商定义，必须分配给客户端才能使用-请参考提供商的文档以获取可用范围的列表。",
 			"title": "OAuth 客户端 '{NAME}'",
@@ -1090,7 +1090,7 @@
 			"functionsFrontend": "前端函数",
 			"helpJs": {
 				"block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />阻止或解除当前表单上所有输入框的操作。",
-				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a REI3 client, installed and running on the same computer as the REI3 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
+				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a Tallarin4 client, installed and running on the same computer as the Tallarin4 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
 				"collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />更新指定集合的值。",
 				"copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />将文本复制到用户的剪贴板。",
 				"dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Shows a dialog with the specified title and content. The title is a simple text string, while the content can be text or HTML.<br /><br />Buttons are defined by a list of strings. If none are defined, a simple OK button is shown.<br /><br />The returned value is the index of the clicked button. So if the first button is clicked, the value will be 0. If the second button is clicked, it´s 1 and so on.<br /><br /><b>Example</b><br />app.dialog_show(<blockquote>'Please confirm',<br />'Do you really want to delete this item?',<br />['Yes', 'Cancel action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1421,7 +1421,7 @@
 			"placeholderFncBackendHelp": "后端函数的占位符 - 可以用作表达式（'SELECT function_abc()'）或直接使用（'PERFORM function_abc()'）。",
 			"placeholderFncFrontend": "函数（前端）",
 			"placeholderFncInstance": "函数（实例）",
-			"placeholderFncInstanceHelp": "REI3 实例中函数的占位符 - 这些函数可以访问文件处理或邮件处理等系统功能。",
+			"placeholderFncInstanceHelp": "Tallarin4 实例中函数的占位符 - 这些函数可以访问文件处理或邮件处理等系统功能。",
 			"placeholderPresets": "Preset record IDs",
 			"placeholderPresetsHelp": "Placeholders for the ID (as BIGINT) of the record that exists for the selected preset.<br /><br />If the preset is not protected, it could have been deleted by users. In this case 'null' is returned.",
 			"placeholderRelations": "关系",
@@ -1459,7 +1459,7 @@
 			"formOpen": "打开的表单",
 			"newLoginForm": "新建登录表单",
 			"title": "登录表单",
-			"titleDepr": "Login forms are deprecated as of REI3.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
+			"titleDepr": "Login forms are deprecated as of Tallarin4.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
 		},
 		"menu": {
 			"button": {
@@ -1486,7 +1486,7 @@
 				"repo": "从仓库安装",
 				"versionCreate": "创建新版本"
 			},
-			"clientEventsHint": "REI3 has a client application, which users can install from their personal settings. When running, the REI3 client application can open files uploaded to REI3 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to REI3, either to update data by using backend functions or to interact with an open REI3 browser session by using frontend functions.",
+			"clientEventsHint": "Tallarin4 has a client application, which users can install from their personal settings. When running, the Tallarin4 client application can open files uploaded to Tallarin4 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to Tallarin4, either to update data by using backend functions or to interact with an open Tallarin4 browser session by using frontend functions.",
 			"color": "颜色",
 			"colorHint": "主要应用颜色 - 如果未被定制或用户设置覆盖，将显示在标题和菜单中。系统样式经过优化，适用于淡化的、偏暗的颜色（深淡色）。",
 			"dependsOn": "构建于",
@@ -1508,7 +1508,7 @@
 			"jsFunctionIdOnLogin": "Session start function",
 			"jsFunctionIdOnLoginHint": "This frontend function is called when a user logs into the system. It can be used to initialize variables or update logs.",
 			"keyCreate": "传输 - 生成新的签名密钥对",
-			"keyCreateInfo": "请务必随时保管好私钥。目标 REI3 实例必须导入公钥以接受您的应用。",
+			"keyCreateInfo": "请务必随时保管好私钥。目标 Tallarin4 实例必须导入公钥以接受您的应用。",
 			"keyCreateLength": "选择密钥长度",
 			"languageCode": "语言代码",
 			"languageCodeHint": "en_us, zh_cn, de_de, ...",
@@ -1516,7 +1516,7 @@
 			"languageMainHint": "如果所选用户语言不在您的应用程序提供的语言中，则使用此语言。",
 			"languages": "应用程序语言",
 			"languagesHint": "应用程序提供的语言。",
-			"nameHint": "此应用程序的参考名称。名称必须在 REI3 系统内唯一，因此请考虑使用基于您的组织名称的前缀。",
+			"nameHint": "此应用程序的参考名称。名称必须在 Tallarin4 系统内唯一，因此请考虑使用基于您的组织名称的前缀。",
 			"nameHolder": "work_scheduler, inventory_planner, ...",
 			"namePwa": "应用程序标题",
 			"namePwaHint": "在已安装应用程序列表中显示的完整应用程序标题。最多可达60个字符长。不支持翻译。",
@@ -1529,7 +1529,7 @@
 			"position": "默认位置",
 			"positionHint": "应用程序在标题中的位置（较小的优先级更高）。可被系统管理员覆盖。",
 			"pwa": "渐进式 Web 应用程序（PWA）",
-			"pwaHint": "REI3 应用程序可以在现代浏览器内部作为渐进式 Web 应用程序（PWA）安装到台式计算机和移动设备上。然后它们将列为已安装的应用程序，获得自己的图标和快捷方式，并且行为类似于本机应用程序。",
+			"pwaHint": "Tallarin4 应用程序可以在现代浏览器内部作为渐进式 Web 应用程序（PWA）安装到台式计算机和移动设备上。然后它们将列为已安装的应用程序，获得自己的图标和快捷方式，并且行为类似于本机应用程序。",
 			"release": "部署",
 			"releaseBuild": "应用程序版本",
 			"releaseBuildApp": "平台版本",
@@ -1555,7 +1555,7 @@
 			"jsFunctionFormIdHint": "分配的函数可以与表单交互，例如读取或写入表单字段。如果被分配，该函数只能在选择的表单上使用，不能在其他前端函数中重复使用。此设置稍后无法更改。",
 			"message": {
 				"api": "<p>API名称将作为API调用的一部分。稍后可以更改它。</p>",
-				"module": "<p>请选择应用程序的名称。此名称用于在REI3系统内唯一标识您的应用程序。用户看不到它。</p><h3>示例：</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>因为应用程序名称必须是唯一的，所以使用组织名作为前缀可能有所帮助。如果您的组织名为“现代时尚有限公司”，可以使用“mfl”作为前缀（如'mfl_shift_planner'）。</p>",
+				"module": "<p>请选择应用程序的名称。此名称用于在Tallarin4系统内唯一标识您的应用程序。用户看不到它。</p><h3>示例：</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>因为应用程序名称必须是唯一的，所以使用组织名作为前缀可能有所帮助。如果您的组织名为“现代时尚有限公司”，可以使用“mfl”作为前缀（如'mfl_shift_planner'）。</p>",
 				"relation": "<p>关系名称应反映其中存储的内容。在应用程序内必须是唯一的。</p><h3>示例：</h3><ul><li>event</li><li>event_attendance</li><li>location</li><li>location_event</li></ul>"
 			},
 			"module": "新应用程序",
@@ -1767,8 +1767,8 @@
 			"checkStartForm": "已定义起始表单",
 			"checkStartFormOff": "未定义起始表单",
 			"checks": "系统检查",
-			"extCommunity": "REI3 论坛",
-			"extDocs": "REI3 文档",
+			"extCommunity": "Tallarin4 论坛",
+			"extDocs": "Tallarin4 文档",
 			"needHelp": "需要帮助吗？",
 			"title": "首步",
 			"titleForms": "创建表单",
@@ -1913,7 +1913,7 @@
 			"moreInfo": "更多信息"
 		},
 		"info": {
-			"admin": "<b>管理员信息：</b> 反馈功能可以在管理员面板中禁用。如果启用了反馈功能，则反馈将发送到当前选择的存储库。组织可以运行自己的存储库（使用<a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a>应用程序）来管理应用程序发布并接收内部反馈。",
+			"admin": "<b>管理员信息：</b> 反馈功能可以在管理员面板中禁用。如果启用了反馈功能，则反馈将发送到当前选择的存储库。组织可以运行自己的存储库（使用<a href=\"https://t4-repo.tech.eus/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Tallarin4 Repository</a>应用程序）来管理应用程序发布并接收内部反馈。",
 			"data": [
 				"反馈类别（常规、错误/问题、建议、赞扬）",
 				"反馈文本",
@@ -1925,7 +1925,7 @@
 			],
 			"personal": "不会发送个人信息。如果您想收到回复，可以在反馈文本中添加联系方式。",
 			"repoUrl": "反馈将发送至",
-			"repoUrlDefault": "<i>（此系统由<a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>开发人员运营）</i>",
+			"repoUrlDefault": "<i>（此系统由<a href=\"https://tech.eus/t4/\" target=\"_blank\">Tallarin4</a>开发人员运营）</i>",
 			"what": "正在发送什么？"
 		},
 		"moduleRelated": "此反馈是否针对当前打开的应用程序？（{NAME}）",
@@ -2146,8 +2146,8 @@
 		},
 		"api": "API",
 		"apis": "API接口",
-		"appName": "REI3",
-		"appWebsite": "https://rei3.de",
+		"appName": "Tallarin4",
+		"appWebsite": "https://tech.eus/t4/",
 		"application": "应用程序",
 		"applications": "应用程序",
 		"arguments": "Arguments",
@@ -2419,7 +2419,7 @@
 		"inputPlaceholder": "Write out names, words or email addresses",
 		"modulesInactive": "Additional search options",
 		"tips": [
-			"A new search can be started from anywhere in REI3 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
+			"A new search can be started from anywhere in Tallarin4 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
 			"When searching for names, words or email addresses, write them out in full.",
 			"If multilingual content is searched, it is important to set the language of your search query (top right corner).",
 			"Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails."
@@ -2433,7 +2433,7 @@
 			"installBundle": "安装核心应用程序"
 		},
 		"newVersion": "更新通知",
-		"newVersionText": "REI3 有新版本可用。<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">下载 REI3 v{VERSION}</a>",
+		"newVersionText": "Tallarin4 有新版本可用。<br /><br /><a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">下载 Tallarin4 v{VERSION}</a>",
 		"noAccess": "尚未授予访问权限。<br />请联系您的系统管理员。",
 		"noAccessAdmin": "To get access, assign roles to your user.",
 		"noAccessTitle": "无法访问应用程序",
@@ -2442,10 +2442,10 @@
 			"installBundle": "核心应用程序",
 			"installBundleDesc": "安装预打包的核心应用程序集，适用于任何组织。'核心应用程序'套件包括：<ul><li>缺勤管理</li><li>时间跟踪</li><li>项目和任务管理</li><li>请求处理</li><li>密码保险柜</li><li>IT 资产管理</li></ul>安装后，请查看各个应用程序的帮助页面，了解每个应用程序的初始设置。",
 			"installFile": "从文件安装",
-			"installFileDesc": "从本地 REI3 文件安装应用程序。适用于离线系统或自制应用程序。<br /><br />可从官方<a href=\"https://rei3.de/en/downloads\" target=\"_blank\">存储库</a>下载公开提供的 REI3 应用程序的文件。",
+			"installFileDesc": "从本地 Tallarin4 文件安装应用程序。适用于离线系统或自制应用程序。<br /><br />可从官方<a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">存储库</a>下载公开提供的 Tallarin4 应用程序的文件。",
 			"installRepo": "从存储库安装",
-			"installRepoDesc": "<b>需要互联网访问</b><br /><br />从官方 REI3 存储库安装应用程序。存储库包含公开提供的 REI3 应用程序的当前版本。<br /><br />所有应用程序均经过审查并进行数字签名。",
-			"intro": "欢迎来到 REI3<br /><br />当前尚未安装任何应用程序。要开始使用 REI3，请从下面的安装选项中选择一个。",
+			"installRepoDesc": "<b>需要互联网访问</b><br /><br />从官方 Tallarin4 存储库安装应用程序。存储库包含公开提供的 Tallarin4 应用程序的当前版本。<br /><br />所有应用程序均经过审查并进行数字签名。",
+			"intro": "欢迎来到 Tallarin4<br /><br />当前尚未安装任何应用程序。要开始使用 Tallarin4，请从下面的安装选项中选择一个。",
 			"title": "设置"
 		}
 	},
@@ -2477,7 +2477,7 @@
 			"button": {
 				"copyHint": "复制所选文件以粘贴到另一个文件输入中。",
 				"downloadHint": "下载文件",
-				"fileRequestHint": "在本地计算机上编辑文件。需要 R3 客户端应用程序（可从用户设置中安装）。如果系统处于维护模式，则此操作无效。",
+				"fileRequestHint": "在本地计算机上编辑文件。需要 T4 客户端应用程序（可从用户设置中安装）。如果系统处于维护模式，则此操作无效。",
 				"pasteHint": "将复制的文件粘贴到此文件输入中。"
 			},
 			"dropTarget": "将文件拖放到此处进行上传",
@@ -2588,8 +2588,8 @@
 			"logout": "登出"
 		},
 		"clientEvents": {
-			"intro": "If the REI3 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with REI3 as it runs in the background.",
-			"noEvents": "There are currently no REI3 applications accessible that offer hotkeys."
+			"intro": "If the Tallarin4 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with Tallarin4 as it runs in the background.",
+			"noEvents": "There are currently no Tallarin4 applications accessible that offer hotkeys."
 		},
 		"colorClassicMode": "颜色方案",
 		"colorClassicMode0": "现代",
@@ -2674,23 +2674,23 @@
 				"loadCnf": "配置文件"
 			},
 			"context": {
-				"client": "REI3 客户端",
+				"client": "Tallarin4 客户端",
 				"ics": "日历应用",
 				"totp": "多因素"
 			},
 			"device": {
-				"adminInfo": "<b>Info for admins:</b> The REI3 client application does not work while REI3 is in maintenance mode.",
+				"adminInfo": "<b>Info for admins:</b> The Tallarin4 client application does not work while Tallarin4 is in maintenance mode.",
 				"installStep1": "Choose a device name:",
 				"installStep2": "Download the application & config file to the same folder:",
 				"installStep3": "Start the application. It will install itself and then appear in your system tray.",
 				"installStep4": "You can now delete the downloaded application & config files.",
-				"intro0": "The REI3 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
-				"intro1": "Files uploaded to REI3 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
-				"intro2": "Global hotkeys can be used to execute actions in REI3 applications, while REI3 runs in the background.",
+				"intro0": "The Tallarin4 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
+				"intro1": "Files uploaded to Tallarin4 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
+				"intro2": "Global hotkeys can be used to execute actions in Tallarin4 applications, while Tallarin4 runs in the background.",
 				"nameHint": "'我的工作电脑'",
 				"os": "Operating system:",
-				"uninstallStep1": "Right-click on the REI3 client tray icon and choose the 'uninstall' option.",
-				"uninstallStep2": "The REI3 client application is now uninstalled.",
+				"uninstallStep1": "Right-click on the Tallarin4 client tray icon and choose the 'uninstall' option.",
+				"uninstallStep2": "The Tallarin4 client application is now uninstalled.",
 				"updateStep1": "Download the new application file:",
 				"updateStep2": "Start the application. It will execute the update and then appear in your system tray.",
 				"updateStep3": "You can now delete the downloaded application file."
@@ -2711,7 +2711,7 @@
 				"nameHint": "'我的智能手机'",
 				"outro": "使用 QR 码将此帐户添加到您的身份验证器应用程序。完成后关闭此窗口。您可以重复此过程以使用多个设备启用 MFA。"
 			},
-			"titleAdd": "Manage REI3 client application",
+			"titleAdd": "Manage Tallarin4 client application",
 			"titleContext": "使用",
 			"titleDateCreate": "创建日期",
 			"titleMfa": "设置多因素身份验证",

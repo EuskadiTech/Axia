@@ -46,7 +46,7 @@ let MyAdminConfig = {
 								{{ updateCheckText }}
 							</td>
 							<td v-else>
-								<a href="https://rei3.de/download" target="_blank">{{ updateCheckText }}</a>
+								<a href="https://tech.eus/t4/download.php" target="_blank">{{ updateCheckText }}</a>
 							</td>
 						</tr>
 						<tr>

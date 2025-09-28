@@ -40,8 +40,8 @@ type manifest struct {
 
 var manifestDefault = manifest{
 	Id:              "platform",
-	Name:            "REI3",
-	ShortName:       "REI3",
+	Name:            "Tallarin4",
+	ShortName:       "T4",
 	Scope:           "/",
 	StartUrl:        "/",
 	Display:         "standalone",

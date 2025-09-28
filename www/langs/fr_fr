@@ -38,7 +38,7 @@
 			"adminMailsHint": "Add receiver email address",
 			"adminMailsList": [
 				"Upcoming expiration of registered OAuth clients.",
-				"Upcoming expiration of an active REI3 Professional license."
+				"Upcoming expiration of an active Tallarin4 Professional license."
 			],
 			"adminMailsTitle": "Admin notifications",
 			"appVersion": "Version de la plateforme",
@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "En secondes",
 			"dbTimeoutIcs": "Délai d'attente de la base de données : Téléchargements de calendrier (ICS)",
 			"dialog": {
-				"builderMode": "Le Builder est utilisé pour créer ou modifier des applications.<br /><br />La modification d'applications peut entraîner une perte de données et ne devrait <b>JAMAIS</b> être effectuée dans des environnements de production.<br /><br />Pour utiliser le Builder en toute sécurité, veuillez utiliser une instance dédiée de REI3 ; les applications prêtes et testées peuvent ensuite être transférées vers un système de production.<br /><br />Veuillez consulter la <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">documentation du Builder</a> pour en savoir plus.",
+				"builderMode": "Le Builder est utilisé pour créer ou modifier des applications.<br /><br />La modification d'applications peut entraîner une perte de données et ne devrait <b>JAMAIS</b> être effectuée dans des environnements de production.<br /><br />Pour utiliser le Builder en toute sécurité, veuillez utiliser une instance dédiée de Tallarin4 ; les applications prêtes et testées peuvent ensuite être transférées vers un système de production.<br /><br />Veuillez consulter la <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">documentation du Builder</a> pour en savoir plus.",
 				"pleaseRead": "Veuillez lire avant d'enregistrer",
 				"productionMode": "Le mode de maintenance est utilisé pour mettre à jour, installer ou supprimer des applications du système.<br /><br />Passer en mode maintenance va <b>déconnecter tous les utilisateurs sans permissions d'administration</b>."
 			},
@@ -104,7 +104,7 @@
 		},
 		"customizing": {
 			"appName": "Nom de l'instance",
-			"appNameHint": "Nom de l'instance REI3, affiché sur la page de connexion.",
+			"appNameHint": "Nom de l'instance Tallarin4, affiché sur la page de connexion.",
 			"appNameShort": "Nom court",
 			"appNameShortHint": "Version courte du nom de l'instance, affichée dans le titre de la page et en tant qu'étiquette si elle est installée en tant qu'application web progressive (PWA).",
 			"companyColorHeader": "Couleur du titre (en-tête)",
@@ -131,8 +131,8 @@
 			"iconPwa2Hint": "Image utilisée pour les icônes des applications web progressives (PWA). Doit être un fichier PNG, max. 128 ko et précisément de 512x512 pixels.",
 			"pwaDomain": "Accès direct à l'application",
 			"pwaDomainHint": "Uniquement le sous-domaine (comme 'my-app' de 'my-app.mon-domaine.com')",
-			"pwaDomainHint1": "Les applications individuelles peuvent être accessibles directement et installées séparément sur les appareils en tant qu'applications web progressives (PWAs). Elles ont alors leur propre page de démarrage, leurs propres icônes et une navigation exclusive. Cela nécessite un enregistrement DNS de sous-domaine pour chaque application afin que le système REI3 soit accessible via différents domaines. Il nécessite également un certificat wildcard sur le serveur REI3 pour répondre correctement aux demandes HTTPS.<br /><br />Une fois que les enregistrements DNS et le certificat wildcard sont prêts, veuillez saisir un sous-domaine pour chaque application souhaitée.",
-			"pwaDomainHint2": "Assurez-vous d'avoir un sous-domaine disponible qui ne figure pas dans cette liste pour accéder au système REI3 général. Sinon, vous n'avez pas accès à l'interface utilisateur d'administration, car chaque sous-domaine d'application donne uniquement accès à l'application spécifique.",
+			"pwaDomainHint1": "Les applications individuelles peuvent être accessibles directement et installées séparément sur les appareils en tant qu'applications web progressives (PWAs). Elles ont alors leur propre page de démarrage, leurs propres icônes et une navigation exclusive. Cela nécessite un enregistrement DNS de sous-domaine pour chaque application afin que le système Tallarin4 soit accessible via différents domaines. Il nécessite également un certificat wildcard sur le serveur Tallarin4 pour répondre correctement aux demandes HTTPS.<br /><br />Une fois que les enregistrements DNS et le certificat wildcard sont prêts, veuillez saisir un sous-domaine pour chaque application souhaitée.",
+			"pwaDomainHint2": "Assurez-vous d'avoir un sous-domaine disponible qui ne figure pas dans cette liste pour accéder au système Tallarin4 général. Sinon, vous n'avez pas accès à l'interface utilisateur d'administration, car chaque sous-domaine d'application donne uniquement accès à l'application spécifique.",
 			"titleCaptions": "Légendes",
 			"titleColors": "Couleurs",
 			"titleCss": "Règles CSS personnalisées",
@@ -140,7 +140,7 @@
 			"titleLogos": "Logos",
 			"titlePwas": "Applications web progressives (PWAs)",
 			"tokenKeepEnable": "Autoriser les utilisateurs à rester connectés",
-			"tokenKeepEnableHint": "Si désactivé, l'option 'rester connecté' sur la page de connexion est supprimée. Sans cette option, les utilisateurs sont obligés de s'authentifier à chaque fois qu'ils accèdent au système. Ce paramètre n'affecte pas l'accès via les appareils, comme les abonnements de calendrier ou les clients REI3."
+			"tokenKeepEnableHint": "Si désactivé, l'option 'rester connecté' sur la page de connexion est supprimée. Sans cette option, les utilisateurs sont obligés de s'authentifier à chaque fois qu'ils accèdent au système. Ce paramètre n'affecte pas l'accès via les appareils, comme les abonnements de calendrier ou les clients Tallarin4."
 		},
 		"files": {
 			"deleteDate": "Fichier supprimé",
@@ -200,11 +200,11 @@
 			"clientId": "Identifiant du client",
 			"currentState": "Valeurs actuelles",
 			"dialog": {
-				"delete": "Êtes-vous sûr de vouloir supprimer le fichier de licence ? Pour réactiver REI3 Professional, un fichier de licence valide doit être téléchargé."
+				"delete": "Êtes-vous sûr de vouloir supprimer le fichier de licence ? Pour réactiver Tallarin4 Professional, un fichier de licence valide doit être téléchargé."
 			},
-			"extCommunity": "Forum communautaire REI3",
-			"extLicense": "REI3 Professional",
-			"intro": "REI3 est entièrement <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">open source</a> et peut être utilisé gratuitement.<br /><br />Pour ceux qui ont besoin de fonctionnalités professionnelles ou de support, il y a <b>REI3 Professional</b>. Son prix est abordable pour les organisations de toutes tailles, souvent beaucoup moins cher que des offres low-code comparables.<br /><br />Tout en soutenant un développement continu, les clients de REI3 Professional peuvent également activer l'ensemble des fonctionnalités et bénéficier du support de Lean Softworks, le développeur principal de REI3.",
+			"extCommunity": "Forum communautaire Tallarin4",
+			"extLicense": "Tallarin4 Professional",
+			"intro": "Tallarin4 est entièrement <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">open source</a> et peut être utilisé gratuitement.<br /><br />Pour ceux qui ont besoin de fonctionnalités professionnelles ou de support, il y a <b>Tallarin4 Professional</b>. Son prix est abordable pour les organisations de toutes tailles, souvent beaucoup moins cher que des offres low-code comparables.<br /><br />Tout en soutenant un développement continu, les clients de Tallarin4 Professional peuvent également activer l'ensemble des fonctionnalités et bénéficier du support de Lean Softworks, le développeur principal de Tallarin4.",
 			"introMore": "Plus d'informations :",
 			"licenseExpired": "La licence a expiré",
 			"licenseId": "ID de licence",
@@ -285,7 +285,7 @@
 			"noData": "No sessions available",
 			"option": {
 				"browser": "Browser session",
-				"fatClient": "REI3 Client"
+				"fatClient": "Tallarin4 Client"
 			},
 			"titles": {
 				"address": "Address",
@@ -457,7 +457,7 @@
 				"defaultOpenId": "Defaults: Open ID Connect"
 			},
 			"claimRoles": "Roles claim",
-			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, REI3 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
+			"claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, Tallarin4 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
 			"claimUsername": "Username claim",
 			"claimUsernameHint": "Name of the claim field, which contains the username. Must be filled. Usernames must be unique for an OAuth client.",
 			"clientId": "Client ID",
@@ -471,21 +471,21 @@
 			},
 			"flow": "OAuth flow",
 			"loginMetaMap": "Update user details via claims",
-			"nameHint": "An internal name to reference this OAuth client inside of REI3.",
+			"nameHint": "An internal name to reference this OAuth client inside of Tallarin4.",
 			"option": {
 				"flow": {
 					"authCodePkce": "Authentication Code with PKCE",
 					"clientCreds": "Client credentials"
 				},
 				"flowHint": {
-					"authCodePkce": "<p>This flow is used in REI3 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to REI3 with verification of identity and user meta data.</p>",
-					"clientCreds": "<p>This flow is used in REI3 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
+					"authCodePkce": "<p>This flow is used in Tallarin4 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to Tallarin4 with verification of identity and user meta data.</p>",
+					"clientCreds": "<p>This flow is used in Tallarin4 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which Tallarin4 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case Tallarin4) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
 				}
 			},
 			"providerUrl": "Provider URL",
 			"providerUrlHint": "URL of the chosen provider for its OAuth service discovery, often called 'Issuer URL'.",
 			"redirectUrl": "Redirect URL",
-			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of REI3. Must also be registered at the service provider.",
+			"redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of Tallarin4. Must also be registered at the service provider.",
 			"scopes": "Scopes",
 			"scopesHint": "Scopes tell the provider, what an OAuth client wishes to do or access. They are defined by the provider and must be assigned to the client to be usable - please refer to the provider´s documentation for a list of available scopes.",
 			"title": "OAuth client '{NAME}'",
@@ -1090,7 +1090,7 @@
 			"functionsFrontend": "Fonctions côté client",
 			"helpJs": {
 				"block_inputs": "app.block_inputs({ARGS}) => NON DÉFINI<br /><br />Bloque ou débloque tous les champs du formulaire actuel.",
-				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a REI3 client, installed and running on the same computer as the REI3 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
+				"client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a Tallarin4 client, installed and running on the same computer as the Tallarin4 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
 				"collection_update": "app.collection_update({ARGS}) => NON DÉFINI<br /><br />Met à jour les valeurs de la collection spécifiée.",
 				"copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => NON DÉFINI<br /><br />Copie le texte dans le presse-papiers de l'utilisateur.",
 				"dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Shows a dialog with the specified title and content. The title is a simple text string, while the content can be text or HTML.<br /><br />Buttons are defined by a list of strings. If none are defined, a simple OK button is shown.<br /><br />The returned value is the index of the clicked button. So if the first button is clicked, the value will be 0. If the second button is clicked, it´s 1 and so on.<br /><br /><b>Example</b><br />app.dialog_show(<blockquote>'Please confirm',<br />'Do you really want to delete this item?',<br />['Yes', 'Cancel action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1421,7 +1421,7 @@
 			"placeholderFncBackendHelp": "Espaces réservés pour les fonctions côté serveur - utilisés soit comme expression ('SELECT function_abc()') soit directement ('PERFORM function_abc()').",
 			"placeholderFncFrontend": "Fonctions (côté client)",
 			"placeholderFncInstance": "Fonctions (instance)",
-			"placeholderFncInstanceHelp": "Espaces réservés pour les fonctions de l'instance REI3 - ceux-ci donnent accès aux fonctionnalités système telles que la manipulation de fichiers ou de courriels.",
+			"placeholderFncInstanceHelp": "Espaces réservés pour les fonctions de l'instance Tallarin4 - ceux-ci donnent accès aux fonctionnalités système telles que la manipulation de fichiers ou de courriels.",
 			"placeholderPresets": "Preset record IDs",
 			"placeholderPresetsHelp": "Placeholders for the ID (as BIGINT) of the record that exists for the selected preset.<br /><br />If the preset is not protected, it could have been deleted by users. In this case 'null' is returned.",
 			"placeholderRelations": "Relations",
@@ -1459,7 +1459,7 @@
 			"formOpen": "Formulaire à ouvrir",
 			"newLoginForm": "Nouveau formulaire de connexion",
 			"title": "Formulaires de connexion",
-			"titleDepr": "Login forms are deprecated as of REI3.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
+			"titleDepr": "Login forms are deprecated as of Tallarin4.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
 		},
 		"menu": {
 			"button": {
@@ -1486,7 +1486,7 @@
 				"repo": "Installer depuis le référentiel",
 				"versionCreate": "Créer une nouvelle version"
 			},
-			"clientEventsHint": "REI3 has a client application, which users can install from their personal settings. When running, the REI3 client application can open files uploaded to REI3 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to REI3, either to update data by using backend functions or to interact with an open REI3 browser session by using frontend functions.",
+			"clientEventsHint": "Tallarin4 has a client application, which users can install from their personal settings. When running, the Tallarin4 client application can open files uploaded to Tallarin4 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to Tallarin4, either to update data by using backend functions or to interact with an open Tallarin4 browser session by using frontend functions.",
 			"color": "Couleur",
 			"colorHint": "Couleur primaire de l'application - affichée dans l'en-tête et le menu si elle n'est pas remplacée par la personnalisation et/ou les paramètres utilisateur. Les styles système sont optimisés pour des couleurs lavées et sombres (pastel foncé).",
 			"dependsOn": "Basé sur",
@@ -1508,7 +1508,7 @@
 			"jsFunctionIdOnLogin": "Session start function",
 			"jsFunctionIdOnLoginHint": "This frontend function is called when a user logs into the system. It can be used to initialize variables or update logs.",
 			"keyCreate": "Transfert - Générer une nouvelle paire de clés de signature",
-			"keyCreateInfo": "Assurez-vous de conserver la clé privée en toute sécurité à tout moment. La clé publique doit être importée dans les instances REI3 cibles pour accepter vos applications.",
+			"keyCreateInfo": "Assurez-vous de conserver la clé privée en toute sécurité à tout moment. La clé publique doit être importée dans les instances Tallarin4 cibles pour accepter vos applications.",
 			"keyCreateLength": "Sélectionner la longueur de la clé",
 			"languageCode": "Code de langue",
 			"languageCodeHint": "en_us, zh_cn, de_de, fr_fr, ...",
@@ -1516,7 +1516,7 @@
 			"languageMainHint": "Est utilisée si la langue utilisateur choisie n'est pas proposée par votre application.",
 			"languages": "Langues de l'application",
 			"languagesHint": "Langues dans lesquelles l'application est disponible.",
-			"nameHint": "Nom de référence pour cette application. Le nom doit être unique au sein d'un système REI3, alors envisagez d'utiliser un préfixe basé sur le nom de votre organisation.",
+			"nameHint": "Nom de référence pour cette application. Le nom doit être unique au sein d'un système Tallarin4, alors envisagez d'utiliser un préfixe basé sur le nom de votre organisation.",
 			"nameHolder": "planificateur_de_travail, planificateur_d'inventaire, ...",
 			"namePwa": "Titre de l'application",
 			"namePwaHint": "Le titre complet de l'application affiché dans la liste des applications installées. Peut comporter jusqu'à 60 caractères. Aucune traduction possible.",
@@ -1529,7 +1529,7 @@
 			"position": "Position par défaut",
 			"positionHint": "Position de l'application dans l'en-tête (les plus petites d'abord). Peut être remplacé par les administrateurs système.",
 			"pwa": "Application web progressive (PWA)",
-			"pwaHint": "Les applications REI3 peuvent être installées sur les ordinateurs de bureau et les appareils mobiles sous la forme d'applications web progressives (PWA) depuis l'intérieur des navigateurs modernes. Elles sont ensuite répertoriées comme des applications installées, obtiennent leurs propres icônes et raccourcis et se comportent de manière similaire aux applications natives.",
+			"pwaHint": "Les applications Tallarin4 peuvent être installées sur les ordinateurs de bureau et les appareils mobiles sous la forme d'applications web progressives (PWA) depuis l'intérieur des navigateurs modernes. Elles sont ensuite répertoriées comme des applications installées, obtiennent leurs propres icônes et raccourcis et se comportent de manière similaire aux applications natives.",
 			"release": "Déploiement",
 			"releaseBuild": "Version de l'application",
 			"releaseBuildApp": "Version de la plateforme",
@@ -1555,7 +1555,7 @@
 			"jsFunctionFormIdHint": "Les fonctions assignées peuvent interagir avec un formulaire pour effectuer des actions telles que la lecture ou l'écriture dans des champs de formulaire. Si elle est assignée, la fonction ne peut être utilisée que sur le formulaire choisi et ne peut pas être réutilisée dans d'autres fonctions frontend. Ce paramètre ne peut pas être modifié ultérieurement.",
 			"message": {
 				"api": "<p>Le nom de l'API sera utilisé comme partie de l'appel API. Il peut être modifié ultérieurement.</p>",
-				"module": "<p>Veuillez choisir un nom pour votre application. Ce nom sert à identifier de manière unique votre application à l'intérieur d'un système REI3. Il n'est pas visible pour les utilisateurs.</p><h3>Exemples :</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Parce que les noms d'application doivent être uniques, il peut être utile d'utiliser un préfixe nommé d'après le nom de votre organisation. Si votre organisation s'appelle 'Modern Fashion Limited', vous pourriez utiliser 'mfl' comme préfixe (comme dans 'mfl_shift_planner').</p>",
+				"module": "<p>Veuillez choisir un nom pour votre application. Ce nom sert à identifier de manière unique votre application à l'intérieur d'un système Tallarin4. Il n'est pas visible pour les utilisateurs.</p><h3>Exemples :</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Parce que les noms d'application doivent être uniques, il peut être utile d'utiliser un préfixe nommé d'après le nom de votre organisation. Si votre organisation s'appelle 'Modern Fashion Limited', vous pourriez utiliser 'mfl' comme préfixe (comme dans 'mfl_shift_planner').</p>",
 				"relation": "<p>Un nom de relation doit refléter ce qui est stocké à l'intérieur. Il doit être unique au sein d'une application.</p><h3>Exemples :</h3><ul><li>event</li><li>event_attendance</li><li>location</li><li>location_event</li></ul>"
 			},
 			"module": "Nouvelle application",
@@ -1767,8 +1767,8 @@
 			"checkStartForm": "Le formulaire de démarrage est défini",
 			"checkStartFormOff": "Le formulaire de démarrage n'est pas défini",
 			"checks": "Vérifications système",
-			"extCommunity": "Forum REI3",
-			"extDocs": "Documentation REI3",
+			"extCommunity": "Forum Tallarin4",
+			"extDocs": "Documentation Tallarin4",
 			"needHelp": "Besoin d'aide ?",
 			"title": "Premiers pas",
 			"titleForms": "Créer des formulaires",
@@ -1913,7 +1913,7 @@
 			"moreInfo": "Plus d'informations"
 		},
 		"info": {
-			"admin": "<b>Info pour les administrateurs :</b> La fonction de feedback peut être désactivée dans le panneau d'administration. Si elle est activée, le feedback est envoyé au référentiel actuellement choisi. Les organisations peuvent exécuter leur propre référentiel (avec l'application <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a>) pour gérer les versions de l'application et recevoir des feedbacks internes.",
+			"admin": "<b>Info pour les administrateurs :</b> La fonction de feedback peut être désactivée dans le panneau d'administration. Si elle est activée, le feedback est envoyé au référentiel actuellement choisi. Les organisations peuvent exécuter leur propre référentiel (avec l'application <a href=\"https://t4-repo.tech.eus/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Tallarin4 Repository</a>) pour gérer les versions de l'application et recevoir des feedbacks internes.",
 			"data": [
 				"Catégorie du feedback (général, bug/problème, suggestion, éloge)",
 				"Texte du feedback",
@@ -1925,7 +1925,7 @@
 			],
 			"personal": "Aucune information personnelle n'est envoyée. Si vous souhaitez recevoir une réponse, vous pouvez ajouter des coordonnées à votre texte de feedback.",
 			"repoUrl": "Le feedback sera envoyé à",
-			"repoUrlDefault": "<i>(ce système est exploité par les développeurs de <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>)</i>",
+			"repoUrlDefault": "<i>(ce système est exploité par les développeurs de <a href=\"https://tech.eus/t4/\" target=\"_blank\">Tallarin4</a>)</i>",
 			"what": "Qu'est-ce qui est envoyé ?"
 		},
 		"moduleRelated": "Ce feedback concerne-t-il l'application ouverte ? ({NAME})",
@@ -2146,8 +2146,8 @@
 		},
 		"api": "API",
 		"apis": "API",
-		"appName": "REI3",
-		"appWebsite": "https://rei3.de",
+		"appName": "Tallarin4",
+		"appWebsite": "https://tech.eus/t4/",
 		"application": "Application",
 		"applications": "Applications",
 		"arguments": "Arguments",
@@ -2419,7 +2419,7 @@
 		"inputPlaceholder": "Write out names, words or email addresses",
 		"modulesInactive": "Additional search options",
 		"tips": [
-			"A new search can be started from anywhere in REI3 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
+			"A new search can be started from anywhere in Tallarin4 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.",
 			"When searching for names, words or email addresses, write them out in full.",
 			"If multilingual content is searched, it is important to set the language of your search query (top right corner).",
 			"Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails."
@@ -2433,7 +2433,7 @@
 			"installBundle": "Installer l'ensemble de base de l'entreprise"
 		},
 		"newVersion": "Notification de mise à jour",
-		"newVersionText": "Une nouvelle version de REI3 est disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Télécharger REI3 v{VERSION}</a>",
+		"newVersionText": "Une nouvelle version de Tallarin4 est disponible.<br /><br /><a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Télécharger Tallarin4 v{VERSION}</a>",
 		"noAccess": "Aucun accès n'a encore été accordé.<br />Veuillez contacter votre administrateur système.",
 		"noAccessAdmin": "Pour obtenir l'accès, attribuez des rôles à votre utilisateur.",
 		"noAccessTitle": "Pas d'accès aux applications",
@@ -2442,10 +2442,10 @@
 			"installBundle": "Ensemble de base de l'entreprise",
 			"installBundleDesc": "Installez un ensemble pré-emballé d'applications de base, utile pour toute organisation. L'ensemble 'Core Company' comprend :<ul><li>Gestion des absences</li><li>Suivi du temps</li><li>Gestion de projets et de tâches</li><li>Traitement des demandes</li><li>Un coffre-fort de mots de passe</li><li>Gestion des actifs informatiques</li></ul>Après l'installation, veuillez consulter les pages d'aide individuelles des applications pour en savoir plus sur la configuration initiale de chacune.",
 			"installFile": "À partir du fichier",
-			"installFileDesc": "Installez des applications à partir de fichiers REI3 locaux. Pour les systèmes hors ligne ou les applications faites maison.<br /><br />Les fichiers des applications REI3 proposées publiquement peuvent être téléchargés depuis le <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">dépôt</a> officiel.",
+			"installFileDesc": "Installez des applications à partir de fichiers Tallarin4 locaux. Pour les systèmes hors ligne ou les applications faites maison.<br /><br />Les fichiers des applications Tallarin4 proposées publiquement peuvent être téléchargés depuis le <a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">dépôt</a> officiel.",
 			"installRepo": "À partir du dépôt",
-			"installRepoDesc": "<b>Accès à Internet requis</b><br /><br />Installez des applications depuis le dépôt officiel REI3. Le dépôt contient des versions à jour des applications REI3 proposées publiquement.<br /><br />Toutes les applications sont examinées et signées numériquement.",
-			"intro": "Bienvenue sur REI3<br /><br />Il n'y a actuellement aucune application installée. Pour commencer à utiliser REI3, veuillez choisir l'une des options d'installation ci-dessous.",
+			"installRepoDesc": "<b>Accès à Internet requis</b><br /><br />Installez des applications depuis le dépôt officiel Tallarin4. Le dépôt contient des versions à jour des applications Tallarin4 proposées publiquement.<br /><br />Toutes les applications sont examinées et signées numériquement.",
+			"intro": "Bienvenue sur Tallarin4<br /><br />Il n'y a actuellement aucune application installée. Pour commencer à utiliser Tallarin4, veuillez choisir l'une des options d'installation ci-dessous.",
 			"title": "Configuration"
 		}
 	},
@@ -2477,7 +2477,7 @@
 			"button": {
 				"copyHint": "Copier les fichiers sélectionnés pour les coller dans un autre champ de fichier.",
 				"downloadHint": "Télécharger le fichier",
-				"fileRequestHint": "Modifier le fichier localement sur votre ordinateur. Nécessite l'application client R3 (installable depuis les paramètres de l'utilisateur). Ne fonctionne pas si le système est en mode maintenance.",
+				"fileRequestHint": "Modifier le fichier localement sur votre ordinateur. Nécessite l'application client T4 (installable depuis les paramètres de l'utilisateur). Ne fonctionne pas si le système est en mode maintenance.",
 				"pasteHint": "Coller les fichiers copiés dans ce champ de fichier."
 			},
 			"dropTarget": "Déposez les fichiers ici pour les télécharger",
@@ -2588,8 +2588,8 @@
 			"logout": "Déconnexion"
 		},
 		"clientEvents": {
-			"intro": "If the REI3 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with REI3 as it runs in the background.",
-			"noEvents": "There are currently no REI3 applications accessible that offer hotkeys."
+			"intro": "If the Tallarin4 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with Tallarin4 as it runs in the background.",
+			"noEvents": "There are currently no Tallarin4 applications accessible that offer hotkeys."
 		},
 		"colorClassicMode": "Schéma de couleurs",
 		"colorClassicMode0": "Moderne",
@@ -2674,23 +2674,23 @@
 				"loadCnf": "Fichier de configuration"
 			},
 			"context": {
-				"client": "Client REI3",
+				"client": "Client Tallarin4",
 				"ics": "Application de calendrier",
 				"totp": "Multi-facteur"
 			},
 			"device": {
-				"adminInfo": "<b>Info for admins:</b> The REI3 client application does not work while REI3 is in maintenance mode.",
+				"adminInfo": "<b>Info for admins:</b> The Tallarin4 client application does not work while Tallarin4 is in maintenance mode.",
 				"installStep1": "Choose a device name:",
 				"installStep2": "Download the application & config file to the same folder:",
 				"installStep3": "Start the application. It will install itself and then appear in your system tray.",
 				"installStep4": "You can now delete the downloaded application & config files.",
-				"intro0": "The REI3 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
-				"intro1": "Files uploaded to REI3 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
-				"intro2": "Global hotkeys can be used to execute actions in REI3 applications, while REI3 runs in the background.",
+				"intro0": "The Tallarin4 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
+				"intro1": "Files uploaded to Tallarin4 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
+				"intro2": "Global hotkeys can be used to execute actions in Tallarin4 applications, while Tallarin4 runs in the background.",
 				"nameHint": "'Mon PC de travail'",
 				"os": "Operating system:",
-				"uninstallStep1": "Right-click on the REI3 client tray icon and choose the 'uninstall' option.",
-				"uninstallStep2": "The REI3 client application is now uninstalled.",
+				"uninstallStep1": "Right-click on the Tallarin4 client tray icon and choose the 'uninstall' option.",
+				"uninstallStep2": "The Tallarin4 client application is now uninstalled.",
 				"updateStep1": "Download the new application file:",
 				"updateStep2": "Start the application. It will execute the update and then appear in your system tray.",
 				"updateStep3": "You can now delete the downloaded application file."
@@ -2711,7 +2711,7 @@
 				"nameHint": "'Mon smartphone'",
 				"outro": "Utilisez le code QR pour ajouter ce compte à votre application d'authentification. Une fois terminé, fermez cette fenêtre. Vous pouvez répéter ce processus pour activer la MFA avec plusieurs appareils."
 			},
-			"titleAdd": "Manage REI3 client application",
+			"titleAdd": "Manage Tallarin4 client application",
 			"titleContext": "Utilisation",
 			"titleDateCreate": "Créé",
 			"titleMfa": "Configuration de l'authentification multi-facteur",

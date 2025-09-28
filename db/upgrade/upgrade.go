@@ -6210,7 +6210,7 @@ var upgradeFunctions = map[string]func(ctx context.Context, tx pgx.Tx) (string, 
 	"0.91": func(ctx context.Context, tx pgx.Tx) (string, error) {
 		_, err := tx.Exec(ctx, `
 			INSERT INTO instance.config (name,value)
-				VALUES ('updateCheckUrl','https://rei3.de/version');
+				VALUES ('updateCheckUrl','https://tech.eus/t4/version.json');
 			
 			INSERT INTO instance.config (name,value)
 				VALUES ('updateCheckVersion','');
