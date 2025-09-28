@@ -24,3 +24,4 @@ download:
       format: "single-language-json"
       options:
         - WRITE_NESTED
+        - DEFAULT_IF_MISSING
