@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Os yw cyfrif e-bost gweithredol ar gael, bydd y system yn anfon hysbysiadau am ddigwyddiadau pwysig. Y rhain ar hyn o bryd yw:",
       "adminMailsHint": "Ychwanegu cyfeiriad e-bost derbynnydd",
-      "adminMailsList": [ "Dod i ben ar gofrestriad cleientiaid OAuth sydd ar ddod.", "Dod i ben ar drwydded REI3 Proffesiynol weithredol." ],
+      "adminMailsList": [ "Dod i ben ar gofrestriad cleientiaid OAuth sydd ar ddod.", "Dod i ben ar drwydded Axia4 Proffesiynol weithredol." ],
       "adminMailsTitle": "Hysbysiadau gweinyddol",
       "appVersion": "Fersiwn y llwyfan",
       "bruteforceAttempts": "Blocio gwesteiwyr ar ôl ymgais",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "Mewn eiliadau",
       "dbTimeoutIcs": "Amser allan y gronfa ddata: Lawrlwythiadau calendr (ICS)",
       "dialog": {
-        "builderMode": "Defnyddir y Builder i greu neu newid ceisiadau.<br /><br />Gall newid ceisiadau arwain at golli data a ni ddylid <b>BYTH</b> ei wneud mewn amgylcheddau cynhyrchu.<br /><br />I ddefnyddio'r Builder yn ddiogel, defnyddiwch enghraifft benodol o REI3; gellir trosglwyddo ceisiadau parod ac wedi'u profi i system gynhyrchu wedyn.<br /><br />Cyfeiriwch at <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">ddogfennaeth y Builder</a> i ddysgu mwy.",
+        "builderMode": "Defnyddir y Builder i greu neu newid ceisiadau.<br /><br />Gall newid ceisiadau arwain at golli data a ni ddylid <b>BYTH</b> ei wneud mewn amgylcheddau cynhyrchu.<br /><br />I ddefnyddio'r Builder yn ddiogel, defnyddiwch enghraifft benodol o Axia4 ; gellir trosglwyddo ceisiadau parod ac wedi'u profi i system gynhyrchu wedyn.<br /><br />Cyfeiriwch at <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">ddogfennaeth y Builder</a> i ddysgu mwy.",
         "pleaseRead": "Darllenwch cyn arbed",
         "productionMode": "Defnyddir y modd cynnal a chadw i ddiweddaru, gosod neu dynnu cymwysiadau o'r system.<br /><br />Bydd newid i'r modd cynnal a chadw yn <b>allgofnodi pob defnyddiwr heb ganiatâd gweinyddol</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Enw enghraifft",
-      "appNameHint": "Enw'r unigolyn REI3, dangosir ar y dudalen mewngofnodi.",
+      "appNameHint": "Enw'r unigolyn Axia4 , dangosir ar y dudalen mewngofnodi.",
       "appNameShort": "Enw byr",
       "appNameShortHint": "Fersiwn fer o enw'r eilydd, wedi'i ddangos yn nheitl y dudalen ac fel label os caiff ei osod fel ap gwe blaengar (PWA).",
       "companyColorHeader": "Lliw teitl (penawd)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Delwedd a ddefnyddir ar gyfer eiconau ap gwe cynyddol. Rhaid iddo fod yn ffeil PNG, uchafswm o 128kb a'n union 512x512 picsel o faint.",
       "pwaDomain": "Mynediad uniongyrchol i'r ap",
       "pwaDomainHint": "Dim ond yr is-barth (fel yn 'my-app' o 'my-app.my-domain.com')",
-      "pwaDomainHint1": "Gellir cyrchu cymwysiadau unigol yn uniongyrchol a'u gosod ar wahân ar ddyfeisiau fel PWAs. Yna mae ganddynt eu tudalen gychwyn eu hunain, eiconau a llywio unigryw. Mae hyn yn gofyn am gofnod DNS is-barth ar gyfer pob cymhwysiad fel bod y system REI3 yn hygyrch trwy wahanol barthau. Mae hefyd yn gofyn am dystysgrif gwyllt ar y gweinydd REI3 i ymateb yn gywir i geisiadau HTTPS.\n\nUnwaith y bydd y cofnodion DNS a'r dystysgrif gwyllt yn barod, rhowch is-barth ar gyfer pob cymhwysiad dymunol.",
-      "pwaDomainHint2": "Gwnewch yn siŵr bod un is-barth ar gael nad yw yn y rhestr hon, i gyrraedd system gyffredinol REI3. Fel arall, ni fydd gennych fynediad i'r rhyngwyneb defnyddiwr gweinyddol gan mai dim ond mynediad i'r cais penodol y mae pob is-barth cais yn ei roi.",
+      "pwaDomainHint1": "Gellir cyrchu cymwysiadau unigol yn uniongyrchol a'u gosod ar wahân ar ddyfeisiau fel PWAs. Yna mae ganddynt eu tudalen gychwyn eu hunain, eiconau a llywio unigryw. Mae hyn yn gofyn am gofnod DNS is-barth ar gyfer pob cymhwysiad fel bod y system Axia4 yn hygyrch trwy wahanol barthau. Mae hefyd yn gofyn am dystysgrif gwyllt ar y gweinydd Axia4 i ymateb yn gywir i geisiadau HTTPS.\n\nUnwaith y bydd y cofnodion DNS a'r dystysgrif gwyllt yn barod, rhowch is-barth ar gyfer pob cymhwysiad dymunol.",
+      "pwaDomainHint2": "Gwnewch yn siŵr bod un is-barth ar gael nad yw yn y rhestr hon, i gyrraedd system gyffredinol Axia4 . Fel arall, ni fydd gennych fynediad i'r rhyngwyneb defnyddiwr gweinyddol gan mai dim ond mynediad i'r cais penodol y mae pob is-barth cais yn ei roi.",
       "titleCaptions": "Pennawdau",
       "titleColors": "Lliwiau",
       "titleCss": "Rheolau CSS personol",
@@ -137,7 +137,7 @@
       "titleLogos": "Logos",
       "titlePwas": "Apiau gwe blaengar (PWAs)",
       "tokenKeepEnable": "Gadewch i ddefnyddwyr aros wedi mewngofnodi",
-      "tokenKeepEnableHint": "Os yw wedi'i ddiffodd, mae'r opsiwn 'aros wedi mewngofnodi' ar y dudalen mewngofnodi yn cael ei dynnu. Heb yr opsiwn hwn, mae defnyddwyr yn cael eu gorfodi i ddilysu bob tro y maent yn cael mynediad i'r system. Nid yw'r gosodiad hwn yn effeithio ar fynediad dyfais, fel tanysgrifiadau calendr neu gleientiaid REI3."
+      "tokenKeepEnableHint": "Os yw wedi'i ddiffodd, mae'r opsiwn 'aros wedi mewngofnodi' ar y dudalen mewngofnodi yn cael ei dynnu. Heb yr opsiwn hwn, mae defnyddwyr yn cael eu gorfodi i ddilysu bob tro y maent yn cael mynediad i'r system. Nid yw'r gosodiad hwn yn effeithio ar fynediad dyfais, fel tanysgrifiadau calendr neu gleientiaid Axia4 ."
     },
     "files": {
       "deleteDate": "Ffeil wedi'i dileu",
@@ -197,11 +197,11 @@
       "clientId": "ID Cleient",
       "currentState": "Gwerthoedd cyfredol",
       "dialog": {
-        "delete": "Ydych chi'n siŵr eich bod am dynnu'r ffeil trwydded? I ailactifadu REI3 Proffesiynol, rhaid uwchlwytho ffeil trwydded ddilys."
+        "delete": "Ydych chi'n siŵr eich bod am dynnu'r ffeil trwydded? I ailactifadu Axia4 Proffesiynol, rhaid uwchlwytho ffeil trwydded ddilys."
       },
-      "extCommunity": "Fforwm Cymuned REI3",
-      "extLicense": "Proffesiynol REI3",
-      "intro": "Mae REI3 yn hollol <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">ffynhonnell agored</a> ac ar gael i'w ddefnyddio'n rhad ac am ddim.<br /><br />I'r rhai sydd angen nodweddion menter neu gefnogaeth, mae <b>REI3 Professional</b> ar gael. Mae'n cael ei brisio i fod yn fforddiadwy i sefydliadau o unrhyw faint, gan gostio llawer llai na chynigion cod isel cymharol.<br /><br />Tra'n cefnogi datblygiad parhaus, gall cwsmeriaid REI3 Professional hefyd actifadu'r ystod lawn o nodweddion a chael cefnogaeth gan Lean Softworks, prif ddatblygwr REI3.",
+      "extCommunity": "Fforwm Cymuned Axia4 ",
+      "extLicense": "Proffesiynol Axia4 ",
+      "intro": "Mae Axia4 yn hollol <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">ffynhonnell agored</a> ac ar gael i'w ddefnyddio'n rhad ac am ddim.<br /><br />I'r rhai sydd angen nodweddion menter neu gefnogaeth, mae <b>Axia4 Professional</b> ar gael. Mae'n cael ei brisio i fod yn fforddiadwy i sefydliadau o unrhyw faint, gan gostio llawer llai na chynigion cod isel cymharol.<br /><br />Tra'n cefnogi datblygiad parhaus, gall cwsmeriaid Axia4 Professional hefyd actifadu'r ystod lawn o nodweddion a chael cefnogaeth gan Lean Softworks, prif ddatblygwr Axia4 .",
       "introMore": "Mwy o wybodaeth:",
       "licenseExpired": "Mae'r drwydded wedi dod i ben",
       "licenseId": "ID Trwydded",
@@ -282,7 +282,7 @@
       "noData": "Dim sesiynau ar gael",
       "option": {
         "browser": "Sesiwn porwr",
-        "fatClient": "Cleient REI3"
+        "fatClient": "Cleient Axia4 "
       },
       "titles": {
         "address": "Cyfeiriad",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Dewisiadau: Open ID Connect"
       },
       "claimRoles": "Hawliad rolau",
-      "claimRolesHint": "Enw'r maes hawliad, sy'n cynnwys rolau neu grwpiau defnyddwyr. Os caiff ei osod, gellir mapio rolau REI3 i werthoedd yn yr hawliad hwn. Rhaid i'r gwerth fod yn arae llinyn JSON, megis: [\"all-users\", \"department-it\"]",
+      "claimRolesHint": "Enw'r maes hawliad, sy'n cynnwys rolau neu grwpiau defnyddwyr. Os caiff ei osod, gellir mapio rolau Axia4 i werthoedd yn yr hawliad hwn. Rhaid i'r gwerth fod yn arae llinyn JSON, megis: [\"all-users\", \"department-it\"]",
       "claimUsername": "Hawliad enw defnyddiwr",
       "claimUsernameHint": "Enw'r maes hawliad, sy'n cynnwys yr enw defnyddiwr. Rhaid ei lenwi. Mae'n rhaid i enwau defnyddwyr fod yn unigryw ar gyfer cleient OAuth.",
       "clientId": "ID Cleient",
@@ -468,21 +468,21 @@
       },
       "flow": "Llifo OAuth",
       "loginMetaMap": "Diweddaru manylion defnyddiwr trwy hawliadau",
-      "nameHint": "Enw mewnol i gyfeirio at y cleient OAuth hwn y tu mewn i REI3.",
+      "nameHint": "Enw mewnol i gyfeirio at y cleient OAuth hwn y tu mewn i Axia4 .",
       "option": {
         "flow": {
           "authCodePkce": "Cod Dilysu gyda PKCE",
           "clientCreds": "Credydau cleient"
         },
         "flowHint": {
-          "authCodePkce": "<p>Defnyddir y llif hwn yn REI3 i ddilysu defnyddwyr trwy ddarparwyr hunaniaeth allanol, fel Keycloak neu Microsoft Entra ID.</p><p>'Cod Dilysu gyda Allwedd Prawf ar gyfer Cyfnewid Cod' yw llif Open ID Connect. Caiff defnyddwyr eu hanfon ymlaen i ddilysu gyda darparwr hunaniaeth. Ar ôl dilysu, caiff defnyddiwr ei ailgyfeirio yn ôl i REI3 gyda dilysu hunaniaeth a meta data defnyddiwr.</p>",
-          "clientCreds": "<p>Mae'r llif hwn yn cael ei ddefnyddio yn REI3 i ddilysu ei hun yn erbyn gwasanaeth, fel Exchange Online.</p><p>'Tystysgrifau Cleient' yw llif OAuth 2.0, y mae REI3 yn ei ddefnyddio i ddilysu yn erbyn darparwr gwasanaeth, i dderbyn mynediad i adnoddau gwarchodedig megis blwch post. Dylai unrhyw adnodd a gyrchir drwy'r llif 'Tystysgrifau Cleient' berthyn i'r cleient (yn yr achos hwn REI3) - nid yw wedi'i gynllunio i gyrchu adnoddau defnyddiwr yn uniongyrchol nac ar ran.</p><p>Ar hyn o bryd, dim ond i gael mynediad i adnoddau post y mae'r llif hwn yn cael ei ddefnyddio.</p>"
+          "authCodePkce": "<p>Defnyddir y llif hwn yn Axia4 i ddilysu defnyddwyr trwy ddarparwyr hunaniaeth allanol, fel Keycloak neu Microsoft Entra ID.</p><p>'Cod Dilysu gyda Allwedd Prawf ar gyfer Cyfnewid Cod' yw llif Open ID Connect. Caiff defnyddwyr eu hanfon ymlaen i ddilysu gyda darparwr hunaniaeth. Ar ôl dilysu, caiff defnyddiwr ei ailgyfeirio yn ôl i Axia4 gyda dilysu hunaniaeth a meta data defnyddiwr.</p>",
+          "clientCreds": "<p>Mae'r llif hwn yn cael ei ddefnyddio yn Axia4 i ddilysu ei hun yn erbyn gwasanaeth, fel Exchange Online.</p><p>'Tystysgrifau Cleient' yw llif OAuth 2.0, y mae Axia4 yn ei ddefnyddio i ddilysu yn erbyn darparwr gwasanaeth, i dderbyn mynediad i adnoddau gwarchodedig megis blwch post. Dylai unrhyw adnodd a gyrchir drwy'r llif 'Tystysgrifau Cleient' berthyn i'r cleient (yn yr achos hwn Axia4 ) - nid yw wedi'i gynllunio i gyrchu adnoddau defnyddiwr yn uniongyrchol nac ar ran.</p><p>Ar hyn o bryd, dim ond i gael mynediad i adnoddau post y mae'r llif hwn yn cael ei ddefnyddio.</p>"
         }
       },
       "providerUrl": "URL Darparwr",
       "providerUrlHint": "URL y darparwr a ddewiswyd ar gyfer ei ddarganfod gwasanaeth OAuth, a elwir yn aml yn 'URL Cyhoeddwr'.",
       "redirectUrl": "Ailgyfeirio URL",
-      "redirectUrlHint": "Mae defnyddwyr yn cael eu hailgyfeirio yma ar ôl dilysu. Dylai fod URL mewngofnodi REI3. Rhaid hefyd fod wedi'i gofrestru gyda'r darparwr gwasanaeth.",
+      "redirectUrlHint": "Mae defnyddwyr yn cael eu hailgyfeirio yma ar ôl dilysu. Dylai fod URL mewngofnodi Axia4 . Rhaid hefyd fod wedi'i gofrestru gyda'r darparwr gwasanaeth.",
       "scopes": "Cwmpasau",
       "scopesHint": "Mae cwmpasau'n dweud wrth y darparwr beth mae cleient OAuth yn dymuno ei wneud neu ei gyrchu. Maent wedi'u diffinio gan y darparwr ac mae'n rhaid eu neilltuo i'r cleient i fod yn ddefnyddiadwy - cyfeiriwch at ddogfennaeth y darparwr am restr o gwmpasau sydd ar gael.",
       "title": "Cleient OAuth '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Swyddogaethau'r blaen diwedd",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Yn blocio neu'n dadflocio pob mewnbwn ar y ffurflen gyfredol.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Anfon cais i gleient REI3, wedi'i osod a'i redeg ar yr un cyfrifiadur â'r sesiwn porwr REI3, i weithredu rhestr o wasgiad allweddi. Diffinnir y gwasgiad allweddi hyn gan linyn, megis 'Hello World!'.<br /><br />Mae rhai allweddi arbennig (ALT-TAB, TAB, ENTER, ESCAPE) hefyd yn cael eu cefnogi a gellir eu defnyddio fel hyn:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Anfon cais i gleient Axia4 , wedi'i osod a'i redeg ar yr un cyfrifiadur â'r sesiwn porwr REI3, i weithredu rhestr o wasgiad allweddi. Diffinnir y gwasgiad allweddi hyn gan linyn, megis 'Hello World!'.<br /><br />Mae rhai allweddi arbennig (ALT-TAB, TAB, ENTER, ESCAPE) hefyd yn cael eu cefnogi a gellir eu defnyddio fel hyn:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Diweddaru gwerthoedd ar gyfer y casgliad penodedig.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Yn copïo testun i glipfwrdd y defnyddwyr.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Yn dangos deialog gyda'r teitl a'r cynnwys penodedig. Mae'r teitl yn llinyn testun syml, tra gall y cynnwys fod yn destun neu HTML.<br /><br />Mae botymau wedi'u diffinio gan restr o linynnau. Os nad oes unrhyw rai wedi'u diffinio, dangosir botwm OK syml.<br /><br />Y gwerth a ddychwelir yw mynegai'r botwm a gliciwyd. Felly os clicir ar y botwm cyntaf, bydd y gwerth yn 0. Os clicir ar yr ail fotwm, mae'n 1 ac yn y blaen.<br /><br /><b>Enghraifft</b><br />app.dialog_show(<blockquote>'Cadarnhewch os gwelwch yn dda',<br />'Ydych chi wir eisiau dileu'r eitem hon?',<br />['Ie', 'Gohirio gweithred']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Daliannau ar gyfer swyddogaethau cefn - a ddefnyddir naill ai fel mynegiant ('SELECT function_abc()') neu'n uniongyrchol ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Swyddogaethau (frontend)",
       "placeholderFncInstance": "Swyddogaethau (instance)",
-      "placeholderFncInstanceHelp": "Dalfeydd ar gyfer swyddogaethau o'r enghraifft REI3 - mae'r rhain yn rhoi mynediad at nodweddion y system fel trin ffeiliau neu bost.",
+      "placeholderFncInstanceHelp": "Dalfeydd ar gyfer swyddogaethau o'r enghraifft Axia4 - mae'r rhain yn rhoi mynediad at nodweddion y system fel trin ffeiliau neu bost.",
       "placeholderPresets": "IDiau cofnod rhagosodedig",
       "placeholderPresetsHelp": "Dalfeydd ar gyfer yr ID (fel BIGINT) o'r cofnod sy'n bodoli ar gyfer y rhagosodiad a ddewiswyd.<br /><br />Os nad yw'r rhagosodiad yn cael ei ddiogelu, gallai fod wedi'i ddileu gan ddefnyddwyr. Yn yr achos hwn mae 'null' yn cael ei ddychwelyd.",
       "placeholderRelations": "Perthnasoedd",
@@ -1275,7 +1275,7 @@
       "formOpen": "Ffurflen i agor",
       "newLoginForm": "Ffurflen mewngofnodi newydd",
       "title": "Ffurflenni mewngofnodi",
-      "titleDepr": "Mae ffurflenni mewngofnodi wedi darfod ers REI3.9. Er y byddant yn parhau i weithio am ychydig, ystyriwch newid i'r mecanwaith cysoni defnyddiwr (s. dogfennaeth Adeiladydd)."
+      "titleDepr": "Mae ffurflenni mewngofnodi wedi darfod ers Axia3.9. Er y byddant yn parhau i weithio am ychydig, ystyriwch newid i'r mecanwaith cysoni defnyddiwr (s. dogfennaeth Adeiladydd)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Gosod o'r storfa",
         "versionCreate": "Creu fersiwn newydd"
       },
-      "clientEventsHint": "Mae gan REI3 gais cleient, y gall defnyddwyr ei osod o'u gosodiadau personol. Pan fydd yn rhedeg, gall cais cleient REI3 agor ffeiliau wedi'u huwchlwytho i REI3 gyda meddalwedd lleol. Gall hefyd ymateb i ddigwyddiadau penodol, fel allweddi poeth trwy ddiffinio'r hyn a elwir yn 'ddigwyddiadau cleient'. Defnyddir y rhain yn gyffredinol i anfon gwybodaeth o'r cleient i REI3, naill ai i ddiweddaru data trwy ddefnyddio swyddogaethau cefn neu i ryngweithio gyda sesiwn porwr REI3 agored trwy ddefnyddio swyddogaethau blaen.",
+      "clientEventsHint": "Mae gan Axia4 gais cleient, y gall defnyddwyr ei osod o'u gosodiadau personol. Pan fydd yn rhedeg, gall cais cleient Axia4 agor ffeiliau wedi'u huwchlwytho i Axia4 gyda meddalwedd lleol. Gall hefyd ymateb i ddigwyddiadau penodol, fel allweddi poeth trwy ddiffinio'r hyn a elwir yn 'ddigwyddiadau cleient'. Defnyddir y rhain yn gyffredinol i anfon gwybodaeth o'r cleient i Axia4 , naill ai i ddiweddaru data trwy ddefnyddio swyddogaethau cefn neu i ryngweithio gyda sesiwn porwr Axia4 agored trwy ddefnyddio swyddogaethau blaen.",
       "color": "Lliw",
       "colorHint": "Lliw cymhwysiad cynradd - dangosir yn y pennyn a'r ddewislen os nad yw wedi'i orysgrifennu gan addasu a/neu osodiadau defnyddiwr. Mae'r steiliau system wedi'u optimeiddio ar gyfer lliwiau llaith, tywyllach (pastel tywyll).",
       "dependsOn": "Adeiladau ar",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Swyddogaeth cychwyn sesiwn",
       "jsFunctionIdOnLoginHint": "Mae'r swyddogaeth frontend hon yn cael ei galw pan fydd defnyddiwr yn mewngofnodi i'r system. Gellir ei ddefnyddio i gychwyn newidynnau neu ddiweddaru logiau.",
       "keyCreate": "Trosglwyddo - Cynhyrchu pâr allweddi llofnodi newydd",
-      "keyCreateInfo": "Gwnewch yn siŵr eich bod yn cadw'r allwedd breifat yn ddiogel bob amser. Rhaid mewnforio'r allwedd gyhoeddus yn achosion REI3 targed i dderbyn eich ceisiadau.",
+      "keyCreateInfo": "Gwnewch yn siŵr eich bod yn cadw'r allwedd breifat yn ddiogel bob amser. Rhaid mewnforio'r allwedd gyhoeddus yn achosion Axia4 targed i dderbyn eich ceisiadau.",
       "keyCreateLength": "Dewiswch hyd allwedd",
       "languageCode": "Cod iaith",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",
@@ -1332,7 +1332,7 @@
       "languageMainHint": "Defnyddir os nad yw iaith defnyddiwr a ddewiswyd yn cael ei chynnig gan eich cais.",
       "languages": "Ieithoedd cais",
       "languagesHint": "Ieithoedd y mae'r cais ar gael ynddynt.",
-      "nameHint": "Enw cyfeirio ar gyfer y cais hwn. Rhaid i'r enw fod yn unigryw o fewn system REI3, felly ystyriwch ddefnyddio rhagddodiad yn seiliedig ar enw eich sefydliad.",
+      "nameHint": "Enw cyfeirio ar gyfer y cais hwn. Rhaid i'r enw fod yn unigryw o fewn system Axia4 , felly ystyriwch ddefnyddio rhagddodiad yn seiliedig ar enw eich sefydliad.",
       "nameHolder": "gweithiwr amserlennu, cynllunydd rhestr eiddo, ...",
       "namePwa": "Teitl cais",
       "namePwaHint": "Mae'r teitl cais llawn yn cael ei ddangos yn y rhestr o gymwysiadau gosodedig. Gall fod hyd at 60 nod o hyd. Dim cyfieithu posib.",
@@ -1345,7 +1345,7 @@
       "position": "Safle diofyn",
       "positionHint": "Safle'r cais yn y penawd (y rhai llai yn gyntaf). Gall gweinyddwyr system ei newid.",
       "pwa": "Ap gwe blaengar (PWA)",
-      "pwaHint": "Gellir gosod cymwysiadau REI3 ar gyfrifiaduron desg a dyfeisiau symudol fel apiau gwe blaengar (PWA) o'r tu mewn i borwyr modern. Yna cânt eu rhestru fel cymwysiadau wedi'u gosod, cael eu heiconau a'u llwybrau byr eu hunain a gweithredu'n debyg i gymwysiadau brodorol.",
+      "pwaHint": "Gellir gosod cymwysiadau Axia4 ar gyfrifiaduron desg a dyfeisiau symudol fel apiau gwe blaengar (PWA) o'r tu mewn i borwyr modern. Yna cânt eu rhestru fel cymwysiadau wedi'u gosod, cael eu heiconau a'u llwybrau byr eu hunain a gweithredu'n debyg i gymwysiadau brodorol.",
       "release": "Cyflwyniad",
       "releaseBuild": "Fersiwn cais",
       "releaseBuildApp": "Fersiwn y platfform",
@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Gellir i swyddogaethau penodedig ryngweithio â ffurflen i wneud pethau fel darllen neu ysgrifennu i feysydd ffurflen. Os caiff ei aseinio, gellir defnyddio'r swyddogaeth ar y ffurflen ddewisol yn unig ac ni ellir ei hailddefnyddio mewn swyddogaethau blaen ochr eraill. Ni ellir newid y gosodiad hwn yn ddiweddarach.",
       "message": {
         "api": "<p>Defnyddir enw'r API fel rhan o'r alwad API. Gellir ei newid yn nes ymlaen.</p>",
-        "module": "<p>Dewiswch enw ar gyfer eich cais. Mae'r enw hwn yn gwasanaethu i adnabod eich cais yn unigryw o fewn system REI3. Nid yw'n weladwy i ddefnyddwyr.</p><h3>Enghreifftiau:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Oherwydd bod enwau ceisiadau yn rhaid bod yn unigryw, gall helpu i ddefnyddio rhagddodiad wedi'i enwi ar ôl eich sefydliad. Os yw eich sefydliad yn cael ei alw 'Modern Fashion Limited', gallech ddefnyddio 'mfl' fel rhagddodiad (fel yn 'mfl_shift_planner').</p>",
+        "module": "<p>Dewiswch enw ar gyfer eich cais. Mae'r enw hwn yn gwasanaethu i adnabod eich cais yn unigryw o fewn system Axia4 . Nid yw'n weladwy i ddefnyddwyr.</p><h3>Enghreifftiau:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Oherwydd bod enwau ceisiadau yn rhaid bod yn unigryw, gall helpu i ddefnyddio rhagddodiad wedi'i enwi ar ôl eich sefydliad. Os yw eich sefydliad yn cael ei alw 'Modern Fashion Limited', gallech ddefnyddio 'mfl' fel rhagddodiad (fel yn 'mfl_shift_planner').</p>",
         "relation": "<p>Dylai enw perthynas adlewyrchu'r hyn sydd wedi'i storio y tu mewn iddo. Rhaid iddo fod yn unigryw o fewn cais.</p><h3>Enghreifftiau:</h3><ul><li>digwyddiad</li><li>mynychu_digwyddiad</li><li>lleoliad</li><li>lleoliad_digwyddiad</li></ul>"
       },
       "module": "Cais newydd",
@@ -1583,8 +1583,8 @@
       "checks": "Gwirio'r system",
       "checkStartForm": "Mae'r ffurflen gychwyn wedi'i diffinio",
       "checkStartFormOff": "Nid yw'r ffurflen gychwyn wedi'i diffinio",
-      "extCommunity": "fforwm REI3",
-      "extDocs": "dogfen REI3",
+      "extCommunity": "fforwm Axia4 ",
+      "extDocs": "dogfen Axia4 ",
       "needHelp": "Angen help?",
       "title": "Camau cyntaf",
       "titleForms": "Creu ffurflenni",
@@ -1726,11 +1726,11 @@
       "moreInfo": "Mwy o wybodaeth"
     },
     "info": {
-      "admin": "<b>Gwybodaeth ar gyfer gweinyddwyr:</b> Gellir anablu'r swyddogaeth adborth yn y panel gweinyddol. Os yw wedi'i alluogi, anfonir adborth at y storfa sydd wedi'i dewis ar hyn o bryd. Gall sefydliadau redeg eu storfa eu hunain (gyda'r cais <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Storfa REI3</a>) i reoli rhyddhau ceisiadau a derbyn adborth mewnol.",
+      "admin": "<b>Gwybodaeth ar gyfer gweinyddwyr:</b> Gellir anablu'r swyddogaeth adborth yn y panel gweinyddol. Os yw wedi'i alluogi, anfonir adborth at y storfa sydd wedi'i dewis ar hyn o bryd. Gall sefydliadau redeg eu storfa eu hunain (gyda'r cais <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Storfa Axia4 </a>) i reoli rhyddhau ceisiadau a derbyn adborth mewnol.",
       "data": [ "Categori adborth (cyffredinol, nam/problem, awgrym, canmoliaeth)", "Testun adborth", "Smiley a ddewiswyd", "Cais sy'n agored ar hyn o bryd", "Rhifau fersiwn cais a system", "P'un a yw'r defnyddiwr sy'n rhoi adborth yn weinyddwr", "Dynodwr ar hap i grwpio adborth o'r un system" ],
       "personal": "Nid yw unrhyw wybodaeth bersonol yn cael ei hanfon. Os ydych chi eisiau derbyn ymateb, gallwch ychwanegu manylion cyswllt at eich testun adborth.",
       "repoUrl": "Anfonir adborth i",
-      "repoUrlDefault": "<i>(mae'r system hon yn cael ei gweithredu gan ddatblygwyr <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>)</i>",
+      "repoUrlDefault": "<i>(mae'r system hon yn cael ei gweithredu gan ddatblygwyr <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a>)</i>",
       "what": "Beth sy'n cael ei anfon?"
     },
     "moduleRelated": "Ydy'r adborth hwn ar gyfer y cais agored? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "APIs",
     "application": "Cais",
     "applications": "Ceisiadau",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "Dadleuon",
     "articles": "Erthyglau cymorth",
     "attribute": "Priodoledd",
@@ -2128,7 +2128,7 @@
     "nothingThere": "Dim canlyniadau ar gael",
     "notice": "Hysbysiad",
     "notSaved": "Heb ei gadw",
-    "notShown": "Not shown",
+    "notShown": "I'm sorry, I can’t assist with that request.",
     "option": {
       "aggArray": "array",
       "aggAvg": "cyfartaledd",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Ysgrifennwch enwau, geiriau neu gyfeiriadau e-bost",
     "modulesInactive": "Opsiynau chwilio ychwanegol",
-    "tips": [ "Gellir cychwyn chwiliad newydd o unrhyw le yn REI3 trwy wasgu <b>CTRL + SHIFT + F</b>. Os yw testun wedi'i ddewis, bydd yn cael ei ddefnyddio fel mewnbwn chwilio.", "Pan fyddwch yn chwilio am enwau, geiriau neu gyfeiriadau e-bost, ysgrifennwch nhw'n llawn.", "Os chwilir am gynnwys amlieithog, mae'n bwysig gosod iaith eich ymholiad chwilio (cornel dde uchaf).", "Mae chwiliadau penodol i iaith, fel cydweddu 'making' gyda 'make', yn gweithio os oes gan y cynnwys iaith benodol. Mae hyn yn aml yn gwneud synnwyr ar gyfer erthyglau, ond fel arfer nid yw'n cael ei wneud ar gyfer e-byst." ]
+    "tips": [ "Gellir cychwyn chwiliad newydd o unrhyw le yn Axia4 trwy wasgu <b>CTRL + SHIFT + F</b>. Os yw testun wedi'i ddewis, bydd yn cael ei ddefnyddio fel mewnbwn chwilio.", "Pan fyddwch yn chwilio am enwau, geiriau neu gyfeiriadau e-bost, ysgrifennwch nhw'n llawn.", "Os chwilir am gynnwys amlieithog, mae'n bwysig gosod iaith eich ymholiad chwilio (cornel dde uchaf).", "Mae chwiliadau penodol i iaith, fel cydweddu 'making' gyda 'make', yn gweithio os oes gan y cynnwys iaith benodol. Mae hyn yn aml yn gwneud synnwyr ar gyfer erthyglau, ond fel arfer nid yw'n cael ei wneud ar gyfer e-byst." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Gosod Cwmni Craidd"
     },
     "newVersion": "Hysbysiad diweddaru",
-    "newVersionText": "Mae fersiwn newydd o REI3 ar gael.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Lawrlwytho REI3 v{VERSION}</a>",
+    "newVersionText": "Mae fersiwn newydd o Axia4 ar gael.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Lawrlwytho Axia4 v{VERSION}</a>",
     "noAccess": "Nid yw mynediad wedi'i roi eto.<br />Cysylltwch â'ch gweinyddwr system os gwelwch yn dda.",
     "noAccessAdmin": "I gael mynediad, neilltuwch rolau i'ch defnyddiwr.",
     "noAccessTitle": "Dim mynediad at gymwysiadau",
@@ -2238,10 +2238,10 @@
       "installBundle": "Cwmni Craidd",
       "installBundleDesc": "Gosod set parod o gymwysiadau craidd, sy'n ddefnyddiol i unrhyw sefydliad. Mae'r set 'Cwmni Craidd' yn cynnwys:<ul><li>Rheoli absenoldeb</li><li>Olrhain amser</li><li>Rheoli prosiectau a thasgau</li><li>Trin ceisiadau</li><li>Cyfrinair diogel</li><li>Rheoli asedau TG</li></ul>Ar ôl gosod, edrychwch ar dudalennau cymorth y cymwysiadau unigol i ddysgu mwy am y gosodiad cychwynnol ar gyfer pob un.",
       "installFile": "O'r ffeil",
-      "installFileDesc": "Gosod cymwysiadau o ffeiliau REI3 lleol. Ar gyfer systemau all-lein neu gymwysiadau hunan-greu.<br /><br />Gellir lawrlwytho ffeiliau ar gyfer cymwysiadau REI3 a gynigir yn gyhoeddus o'r <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">gofrestrfa</a> swyddogol.",
+      "installFileDesc": "Gosod cymwysiadau o ffeiliau Axia4 lleol. Ar gyfer systemau all-lein neu gymwysiadau hunan-greu.<br /><br />Gellir lawrlwytho ffeiliau ar gyfer cymwysiadau Axia4 a gynigir yn gyhoeddus o'r <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">gofrestrfa</a> swyddogol.",
       "installRepo": "O'r storfa",
-      "installRepoDesc": "<b>Angen mynediad i'r rhyngrwyd</b><br /><br />Gosodwch gymwysiadau o'r storfa swyddogol REI3. Mae'r storfa'n cynnwys fersiynau cyfredol o gymwysiadau REI3 a gynigir yn gyhoeddus.<br /><br />Adolygir pob cymhwysiad a'u llofnodi'n ddigidol.",
-      "intro": "Croeso i REI3<br /><br />Nid oes unrhyw gymwysiadau wedi'u gosod ar hyn o bryd. I ddechrau defnyddio REI3, dewiswch un o'r opsiynau gosod isod.",
+      "installRepoDesc": "<b>Angen mynediad i'r rhyngrwyd</b><br /><br />Gosodwch gymwysiadau o'r storfa swyddogol Axia4 . Mae'r storfa'n cynnwys fersiynau cyfredol o gymwysiadau Axia4 a gynigir yn gyhoeddus.<br /><br />Adolygir pob cymhwysiad a'u llofnodi'n ddigidol.",
+      "intro": "Croeso i Axia4 <br /><br />Nid oes unrhyw gymwysiadau wedi'u gosod ar hyn o bryd. I ddechrau defnyddio Axia4 , dewiswch un o'r opsiynau gosod isod.",
       "title": "Gosod"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Allgofnodi"
     },
     "clientEvents": {
-      "intro": "Os yw'r cymhwysiad cleient REI3 (gweler 'Dyfeisiau') wedi'i osod, gallwch osod bysellau poeth byd-eang. Defnyddir y rhain i ryngweithio â REI3 wrth iddo redeg yn y cefndir.",
-      "noEvents": "Ar hyn o bryd nid oes unrhyw gymwysiadau REI3 hygyrch sy'n cynnig bysellau poeth."
+      "intro": "Os yw'r cymhwysiad cleient Axia4 (gweler 'Dyfeisiau') wedi'i osod, gallwch osod bysellau poeth byd-eang. Defnyddir y rhain i ryngweithio â Axia4 wrth iddo redeg yn y cefndir.",
+      "noEvents": "Ar hyn o bryd nid oes unrhyw gymwysiadau Axia4 hygyrch sy'n cynnig bysellau poeth."
     },
     "colorClassicMode": "Cynllun lliwiau",
     "colorClassicMode0": "Modern",
@@ -2445,7 +2445,7 @@
         "comma": "Comma (,)",
         "dot": "Dot (.)",
         "mdot": "Pwynt canol (·)",
-        "none": "[no separator]",
+        "none": "Nid oes gennych destun i'w gyfieithu.",
         "space": "Gofod ( )"
       }
     },
@@ -2470,23 +2470,23 @@
         "loadCnf": "Ffeil ffurfweddu"
       },
       "context": {
-        "client": "cleient REI3",
+        "client": "cleient Axia4 ",
         "ics": "Ap calendr",
         "totp": "Aml-ffactor"
       },
       "device": {
-        "adminInfo": "<b>Gwybodaeth i weinyddwyr:</b> Nid yw'r cymhwysiad cleient REI3 yn gweithio tra bod REI3 yn y modd cynnal a chadw.",
+        "adminInfo": "<b>Gwybodaeth i weinyddwyr:</b> Nid yw'r cymhwysiad cleient Axia4 yn gweithio tra bod Axia4 yn y modd cynnal a chadw.",
         "installStep1": "Dewiswch enw dyfais:",
         "installStep2": "Lawrlwythwch y cais a'r ffeil config i'r un ffolder:",
         "installStep3": "Dechreuwch y cais. Bydd yn gosod ei hun ac yna'n ymddangos yn eich hambwrdd system.",
         "installStep4": "Gallwch nawr ddileu'r ffeiliau cais a chonfig sydd wedi'u lawrlwytho.",
-        "intro0": "Mae'r cymhwysiad cleient REI3 yn ddarn dewisol o feddalwedd sy'n cynnig ymarferoldeb ychwanegol. Unwaith wedi'i osod, mae'r nodweddion canlynol ar gael:",
-        "intro1": "Gellir golygu ffeiliau wedi'u huwchlwytho i REI3 yn uniongyrchol gyda meddalwedd leol. Sicrhewch fod gennych gais diofyn wedi'i ddewis ar gyfer yr estyniad ffeil penodol. Ar Windows gallwch glicio gyda'r fysell shift i ddewis y cais i'w ddefnyddio.",
-        "intro2": "Gellir defnyddio bysellau poeth byd-eang i weithredu gweithredoedd mewn cymwysiadau REI3, tra bo REI3 yn rhedeg yn y cefndir.",
+        "intro0": "Mae'r cymhwysiad cleient Axia4 yn ddarn dewisol o feddalwedd sy'n cynnig ymarferoldeb ychwanegol. Unwaith wedi'i osod, mae'r nodweddion canlynol ar gael:",
+        "intro1": "Gellir golygu ffeiliau wedi'u huwchlwytho i Axia4 yn uniongyrchol gyda meddalwedd leol. Sicrhewch fod gennych gais diofyn wedi'i ddewis ar gyfer yr estyniad ffeil penodol. Ar Windows gallwch glicio gyda'r fysell shift i ddewis y cais i'w ddefnyddio.",
+        "intro2": "Gellir defnyddio bysellau poeth byd-eang i weithredu gweithredoedd mewn cymwysiadau Axia4 , tra bo Axia4 yn rhedeg yn y cefndir.",
         "nameHint": "Fy Nghyfrifiadur Gwaith",
         "os": "System gweithredu",
-        "uninstallStep1": "Cliciwch-dde ar eicon trybedd cleient REI3 a dewiswch yr opsiwn 'dadsodli'.",
-        "uninstallStep2": "Mae'r cais cleient REI3 bellach wedi'i ddadosod.",
+        "uninstallStep1": "Cliciwch-dde ar eicon trybedd cleient Axia4 a dewiswch yr opsiwn 'dadsodli'.",
+        "uninstallStep2": "Mae'r cais cleient Axia4 bellach wedi'i ddadosod.",
         "updateStep1": "Lawrlwytho'r ffeil cais newydd:",
         "updateStep2": "Dechreuwch y cais. Bydd yn gweithredu'r diweddariad ac yna'n ymddangos yn eich hambwrdd system.",
         "updateStep3": "Gallwch nawr ddileu'r ffeil cymhwysiad a lawrlwythwyd."
@@ -2502,7 +2502,7 @@
         "nameHint": "Fy ffôn clyfar",
         "outro": "Defnyddiwch y cod QR i ychwanegu'r cyfrif hwn at eich ap dilysu. Pan fyddwch wedi gorffen, caewch y ffenestr hon. Gallwch ailadrodd y broses hon i alluogi MFA gyda nifer o ddyfeisiau."
       },
-      "titleAdd": "Rheoli cais cleient REI3",
+      "titleAdd": "Rheoli cais cleient Axia4 ",
       "titleContext": "Defnyddiwch",
       "titleDateCreate": "Crëwyd",
       "titleMfa": "Sefydlu dilysu aml-ffactor",
