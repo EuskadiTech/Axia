@@ -8,15 +8,6 @@ pull-request:
   labels:
     - "translations"
 
-# What files should be uploaded on push
-upload:
-  files:
-    - path: "/www/langs/en_us"
-      format: "single-language-json"
-      language-key: "en"
-      options:
-        - WRITE_NESTED
-
 # Where we should commit translations files
 download:
   files:
