@@ -2128,7 +2128,7 @@
     "nothingThere": "Não há resultados disponíveis",
     "notice": "Aviso",
     "notSaved": "Não salvo",
-    "notShown": "Not shown",
+    "notShown": "I'm sorry, but I cannot see the text you want me to translate. Could you please provide the text you'd like translated into Portuguese?",
     "option": {
       "aggArray": "array",
       "aggAvg": "média",
@@ -2445,7 +2445,7 @@
         "comma": "Vírgula (,)",
         "dot": "Ponto (.)",
         "mdot": "Ponto médio (·)",
-        "none": "[no separator]",
+        "none": "I'm sorry, but I need the text that you want to translate. Could you please provide it?",
         "space": "Espaço ( )"
       }
     },
