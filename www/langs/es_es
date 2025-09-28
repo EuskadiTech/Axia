@@ -2128,7 +2128,7 @@
     "nothingThere": "No hay resultados disponibles",
     "notice": "Aviso",
     "notSaved": "No guardado",
-    "notShown": "Lo siento, no puedo traducir el texto ya que no se ha proporcionado. Por favor, proporciona el texto que deseas traducir.",
+    "notShown": "No mostrado",
     "option": {
       "aggArray": "matriz",
       "aggAvg": "promedio",
@@ -2185,7 +2185,7 @@
     "status": "Estado",
     "systemModes": "Modos del sistema",
     "textSearch": "Búsqueda de texto",
-    "threeDots": "Lo siento, pero no veo ningún texto para traducir. Podrías proporcionarlo para que pueda ayudarte.",
+    "threeDots": "...",
     "tip": "Consejo",
     "title": "Título",
     "token": "Token",
@@ -2263,11 +2263,11 @@
       "dateTo": "A",
       "fullDayHint": "Selección todo el día",
       "inputDay": "dd",
-      "inputHour": "Lo siento, necesito que me proporciones el texto que deseas traducir.",
-      "inputMinute": "Lo siento, necesito que me proporciones el texto que deseas traducir.",
+      "inputHour": "HH",
+      "inputMinute": "MM",
       "inputMonth": "mm",
-      "inputSecond": "Lo siento, necesito que me proporciones el texto que deseas traducir.",
-      "inputYear": "yyyy"
+      "inputSecond": "SS",
+      "inputYear": "aaaa"
     },
     "files": {
       "button": {
@@ -2531,3 +2531,4 @@
     "width": "Ancho"
   }
 }
+ 
