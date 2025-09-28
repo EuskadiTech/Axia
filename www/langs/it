@@ -2185,7 +2185,7 @@
     "status": "Stato",
     "systemModes": "Modalità di sistema",
     "textSearch": "Ricerca testuale",
-    "threeDots": "Mi dispiace, non vedo il testo da tradurre. Potresti fornirmelo?",
+    "threeDots": "...",
     "tip": "Suggerimento",
     "title": "Titolo",
     "token": "Gettone",
