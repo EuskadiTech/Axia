@@ -24,12 +24,12 @@ func adminMails() error {
 		oauthClientExpirationBody    string
 		oauthClientExpirationSubject string
 	}{
-		intro: `<p>You are receiving this message, because your email address has been added to the Tallarin4 admin notification list.</p>
-		<p>To change this setting, please visit your Tallarin4 instance: {URL}</p>`,
+		intro: `<p>You are receiving this message, because your email address has been added to the Axia admin notification list.</p>
+		<p>To change this setting, please visit your Axia instance: {URL}</p>`,
 		licenseExpirationBody:        `<p>Your license expires on: {DATE}</p>`,
-		licenseExpirationSubject:     `Your Tallarin4 Professional license is about to expire`,
+		licenseExpirationSubject:     `Your Axia Professional license is about to expire`,
 		oauthClientExpirationBody:    `<p>Your OAuth client expires on: {DATE}</p>`,
-		oauthClientExpirationSubject: `Your Tallarin4 OAuth client is about to expire`,
+		oauthClientExpirationSubject: `Your Axia OAuth client is about to expire`,
 	}
 
 	ctx, ctxCanc := context.WithTimeout(context.Background(), db.CtxDefTimeoutSysTask)

@@ -40,8 +40,8 @@ type manifest struct {
 
 var manifestDefault = manifest{
 	Id:              "platform",
-	Name:            "Tallarin4",
-	ShortName:       "T4",
+	Name:            "Axia",
+	ShortName:       "Ax4",
 	Scope:           "/",
 	StartUrl:        "/",
 	Display:         "standalone",

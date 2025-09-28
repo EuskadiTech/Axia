@@ -59,8 +59,8 @@ import (
 
 var (
 	// overwritten by build parameters
-	appName          string = "Tallarin4"
-	appNameShort     string = "T4"
+	appName          string = "Axia"
+	appNameShort     string = "Ax4"
 	appVersion       string = "4.0.1.0"
 	appVersionClient string = "4.0.1.0"
 

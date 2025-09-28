@@ -19,7 +19,7 @@
 <li><a href="#unter-windows-server">Unter Windows Server</a></li>
 <li><a href="#auf-einem-linux-server">Auf einem Linux-Server</a></li>
 </ol></li>
-<li><a href="#erster-zugriff-auf-rei3">Erster Zugriff auf Tallarin4</a></li>
+<li><a href="#erster-zugriff-auf-rei3">Erster Zugriff auf Axia</a></li>
 <li><a href="#konfiguration">Konfiguration</a>
 <ol type="1">
 <li><a href="#ssl-zertifikate">SSL-Zertifikate</a></li>
@@ -46,9 +46,9 @@
 <li><a href="#cloudbetrieb">Cloudbetrieb</a></li>
 </ol>
 <h1 id="einführung">Einführung</h1>
-<p>Dies ist die Dokumentation zum Bereitstellen und Betreiben der Tallarin4-Anwendungsplattform. Kenntnisse für die Zielinfrastruktur (Windows Server oder Linux) werden vorausgesetzt. Nach der Installation können Administratoren Tallarin4-Anwendungen aus Online- oder lokalen Repositorys in Infrastrukturen mit oder ohne Internetzugang bereitstellen.</p>
+<p>Dies ist die Dokumentation zum Bereitstellen und Betreiben der Axia-Anwendungsplattform. Kenntnisse für die Zielinfrastruktur (Windows Server oder Linux) werden vorausgesetzt. Nach der Installation können Administratoren Axia-Anwendungen aus Online- oder lokalen Repositorys in Infrastrukturen mit oder ohne Internetzugang bereitstellen.</p>
 <h1 id="bereitstellungsmodelle">Bereitstellungsmodelle</h1>
-<p>Abhängig von der verfügbaren IT-Infrastruktur und wie Tallarin4 eingesetzt werden soll, existieren verschiedene Bereitstellungsmodelle:</p>
+<p>Abhängig von der verfügbaren IT-Infrastruktur und wie Axia eingesetzt werden soll, existieren verschiedene Bereitstellungsmodelle:</p>
 <table>
 <thead>
 <tr>
@@ -64,8 +64,8 @@
 <td>Entworfen für</td>
 <td style="text-align: center;">Produktion</td>
 <td style="text-align: center;">Produktion</td>
-<td style="text-align: center;">Test &amp; Bau von Tallarin4-Anwendungen</td>
-<td style="text-align: center;">Test &amp; Bau von Tallarin4-Anwendungen</td>
+<td style="text-align: center;">Test &amp; Bau von Axia-Anwendungen</td>
+<td style="text-align: center;">Test &amp; Bau von Axia-Anwendungen</td>
 </tr>
 <tr>
 <td>Integrierte Datenbank</td>
@@ -90,18 +90,18 @@
 </tr>
 </tbody>
 </table>
-<p>Falls eigene Tallarin4-Anwendungen erstellt werden sollen, ist es ratsam, diese auf einen System zu erstellen und dann auf einen anderen System auszurollen. Hierdurch werden Endbenutzer erst dann betroffen, wenn Anwendungen getestet und bereit sind. Besonders die portablen und Docker-Versionen bieten sich für das Entwickeln von Anwendungen an.</p>
+<p>Falls eigene Axia-Anwendungen erstellt werden sollen, ist es ratsam, diese auf einen System zu erstellen und dann auf einen anderen System auszurollen. Hierdurch werden Endbenutzer erst dann betroffen, wenn Anwendungen getestet und bereit sind. Besonders die portablen und Docker-Versionen bieten sich für das Entwickeln von Anwendungen an.</p>
 <h2 id="dediziert">Dediziert</h2>
-<p>Das häufigste Bereitstellungsmodell. Tallarin4 wird auf einem Anwendungsserver (Windows oder Linux) installiert und mit einem separaten Datenbanksystem verbunden.</p>
+<p>Das häufigste Bereitstellungsmodell. Axia wird auf einem Anwendungsserver (Windows oder Linux) installiert und mit einem separaten Datenbanksystem verbunden.</p>
 <h2 id="eigenständig">Eigenständig</h2>
 <p>Diese Option ist nur unter Windows Server verfügbar. Die eigenständige Bereitstellung hat fast keine externen Abhängigkeiten und verfügt über eine eigene Datenbank. Es ist das empfohlene Modell für Unternehmen mit kleinen IT-Teams.</p>
 <h2 id="portable">Portable</h2>
-<p>Für Entwicklungs- und Testinstanzen - die portable Version von Tallarin4 kann auf Windows-Clients ohne jegliche Einrichtung gestartet werden. Wie das eigenständige Modell verfügt auch die portable Version über eine eigene Datenbank. Es wird nicht empfohlen, eine portable Instanz produktiv zu nutzen.</p>
+<p>Für Entwicklungs- und Testinstanzen - die portable Version von Axia kann auf Windows-Clients ohne jegliche Einrichtung gestartet werden. Wie das eigenständige Modell verfügt auch die portable Version über eine eigene Datenbank. Es wird nicht empfohlen, eine portable Instanz produktiv zu nutzen.</p>
 <h2 id="docker">Docker</h2>
-<p>Für Entwicklungs- und Testinstanzen steht eine <a href="https://tech.eus/t4/downloads.php">Docker Compose-Datei</a> zur Verfügung, um schnell eine Tallarin4-Instanz zu starten. Diese Datei ist jedoch nicht für den produktiven Einsatz konfiguriert. Um Tallarin4 produktiv mit Docker zu betreiben, können die bereitgestellten Dateien als Vorlagen verwendet und an die Zielumgebung angepasst werden. Weitere Details finden sich auf der <a href="https://github.com/EuskadiTech/tallarin">Repository-Seite</a>.</p>
+<p>Für Entwicklungs- und Testinstanzen steht eine <a href="https://tech.eus/t4/downloads.php">Docker Compose-Datei</a> zur Verfügung, um schnell eine Axia-Instanz zu starten. Diese Datei ist jedoch nicht für den produktiven Einsatz konfiguriert. Um Axia produktiv mit Docker zu betreiben, können die bereitgestellten Dateien als Vorlagen verwendet und an die Zielumgebung angepasst werden. Weitere Details finden sich auf der <a href="https://github.com/EuskadiTech/tallarin">Repository-Seite</a>.</p>
 <h1 id="technische-anforderungen">Technische Anforderungen</h1>
 <h2 id="server">Server</h2>
-<p>Um Tallarin4 ausführen zu können, müssen folgende Anforderungen erfüllt sein:</p>
+<p>Um Axia ausführen zu können, müssen folgende Anforderungen erfüllt sein:</p>
 <ul>
 <li>Betriebssystem (eines davon)
 <ul>
@@ -119,7 +119,7 @@
 </ul></li>
 <li>Speicherplatz
 <ul>
-<li>500 MB für Tallarin4 selbst</li>
+<li>500 MB für Axia selbst</li>
 <li>20+ GB für die Datenbank und hochgeladene Dateien (skaliert mit Nutzung)</li>
 </ul></li>
 <li>Software
@@ -142,46 +142,46 @@
 </ul></li>
 </ul>
 <h2 id="endgeräte">Endgeräte</h2>
-<p>Für den Zugriff auf eine laufende Tallarin4-Instanz kann jeder moderne Browser verwendet werden, wie bspw. Firefox, Chrome oder Safari. Dies schließt mobile Browser ein. Tallarin4 verwendet moderne Webstandards; "Internet Explorer" wird nicht unterstützt.</p>
+<p>Für den Zugriff auf eine laufende Axia-Instanz kann jeder moderne Browser verwendet werden, wie bspw. Firefox, Chrome oder Safari. Dies schließt mobile Browser ein. Axia verwendet moderne Webstandards; "Internet Explorer" wird nicht unterstützt.</p>
 <h1 id="installation">Installation</h1>
 <h2 id="unter-windows-server">Unter Windows Server</h2>
-<p>Tallarin4 wird mit einem grafischen Installationsprogramm für Windows Server geliefert. Das Installationsprogramm unterstützt sowohl <a href="#eigenständig">eigenständige</a> als auch <a href="#dediziert">dedizierte</a> Bereitstellungsmodelle.</p>
+<p>Axia wird mit einem grafischen Installationsprogramm für Windows Server geliefert. Das Installationsprogramm unterstützt sowohl <a href="#eigenständig">eigenständige</a> als auch <a href="#dediziert">dedizierte</a> Bereitstellungsmodelle.</p>
 <ul>
-<li><a href="#eigenständig">Eigenständig</a>: Nach Ausführung des Installationsprogrammes kann Tallarin4 sofort gestartet werden.</li>
+<li><a href="#eigenständig">Eigenständig</a>: Nach Ausführung des Installationsprogrammes kann Axia sofort gestartet werden.</li>
 <li><a href="#dediziert">Dediziert</a>: Nach der Installation müssen Datenbankverbindungsdetails für eine leere, UTF8-enkodierte <a href="#vorbereiten-einer-neuen-postgresql-datenbank">PostgreSQL-Datenbank</a> (13.0 oder neuer) in der Konfigurationsdatei <code>config.json</code> eingetragen werden. Die Datei <code>config.json</code> befindet sich im ausgewählten Anwendungsverzeichnis. Der Datenbankbenutzer muss volle Berechtigungen für die gewählte Datenbank haben</li>
 </ul>
-<p>Falls Tallarin4 hinter einem Proxy betrieben werden soll, bitte sicherstellen, dass die Sitzungszeit für Websocket-Clients nicht zeitlich limitiert wird. Mehr details <a href="#proxies">hier</a>.</p>
-<p>Unabhängig vom Bereitstellungsmodell, wird Tallarin4 unter Windows Server als Windows-Dienst behandelt und kann über den Service-Manager gestartet werden (Befehl: <code>services.msc</code>). Falls der Dienst nicht starten kann, schreibt Tallarin4 in das Windows-Applikationslog.</p>
-<p>Aus lizenzrechtlichen Gründen können wir Ghostscript nicht zusammen mit Tallarin4 ausliefern. Wenn PDF-Thumbnails erstellt werden sollen, muss eine aktuelle Version von Ghostscript auf dem Tallarin4-Server installiert werden.</p>
+<p>Falls Axia hinter einem Proxy betrieben werden soll, bitte sicherstellen, dass die Sitzungszeit für Websocket-Clients nicht zeitlich limitiert wird. Mehr details <a href="#proxies">hier</a>.</p>
+<p>Unabhängig vom Bereitstellungsmodell, wird Axia unter Windows Server als Windows-Dienst behandelt und kann über den Service-Manager gestartet werden (Befehl: <code>services.msc</code>). Falls der Dienst nicht starten kann, schreibt Axia in das Windows-Applikationslog.</p>
+<p>Aus lizenzrechtlichen Gründen können wir Ghostscript nicht zusammen mit Axia ausliefern. Wenn PDF-Thumbnails erstellt werden sollen, muss eine aktuelle Version von Ghostscript auf dem Axia-Server installiert werden.</p>
 <h2 id="auf-einem-linux-server">Auf einem Linux-Server</h2>
-<p>Für Linux-Server ist Tallarin4 als komprimiertes Archiv mit vorkompilierten Binärdateien verfügbar. Die Installationsschritte sind:</p>
+<p>Für Linux-Server ist Axia als komprimiertes Archiv mit vorkompilierten Binärdateien verfügbar. Die Installationsschritte sind:</p>
 <ol type="1">
-<li>Extrahieren Sie das Tallarin4-Archiv in ein Verzeichnis Ihrer Wahl (<code>/opt/rei3/</code> zum Beispiel).</li>
+<li>Extrahieren Sie das Axia-Archiv in ein Verzeichnis Ihrer Wahl (<code>/opt/rei3/</code> zum Beispiel).</li>
 <li>Machen Sie die Datei <code>r3</code> ausführbar (<code>chmod u+x r3</code>).</li>
 <li>Kopieren Sie die Datei <code>config_template.json</code> zu <code>config.json</code> - die Datei muss im gleichen Verzeichnis sein wie die ausführbare Datei <code>r3</code>.</li>
 <li>Fügen Sie der Datei <code>config.json</code> Verbindungsdetails zu einer leeren, UTF8-enkodierten <a href="#vorbereiten-einer-neuen-postgresql-datenbank">PostgreSQL-Datenbank</a> (13.0 oder neuer) hinzu. Der Datenbankbenutzer muss volle Berechtigungen für die gewählte Datenbank haben.</li>
 <li>Optional: Installieren Sie ImageMagick und Ghostscript falls Thumbnails erwünscht sind (<code>sudo apt install imagemagick ghostscript</code>).</li>
 <li>Optional: Installieren Sie PostgreSQL-Client-Werkzeuge falls Sie die integrierte Backup-Funktion nutzen möchten (<code>sudo apt install postgresql-client</code>).</li>
-<li>Registrieren Sie Tallarin4 im Service-Manager (<code>sudo ./r3 -install</code>).</li>
-<li>Starten Sie den Tallarin4-Dienst (<code>systemctl start rei3</code> zum Beispiel).</li>
+<li>Registrieren Sie Axia im Service-Manager (<code>sudo ./r3 -install</code>).</li>
+<li>Starten Sie den Axia-Dienst (<code>systemctl start rei3</code> zum Beispiel).</li>
 </ol>
-<p>Falls Tallarin4 hinter einem Proxy betrieben werden soll, bitte sicherstellen, dass die Sitzungszeit für Websocket-Clients nicht zeitlich limitiert wird. Mehr details <a href="#proxies">hier</a>.</p>
-<p>Sollte der Dienst nicht starten, schreibt Tallarin4 ins <code>syslog</code>.</p>
-<h1 id="erster-zugriff-auf-rei3">Erster Zugriff auf Tallarin4</h1>
-<p>Während der Ausführung ist Tallarin4 standardmäßig über Port 443 erreichbar. Sie können jeden modernen Browser verwenden, um lokal auf Tallarin4 unter <code>https://localhost/</code> oder über das Netzwerk mit einer entsprechend konfigurierten Firewall zuzugreifen. Während der Installation wird ein einzelner Administratorbenutzer erstellt. Benutzername und Passwort sind jeweils auf "admin" gesetzt.</p>
+<p>Falls Axia hinter einem Proxy betrieben werden soll, bitte sicherstellen, dass die Sitzungszeit für Websocket-Clients nicht zeitlich limitiert wird. Mehr details <a href="#proxies">hier</a>.</p>
+<p>Sollte der Dienst nicht starten, schreibt Axia ins <code>syslog</code>.</p>
+<h1 id="erster-zugriff-auf-rei3">Erster Zugriff auf Axia</h1>
+<p>Während der Ausführung ist Axia standardmäßig über Port 443 erreichbar. Sie können jeden modernen Browser verwenden, um lokal auf Axia unter <code>https://localhost/</code> oder über das Netzwerk mit einer entsprechend konfigurierten Firewall zuzugreifen. Während der Installation wird ein einzelner Administratorbenutzer erstellt. Benutzername und Passwort sind jeweils auf "admin" gesetzt.</p>
 <p>Nach der Anmeldung kann auf die Adminoberfläche zugegriffen werden, um Benutzer zu verwalten, Anwendungen zu installieren, auf Systemprotokolle zuzugreifen usw. Das Standardkennwort sollte sofort nach der ersten Anmeldung geändert werden.</p>
 <h1 id="konfiguration">Konfiguration</h1>
-<p>Die Kernkonfiguration von Tallarin4 kann in der Konfigurationsdatei (<code>config.json</code>) geändert werden, die sich im ausgewählten Tallarin4-Installationsverzeichnis befindet. Das Festlegen von Dateipfaden, Webserver-Port und Datenbankverbindungsdetails ist unkompliziert - eine vollständige <a href="#konfigurationsdatei">Referenz</a> kann hier gefunden werden. Änderungen werden beim Neustart des Anwendungsdienstes angewendet.</p>
+<p>Die Kernkonfiguration von Axia kann in der Konfigurationsdatei (<code>config.json</code>) geändert werden, die sich im ausgewählten Axia-Installationsverzeichnis befindet. Das Festlegen von Dateipfaden, Webserver-Port und Datenbankverbindungsdetails ist unkompliziert - eine vollständige <a href="#konfigurationsdatei">Referenz</a> kann hier gefunden werden. Änderungen werden beim Neustart des Anwendungsdienstes angewendet.</p>
 <h2 id="ssl-zertifikate">SSL-Zertifikate</h2>
-<p>Während der Installation erstellt Tallarin4 ein selbstsigniertes Zertifikat, um den verschlüsselten Zugriff auf die Anwendung zu ermöglichen. Es wird nicht empfohlen, dieses Zertifikat dauerhaft zu nutzen. Wenn möglich, sollte für Tallarin4 ein ordnungsgemäß signiertes Zertifikat bereitgestellt werden, um eine sichere Kommunikation mit Vertrauen zwischen Endgeräten und Server zu gewährleisten.</p>
+<p>Während der Installation erstellt Axia ein selbstsigniertes Zertifikat, um den verschlüsselten Zugriff auf die Anwendung zu ermöglichen. Es wird nicht empfohlen, dieses Zertifikat dauerhaft zu nutzen. Wenn möglich, sollte für Axia ein ordnungsgemäß signiertes Zertifikat bereitgestellt werden, um eine sichere Kommunikation mit Vertrauen zwischen Endgeräten und Server zu gewährleisten.</p>
 <p>Einige allgemeine Überlegungen / Fallstricke:</p>
 <ul>
-<li>Tallarin4 kann mit verschiedenen Zertifikaten arbeiten. Wenn Tallarin4 ein Zertifikat nicht laden kann, startet es nicht und protokolliert in das Betriebssystem (<code>syslog</code> für Linux, sonst Windows-Applikationslog).</li>
-<li>Stellen Sie sicher, dass der Hostname im Zertifikat, derselbe ist, den die Clients zum Zugriff auf den Tallarin4-Server verwenden. Der Port ist irrelevant.</li>
-<li>Wenn Sie Tallarin4 intern betreiben (nicht über die Cloud erreichbar), müssen die Clients das Zertifikat trotzdem überprüfen können. Stellen Sie sicher, dass Ihre Zertifikatsdatei (*.crt) alle Zertifikate in der Kette bis zu dem Zertifikat enthält, das den Clients bekannt ist - dies ist in der Regel ein vertrauenswürdiges Stamm- oder Zwischenzertifikat.</li>
+<li>Axia kann mit verschiedenen Zertifikaten arbeiten. Wenn Axia ein Zertifikat nicht laden kann, startet es nicht und protokolliert in das Betriebssystem (<code>syslog</code> für Linux, sonst Windows-Applikationslog).</li>
+<li>Stellen Sie sicher, dass der Hostname im Zertifikat, derselbe ist, den die Clients zum Zugriff auf den Axia-Server verwenden. Der Port ist irrelevant.</li>
+<li>Wenn Sie Axia intern betreiben (nicht über die Cloud erreichbar), müssen die Clients das Zertifikat trotzdem überprüfen können. Stellen Sie sicher, dass Ihre Zertifikatsdatei (*.crt) alle Zertifikate in der Kette bis zu dem Zertifikat enthält, das den Clients bekannt ist - dies ist in der Regel ein vertrauenswürdiges Stamm- oder Zwischenzertifikat.</li>
 </ul>
 <h2 id="proxies">Proxies</h2>
-<p>Wenn Clients mit einem Tallarin4-Server kommunizieren, verwenden sie zwei Methoden - beide laufen über den gleichen Port per TCP:</p>
+<p>Wenn Clients mit einem Axia-Server kommunizieren, verwenden sie zwei Methoden - beide laufen über den gleichen Port per TCP:</p>
 <ul>
 <li>HTTP(S)-Anfragen, um Dateien, Bilder und andere Webressourcen zu laden.</li>
 <li>Eine kontinuierliche Websocket-Verbindung für den Datenaustausch zwischen Server und Client. Wenn diese Verbindung unterbrochen wird, versucht der Client, diese wiederherzustellen.</li>
@@ -190,47 +190,47 @@
 <p>Websockets hingegen sollen so lange aktiv bleiben, bis eine der beiden Seiten (Server oder Client) die Verbindung absichtlich schließt. Bei der Konfiguration eines Proxys sollte das Anfrage-Timeout bzw. max. Sitzungszeit für Websocket-Verbindungen deaktiviert oder zumindest auf mehrere Stunden eingestellt werden. Einige Proxys (wie HAProxy) nennen diese Verbindungen "Tunnel". Jedes Mal, wenn eine Websocket-Verbindung von einem Proxy zwangsweise geschlossen wird, muss der Client die Verbindung neu aufbauen und es können ungespeicherte Änderungen verloren gehen.</p>
 <p>Im Falle von <a href="#clusterbetrieb-und-systemleistung">Cluster-Setups</a> muss eine Websocket-Verbindung bei einem bestimmten Server 'hängen bleiben', bis sie geschlossen wird. Auch wenn die ersten Anfragen über Round-Robin zugewiesen werden, ist ein bestimmter Server für die laufende Websocket-Kommunikation mit einem Client zuständig. HTTP(S)-Anfragen können jedoch jederzeit von einem beliebigen Cluster-Server bearbeitet werden.</p>
 <h2 id="konfigurationsdatei">Konfigurationsdatei</h2>
-<p>Dies sind die Einstellungen in der Tallarin4-Konfigurationsdatei <code>config.json</code> zur Referenz:</p>
+<p>Dies sind die Einstellungen in der Axia-Konfigurationsdatei <code>config.json</code> zur Referenz:</p>
 <ul>
 <li>db: Einstellungen für die Datenbankverbindung.
 <ul>
 <li>host: Datenbank-Host, zu dem eine Verbindung hergestellt werden soll. Kann ein Hostname oder eine Netzwerkadresse sein.</li>
 <li>port: Port des Datenbank-Hosts, zu dem eine Verbindung aufgebaut werden soll. Postgres läuft standardmäßig auf Port 5432.</li>
-<li>name: Name der Datenbank, zu der eine Verbindung aufgebaut werden soll. Tallarin4 benötigt einen Benutzer mit vollen Rechten für diese Datenbank. Um eine neue Datenbank für Tallarin4 vorzubereiten, <a href="#vorbereiten-einer-neuen-postgresql-datenbank">dieser Anleitung folgen</a>.</li>
+<li>name: Name der Datenbank, zu der eine Verbindung aufgebaut werden soll. Axia benötigt einen Benutzer mit vollen Rechten für diese Datenbank. Um eine neue Datenbank für Axia vorzubereiten, <a href="#vorbereiten-einer-neuen-postgresql-datenbank">dieser Anleitung folgen</a>.</li>
 <li>user: Datenbank-Benutzername, mit dem die Verbindung hergestellt werden soll.</li>
 <li>pass: Passwort des Datenbankbenutzers, mit dem die Verbindung hergestellt werden soll.</li>
 <li>ssl: Verbindung zum Datenbank-Host über SSL. Funktioniert nur, wenn der Datenbankhost SSL unterstützt.</li>
-<li>sslSkipVerify: Wenn 'ssl' aktiv ist, wird ignoriert, wenn das angegebene SSL-Zertifikat nicht vom Tallarin4-Hostsystem überprüft werden kann. Dies ermöglicht eine verschlüsselte Datenbankverbindung, auch wenn das angegebene Zertifikat nicht vertrauenswürdig ist.</li>
-<li>connsMin: Mindestanzahl der Datenbankverbindungen, die offen gehalten werden sollen. Wenn auf 0 gesetzt, wählt Tallarin4 eine Anzahl.</li>
-<li>connsMax: Maximalanzahl der Datenbankverbindungen, die verwendet werden können. Eine Begrenzung dieser Zahl kann sinnvoll sein, wenn Tallarin4 auf einem gemeinsam genutzten Datenbanksystem läuft. Tallarin4 sollte mindestens 4 DB-Verbindungen für sich selbst haben. Wenn auf 0 gesetzt, wird Tallarin4 eine Anzahl wählen.</li>
-<li>embedded: Wenn 'true', startet Tallarin4 eine interne Datenbank. Relevant für eigenständige und portable Bereitstellungsmodelle. Wenn auf 'false' gesetzt, verbindet sich Tallarin4 mit einem externen Datenbankserver.</li>
+<li>sslSkipVerify: Wenn 'ssl' aktiv ist, wird ignoriert, wenn das angegebene SSL-Zertifikat nicht vom Axia-Hostsystem überprüft werden kann. Dies ermöglicht eine verschlüsselte Datenbankverbindung, auch wenn das angegebene Zertifikat nicht vertrauenswürdig ist.</li>
+<li>connsMin: Mindestanzahl der Datenbankverbindungen, die offen gehalten werden sollen. Wenn auf 0 gesetzt, wählt Axia eine Anzahl.</li>
+<li>connsMax: Maximalanzahl der Datenbankverbindungen, die verwendet werden können. Eine Begrenzung dieser Zahl kann sinnvoll sein, wenn Axia auf einem gemeinsam genutzten Datenbanksystem läuft. Axia sollte mindestens 4 DB-Verbindungen für sich selbst haben. Wenn auf 0 gesetzt, wird Axia eine Anzahl wählen.</li>
+<li>embedded: Wenn 'true', startet Axia eine interne Datenbank. Relevant für eigenständige und portable Bereitstellungsmodelle. Wenn auf 'false' gesetzt, verbindet sich Axia mit einem externen Datenbankserver.</li>
 </ul></li>
 <li>web: Webserver-Einstellungen.
 <ul>
-<li>cert/key: Namen der Zertifikats- und Schlüsseldateien, damit Tallarin4 HTTPS anbieten kann. Wenn keine Dateien vorhanden sind, erstellt Tallarin4 ein selbstsigniertes Zertifikat und Schlüsseldatei, wenn es im HTTPS-Modus gestartet wird.</li>
-<li>listen: Netzwerkadresse, auf der gelauscht werden soll. Wenn auf 0.0.0.0 gesetzt, wird Tallarin4 unabhängig von der Zieladresse auf Anfragen antworten.</li>
+<li>cert/key: Namen der Zertifikats- und Schlüsseldateien, damit Axia HTTPS anbieten kann. Wenn keine Dateien vorhanden sind, erstellt Axia ein selbstsigniertes Zertifikat und Schlüsseldatei, wenn es im HTTPS-Modus gestartet wird.</li>
+<li>listen: Netzwerkadresse, auf der gelauscht werden soll. Wenn auf 0.0.0.0 gesetzt, wird Axia unabhängig von der Zieladresse auf Anfragen antworten.</li>
 <li>port: Netzwerk-Port, an dem gelauscht werden soll. Wenn dieser Wert auf 0 gesetzt ist, wird beim Start des Dienstes ein freier Port vom Betriebssystem zugewiesen.</li>
-<li>tlsMinVersion: Die minimale TLS-Version, die Tallarin4 von Clients akzeptieren soll. Gültige Werte: "1.1", "1.2", "1.3"</li>
+<li>tlsMinVersion: Die minimale TLS-Version, die Axia von Clients akzeptieren soll. Gültige Werte: "1.1", "1.2", "1.3"</li>
 </ul></li>
-<li>paths: Pfade, in denen sich Dateien/Verzeichnisse befinden, die für den Betrieb von Tallarin4 relevant sind.
+<li>paths: Pfade, in denen sich Dateien/Verzeichnisse befinden, die für den Betrieb von Axia relevant sind.
 <ul>
-<li>certificates: Zertifikate für die Tallarin4-Webserver-Komponente (siehe 'web'-&gt;'cert' &amp; 'web'-&gt;'key').</li>
+<li>certificates: Zertifikate für die Axia-Webserver-Komponente (siehe 'web'-&gt;'cert' &amp; 'web'-&gt;'key').</li>
 <li>embeddedDbBin: Nur relevant für portable/eigenständige Bereitstellungsmodelle. Binärdateien für das integrierte Postgres-Datenbanksystem.</li>
 <li>embeddedDbData: Nur relevant für portable/eigenständige Bereitstellungsmodelle. Datendateien für das integrierte Postgres-Datenbanksystem.</li>
-<li>files: In Tallarin4 hochgeladene Dateien, die in Attributen vom Typ "files" gespeichert werden. Der Inhalt wird regelmäßig durch geplante Aufgaben bereinigt, wenn Verweise entfernt werden oder die Aufbewahrungsfrist für Dateien erfüllt ist.</li>
-<li>fileExport / fileImport: Nur relevant, wenn Tallarin4-Anwendungen Export-/Import-Funktionen benötigen. Verzeichnisse von/in denen Tallarin4 Dateien exportieren bzw. importieren kann. Müssen für den Tallarin4-Server erreichbar sein (oder für die Knoten im Cluster-Betrieb). Aus Sicherheitsgründen kann der Tallarin4-Server nur diese Verzeichnisse für Exporte/Importe nutzen.</li>
-<li>temp: Dateien, die für verschiedene Vorgänge vorübergehend in Tallarin4 hochgeladen werden. CSV-Uploads, Anwendungsimporte, usw. Der Inhalt wird regelmäßig durch geplante Aufgaben bereinigt.</li>
-<li>transfer: Dateien, die zur Installation oder Aktualisierung von Anwendungen in Tallarin4 hochgeladen werden. Die Dateien werden aufbewahrt, um einen zukünftigen Export von Abhängigkeiten zu ermöglichen.</li>
+<li>files: In Axia hochgeladene Dateien, die in Attributen vom Typ "files" gespeichert werden. Der Inhalt wird regelmäßig durch geplante Aufgaben bereinigt, wenn Verweise entfernt werden oder die Aufbewahrungsfrist für Dateien erfüllt ist.</li>
+<li>fileExport / fileImport: Nur relevant, wenn Axia-Anwendungen Export-/Import-Funktionen benötigen. Verzeichnisse von/in denen Axia Dateien exportieren bzw. importieren kann. Müssen für den Axia-Server erreichbar sein (oder für die Knoten im Cluster-Betrieb). Aus Sicherheitsgründen kann der Axia-Server nur diese Verzeichnisse für Exporte/Importe nutzen.</li>
+<li>temp: Dateien, die für verschiedene Vorgänge vorübergehend in Axia hochgeladen werden. CSV-Uploads, Anwendungsimporte, usw. Der Inhalt wird regelmäßig durch geplante Aufgaben bereinigt.</li>
+<li>transfer: Dateien, die zur Installation oder Aktualisierung von Anwendungen in Axia hochgeladen werden. Die Dateien werden aufbewahrt, um einen zukünftigen Export von Abhängigkeiten zu ermöglichen.</li>
 </ul></li>
-<li>mirror: Deaktiviert schreibende Konnektoren (aktuell: E-Mail &amp; Rest) sowie integrierte Backups. Nützlich für Tallarin4-Instanzen, die Produktivsysteme für Tests oder Entwicklungsarbeiten spiegeln sollen.</li>
-<li>portable: Nur relevant für portable Bereitstellung. Wenn 'true', startet Tallarin4 im HTTP-Modus und öffnet einen Browser zur Tallarin4-Startseite.</li>
+<li>mirror: Deaktiviert schreibende Konnektoren (aktuell: E-Mail &amp; Rest) sowie integrierte Backups. Nützlich für Axia-Instanzen, die Produktivsysteme für Tests oder Entwicklungsarbeiten spiegeln sollen.</li>
+<li>portable: Nur relevant für portable Bereitstellung. Wenn 'true', startet Axia im HTTP-Modus und öffnet einen Browser zur Axia-Startseite.</li>
 <li>cluster: Cluster-Einstellungen.
 <ul>
-<li>nodeId: Die diesem Clusterknoten zugewiesene ID. Sollte nicht von Hand ausgefüllt werden. Tallarin4 generiert und speichert automatisch eine neue Knoten-ID, wenn sich ein Knoten zum ersten Mal mit einem Cluster verbindet.</li>
+<li>nodeId: Die diesem Clusterknoten zugewiesene ID. Sollte nicht von Hand ausgefüllt werden. Axia generiert und speichert automatisch eine neue Knoten-ID, wenn sich ein Knoten zum ersten Mal mit einem Cluster verbindet.</li>
 </ul></li>
 </ul>
 <h1 id="allgemeine-administration">Allgemeine Administration</h1>
-<p>Nach der Konfiguration werden grundsätzlich alle administrativen Aufgaben über die Adminoberfläche in der Tallarin4-Hauptwebanwendung ausgeführt. Jeder Benutzer, der als "Administrator" definiert ist, hat vollen Zugriff auf diese Funktionen.</p>
+<p>Nach der Konfiguration werden grundsätzlich alle administrativen Aufgaben über die Adminoberfläche in der Axia-Hauptwebanwendung ausgeführt. Jeder Benutzer, der als "Administrator" definiert ist, hat vollen Zugriff auf diese Funktionen.</p>
 <h2 id="wartungsmodus">Wartungsmodus</h2>
 <p>Um tiefgreifende Systemänderungen sicher auszuführen, steht ein separater Betriebsmodus zur Verfügung, der als "Wartungsmodus" bezeichnet wird. Wenn dieser aktiviert ist, werden alle Benutzer, die keine Administratoren sind, vom System abgemeldet. Neue Anmeldungen von Nicht-Administratoren werden abgelehnt.</p>
 <p><img src="de_de_admin_pics/maintenance_mode.webp" alt="Wartungsmodus" /></p>
@@ -238,41 +238,41 @@
 <h2 id="builder-modus">Builder-Modus</h2>
 <p>Wenn das System im Wartungsmodus ist, kann zusätzlich der Builder-Modus aktiviert werden. Dies ermöglicht Adminbenutzern Zugriff auf das integrierte, grafische Anwendungsentwicklungswerkzeug, kurz 'Builder' genannt.</p>
 <p><img src="de_de_admin_pics/builder_mode.webp" alt="Builder-Modus" /></p>
-<p>Der Builder ist ein umfangreiches Werkzeug. Alle Tallarin4-Anwendungen werden ausschließlich über den Builder erstellt und geändert. Bitte beachten Sie, dass das Ändern von Anwendungen dauerhafte Konsequenzen bis hin zum Datenverlust hat. Versuchen Sie nicht, den Builder in einer produktiven Instanz zu verwenden. Zum Testen oder Entwickeln von Anwendungen sollte eine separate Instanz verwendet werden. Die portable Version macht dies für Windows-Endgeräte einfach. Unter Linux dient ein separater Anwendungsdienst, der auf eine separate Datenbank zugreift, demselben Zweck.</p>
+<p>Der Builder ist ein umfangreiches Werkzeug. Alle Axia-Anwendungen werden ausschließlich über den Builder erstellt und geändert. Bitte beachten Sie, dass das Ändern von Anwendungen dauerhafte Konsequenzen bis hin zum Datenverlust hat. Versuchen Sie nicht, den Builder in einer produktiven Instanz zu verwenden. Zum Testen oder Entwickeln von Anwendungen sollte eine separate Instanz verwendet werden. Die portable Version macht dies für Windows-Endgeräte einfach. Unter Linux dient ein separater Anwendungsdienst, der auf eine separate Datenbank zugreift, demselben Zweck.</p>
 <h2 id="authentifizierung-und-autorisierung">Authentifizierung und Autorisierung</h2>
-<p>Zur Verwaltung von Zugriffen und Berechtigungen enthält das Tallarin4-Adminpanel eine Benutzerverwaltungsoberfläche. Hier kann jeder Benutzer mit dem Admin-Flag andere Benutzer anlegen, bearbeiten und deren Berechtigungen aktualisieren.</p>
-<p>Tallarin4 unterstützt aktuell vier Authentifizierungsoptionen:</p>
+<p>Zur Verwaltung von Zugriffen und Berechtigungen enthält das Axia-Adminpanel eine Benutzerverwaltungsoberfläche. Hier kann jeder Benutzer mit dem Admin-Flag andere Benutzer anlegen, bearbeiten und deren Berechtigungen aktualisieren.</p>
+<p>Axia unterstützt aktuell vier Authentifizierungsoptionen:</p>
 <ol type="1">
-<li>Lokal: Benutzer werden im Tallarin4-Adminpanel erstellt und melden sich mit ihren Zugangsdaten an.</li>
-<li>OAuth2: Benutzer werden an einen OAuth2-Identitätsanbieter weitergeleitet, authentifizieren sich dort und melden sich über OpenID Connect bei Tallarin4 an.</li>
+<li>Lokal: Benutzer werden im Axia-Adminpanel erstellt und melden sich mit ihren Zugangsdaten an.</li>
+<li>OAuth2: Benutzer werden an einen OAuth2-Identitätsanbieter weitergeleitet, authentifizieren sich dort und melden sich über OpenID Connect bei Axia an.</li>
 <li>LDAP: Benutzer werden regelmäßig aus einer LDAP-Quelle (oft Active Directory) importiert. Beim Login werden ihre Zugangsdaten live gegen das LDAP geprüft.</li>
-<li>Öffentlich: Benutzer melden sich über eine vordefinierte URL bei Tallarin4 an.</li>
+<li>Öffentlich: Benutzer melden sich über eine vordefinierte URL bei Axia an.</li>
 </ol>
 <p>Unabhängig von der Authentifizierung benötigt jeder Benutzer einen eindeutigen Namen. Dies kann alles sein – von Namen über E-Mail-Adressen bis hin zu Personalnummern.</p>
 <p>Um den Zugriff auf Anwendungen zu steuern, werden Benutzern Rollen zugewiesen. Rollenberechtigungen sind kumulativ – je mehr Rollen ein Benutzer hat, desto mehr Zugriff erhält er.</p>
-<p>Die Rollenzuweisung kann manuell durch Admins in der internen Benutzerverwaltung erfolgen – oder automatisch über Rollen-Mapping, wenn Benutzer von außerhalb Tallarin4 stammen:</p>
+<p>Die Rollenzuweisung kann manuell durch Admins in der internen Benutzerverwaltung erfolgen – oder automatisch über Rollen-Mapping, wenn Benutzer von außerhalb Axia stammen:</p>
 <ul>
 <li>OAuth2: Rollen können basierend auf dem Inhalt eines Claims im ID-Token des Benutzers zugewiesen werden.</li>
-<li>LDAP: Rollen können auf Gruppenmitgliedschaften des authentifizierten Benutzers abgebildet werden. In Microsoft Active Directory werden verschachtelte Gruppen ebenso unterstützt wie die automatische Deaktivierung von Benutzern in Tallarin4, wenn das zugehörige LDAP-Benutzerkonto deaktiviert wird.</li>
+<li>LDAP: Rollen können auf Gruppenmitgliedschaften des authentifizierten Benutzers abgebildet werden. In Microsoft Active Directory werden verschachtelte Gruppen ebenso unterstützt wie die automatische Deaktivierung von Benutzern in Axia, wenn das zugehörige LDAP-Benutzerkonto deaktiviert wird.</li>
 </ul>
 <p>MFA (Multi-Faktor-Authentifizierung) in Form von TOTP (zeitbasierte Einmalpasswörter) steht Benutzern für die lokale und LDAP-Authentifizierung zur Verfügung. MFA kann auf mehreren Geräten eingerichtet werden und wird von den meisten Authenticator-Apps unterstützt (alle, die TOTP unterstützen). Admins können MFA für Benutzer bei Bedarf zurücksetzen.</p>
 <h1 id="anwendungen-verwalten">Anwendungen verwalten</h1>
-<p>Um Tallarin4 nutzen zu können, müssen Anwendungen installiert werden; hierzu ist die Aktivierung des <a href="#wartungsmodus">Wartungsmodus</a> erforderlich.</p>
+<p>Um Axia nutzen zu können, müssen Anwendungen installiert werden; hierzu ist die Aktivierung des <a href="#wartungsmodus">Wartungsmodus</a> erforderlich.</p>
 <p>Anwendungen werden über die Adminoberfläche installiert. Sie können aus mehreren Quellen abgerufen werden:</p>
 <ul>
-<li>Offizielles Repository: Vorinstalliertes Repository für offizielle Tallarin4-Anwendungen. Für den Zugriff auf diesen Onlinedienst ist ein Internetzugang erforderlich.
+<li>Offizielles Repository: Vorinstalliertes Repository für offizielle Axia-Anwendungen. Für den Zugriff auf diesen Onlinedienst ist ein Internetzugang erforderlich.
 <ul>
 <li><img src="de_de_admin_pics/repo.webp" alt="Offizielles Repository" /></li>
 </ul></li>
-<li>Lokales Repository: Für Organisationen, die mehrere Tallarin4-Instanzen ausführen und/oder die vollständige Kontrolle über alle Veröffentlichungen benötigen. Ein Repository kann auf jeder Tallarin4-Instanz installiert werden, da es sich auch um eine Tallarin4-Anwendung handelt.</li>
+<li>Lokales Repository: Für Organisationen, die mehrere Axia-Instanzen ausführen und/oder die vollständige Kontrolle über alle Veröffentlichungen benötigen. Ein Repository kann auf jeder Axia-Instanz installiert werden, da es sich auch um eine Axia-Anwendung handelt.</li>
 <li>Manueller Import von Anwendungen: Alle Anwendungen können manuell importiert werden. Dies ist nützlich für Entwicklungsversionen, Tests und für Anwendungen, die in keinem Repository veröffentlicht wurden.</li>
 </ul>
-<p>Unternehmen, die mit Tallarin4 beginnen, sollten mit dem offiziellen Repository starten und zu lokalen Repositorys wechseln, wenn sie skalieren oder selbst entwickelte Anwendungen im Fokus stehen.</p>
+<p>Unternehmen, die mit Axia beginnen, sollten mit dem offiziellen Repository starten und zu lokalen Repositorys wechseln, wenn sie skalieren oder selbst entwickelte Anwendungen im Fokus stehen.</p>
 <h1 id="sicherung-und-wiederherstellung">Sicherung und Wiederherstellung</h1>
-<p>Um eine Tallarin4-Instanz vollständig wiederherzustellen, müssen diese Komponenten gesichert werden:</p>
+<p>Um eine Axia-Instanz vollständig wiederherzustellen, müssen diese Komponenten gesichert werden:</p>
 <ul>
-<li>Die Tallarin4-Datenbank</li>
-<li>Die Tallarin4-Konfigurationsdatei (<code>config.json</code>)</li>
+<li>Die Axia-Datenbank</li>
+<li>Die Axia-Konfigurationsdatei (<code>config.json</code>)</li>
 <li>Verzeichnisse (können umbenannt werden in <code>config.json</code>)
 <ul>
 <li><code>certificates</code> (verwendete SSL-Zertifikate)</li>
@@ -284,7 +284,7 @@
 <p><img src="de_de_admin_pics/backup.webp" alt="Backups!" /></p>
 <p>Bei größeren Systemen reicht die integrierte Backup-Funktion möglicherweise nicht aus; sie kann nur Vollsicherungen erstellen, die zwar sehr sicher sind, aber mehr Zeit und Speicherplatz benötigen als andere Sicherungsmethoden. Bei wachsenden Datenbeständen sollten Sie auch inkrementelle/differenzielle Sicherungen in Betracht ziehen; diese erfordern mehr Aufwand und möglicherweise Infrastruktur und sind nicht Teil dieser Dokumentation.</p>
 <h2 id="datenbank">Datenbank</h2>
-<p>In jedem Bereitstellungsmodell wird eine PostgreSQL-Datenbank für Tallarin4 verwendet. Um auf die eigenständige, integrierte Datenbank zuzugreifen, verwenden Sie die Verbindungsdetails aus der Tallarin4-Konfigurationsdatei (<code>config.json</code>), während der Tallarin4-Dienst ausgeführt wird. Die Datenbank heißt standardmäßig "app".</p>
+<p>In jedem Bereitstellungsmodell wird eine PostgreSQL-Datenbank für Axia verwendet. Um auf die eigenständige, integrierte Datenbank zuzugreifen, verwenden Sie die Verbindungsdetails aus der Axia-Konfigurationsdatei (<code>config.json</code>), während der Axia-Dienst ausgeführt wird. Die Datenbank heißt standardmäßig "app".</p>
 <p>Für vollständige Sicherungen empfehlen wir die Verwendung interner PostgreSQL-Werkzeuge wie <code>pg_dump</code> zum Sichern und<code> pg_restore</code> zum Wiederherstellen der Datenbank. Beispiele:</p>
 <ul>
 <li>Um in ein Zielverzeichnis zu sichern: pg_dump -h HOSTNAME -p 5432 -U USERNAME -Fd -f TARGETDIR</li>
@@ -293,53 +293,53 @@
 <p>Empfehlungen:</p>
 <ul>
 <li>Sichern Sie immer an einem separaten Netzwerkspeicherort, zur Absicherung gegen einen totalen Systemausfall.</li>
-<li>Wiederherstellungen vollständiger Sicherungen sollten immer in eine leere / neue Datenbank ausgeführt werden, um sicherzustellen, dass alle Daten in den gesicherten Zustand zurückversetzt werden können. Die wiederhergestellte Datenbank kann dann umbenannt oder die Tallarin4-Konfigurationsdatei aktualisiert werden, um auf die wiederhergestellte Datenbank zuzugreifen.</li>
+<li>Wiederherstellungen vollständiger Sicherungen sollten immer in eine leere / neue Datenbank ausgeführt werden, um sicherzustellen, dass alle Daten in den gesicherten Zustand zurückversetzt werden können. Die wiederhergestellte Datenbank kann dann umbenannt oder die Axia-Konfigurationsdatei aktualisiert werden, um auf die wiederhergestellte Datenbank zuzugreifen.</li>
 </ul>
 <h1 id="aktualisierungen">Aktualisierungen</h1>
-<p>Es gibt zwei Arten von Aktualisierungen: Anwendung- und Plattformaktualisierung. Anwendungsaktualisierungen sind häufiger und dienen dazu, die Funktionalität für Tallarin4-Anwendungen zu erweitern. Diese können direkt von der Adminoberfläche installiert werden, wenn der Wartungsmodus aktiv ist. Wenn die Aktualisierungen über das Repository empfangen werden, handelt es sich um einen Ein-Klick-Vorgang. Manuelle Aktualisierungen müssen über gepackte Anwendungsdateien bereitgestellt werden. Es wird empfohlen, Aktualisierungen zuerst in Testumgebungen zu installieren, da sich Aussehen und Verhalten zwischen Anwendungsversionen ändern können.</p>
+<p>Es gibt zwei Arten von Aktualisierungen: Anwendung- und Plattformaktualisierung. Anwendungsaktualisierungen sind häufiger und dienen dazu, die Funktionalität für Axia-Anwendungen zu erweitern. Diese können direkt von der Adminoberfläche installiert werden, wenn der Wartungsmodus aktiv ist. Wenn die Aktualisierungen über das Repository empfangen werden, handelt es sich um einen Ein-Klick-Vorgang. Manuelle Aktualisierungen müssen über gepackte Anwendungsdateien bereitgestellt werden. Es wird empfohlen, Aktualisierungen zuerst in Testumgebungen zu installieren, da sich Aussehen und Verhalten zwischen Anwendungsversionen ändern können.</p>
 <p>Plattformaktualisierungen richten sich an die zugrunde liegende Plattform-Software und sind möglicherweise auch für Anwendungsaktualisierungen erforderlich, wenn für diese neuere Plattformfunktionen erforderlich sind. Da Sicherheits- und Stabilitätsprobleme mit Plattformaktualisierungen behoben werden, ist es immer gut, die Plattform selbst zu aktualisieren.</p>
 <h2 id="plattformaktualisierung">Plattformaktualisierung</h2>
 <p>Wenn das grafische Installationsprogramm für Windows verwendet wird, kann durch Ausführen einer neueren Version die Aktualisierung gestartet werden. Der Plattformdienst wird automatisch neu gestartet.</p>
 <p>Bei Linux-Servern ist es erforderlich, den Dienst zu stoppen und Dateien im ausgewählten Anwendungsverzeichnis mit dem neuesten extrahierbaren Paket zu überschreiben. Danach kann der Dienst neu gestartet werden.</p>
-<p>Um die portable Version zu aktualisieren, stoppen Sie alle laufenden Tallarin4-Instanzen und extrahieren Sie den Inhalt einer neueren, portablen Version in das Anwendungsverzeichnis.</p>
+<p>Um die portable Version zu aktualisieren, stoppen Sie alle laufenden Axia-Instanzen und extrahieren Sie den Inhalt einer neueren, portablen Version in das Anwendungsverzeichnis.</p>
 <h1 id="vorbereiten-einer-neuen-postgresql-datenbank">Vorbereiten einer neuen PostgreSQL-Datenbank</h1>
-<p>Tallarin4 im <a href="#dediziert">dedizierten Bereitstellungsmodell</a> benötigt volle Berechtigungen auf eine UTF8 kodierte PostgreSQL Datenbank. Diese Dokumentation behandelt nicht die Installation von PostgreSQL auf dem gewählten Betriebssystem. Sobald der PostgreSQL-Dienst jedoch verfügbar ist, mit einem PostgreSQL-Client (wie <code>psql</code> oder <code>pgAdmin</code>) verbinden und sicherstellen, dass sowohl ein Benutzer als auch eine Datenbank für Tallarin4 existiert. Um beides zu erstellen:</p>
+<p>Axia im <a href="#dediziert">dedizierten Bereitstellungsmodell</a> benötigt volle Berechtigungen auf eine UTF8 kodierte PostgreSQL Datenbank. Diese Dokumentation behandelt nicht die Installation von PostgreSQL auf dem gewählten Betriebssystem. Sobald der PostgreSQL-Dienst jedoch verfügbar ist, mit einem PostgreSQL-Client (wie <code>psql</code> oder <code>pgAdmin</code>) verbinden und sicherstellen, dass sowohl ein Benutzer als auch eine Datenbank für Axia existiert. Um beides zu erstellen:</p>
 <ol type="1">
 <li><code>CREATE ROLE my_rei3_user WITH LOGIN PASSWORD 'MY_STRONG_PW!';</code></li>
 <li><code>CREATE DATABASE my_rei3_db WITH OWNER = my_rei3_user TEMPLATE = template0 ENCODING = 'UTF8';</code></li>
 </ol>
 <h1 id="clusterbetrieb-und-systemleistung">Clusterbetrieb und Systemleistung</h1>
-<p>Tallarin4-Server können in Clustern betrieben werden, um mehr Anfragen und Benutzer gleichzeitig zu verarbeiten. Bevor Sie ein Clusterbetrieb in Erwägung ziehen, ist es wichtig zu wissen, woher wahrgenommene Leistungsprobleme kommen. Tallarin4 ist für die gleichzeitige Bearbeitung vieler Benutzer ausgelegt und kann auch mehrere Prozessorkerne sowie mehr Arbeitsspeicher nutzen, um die Leistung zu verbessern. Nur wenn die CPU-Last/Speichernutzung des Tallarin4-Dienstes häufig sehr hoch ist, kann der Clusterbetrieb mehrerer Tallarin4-Server sinnvoll sein.</p>
+<p>Axia-Server können in Clustern betrieben werden, um mehr Anfragen und Benutzer gleichzeitig zu verarbeiten. Bevor Sie ein Clusterbetrieb in Erwägung ziehen, ist es wichtig zu wissen, woher wahrgenommene Leistungsprobleme kommen. Axia ist für die gleichzeitige Bearbeitung vieler Benutzer ausgelegt und kann auch mehrere Prozessorkerne sowie mehr Arbeitsspeicher nutzen, um die Leistung zu verbessern. Nur wenn die CPU-Last/Speichernutzung des Axia-Dienstes häufig sehr hoch ist, kann der Clusterbetrieb mehrerer Axia-Server sinnvoll sein.</p>
 <p>In den meisten Fällen sind die Leistungsprobleme auf andere Ursachen zurückzuführen:</p>
 <ul>
-<li>Hohe Datenbanklast. Beim Betrieb größerer Tallarin4-Instanzen kann die Menge der Anfragen das Datenbanksystem überfordern. Dies lässt sich feststellen, indem man sich mit dem Datenbankserver verbindet und sich seine Statistiken ansieht. In diesem Szenario befindet sich der Tallarin4-Dienst im Leerlauf, während die Datenbank überlastet ist. Um die Leistung zu verbessern, müsste das Datenbanksystem aufgerüstet werden - entweder mit besserer Hardware oder mit Clusterbetrieb des Datenbanksystems selbst. Beachten Sie, dass Tallarin4 nur geclusterte Datenbanken mit dem <a href="#dediziert">dedizierten</a> Bereitstellungsmodell unterstützt. Ein Clusterbetrieb von Tallarin4 selbst würde die Leistung in diesem Fall nicht verbessern.</li>
-<li>Fehlende oder schlecht genutzte Indizes auf Datenbankrelationen. Dies lässt sich erkennen, wenn man sich mit dem Datenbankserver verbindet und Benchmarks mit problematischen Anfragen durchführt. Wenn Indizes nicht optimiert sind, kann der Autor der betroffenen Anwendung die Leistung einfach verbessern, indem er sie anpasst. Der Clusterbetrieb von Tallarin4 würde in diesem Fall zu keiner Leistungsverbesserung führen.</li>
-<li>Langsamer Speicher. Entweder das Datenbanksystem oder Tallarin4 selbst greift auf langsame Speichersysteme zu. Dies zeigt sich, wenn sowohl der Tallarin4-Anwendungsdienst als auch das Datenbanksystem nur sehr wenig belastet sind, die Anfragen aber trotzdem lange dauern. In diesem Fall hat die Verbesserung der Latenz/Durchsatzrate des zugrunde liegenden Speichersystems die größten Auswirkungen auf die Leistung. Ein Clusterbetrieb der Tallarin4-Server würde nicht helfen.</li>
+<li>Hohe Datenbanklast. Beim Betrieb größerer Axia-Instanzen kann die Menge der Anfragen das Datenbanksystem überfordern. Dies lässt sich feststellen, indem man sich mit dem Datenbankserver verbindet und sich seine Statistiken ansieht. In diesem Szenario befindet sich der Axia-Dienst im Leerlauf, während die Datenbank überlastet ist. Um die Leistung zu verbessern, müsste das Datenbanksystem aufgerüstet werden - entweder mit besserer Hardware oder mit Clusterbetrieb des Datenbanksystems selbst. Beachten Sie, dass Axia nur geclusterte Datenbanken mit dem <a href="#dediziert">dedizierten</a> Bereitstellungsmodell unterstützt. Ein Clusterbetrieb von Axia selbst würde die Leistung in diesem Fall nicht verbessern.</li>
+<li>Fehlende oder schlecht genutzte Indizes auf Datenbankrelationen. Dies lässt sich erkennen, wenn man sich mit dem Datenbankserver verbindet und Benchmarks mit problematischen Anfragen durchführt. Wenn Indizes nicht optimiert sind, kann der Autor der betroffenen Anwendung die Leistung einfach verbessern, indem er sie anpasst. Der Clusterbetrieb von Axia würde in diesem Fall zu keiner Leistungsverbesserung führen.</li>
+<li>Langsamer Speicher. Entweder das Datenbanksystem oder Axia selbst greift auf langsame Speichersysteme zu. Dies zeigt sich, wenn sowohl der Axia-Anwendungsdienst als auch das Datenbanksystem nur sehr wenig belastet sind, die Anfragen aber trotzdem lange dauern. In diesem Fall hat die Verbesserung der Latenz/Durchsatzrate des zugrunde liegenden Speichersystems die größten Auswirkungen auf die Leistung. Ein Clusterbetrieb der Axia-Server würde nicht helfen.</li>
 </ul>
-<p>Ist der Tallarin4-Dienst tatsächlich der Engpass, kann ein Clusterbetrieb helfen - hierfür müssen folgende Voraussetzungen erfüllt sein:</p>
+<p>Ist der Axia-Dienst tatsächlich der Engpass, kann ein Clusterbetrieb helfen - hierfür müssen folgende Voraussetzungen erfüllt sein:</p>
 <ul>
-<li>Tallarin4 muss im <a href="#dediziert">dedizierten</a> Bereitstellungsmodell laufen, d.h. das Datenbanksystem muss von Tallarin4 selbst getrennt sein. Ein Wechsel vom <a href="#eigenständig">eigenständigen</a> Bereitstellungsmodell zum dedizierten ist jederzeit möglich.</li>
-<li>Tallarin4-Server müssen auf denselben Speicherort für ihre Dateipfade zugreifen.</li>
-<li>Tallarin4-Server müssen auf dieselbe Datenbank zugreifen.</li>
-<li>Es spielt KEINE Rolle, ob die Tallarin4-Server auf unterschiedlichen Betriebssystemen oder Prozessorarchitekturen laufen.</li>
+<li>Axia muss im <a href="#dediziert">dedizierten</a> Bereitstellungsmodell laufen, d.h. das Datenbanksystem muss von Axia selbst getrennt sein. Ein Wechsel vom <a href="#eigenständig">eigenständigen</a> Bereitstellungsmodell zum dedizierten ist jederzeit möglich.</li>
+<li>Axia-Server müssen auf denselben Speicherort für ihre Dateipfade zugreifen.</li>
+<li>Axia-Server müssen auf dieselbe Datenbank zugreifen.</li>
+<li>Es spielt KEINE Rolle, ob die Axia-Server auf unterschiedlichen Betriebssystemen oder Prozessorarchitekturen laufen.</li>
 </ul>
 <p>Die Einrichtung des Clusters selbst ist sehr einfach:</p>
 <ol type="1">
-<li>Der erste Tallarin4-Server ist standardmäßig bereits Teil eines Ein-Server-Clusters, mit sich selbst als Clustermaster. Hier muss nichts weiter getan werden.</li>
-<li>Um weitere Serverknoten hinzuzufügen, installieren Sie Tallarin4 auf anderen Servern und verwenden Sie die gleichen Datenbank- und Dateipfadeinstellungen in der Tallarin4-Konfigurationsdatei <code>config.json</code>.
+<li>Der erste Axia-Server ist standardmäßig bereits Teil eines Ein-Server-Clusters, mit sich selbst als Clustermaster. Hier muss nichts weiter getan werden.</li>
+<li>Um weitere Serverknoten hinzuzufügen, installieren Sie Axia auf anderen Servern und verwenden Sie die gleichen Datenbank- und Dateipfadeinstellungen in der Axia-Konfigurationsdatei <code>config.json</code>.
 <ul>
 <li>Die Dateipfade für den gesamten Cluster müssen auf denselben Speicherort verweisen - normalerweise eignen sich Netzwerkfreigaben gut für diese Anforderung.</li>
 <li>Wählen Sie eine beliebige Konfiguration im "Web"-Teil der Konfigurationsdatei, die zu Ihrer Infrastruktur passt (welcher Port verwendet werden soll, wie die Zertifikatsdateien benannt werden, usw.).</li>
 <li>Die <code>cluster/nodeId</code> muss für neue Serverknoten leer gelassen werden.</li>
 </ul></li>
-<li>Sobald sich ein neuer Serverknoten mit der bestehenden Tallarin4-Datenbank verbindet, registriert er sich als neuer Clusterknoten und weist sich selbst eine eindeutige Knoten-ID zu.</li>
+<li>Sobald sich ein neuer Serverknoten mit der bestehenden Axia-Datenbank verbindet, registriert er sich als neuer Clusterknoten und weist sich selbst eine eindeutige Knoten-ID zu.</li>
 </ol>
 <p>Dies ist die gesamte Einrichtung. Das Cluster konfiguriert sich automatisch und weist auch automatisch die Rolle des Clustermasters und die Aufgaben zu, je nachdem, welche Knoten einchecken.</p>
 <h1 id="cloudbetrieb">Cloudbetrieb</h1>
-<p>Tallarin4 kann im Internet zugänglich gemacht werden, indem entsprechende Firewall-Ports geöffnet werden. Wir, die Tallarin4-Hersteller, sind bestrebt, die Plattform so sicher wie möglich zu gestalten. Wie bei jeder anderen Anwendung ist es immer möglich, dass unentdeckte Sicherheitslücken ausgenutzt und unbefugter Zugriff erreicht wird. Neben der regelmäßigen Aktualisierung von Tallarin4 selbst sind wir der Ansicht, dass zusätzliche Sicherheitsmaßnahmen erforderlich sind, um Webanwendungen in der Cloud sicher auszuführen. Diese sind u. A.:</p>
+<p>Axia kann im Internet zugänglich gemacht werden, indem entsprechende Firewall-Ports geöffnet werden. Wir, die Axia-Hersteller, sind bestrebt, die Plattform so sicher wie möglich zu gestalten. Wie bei jeder anderen Anwendung ist es immer möglich, dass unentdeckte Sicherheitslücken ausgenutzt und unbefugter Zugriff erreicht wird. Neben der regelmäßigen Aktualisierung von Axia selbst sind wir der Ansicht, dass zusätzliche Sicherheitsmaßnahmen erforderlich sind, um Webanwendungen in der Cloud sicher auszuführen. Diese sind u. A.:</p>
 <ul>
 <li>Ausführen von Intrusion-Detection-Software auf dem Anwendungsserver oder Firewalls</li>
 <li>Anwenden von Härtungsprinzipien auf dem Anwendungsserver</li>
 <li>Verwenden einer DMZ zum Trennen von Cloud-Diensten von lokalen, geschützten Netzwerken</li>
 </ul>
-<p>Die Tallarin4-Plattform enthält einen Bruteforce-Schutz. Dies reicht bei Weitem nicht alleine für einen sicheren Betrieb mit Cloud-Verbindung. In jedem Fall sollten zusätzliche Maßnahmen (wie oben beschrieben) angewendet werden.</p>
+<p>Die Axia-Plattform enthält einen Bruteforce-Schutz. Dies reicht bei Weitem nicht alleine für einen sicheren Betrieb mit Cloud-Verbindung. In jedem Fall sollten zusätzliche Maßnahmen (wie oben beschrieben) angewendet werden.</p>

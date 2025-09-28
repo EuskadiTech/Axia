@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Wenn ein funktionierendes E-Mail-Konto vorhanden ist, verschickt das System Benachrichtigungen über wichtige Ereignisse. Diese sind derzeit:",
       "adminMailsHint": "Empfänger-E-Mail-Adresse hinzufügen",
-      "adminMailsList": [ "Bevorstehender Ablauf registrierter OAuth-Clients.", "Bevorstehender Ablauf einer aktiven Tallarin4 Professional-Lizenz." ],
+      "adminMailsList": [ "Bevorstehender Ablauf registrierter OAuth-Clients.", "Bevorstehender Ablauf einer aktiven Axia Professional-Lizenz." ],
       "adminMailsTitle": "Admin-Benachrichtigungen",
       "appVersion": "Plattform-Version",
       "bruteforceAttempts": "Host blocken nach Versuchen",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "In Sekunden",
       "dbTimeoutIcs": "Datenbank-Timeout: Kalender-Downloads (ICS)",
       "dialog": {
-        "builderMode": "Der Builder dient zum Erstellen oder Verändern von Anwendungen.<br /><br />Das Ändern von Anwendungen kann zum Datenverlust führen und sollte <b>NIEMALS</b> in produktiven Umgebungen getan werden.<br /><br />Um den Builder sicher zu nutzen, bitte eine dedizierte Instanz von Tallarin4 verwenden; fertige und getestete Anwendungen können dann in ein Produktivsystem transferiert werden.<br /><br />Um mehr zu lernen, steht die <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">Builder-Dokumentation</a> zur Verfügung.",
+        "builderMode": "Der Builder dient zum Erstellen oder Verändern von Anwendungen.<br /><br />Das Ändern von Anwendungen kann zum Datenverlust führen und sollte <b>NIEMALS</b> in produktiven Umgebungen getan werden.<br /><br />Um den Builder sicher zu nutzen, bitte eine dedizierte Instanz von Axia verwenden; fertige und getestete Anwendungen können dann in ein Produktivsystem transferiert werden.<br /><br />Um mehr zu lernen, steht die <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">Builder-Dokumentation</a> zur Verfügung.",
         "pleaseRead": "Bitte vor dem Speichern lesen",
         "productionMode": "Der Wartungsmodus wird genutzt, um Anwendungen zu aktualisieren, installieren oder zu entfernen.<br /><br />Beim Aktivieren des Wartungsmodus werden <b>alle Benutzer ohne Adminrechte abgemeldet</b>."
       },
@@ -101,9 +101,9 @@
     },
     "customizing": {
       "appName": "Instanzname",
-      "appNameHint": "Name der Tallarin4-Instanz, wird angezeigt auf der Anmeldeseite.",
+      "appNameHint": "Name der Axia-Instanz, wird angezeigt auf der Anmeldeseite.",
       "appNameShort": "Kurzer Name",
-      "appNameShortHint": "Kurze Version des Instanznamens, wird als Seitentitel verwendet sowie als Beschriftung wenn Tallarin4 als Progressive-Web-App (PWA) installiert wird.",
+      "appNameShortHint": "Kurze Version des Instanznamens, wird als Seitentitel verwendet sowie als Beschriftung wenn Axia als Progressive-Web-App (PWA) installiert wird.",
       "companyColorHeader": "Titelfarbe (Hauptmenü)",
       "companyColorHeaderHint": "Definiert eine feste Farbe auf dem Header, Farben einzelner Anwendungen werden ignoriert.",
       "companyColorLogin": "Titelfarbe (Anmeldung)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Bild, welches als Icon für die Progressive-Web-App genutzt wird. Muss eine PNG-Datei mit max. 128kb und genau 512x512 Pixel groß sein.",
       "pwaDomain": "Direkter Zugriff auf Anwendungen",
       "pwaDomainHint": "Nur die Subdomäne (bspw. 'my-app' von 'my-app.my-domain.com')",
-      "pwaDomainHint1": "Auf individuelle Anwendungen kann direkt zugegriffen und diese können auch einzelnd als PWAs auf Geräten installiert werden. Anwendungen haben dann ihre eigenen Startseiten, Icons und exklusive Navigation. Hierfür muss ein Subdomänen-DNS-Eintrag für jede Anwendung gesetzt sein, damit das Tallarin4-System über verschiedene Domänen erreichbar ist. Zusätzlich wird ein Wildcard-Zertifikat benötigt, damit der Tallarin4-Server korrekt auf HTTPS-Anfragen reagieren kann.<br /><br />Sobald DNS-Einträge und Wildcard-Zertifikat gesetzt sind, muss eine Subdomäne je gewünschter Anwendung hier eingetragen werden.",
-      "pwaDomainHint2": "Bitte sicherstellen, dass eine Subdomäne existiert, die hier nicht referenziert wird, damit das allgemeine Tallarin4-System noch erreicht werden kann. Anderweitig ist kein Zugriff auf die Adminoberfläche möglich, da Subdomänen für Anwendungen nur Zugriff auf die jeweilige Anwendung selbst zulassen.",
+      "pwaDomainHint1": "Auf individuelle Anwendungen kann direkt zugegriffen und diese können auch einzelnd als PWAs auf Geräten installiert werden. Anwendungen haben dann ihre eigenen Startseiten, Icons und exklusive Navigation. Hierfür muss ein Subdomänen-DNS-Eintrag für jede Anwendung gesetzt sein, damit das Axia-System über verschiedene Domänen erreichbar ist. Zusätzlich wird ein Wildcard-Zertifikat benötigt, damit der Axia-Server korrekt auf HTTPS-Anfragen reagieren kann.<br /><br />Sobald DNS-Einträge und Wildcard-Zertifikat gesetzt sind, muss eine Subdomäne je gewünschter Anwendung hier eingetragen werden.",
+      "pwaDomainHint2": "Bitte sicherstellen, dass eine Subdomäne existiert, die hier nicht referenziert wird, damit das allgemeine Axia-System noch erreicht werden kann. Anderweitig ist kein Zugriff auf die Adminoberfläche möglich, da Subdomänen für Anwendungen nur Zugriff auf die jeweilige Anwendung selbst zulassen.",
       "titleCaptions": "Beschriftungen",
       "titleColors": "Farben",
       "titleCss": "CSS-Regeln",
@@ -137,7 +137,7 @@
       "titleLogos": "Logos",
       "titlePwas": "Progressive-Web-Apps (PWAs)",
       "tokenKeepEnable": "Benutzern erlauben, angemeldet zu bleiben",
-      "tokenKeepEnableHint": "Wenn deaktiviert, wird die Option \"angemeldet bleiben\" von der Anmeldeseite entfernt. Ohne diese Option werden Benutzer gezwungen, sich neu anzumelden, wenn sie auf das System zugreifen. Diese Einstellung betrifft nicht Gerätezugriffe wie Kalendar-Abonnements oder Tallarin4-Clients."
+      "tokenKeepEnableHint": "Wenn deaktiviert, wird die Option \"angemeldet bleiben\" von der Anmeldeseite entfernt. Ohne diese Option werden Benutzer gezwungen, sich neu anzumelden, wenn sie auf das System zugreifen. Diese Einstellung betrifft nicht Gerätezugriffe wie Kalendar-Abonnements oder Axia-Clients."
     },
     "files": {
       "deleteDate": "Datei gelöscht",
@@ -197,11 +197,11 @@
       "clientId": "Kunden-ID",
       "currentState": "Aktuelle Werte",
       "dialog": {
-        "delete": "Möchten Sie die Lizenzdatei wirklich entfernen? Um Tallarin4 Professional erneut zu aktivieren, muss eine gültige Lizenzdatei eingespielt werden."
+        "delete": "Möchten Sie die Lizenzdatei wirklich entfernen? Um Axia Professional erneut zu aktivieren, muss eine gültige Lizenzdatei eingespielt werden."
       },
-      "extCommunity": "Tallarin4 Community Forum",
-      "extLicense": "Tallarin4 Professional",
-      "intro": "Tallarin4 ist vollständig <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">Open-Source</a> und kann kostenlos genutzt werden.<br /><br />Für Enterprise-Features oder -Support gibt es <b>Tallarin4 Professional</b>. Preislich so gestaltet, dass es für Unternehmen jeder Größe bezahlbar sein sollte, ist es oft deutlich günstiger als vergleichbare Low-Code-Produkte am Markt.<br /><br />Tallarin4 Professional-Kunden unterstützen nicht nur die kontinuierliche Weiterentwicklung, sondern können auch alle Features aktivieren und erhalten professionelle Unterstützung von Lean Softworks, dem primären Entwickler von Tallarin4.",
+      "extCommunity": "Axia Community Forum",
+      "extLicense": "Axia Professional",
+      "intro": "Axia ist vollständig <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">Open-Source</a> und kann kostenlos genutzt werden.<br /><br />Für Enterprise-Features oder -Support gibt es <b>Axia Professional</b>. Preislich so gestaltet, dass es für Unternehmen jeder Größe bezahlbar sein sollte, ist es oft deutlich günstiger als vergleichbare Low-Code-Produkte am Markt.<br /><br />Axia Professional-Kunden unterstützen nicht nur die kontinuierliche Weiterentwicklung, sondern können auch alle Features aktivieren und erhalten professionelle Unterstützung von Lean Softworks, dem primären Entwickler von Axia.",
       "introMore": "Mehr Informationen:",
       "licenseExpired": "Lizenz ist abgelaufen",
       "licenseId": "Lizenz-ID",
@@ -282,7 +282,7 @@
       "noData": "Keine Sitzungen verfügbar",
       "option": {
         "browser": "Browser-Sitzung",
-        "fatClient": "Tallarin4 Client"
+        "fatClient": "Axia Client"
       },
       "titles": {
         "address": "Adresse",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Standardwerte: Open ID Connect"
       },
       "claimRoles": "Rollen-Claim",
-      "claimRolesHint": "Name des Claim-Feldes, welches Benutzerrollen oder -gruppen beinhaltet. Wenn gesetzt, können Tallarin4-Rollen zu Werten in diesem Claim zugeordnet werden. Wert muss ein JSON-String-Array sein, wie z. B.: [\"alle-benutzer\", \"abteilung-it\"]",
+      "claimRolesHint": "Name des Claim-Feldes, welches Benutzerrollen oder -gruppen beinhaltet. Wenn gesetzt, können Axia-Rollen zu Werten in diesem Claim zugeordnet werden. Wert muss ein JSON-String-Array sein, wie z. B.: [\"alle-benutzer\", \"abteilung-it\"]",
       "claimUsername": "Benutzer-Claim",
       "claimUsernameHint": "Name des Claim-Feldes, welches den Benutzernamen beinhaltet. Muss gesetzt sein. Benutzernamen im jeweiligen OAuth-Client müssen einzigartig sein.",
       "clientId": "Client-ID",
@@ -468,21 +468,21 @@
       },
       "flow": "OAuth-Flow",
       "loginMetaMap": "Benutzer-Details über Claims aktualisieren",
-      "nameHint": "Ein interner Name, um auf diesen OAuth-Client innerhalb von Tallarin4 zu referenzieren.",
+      "nameHint": "Ein interner Name, um auf diesen OAuth-Client innerhalb von Axia zu referenzieren.",
       "option": {
         "flow": {
           "authCodePkce": "Authentication Code with PKCE",
           "clientCreds": "Client credentials"
         },
         "flowHint": {
-          "authCodePkce": "<p>Dieser Flow wird in Tallarin4 verwendet, um Benutzer über einen externen Identitätsanbieter anzumelden, wie z. B. Keycloak oder Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' ist ein Open ID Connect-Flow. Benutzer werden zur Authentifizierung zu einem Identitätsanbieter weitergeleitet. Nach Authentifizierung wird der Benutzer zurück zu Tallarin4 geschickt, wobei seine Identität verifiziert und Metadaten aktualisiert werden.</p>",
-          "clientCreds": "<p>Dieser Flow wird in Tallarin4 verwendet, damit sich das System gegen einen Dienst, wie z. B. Exchange Online, authentifizieren kann.</p><p>'Client Credentials' ist ein OAuth 2.0-Flow, mit welcher sich ein Client gegen Diensteanbieter authentifzieren kann, um auf geschützte Ressourcen wie z. B. Postfächer zuzugreifen. Ressourcen, die über den 'Client Credentials'-Flow zugegriffen werden, sollten zum Client (in diesem Fall Tallarin4) gehören; dieser Flow ist nicht dafür gedacht, auf Benutzer-Ressourcen direkt oder in Namen dessen zuzugreifen.</p><p>Dieser Flow wird aktuell nur für Zugriff auf E-Mail-Ressourcen verwendet.</p>"
+          "authCodePkce": "<p>Dieser Flow wird in Axia verwendet, um Benutzer über einen externen Identitätsanbieter anzumelden, wie z. B. Keycloak oder Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' ist ein Open ID Connect-Flow. Benutzer werden zur Authentifizierung zu einem Identitätsanbieter weitergeleitet. Nach Authentifizierung wird der Benutzer zurück zu Axia geschickt, wobei seine Identität verifiziert und Metadaten aktualisiert werden.</p>",
+          "clientCreds": "<p>Dieser Flow wird in Axia verwendet, damit sich das System gegen einen Dienst, wie z. B. Exchange Online, authentifizieren kann.</p><p>'Client Credentials' ist ein OAuth 2.0-Flow, mit welcher sich ein Client gegen Diensteanbieter authentifzieren kann, um auf geschützte Ressourcen wie z. B. Postfächer zuzugreifen. Ressourcen, die über den 'Client Credentials'-Flow zugegriffen werden, sollten zum Client (in diesem Fall Axia) gehören; dieser Flow ist nicht dafür gedacht, auf Benutzer-Ressourcen direkt oder in Namen dessen zuzugreifen.</p><p>Dieser Flow wird aktuell nur für Zugriff auf E-Mail-Ressourcen verwendet.</p>"
         }
       },
       "providerUrl": "Anbieter-URL",
       "providerUrlHint": "URL des gewählten Anbieters für OAuth-Service-Discovery, oft auch \"Issuer URL\" genannt.",
       "redirectUrl": "Weiterleitungs-URL",
-      "redirectUrlHint": "Benutzer werden hierhin weitergeleitet, nachdem sie sich authentifiziert haben. Sollte die URL der Anmeldeseite von Tallarin4 sein. Muss ebenfalls beim Anbieter registriert sein.",
+      "redirectUrlHint": "Benutzer werden hierhin weitergeleitet, nachdem sie sich authentifiziert haben. Sollte die URL der Anmeldeseite von Axia sein. Muss ebenfalls beim Anbieter registriert sein.",
       "scopes": "Scopes",
       "scopesHint": "Scopes teilen dem Anbieter mit, was ein OAuth-Client tun oder worauf er zugreifen möchte. Sie werden vom Anbieter definiert und müssen dem Client zugewiesen werden, um nutzbar zu sein - eine Liste der verfügbaren Scopes sollte in der Dokumentation vom Anbieter zu finden sein.",
       "title": "OAuth-Client '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Frontend-Funktionen",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Sperrt alle Eingaben auf dem aktuellen Formular oder gibt diese wieder frei.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sendet eine Anfrage an einen Tallarin4-Client, installiert und aktiv auf dem gleichen Computer wie die Tallarin4-Browser-Sitzung, eine Reihe an Tastatureingaben durchzuführen. Diese Eingaben werden durch einen String definiert, wie z. B. \"Hallo Welt!\".<br /><br />Einige Sondertasten (ALT-TAB, TAB, ENTER, ESCAPE) werden ebenfalls unterstützt und können wie folgt verwendet werden:<br />\"Hallo,{ENTER}wie geht es dir?\"",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sendet eine Anfrage an einen Axia-Client, installiert und aktiv auf dem gleichen Computer wie die Axia-Browser-Sitzung, eine Reihe an Tastatureingaben durchzuführen. Diese Eingaben werden durch einen String definiert, wie z. B. \"Hallo Welt!\".<br /><br />Einige Sondertasten (ALT-TAB, TAB, ENTER, ESCAPE) werden ebenfalls unterstützt und können wie folgt verwendet werden:<br />\"Hallo,{ENTER}wie geht es dir?\"",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Aktualisiert Werte für die spezifizierte Sammlung.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Kopiert Text zur Zwischenablage des Benutzers.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Zeigt einen Dialog mit den definierten Titel und Inhalt. Der Titel ist ein simpler Textstring, der Inhalt kann entweder Text oder HTML sein.<br /><br />Buttons werden mithilfe einer Liste an Textstrings definiert. Wenn keine definiert sind, wird ein simpler OK-Button angezeigt.<br /><br />Der Rückgabewert ist der Index vom gedrückten Button. Wenn also der 1. Button gedrückt wurde, ist der Wert 0. Beim 2. Button ist der Wert 1 usw.<br /><br /><b>Example</b><br />app.dialog_show(<blockquote>'Please confirm',<br />'Do you really want to delete this item?',<br />['Yes', 'Cancel action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Platzhalter für Backend-Funktionen - entweder als Ausdruck ('SELECT function_abc()') oder direkt aufgerufen ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Funktionen (Frontend)",
       "placeholderFncInstance": "Funktionen (Instanz)",
-      "placeholderFncInstanceHelp": "Platzhalter für Funktionen von der Tallarin4-Instanz - diese erlauben Zugriff auf System-Features wie Datei- oder Mailverarbeitung.",
+      "placeholderFncInstanceHelp": "Platzhalter für Funktionen von der Axia-Instanz - diese erlauben Zugriff auf System-Features wie Datei- oder Mailverarbeitung.",
       "placeholderPresets": "Vordefinierte Datensatz-IDs",
       "placeholderPresetsHelp": "Platzhalter für die ID (als BIGINT) für den Datensatz, der als vordefinierter Datensatz im System angelegt worden ist.<br /><br />Wenn der vordefinierte Datensatz nicht geschützt war, könnte dieser von Benutzern gelöscht worden sein. In diesem Fall wird 'null' zurückgegeben.",
       "placeholderRelations": "Relationen",
@@ -1275,7 +1275,7 @@
       "formOpen": "Zu öffnendes Formular",
       "newLoginForm": "Neues Anmeldeformular",
       "title": "Anmeldeformulare",
-      "titleDepr": "Anmeldeformulare sind seit Tallarin4.9 veraltet. Auch wenn sie noch für eine Weile funktionieren werden, sollte auf das Benutzer-Sync-Verfahren gewechselt werden (s. Builder-Dokumentation)."
+      "titleDepr": "Anmeldeformulare sind seit Axia.9 veraltet. Auch wenn sie noch für eine Weile funktionieren werden, sollte auf das Benutzer-Sync-Verfahren gewechselt werden (s. Builder-Dokumentation)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Vom Repository installieren",
         "versionCreate": "Neue Version erzeugen"
       },
-      "clientEventsHint": "Tallarin4 hat eine Client-Anwendung, welche Benutzer über ihre persönlichen Einstellungen installieren können. Wenn diese läuft, kann sie in Tallarin4 hochgeladene Dateien mit lokaler Software öffnen. Sie kann auch auf bestimmte Ereignisse wie z. B. Hotkey-Eingaben reagieren, indem sogenannte 'Client-Ereignisse' definiert werden. Diese Ereignisse werden idR. genutzt, um Informationen vom Client zu Tallarin4 zu schicken - entweder um Daten zu aktualisieren mithilfe von Backend-Funktionen oder mit einer offenen Tallarin4-Browser-Sitzung zu interagieren mithilfe von Frontend-Funktionen.",
+      "clientEventsHint": "Axia hat eine Client-Anwendung, welche Benutzer über ihre persönlichen Einstellungen installieren können. Wenn diese läuft, kann sie in Axia hochgeladene Dateien mit lokaler Software öffnen. Sie kann auch auf bestimmte Ereignisse wie z. B. Hotkey-Eingaben reagieren, indem sogenannte 'Client-Ereignisse' definiert werden. Diese Ereignisse werden idR. genutzt, um Informationen vom Client zu Axia zu schicken - entweder um Daten zu aktualisieren mithilfe von Backend-Funktionen oder mit einer offenen Axia-Browser-Sitzung zu interagieren mithilfe von Frontend-Funktionen.",
       "color": "Farbe",
       "colorHint": "Primäre Anwendungsfarbe - sichtbar in der obersten Leiste und Menü, wenn nicht durch Customizing und/oder Benutzereinstellung überschrieben. Die Systemdarstellung ist optimiert für ausgewaschene, dunklere Farben (dunkles Pastell).",
       "dependsOn": "Baut auf",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Sitzungsstart-Funktion",
       "jsFunctionIdOnLoginHint": "Diese Frontendfunktion wird ausgeführt, wenn ein Benutzer sich im System einloggt. Sie kann bspw. genutzt werden, um Variablen zu initalisieren oder Logs zu schreiben.",
       "keyCreate": "Transfer - Neues Signierschlüsselpaar erzeugen",
-      "keyCreateInfo": "Stelle sicher, dass der private Schlüssel zu jeder Zeit sicher verwahrt wird. Der öffentliche Schlüssel muss in Zielinstanzen von Tallarin4 importiert werden, bevor Anwendungen installiert werden können.",
+      "keyCreateInfo": "Stelle sicher, dass der private Schlüssel zu jeder Zeit sicher verwahrt wird. Der öffentliche Schlüssel muss in Zielinstanzen von Axia importiert werden, bevor Anwendungen installiert werden können.",
       "keyCreateLength": "Schlüssellänge auswählen",
       "languageCode": "Sprach-Code",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",
@@ -1332,7 +1332,7 @@
       "languageMainHint": "Wird verwendet, wenn die gewählte Benutzersprache von dieser Anwendung nicht angeboten wird.",
       "languages": "Anwendungssprachen",
       "languagesHint": "Sprachen, in der diese Anwendung verfügbar ist.",
-      "nameHint": "Referenzname für diese Anwendung. Dieser Name muss in einem Tallarin4-System einzigartig sein, deswegen kann ein Präfix basierend auf dem Organisationsnamen sinnvoll sein.",
+      "nameHint": "Referenzname für diese Anwendung. Dieser Name muss in einem Axia-System einzigartig sein, deswegen kann ein Präfix basierend auf dem Organisationsnamen sinnvoll sein.",
       "nameHolder": "work_scheduler, inventory_planner, ...",
       "namePwa": "Anwendungstitel",
       "namePwaHint": "Der volle Anwendungstitel, welcher in der Liste installierter Anwendungen zu sehen ist. Kann bis zu 60 Zeichen lang sein. Keine Übersetzung möglich.",
@@ -1345,7 +1345,7 @@
       "position": "Standardposition",
       "positionHint": "Position der Anwendung in der Kopfzeile (kleinere zuerst). Kann von Systemadministratoren überschrieben werden.",
       "pwa": "Progressive Web App (PWA)",
-      "pwaHint": "Tallarin4-Anwendungen können auf Desktop-Computern sowie auf mobilen Geräten als Progressive Web Apps (PWA) über moderne Browser installiert werden. Sie werden bei den installierten Anwendungen aufgeführt, haben eigene Icons sowie Verknüpfungen und verhalten sich ähnlich zu nativen Anwendungen.",
+      "pwaHint": "Axia-Anwendungen können auf Desktop-Computern sowie auf mobilen Geräten als Progressive Web Apps (PWA) über moderne Browser installiert werden. Sie werden bei den installierten Anwendungen aufgeführt, haben eigene Icons sowie Verknüpfungen und verhalten sich ähnlich zu nativen Anwendungen.",
       "release": "Veröffentlichung",
       "releaseBuild": "Anwendungsversion",
       "releaseBuildApp": "Plattformversion",
@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Zugewiesene Funktionen können mit einem Formular interagieren, um bspw. Formularfelder zu lesen oder zu beschreiben. Wenn zugewiesen, können Funktionen nur in dem gewählten Formular ausgewählt und auch nicht in anderen Frontend-Funktionen aufgerufen werden. Diese Einstellung kann nachträglich nicht geändert werden.",
       "message": {
         "api": "<p>Der API-Name wird als Teil des API-Aufrufs verwendet. Er kann später geändert werden.</p>",
-        "module": "<p>Bitte wählen Sie einen Namen für Ihre Anwendung. Dieser Name dient zur eindeutigen Identifizierung Ihrer Anwendung in einem Tallarin4-System. Er ist nicht für Benutzer sichtbar.</p><h3>Beispiele:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Da der Anwendungsname eindeutig sein muss, kann ein nach Ihrer Organisation benannter Präfix sinnvoll sein. Falls Ihre Organisation bspw. \"Modern Fashion GmbH\" heißt, könnten Sie \"mfg\" als Präfix nutzen (also \"mfg_shift_planner\").</p>",
+        "module": "<p>Bitte wählen Sie einen Namen für Ihre Anwendung. Dieser Name dient zur eindeutigen Identifizierung Ihrer Anwendung in einem Axia-System. Er ist nicht für Benutzer sichtbar.</p><h3>Beispiele:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Da der Anwendungsname eindeutig sein muss, kann ein nach Ihrer Organisation benannter Präfix sinnvoll sein. Falls Ihre Organisation bspw. \"Modern Fashion GmbH\" heißt, könnten Sie \"mfg\" als Präfix nutzen (also \"mfg_shift_planner\").</p>",
         "relation": "<p>Ein Relationsname sollte darstellen, was in dieser gespeichert wird. Er muss in einer Anwendung einzigartig sein.</p><h3>Beispiele:</h3><ul><li>event</li><li>event_attendance</li><li>location</li><li>location_event</li></ul>"
       },
       "module": "Neue Anwendung",
@@ -1583,8 +1583,8 @@
       "checks": "System-Checks",
       "checkStartForm": "Startformular ist festgelegt",
       "checkStartFormOff": "Startformular ist nicht festgelegt",
-      "extCommunity": "Tallarin4-Forum",
-      "extDocs": "Tallarin4-Dokumentation",
+      "extCommunity": "Axia-Forum",
+      "extDocs": "Axia-Dokumentation",
       "needHelp": "Fragen?",
       "title": "Erste Schritte",
       "titleForms": "Formulare erstellen",
@@ -1726,11 +1726,11 @@
       "moreInfo": "Weitere Informationen"
     },
     "info": {
-      "admin": "<b>Infos für Admins:</b> Die Feedback-Funktion kann in der Adminoberfläche deaktiviert werden. Wenn aktiv, wird Feedback an das aktuell ausgewählte Repository gesendet. Organisationen können ihr eigenes Repository betreiben (mit der <a href=\"https://t4-repo.tech.eus/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Tallarin4 Repository-Anwendung</a>), um intern Anwendungsversionen zu verwalten und Feedback zu empfangen.",
+      "admin": "<b>Infos für Admins:</b> Die Feedback-Funktion kann in der Adminoberfläche deaktiviert werden. Wenn aktiv, wird Feedback an das aktuell ausgewählte Repository gesendet. Organisationen können ihr eigenes Repository betreiben (mit der <a href=\"https://t4-repo.tech.eus/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia Repository-Anwendung</a>), um intern Anwendungsversionen zu verwalten und Feedback zu empfangen.",
       "data": [ "Feedback-Kategorie (Allgemein, Fehler / Problem, Vorschlag, Lob)", "Feedback-Text", "Smiley, der ausgewählt wurde", "Anwendung, die aktuall offen ist", "Anwendungs- & Systemversionsnummern", "Ob Benutzer, der Feedback gibt, ein Administrator ist", "Zufällig generierte Kennung, um Feedback aus dem gleichen System zu bündeln" ],
       "personal": "Es werden keine persönlichen Informationen gesendet. Um eine Antwort zu erhalten, können Kontaktdetails im Feedback-Text hinterlegt werden.",
       "repoUrl": "Feedback wird gesendet zu",
-      "repoUrlDefault": "<i>(dieses System wird betrieben von den Entwicklern von <a href=\"https://tech.eus/t4/\" target=\"_blank\">Tallarin4</a>)</i>",
+      "repoUrlDefault": "<i>(dieses System wird betrieben von den Entwicklern von <a href=\"https://tech.eus/t4/\" target=\"_blank\">Axia</a>)</i>",
       "what": "Was wird gesendet?"
     },
     "moduleRelated": "Ist dies Feedback für die offene Anwendung? ({NAME})",
@@ -1953,7 +1953,7 @@
     "apis": "APIs",
     "application": "Anwendung",
     "applications": "Anwendungen",
-    "appName": "Tallarin4",
+    "appName": "Axia",
     "appWebsite": "https://tech.eus/t4/",
     "arguments": "Argumente",
     "articles": "Hilfe-Artikel",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Namen, Wörter & E-Mail-Adressen immer ausschreiben",
     "modulesInactive": "Weitere Suchoptionen",
-    "tips": [ "Eine neue Suche kann von überall in Tallarin4 durch Drücken von <b>STRG + SHIFT + F</b> gestartet werden. Falls Text ausgewählt ist, wird dieser als Sucheingabe genutzt.", "Bei der Suche nach Namen, Wörtern oder E-Mail-Adressen, diese immer ausschreiben.", "Wenn mehrsprachige Inhalte durchsucht werden, ist es wichtig, die Sprache der Sucheingabe festzulegen (rechts-oben).", "Sprachabhängige Suchen, wie z. B. das Finden von \"Einträgen\" mit der Suche nach \"Eintrag\", sind möglich, wenn die Sprache des Inhaltes definiert ist. Dies macht oft für Artikel oder Dokumentationen Sinn, wird aber meist für E-Mails nicht gemacht." ]
+    "tips": [ "Eine neue Suche kann von überall in Axia durch Drücken von <b>STRG + SHIFT + F</b> gestartet werden. Falls Text ausgewählt ist, wird dieser als Sucheingabe genutzt.", "Bei der Suche nach Namen, Wörtern oder E-Mail-Adressen, diese immer ausschreiben.", "Wenn mehrsprachige Inhalte durchsucht werden, ist es wichtig, die Sprache der Sucheingabe festzulegen (rechts-oben).", "Sprachabhängige Suchen, wie z. B. das Finden von \"Einträgen\" mit der Suche nach \"Eintrag\", sind möglich, wenn die Sprache des Inhaltes definiert ist. Dies macht oft für Artikel oder Dokumentationen Sinn, wird aber meist für E-Mails nicht gemacht." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Core Company installieren"
     },
     "newVersion": "Update-Notifikation",
-    "newVersionText": "Eine neue Version von Tallarin4 ist verfügbar.<br /><br /><a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Tallarin4 v{VERSION} herunterladen</a>",
+    "newVersionText": "Eine neue Version von Axia ist verfügbar.<br /><br /><a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Axia v{VERSION} herunterladen</a>",
     "noAccess": "Es ist noch kein Zugriff eingerichtet.<br />Bitte kontaktiere deinen Systemadministrator.",
     "noAccessAdmin": "Um Zugriff zu erhalten, weise deinem Benutzer Rollen zu.",
     "noAccessTitle": "Kein Zugriff auf Anwendungen",
@@ -2238,10 +2238,10 @@
       "installBundle": "Core Company",
       "installBundleDesc": "Installiere eine vorselektierte Sammlung an Kernanwendungen für Organisationen. Die Sammlung \"Core Company\" inkludiert:<ul><li>Abwesenheitsverwaltung</li><li>Zeiterfassung</li><li>Projekt- & Aufgabenverwaltung</li><li>Anfragenverwaltung</li><li>Ein Passwort-Safe</li><li>IT-Anlagenverwaltung</li></ul>Nach der Installation unterstützen die Hilfeseiten der jeweiligen Anwendungen bei der Ersteinrichtung.",
       "installFile": "Von Datei",
-      "installFileDesc": "Installiere Anwendungen von lokalen Tallarin4-Dateien. Für Offline-Systeme oder selbsterstellte Anwendungen.<br /><br />Dateien für öffentliche Tallarin4-Anwendungen können vom offiziellen <a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Repository</a> heruntergeladen werden.",
+      "installFileDesc": "Installiere Anwendungen von lokalen Axia-Dateien. Für Offline-Systeme oder selbsterstellte Anwendungen.<br /><br />Dateien für öffentliche Axia-Anwendungen können vom offiziellen <a href=\"https://tech.eus/t4/downloads.php\" target=\"_blank\">Repository</a> heruntergeladen werden.",
       "installRepo": "Vom Repository",
-      "installRepoDesc": "<b>Internetzugriff erforderlich</b><br /><br />Installiere Anwendungen vom offiziellen Tallarin4-Repository. Das Repository bietet aktuelle Versionen öffentlich angebotener Tallarin4-Anwendungen.<br /><br />Alle Anwendungen sind geprüft und digital signiert.",
-      "intro": "Willkommen in Tallarin4<br /><br />Aktuell sind keine Anwendungen installiert. Um Tallarin4 zu benutzen, wähle bitte eine der unteren Installationsoptionen.",
+      "installRepoDesc": "<b>Internetzugriff erforderlich</b><br /><br />Installiere Anwendungen vom offiziellen Axia-Repository. Das Repository bietet aktuelle Versionen öffentlich angebotener Axia-Anwendungen.<br /><br />Alle Anwendungen sind geprüft und digital signiert.",
+      "intro": "Willkommen in Axia<br /><br />Aktuell sind keine Anwendungen installiert. Um Axia zu benutzen, wähle bitte eine der unteren Installationsoptionen.",
       "title": "Einrichtung"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Abmelden"
     },
     "clientEvents": {
-      "intro": "Wenn die Tallarin4-Client-Anwendung (s. \"Geräte\") installiert ist, können globale Hotkeys eingestellt werden. Diese werden verwendet, um mit Tallarin4 zu interagieren, wenn es im Hintergrund läuft.",
-      "noEvents": "Aktuell sind keine Tallarin4-Anwendungen verfügbar, die Hotkeys anbieten."
+      "intro": "Wenn die Axia-Client-Anwendung (s. \"Geräte\") installiert ist, können globale Hotkeys eingestellt werden. Diese werden verwendet, um mit Axia zu interagieren, wenn es im Hintergrund läuft.",
+      "noEvents": "Aktuell sind keine Axia-Anwendungen verfügbar, die Hotkeys anbieten."
     },
     "colorClassicMode": "Farbschema",
     "colorClassicMode0": "Modern",
@@ -2470,23 +2470,23 @@
         "loadCnf": "Konfigdatei"
       },
       "context": {
-        "client": "Tallarin4-Client",
+        "client": "Axia-Client",
         "ics": "Kalender-App",
         "totp": "Multi-Faktor"
       },
       "device": {
-        "adminInfo": "<b>Info für Admins:</b> Die Tallarin4-Client-Anwendung funktioniert nicht, wenn sich Tallarin4 im Wartungsmodus befindet.",
+        "adminInfo": "<b>Info für Admins:</b> Die Axia-Client-Anwendung funktioniert nicht, wenn sich Axia im Wartungsmodus befindet.",
         "installStep1": "Gerätename auswählen:",
         "installStep2": "Anwendungs- & Konfigdatei in den gleichen Ordner herunterladen:",
         "installStep3": "Die Anwendung starten. Sie wird sich installieren und dann im Systemtray erscheinen.",
         "installStep4": "Die heruntergeladenen Anwendungs- & Konfigdateien können jetzt gelöscht werden.",
-        "intro0": "Die Tallarin4-Client-Anwendung ist eine optionale Software, die zusätzliche Funktionen bietet. Sobald sie installiert ist, stehen die folgenden Funktionen zur Verfügung:",
-        "intro1": "In Tallarin4 hochgeladene Dateien können direkt mit lokaler Software bearbeitet werden. Eine Standardanwendung für die jeweilige Dateierweiterung muss definiert sein. Unter Windows kann mit Umschalt+Mausklick eine Anwendung ausgewählt werden.",
-        "intro2": "Globale Hotkeys können verwendet werden, um Aktionen in Tallarin4-Anwendungen auszuführen, während Tallarin4 im Hintergrund läuft.",
+        "intro0": "Die Axia-Client-Anwendung ist eine optionale Software, die zusätzliche Funktionen bietet. Sobald sie installiert ist, stehen die folgenden Funktionen zur Verfügung:",
+        "intro1": "In Axia hochgeladene Dateien können direkt mit lokaler Software bearbeitet werden. Eine Standardanwendung für die jeweilige Dateierweiterung muss definiert sein. Unter Windows kann mit Umschalt+Mausklick eine Anwendung ausgewählt werden.",
+        "intro2": "Globale Hotkeys können verwendet werden, um Aktionen in Axia-Anwendungen auszuführen, während Axia im Hintergrund läuft.",
         "nameHint": "'Mein Arbeits-PC'",
         "os": "Betriebssystem:",
-        "uninstallStep1": "Rechts-klicken auf das Tray-Icon vom Tallarin4-Client und die Option \"Deinstallieren\" auswählen.",
-        "uninstallStep2": "Der Tallarin4-Client ist jetzt deinstalliert.",
+        "uninstallStep1": "Rechts-klicken auf das Tray-Icon vom Axia-Client und die Option \"Deinstallieren\" auswählen.",
+        "uninstallStep2": "Der Axia-Client ist jetzt deinstalliert.",
         "updateStep1": "Die neue Anwendungsdatei herunterladen:",
         "updateStep2": "Die Anwendung starten. Sie wird das Update ausführen und dann im Systemtray erscheinen.",
         "updateStep3": "Die heruntergeladene Anwendungsdatei kann gelöscht werden."
@@ -2502,7 +2502,7 @@
         "nameHint": "'Mein Smartphone'",
         "outro": "Verwenden Sie den QR-Code, um dieses Konto zu Ihrer Authenticator-App hinzuzufügen. Wenn Sie fertig sind, schließen Sie dieses Fenster. Sie können diesen Vorgang wiederholen, um MFA für mehrere Geräte zu aktivieren."
       },
-      "titleAdd": "Tallarin4-Client-Anwendung verwalten",
+      "titleAdd": "Axia-Client-Anwendung verwalten",
       "titleContext": "Verwendung",
       "titleDateCreate": "Erstellt",
       "titleMfa": "Multifaktor-Authentifizierung hinzufügen",
