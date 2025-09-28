@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Os yw cyfrif e-bost gweithredol ar gael, bydd y system yn anfon hysbysiadau am ddigwyddiadau pwysig. Y rhain ar hyn o bryd yw:",
       "adminMailsHint": "Ychwanegu cyfeiriad e-bost derbynnydd",
-      "adminMailsList": [ "Dod i ben ar gofrestriad cleientiaid OAuth sydd ar ddod.", "Dod i ben ar drwydded REI3 Proffesiynol weithredol." ],
+      "adminMailsList": [ "Dod i ben ar gofrestriad cleientiaid OAuth sydd ar ddod.", "Dod i ben ar drwydded Axia4 Proffesiynol weithredol." ],
       "adminMailsTitle": "Hysbysiadau gweinyddol",
       "appVersion": "Fersiwn y llwyfan",
       "bruteforceAttempts": "Blocio gwesteiwyr ar ôl ymgais",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "Mewn eiliadau",
       "dbTimeoutIcs": "Amser allan y gronfa ddata: Lawrlwythiadau calendr (ICS)",
       "dialog": {
-        "builderMode": "Defnyddir y Builder i greu neu newid ceisiadau.<br /><br />Gall newid ceisiadau arwain at golli data a ni ddylid <b>BYTH</b> ei wneud mewn amgylcheddau cynhyrchu.<br /><br />I ddefnyddio'r Builder yn ddiogel, defnyddiwch enghraifft benodol o REI3; gellir trosglwyddo ceisiadau parod ac wedi'u profi i system gynhyrchu wedyn.<br /><br />Cyfeiriwch at <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">ddogfennaeth y Builder</a> i ddysgu mwy.",
+        "builderMode": "Defnyddir y Builder i greu neu newid ceisiadau.<br /><br />Gall newid ceisiadau arwain at golli data a ni ddylid <b>BYTH</b> ei wneud mewn amgylcheddau cynhyrchu.<br /><br />I ddefnyddio'r Builder yn ddiogel, defnyddiwch enghraifft benodol o Axia4 ; gellir trosglwyddo ceisiadau parod ac wedi'u profi i system gynhyrchu wedyn.<br /><br />Cyfeiriwch at <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">ddogfennaeth y Builder</a> i ddysgu mwy.",
         "pleaseRead": "Darllenwch cyn arbed",
         "productionMode": "Defnyddir y modd cynnal a chadw i ddiweddaru, gosod neu dynnu cymwysiadau o'r system.<br /><br />Bydd newid i'r modd cynnal a chadw yn <b>allgofnodi pob defnyddiwr heb ganiatâd gweinyddol</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Enw enghraifft",
-      "appNameHint": "Enw'r unigolyn REI3, dangosir ar y dudalen mewngofnodi.",
+      "appNameHint": "Enw'r unigolyn Axia4 , dangosir ar y dudalen mewngofnodi.",
       "appNameShort": "Enw byr",
       "appNameShortHint": "Fersiwn fer o enw'r eilydd, wedi'i ddangos yn nheitl y dudalen ac fel label os caiff ei osod fel ap gwe blaengar (PWA).",
       "companyColorHeader": "Lliw teitl (penawd)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Delwedd a ddefnyddir ar gyfer eiconau ap gwe cynyddol. Rhaid iddo fod yn ffeil PNG, uchafswm o 128kb a'n union 512x512 picsel o faint.",
       "pwaDomain": "Mynediad uniongyrchol i'r ap",
       "pwaDomainHint": "Dim ond yr is-barth (fel yn 'my-app' o 'my-app.my-domain.com')",
-      "pwaDomainHint1": "Gellir cyrchu cymwysiadau unigol yn uniongyrchol a'u gosod ar wahân ar ddyfeisiau fel PWAs. Yna mae ganddynt eu tudalen gychwyn eu hunain, eiconau a llywio unigryw. Mae hyn yn gofyn am gofnod DNS is-barth ar gyfer pob cymhwysiad fel bod y system REI3 yn hygyrch trwy wahanol barthau. Mae hefyd yn gofyn am dystysgrif gwyllt ar y gweinydd REI3 i ymateb yn gywir i geisiadau HTTPS.\n\nUnwaith y bydd y cofnodion DNS a'r dystysgrif gwyllt yn barod, rhowch is-barth ar gyfer pob cymhwysiad dymunol.",
-      "pwaDomainHint2": "Gwnewch yn siŵr bod un is-barth ar gael nad yw yn y rhestr hon, i gyrraedd system gyffredinol REI3. Fel arall, ni fydd gennych fynediad i'r rhyngwyneb defnyddiwr gweinyddol gan mai dim ond mynediad i'r cais penodol y mae pob is-barth cais yn ei roi.",
+      "pwaDomainHint1": "Gellir cyrchu cymwysiadau unigol yn uniongyrchol a'u gosod ar wahân ar ddyfeisiau fel PWAs. Yna mae ganddynt eu tudalen gychwyn eu hunain, eiconau a llywio unigryw. Mae hyn yn gofyn am gofnod DNS is-barth ar gyfer pob cymhwysiad fel bod y system Axia4 yn hygyrch trwy wahanol barthau. Mae hefyd yn gofyn am dystysgrif gwyllt ar y gweinydd Axia4 i ymateb yn gywir i geisiadau HTTPS.\n\nUnwaith y bydd y cofnodion DNS a'r dystysgrif gwyllt yn barod, rhowch is-barth ar gyfer pob cymhwysiad dymunol.",
+      "pwaDomainHint2": "Gwnewch yn siŵr bod un is-barth ar gael nad yw yn y rhestr hon, i gyrraedd system gyffredinol Axia4 . Fel arall, ni fydd gennych fynediad i'r rhyngwyneb defnyddiwr gweinyddol gan mai dim ond mynediad i'r cais penodol y mae pob is-barth cais yn ei roi.",
       "titleCaptions": "Pennawdau",
       "titleColors": "Lliwiau",
       "titleCss": "Rheolau CSS personol",
@@ -137,7 +137,7 @@
       "titleLogos": "Logos",
       "titlePwas": "Apiau gwe blaengar (PWAs)",
       "tokenKeepEnable": "Gadewch i ddefnyddwyr aros wedi mewngofnodi",
-      "tokenKeepEnableHint": "Os yw wedi'i ddiffodd, mae'r opsiwn 'aros wedi mewngofnodi' ar y dudalen mewngofnodi yn cael ei dynnu. Heb yr opsiwn hwn, mae defnyddwyr yn cael eu gorfodi i ddilysu bob tro y maent yn cael mynediad i'r system. Nid yw'r gosodiad hwn yn effeithio ar fynediad dyfais, fel tanysgrifiadau calendr neu gleientiaid REI3."
+      "tokenKeepEnableHint": "Os yw wedi'i ddiffodd, mae'r opsiwn 'aros wedi mewngofnodi' ar y dudalen mewngofnodi yn cael ei dynnu. Heb yr opsiwn hwn, mae defnyddwyr yn cael eu gorfodi i ddilysu bob tro y maent yn cael mynediad i'r system. Nid yw'r gosodiad hwn yn effeithio ar fynediad dyfais, fel tanysgrifiadau calendr neu gleientiaid Axia4 ."
     },
     "files": {
       "deleteDate": "Ffeil wedi'i dileu",
@@ -197,11 +197,11 @@
       "clientId": "ID Cleient",
       "currentState": "Gwerthoedd cyfredol",
       "dialog": {
-        "delete": "Ydych chi'n siŵr eich bod am dynnu'r ffeil trwydded? I ailactifadu REI3 Proffesiynol, rhaid uwchlwytho ffeil trwydded ddilys."
+        "delete": "Ydych chi'n siŵr eich bod am dynnu'r ffeil trwydded? I ailactifadu Axia4 Proffesiynol, rhaid uwchlwytho ffeil trwydded ddilys."
       },
-      "extCommunity": "Fforwm Cymuned REI3",
-      "extLicense": "Proffesiynol REI3",
-      "intro": "Mae REI3 yn hollol <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">ffynhonnell agored</a> ac ar gael i'w ddefnyddio'n rhad ac am ddim.<br /><br />I'r rhai sydd angen nodweddion menter neu gefnogaeth, mae <b>REI3 Professional</b> ar gael. Mae'n cael ei brisio i fod yn fforddiadwy i sefydliadau o unrhyw faint, gan gostio llawer llai na chynigion cod isel cymharol.<br /><br />Tra'n cefnogi datblygiad parhaus, gall cwsmeriaid REI3 Professional hefyd actifadu'r ystod lawn o nodweddion a chael cefnogaeth gan Lean Softworks, prif ddatblygwr REI3.",
+      "extCommunity": "Fforwm Cymuned Axia4 ",
+      "extLicense": "Proffesiynol Axia4 ",
+      "intro": "Mae Axia4 yn hollol <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">ffynhonnell agored</a> ac ar gael i'w ddefnyddio'n rhad ac am ddim.<br /><br />I'r rhai sydd angen nodweddion menter neu gefnogaeth, mae <b>Axia4 Professional</b> ar gael. Mae'n cael ei brisio i fod yn fforddiadwy i sefydliadau o unrhyw faint, gan gostio llawer llai na chynigion cod isel cymharol.<br /><br />Tra'n cefnogi datblygiad parhaus, gall cwsmeriaid Axia4 Professional hefyd actifadu'r ystod lawn o nodweddion a chael cefnogaeth gan Lean Softworks, prif ddatblygwr Axia4 .",
       "introMore": "Mwy o wybodaeth:",
       "licenseExpired": "Mae'r drwydded wedi dod i ben",
       "licenseId": "ID Trwydded",
@@ -282,7 +282,7 @@
       "noData": "Dim sesiynau ar gael",
       "option": {
         "browser": "Sesiwn porwr",
-        "fatClient": "Cleient REI3"
+        "fatClient": "Cleient Axia4 "
       },
       "titles": {
         "address": "Cyfeiriad",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Dewisiadau: Open ID Connect"
       },
       "claimRoles": "Hawliad rolau",
-      "claimRolesHint": "Enw'r maes hawliad, sy'n cynnwys rolau neu grwpiau defnyddwyr. Os caiff ei osod, gellir mapio rolau REI3 i werthoedd yn yr hawliad hwn. Rhaid i'r gwerth fod yn arae llinyn JSON, megis: [\"all-users\", \"department-it\"]",
+      "claimRolesHint": "Enw'r maes hawliad, sy'n cynnwys rolau neu grwpiau defnyddwyr. Os caiff ei osod, gellir mapio rolau Axia4 i werthoedd yn yr hawliad hwn. Rhaid i'r gwerth fod yn arae llinyn JSON, megis: [\"all-users\", \"department-it\"]",
       "claimUsername": "Hawliad enw defnyddiwr",
       "claimUsernameHint": "Enw'r maes hawliad, sy'n cynnwys yr enw defnyddiwr. Rhaid ei lenwi. Mae'n rhaid i enwau defnyddwyr fod yn unigryw ar gyfer cleient OAuth.",
       "clientId": "ID Cleient",
@@ -468,7 +468,7 @@
       },
       "flow": "Llifo OAuth",
       "loginMetaMap": "Diweddaru manylion defnyddiwr trwy hawliadau",
-      "nameHint": "Enw mewnol i gyfeirio at y cleient OAuth hwn y tu mewn i REI3.",
+      "nameHint": "Enw mewnol i gyfeirio at y cleient OAuth hwn y tu mewn i Axia4 .",
       "option": {
         "flow": {
           "authCodePkce": "Cod Dilysu gyda PKCE",

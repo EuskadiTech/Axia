@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "If a working email account is available, the system will send out notifications about important events. These are currently:",
       "adminMailsHint": "Add receiver email address",
-      "adminMailsList": [ "Upcoming expiration of registered OAuth clients.", "Upcoming expiration of an active REI3 Professional license." ],
+      "adminMailsList": [ "Upcoming expiration of registered OAuth clients.", "Upcoming expiration of an active Axia4 Professional license." ],
       "adminMailsTitle": "Admin notifications",
       "appVersion": "Platform version",
       "bruteforceAttempts": "Block hosts after attempts",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "In seconds",
       "dbTimeoutIcs": "Database timeout: Calendar downloads (ICS)",
       "dialog": {
-        "builderMode": "The Builder is used to create or change applications.<br /><br />Changing applications can result in data loss and should <b>NEVER</b> be done in production environments.<br /><br />To safely use the Builder, please use a dedicated instance of REI3; ready and tested applications can then be transferred to a production system.<br /><br />Please refer to the <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">Builder documentation</a> to learn more.",
+        "builderMode": "The Builder is used to create or change applications.<br /><br />Changing applications can result in data loss and should <b>NEVER</b> be done in production environments.<br /><br />To safely use the Builder, please use a dedicated instance of Axia4 ; ready and tested applications can then be transferred to a production system.<br /><br />Please refer to the <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">Builder documentation</a> to learn more.",
         "pleaseRead": "Please read before saving",
         "productionMode": "The maintenance mode is used to update, install or remove applications from the system.<br /><br />Switching to maintenance mode will <b>logout all users without admin permissions</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Instance name",
-      "appNameHint": "Name of the REI3 instance, shown on the login page.",
+      "appNameHint": "Name of the Axia4 instance, shown on the login page.",
       "appNameShort": "Short name",
       "appNameShortHint": "Short version of the instance name, shown in the page title and as label if installed as progressive web app (PWA).",
       "companyColorHeader": "Title color (header)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Image used for progressive web app icons. Must be PNG file, max. 128kb and precisely 512x512 pixels in size.",
       "pwaDomain": "Direct app access",
       "pwaDomainHint": "Only the sub domain (as in 'my-app' from  'my-app.my-domain.com')",
-      "pwaDomainHint1": "Individual applications can be accessed directly and installed separately on devices as PWAs. They then have their own start page, icons and exclusive navigation. This requires a sub domain DNS record for each application so that the REI3 system is reachable via different domains. It also requires a wildcard certificate on the REI3 server to respond correctly to HTTPS requests.<br /><br />Once both DNS records and wildcard certificate are ready, please enter a sub domain for each desired application.",
-      "pwaDomainHint2": "Make sure to have one sub domain available that is not in this list, to reach the general REI3 system. Otherwise you have no access to the admin user interface as each application sub domain only gives access to the specific application.",
+      "pwaDomainHint1": "Individual applications can be accessed directly and installed separately on devices as PWAs. They then have their own start page, icons and exclusive navigation. This requires a sub domain DNS record for each application so that the Axia4 system is reachable via different domains. It also requires a wildcard certificate on the Axia4 server to respond correctly to HTTPS requests.<br /><br />Once both DNS records and wildcard certificate are ready, please enter a sub domain for each desired application.",
+      "pwaDomainHint2": "Make sure to have one sub domain available that is not in this list, to reach the general Axia4 system. Otherwise you have no access to the admin user interface as each application sub domain only gives access to the specific application.",
       "titleCaptions": "Captions",
       "titleColors": "Colors",
       "titleCss": "Custom CSS rules",
@@ -137,7 +137,7 @@
       "titleLogos": "Logos",
       "titlePwas": "Progressive web apps (PWAs)",
       "tokenKeepEnable": "Allow users to stay logged in",
-      "tokenKeepEnableHint": "If switched off, the 'stay logged in' option on the login page is removed. Without this option, users are forced to authenticate every time they access the system. This setting does not affect device access, like calendar subscriptions or REI3 clients."
+      "tokenKeepEnableHint": "If switched off, the 'stay logged in' option on the login page is removed. Without this option, users are forced to authenticate every time they access the system. This setting does not affect device access, like calendar subscriptions or Axia4 clients."
     },
     "files": {
       "deleteDate": "File deleted",
@@ -197,11 +197,11 @@
       "clientId": "Client ID",
       "currentState": "Current values",
       "dialog": {
-        "delete": "Are you sure you want to remove the license file? To reactivate REI3 Professional, a valid license file must be uploaded."
+        "delete": "Are you sure you want to remove the license file? To reactivate Axia4 Professional, a valid license file must be uploaded."
       },
-      "extCommunity": "REI3 Community Forum",
-      "extLicense": "REI3 Professional",
-      "intro": "REI3 is fully <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">open source</a> and can be used free of charge.<br /><br />For those needing enterprise features or support, there is <b>REI3 Professional</b>. It is priced to be affordable to organizations of any size, often costing much less than comparable low-code offerings.<br /><br />While supporting continuous development, REI3 Professional customers can also activate the full range of features and get support from Lean Softworks, the primary developer of REI3.",
+      "extCommunity": "Axia4 Community Forum",
+      "extLicense": "Axia4 Professional",
+      "intro": "Axia4 is fully <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">open source</a> and can be used free of charge.<br /><br />For those needing enterprise features or support, there is <b>Axia4 Professional</b>. It is priced to be affordable to organizations of any size, often costing much less than comparable low-code offerings.<br /><br />While supporting continuous development, Axia4 Professional customers can also activate the full range of features and get support from Lean Softworks, the primary developer of Axia4 .",
       "introMore": "More information:",
       "licenseExpired": "License has expired",
       "licenseId": "License ID",
@@ -282,7 +282,7 @@
       "noData": "No sessions available",
       "option": {
         "browser": "Browser session",
-        "fatClient": "REI3 Client"
+        "fatClient": "Axia4 Client"
       },
       "titles": {
         "address": "Address",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Defaults: Open ID Connect"
       },
       "claimRoles": "Roles claim",
-      "claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, REI3 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
+      "claimRolesHint": "Name of the claim field, which contains user roles or groups. If set, Axia4 roles can be mapped to values in this claim. Value must be a JSON string array, such as: [\"all-users\", \"department-it\"]",
       "claimUsername": "Username claim",
       "claimUsernameHint": "Name of the claim field, which contains the username. Must be filled. Usernames must be unique for an OAuth client.",
       "clientId": "Client ID",
@@ -468,7 +468,7 @@
       },
       "flow": "OAuth flow",
       "loginMetaMap": "Update user details via claims",
-      "nameHint": "An internal name to reference this OAuth client inside of REI3.",
+      "nameHint": "An internal name to reference this OAuth client inside of Axia4 .",
       "option": {
         "flow": {
           "authCodePkce": "Authentication Code with PKCE",

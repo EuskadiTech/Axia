@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Se è disponibile un account email funzionante, il sistema invierà notifiche sugli eventi importanti. Questi sono attualmente:",
       "adminMailsHint": "Aggiungi l'indirizzo email del destinatario",
-      "adminMailsList": [ "Prossima scadenza dei client OAuth registrati.", "Prossima scadenza di una licenza attiva REI3 Professional." ],
+      "adminMailsList": [ "Prossima scadenza dei client OAuth registrati.", "Prossima scadenza di una licenza attiva Axia4 Professional." ],
       "adminMailsTitle": "Notifiche amministrative",
       "appVersion": "Versione della piattaforma",
       "bruteforceAttempts": "Blocca gli host dopo i tentativi",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "In pochi secondi",
       "dbTimeoutIcs": "Timeout del database: Download dei calendari (ICS)",
       "dialog": {
-        "builderMode": "Il Builder viene utilizzato per creare o modificare applicazioni.<br /><br />Modificare le applicazioni può comportare la perdita di dati e non dovrebbe <b>MAI</b> essere fatto in ambienti di produzione.<br /><br />Per utilizzare in sicurezza il Builder, si prega di utilizzare un'istanza dedicata di REI3; le applicazioni pronte e testate possono quindi essere trasferite a un sistema di produzione.<br /><br />Si prega di fare riferimento alla <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">documentazione del Builder</a> per saperne di più.",
+        "builderMode": "Il Builder viene utilizzato per creare o modificare applicazioni.<br /><br />Modificare le applicazioni può comportare la perdita di dati e non dovrebbe <b>MAI</b> essere fatto in ambienti di produzione.<br /><br />Per utilizzare in sicurezza il Builder, si prega di utilizzare un'istanza dedicata di Axia4; le applicazioni pronte e testate possono quindi essere trasferite a un sistema di produzione.<br /><br />Si prega di fare riferimento alla <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">documentazione del Builder</a> per saperne di più.",
         "pleaseRead": "Si prega di leggere prima di salvare",
         "productionMode": "La modalità di manutenzione viene utilizzata per aggiornare, installare o rimuovere applicazioni dal sistema.<br /><br />Passando alla modalità di manutenzione, si <b>disconnetteranno tutti gli utenti senza permessi di amministratore</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Nome istanza",
-      "appNameHint": "Nome dell'istanza REI3, visualizzato nella pagina di accesso.",
+      "appNameHint": "Nome dell'istanza Axia4 , visualizzato nella pagina di accesso.",
       "appNameShort": "Nome breve",
       "appNameShortHint": "Versione breve del nome dell'istanza, mostrata nel titolo della pagina e come etichetta se installata come app web progressiva (PWA).",
       "companyColorHeader": "Colore del titolo (intestazione)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Immagine usata per le icone delle applicazioni web progressive. Deve essere un file PNG, massimo 128kb e precisamente 512x512 pixel di dimensione.",
       "pwaDomain": "Accesso diretto all'app",
       "pwaDomainHint": "Solo il sottodominio (come in 'my-app' da 'my-app.my-domain.com')",
-      "pwaDomainHint1": "Le singole applicazioni possono essere accedute direttamente e installate separatamente sui dispositivi come PWA. Hanno quindi la loro pagina iniziale, icone e navigazione esclusiva. Questo richiede un record DNS di sottodominio per ciascuna applicazione in modo che il sistema REI3 sia raggiungibile tramite domini diversi. Inoltre, è necessario un certificato wildcard sul server REI3 per rispondere correttamente alle richieste HTTPS.\n\nUna volta pronti sia i record DNS che il certificato wildcard, si prega di inserire un sottodominio per ciascuna applicazione desiderata.",
-      "pwaDomainHint2": "Assicurati di avere un sottodominio disponibile che non sia in questo elenco, per accedere al sistema generale REI3. Altrimenti, non avrai accesso all'interfaccia utente amministrativa poiché ogni sottodominio dell'applicazione dà accesso solo all'applicazione specifica.",
+      "pwaDomainHint1": "Le singole applicazioni possono essere accedute direttamente e installate separatamente sui dispositivi come PWA. Hanno quindi la loro pagina iniziale, icone e navigazione esclusiva. Questo richiede un record DNS di sottodominio per ciascuna applicazione in modo che il sistema Axia4 sia raggiungibile tramite domini diversi. Inoltre, è necessario un certificato wildcard sul server Axia4 per rispondere correttamente alle richieste HTTPS.\n\nUna volta pronti sia i record DNS che il certificato wildcard, si prega di inserire un sottodominio per ciascuna applicazione desiderata.",
+      "pwaDomainHint2": "Assicurati di avere un sottodominio disponibile che non sia in questo elenco, per accedere al sistema generale Axia4 . Altrimenti, non avrai accesso all'interfaccia utente amministrativa poiché ogni sottodominio dell'applicazione dà accesso solo all'applicazione specifica.",
       "titleCaptions": "Didascalie",
       "titleColors": "Colori",
       "titleCss": "Regole CSS personalizzate",
@@ -137,7 +137,7 @@
       "titleLogos": "Loghi",
       "titlePwas": "Applicazioni web progressive (PWA)",
       "tokenKeepEnable": "Consenti agli utenti di rimanere connessi",
-      "tokenKeepEnableHint": "Se disattivata, l'opzione 'rimani connesso' nella pagina di accesso viene rimossa. Senza questa opzione, gli utenti sono costretti ad autenticarsi ogni volta che accedono al sistema. Questa impostazione non influisce sull'accesso ai dispositivi, come le sottoscrizioni del calendario o i client REI3."
+      "tokenKeepEnableHint": "Se disattivata, l'opzione 'rimani connesso' nella pagina di accesso viene rimossa. Senza questa opzione, gli utenti sono costretti ad autenticarsi ogni volta che accedono al sistema. Questa impostazione non influisce sull'accesso ai dispositivi, come le sottoscrizioni del calendario o i client Axia4 ."
     },
     "files": {
       "deleteDate": "File eliminato",
@@ -197,11 +197,11 @@
       "clientId": "ID cliente",
       "currentState": "Valori attuali",
       "dialog": {
-        "delete": "Sei sicuro di voler rimuovere il file di licenza? Per riattivare REI3 Professional, deve essere caricato un file di licenza valido."
+        "delete": "Sei sicuro di voler rimuovere il file di licenza? Per riattivare Axia4 Professional, deve essere caricato un file di licenza valido."
       },
-      "extCommunity": "Forum della Comunità REI3",
-      "extLicense": "REI3 Professionale",
-      "intro": "REI3 è completamente <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">open source</a> e può essere utilizzato gratuitamente.<br /><br />Per coloro che necessitano di funzionalità enterprise o supporto, esiste <b>REI3 Professional</b>. È prezzato per essere accessibile a organizzazioni di qualsiasi dimensione, spesso costando molto meno rispetto ad altre soluzioni low-code comparabili.<br /><br />Supportando lo sviluppo continuo, i clienti di REI3 Professional possono anche attivare l'intera gamma di funzionalità e ottenere supporto da Lean Softworks, lo sviluppatore principale di REI3.",
+      "extCommunity": "Forum della Comunità Axia4 ",
+      "extLicense": "Axia4 Professionale",
+      "intro": "Axia4 è completamente <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">open source</a> e può essere utilizzato gratuitamente.<br /><br />Per coloro che necessitano di funzionalità enterprise o supporto, esiste <b>Axia4 Professional</b>. È prezzato per essere accessibile a organizzazioni di qualsiasi dimensione, spesso costando molto meno rispetto ad altre soluzioni low-code comparabili.<br /><br />Supportando lo sviluppo continuo, i clienti di Axia4 Professional possono anche attivare l'intera gamma di funzionalità e ottenere supporto da Lean Softworks, lo sviluppatore principale di Axia4 .",
       "introMore": "Ulteriori informazioni:",
       "licenseExpired": "La licenza è scaduta",
       "licenseId": "ID licenza",
@@ -282,7 +282,7 @@
       "noData": "Nessuna sessione disponibile",
       "option": {
         "browser": "Sessione del browser",
-        "fatClient": "Cliente REI3"
+        "fatClient": "Cliente Axia4 "
       },
       "titles": {
         "address": "Indirizzo",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Impostazioni predefinite: Open ID Connect"
       },
       "claimRoles": "Ruoli assegnati",
-      "claimRolesHint": "Nome del campo di richiesta, che contiene ruoli o gruppi utente. Se impostato, i ruoli REI3 possono essere mappati ai valori in questa richiesta. Il valore deve essere un array di stringhe JSON, come: [\"all-users\", \"department-it\"]",
+      "claimRolesHint": "Nome del campo di richiesta, che contiene ruoli o gruppi utente. Se impostato, i ruoli Axia4 possono essere mappati ai valori in questa richiesta. Il valore deve essere un array di stringhe JSON, come: [\"all-users\", \"department-it\"]",
       "claimUsername": "Richiesta di nome utente",
       "claimUsernameHint": "Nome del campo di dichiarazione, che contiene il nome utente. Deve essere compilato. I nomi utente devono essere unici per un client OAuth.",
       "clientId": "ID cliente",
@@ -468,7 +468,7 @@
       },
       "flow": "Flusso OAuth",
       "loginMetaMap": "Aggiorna i dettagli dell'utente tramite claims",
-      "nameHint": "Un nome interno per fare riferimento a questo client OAuth all'interno di REI3.",
+      "nameHint": "Un nome interno per fare riferimento a questo client OAuth all'interno di Axia4 .",
       "option": {
         "flow": {
           "authCodePkce": "Codice di Autenticazione con PKCE",

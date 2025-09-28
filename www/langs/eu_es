@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Badaude erabilgarri dauden posta elektronikoko kontu funtzionalak, sistema gertaera garrantzitsuei buruzko jakinarazpenak bidaliko ditu. Gaur egun hauek dira:",
       "adminMailsHint": "Gehitu hartzailearen helbide elektronikoa",
-      "adminMailsList": [ "Erregistratutako OAuth bezeroen iraungipen hurrengoa.", "Hurrengo iraungitzea REI3 Professional aktibo baten lizentzia." ],
+      "adminMailsList": [ "Erregistratutako OAuth bezeroen iraungipen hurrengoa.", "Hurrengo iraungitzea Axia4 Professional aktibo baten lizentzia." ],
       "adminMailsTitle": "Administratzailearen jakinarazpenak",
       "appVersion": "Plataformaren bertsioa",
       "bruteforceAttempts": "Hostak blokeatu saiakeren ondoren",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "Segundotan",
       "dbTimeoutIcs": "Datu-basearen itxaron denbora: Egutegiaren deskargak (ICS)",
       "dialog": {
-        "builderMode": "Eraikitzailea aplikazioak sortu edo aldatzeko erabiltzen da.<br /><br />Aplikazioak aldatzeak datuak galtzea ekar dezake eta <b>INOIZ</b> ez da produkzio-inguruneetan egin behar.<br /><br />Eraikitzailea segurtasunez erabiltzeko, REI3-ren instantzia dedikatu bat erabili; prest eta probatuta dauden aplikazioak produkzio-sistema batera transferi daitezke.<br /><br />Kontsultatu <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">Eraikitzailearen dokumentazioa</a> informazio gehiago lortzeko.",
+        "builderMode": "Eraikitzailea aplikazioak sortu edo aldatzeko erabiltzen da.<br /><br />Aplikazioak aldatzeak datuak galtzea ekar dezake eta <b>INOIZ</b> ez da produkzio-inguruneetan egin behar.<br /><br />Eraikitzailea segurtasunez erabiltzeko, Axia4-ren instantzia dedikatu bat erabili; prest eta probatuta dauden aplikazioak produkzio-sistema batera transferi daitezke.<br /><br />Kontsultatu <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">Eraikitzailearen dokumentazioa</a> informazio gehiago lortzeko.",
         "pleaseRead": "Mesedez, irakurri gorde aurretik",
         "productionMode": "Mantentze-modua sistemako aplikazioak eguneratzeko, instalatzeko edo ezabatzeko erabiltzen da.<br /><br />Mantentze-modura aldatzeak <b>administratzaile-baimenik gabeko erabiltzaile guztien saioa itxiko du</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Instantziaren izena",
-      "appNameHint": "REI3 instantziaren izena, saio-hasiera orrian erakusten dena.",
+      "appNameHint": "Axia4 instantziaren izena, saio-hasiera orrian erakusten dena.",
       "appNameShort": "Izen laburra",
       "appNameShortHint": "Instantziaren izenaren bertsio laburra, orriaren izenburuan eta etiketetan bistaratzen dena aplikazio web progresibo (PWA) gisa instalatzen bada.",
       "companyColorHeader": "Tituluaren kolorea (goiburua)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Irudi hau aplikazio web progresiboko ikonoetarako erabiltzen da. PNG fitxategia izan behar du, gehienez 128kb eta zehazki 512x512 pixeleko tamaina izan behar du.",
       "pwaDomain": "Aplikaziorako sarbide zuzena",
       "pwaDomainHint": "Subdominio bakarrik (adibidez, 'mi-app' 'mi-app.mi-dominio.com'-etik)",
-      "pwaDomainHint1": "Banakako aplikazioak zuzenean sar daitezke eta aparte instalatu PWAs moduko gailuetan. Ondoren, beren hasierako orria, ikonoak eta nabigazio esklusiboa dituzte. Horrek azpidomeinu DNS erregistro bat eskatzen du aplikazio bakoitzerako, REI3 sistema domeinu desberdinen bidez eskura dadin. Gainera, REI3 zerbitzarian ziurtagiri komodin bat behar da HTTPS eskaerei behar bezala erantzuteko.<br /><br />Behin DNS erregistroak eta ziurtagiri komodina prest daudenean, sartu nahi den aplikazio bakoitzerako azpidomeinu bat.",
-      "pwaDomainHint2": "Ziurtatu zerrenda honetan ez dagoen azpidomeinu bat duzula eskuragarri, REI3 sistema orokorrera sartzeko. Bestela, ez duzu administrazio-interfazerako sarbiderik izango, aplikazio bakoitzaren azpidomeinuak aplikazio zehatz baterako bakarrik ematen baitu sarbidea.",
+      "pwaDomainHint1": "Banakako aplikazioak zuzenean sar daitezke eta aparte instalatu PWAs moduko gailuetan. Ondoren, beren hasierako orria, ikonoak eta nabigazio esklusiboa dituzte. Horrek azpidomeinu DNS erregistro bat eskatzen du aplikazio bakoitzerako, Axia4 sistema domeinu desberdinen bidez eskura dadin. Gainera, Axia4 zerbitzarian ziurtagiri komodin bat behar da HTTPS eskaerei behar bezala erantzuteko.<br /><br />Behin DNS erregistroak eta ziurtagiri komodina prest daudenean, sartu nahi den aplikazio bakoitzerako azpidomeinu bat.",
+      "pwaDomainHint2": "Ziurtatu zerrenda honetan ez dagoen azpidomeinu bat duzula eskuragarri, Axia4 sistema orokorrera sartzeko. Bestela, ez duzu administrazio-interfazerako sarbiderik izango, aplikazio bakoitzaren azpidomeinuak aplikazio zehatz baterako bakarrik ematen baitu sarbidea.",
       "titleCaptions": "Izenburuak",
       "titleColors": "Koloreak",
       "titleCss": "Pertsonalizatutako CSS arauak",
@@ -137,7 +137,7 @@
       "titleLogos": "Logotipoak",
       "titlePwas": "Aplikazio web progresiboak (PWAk)",
       "tokenKeepEnable": "Erabiltzaileei konektatuta egoten uztea",
-      "tokenKeepEnableHint": "Desaktibatzen bada, saioa hasteko orrian 'konektatuta mantendu' aukera ezabatzen da. Aukera hori gabe, erabiltzaileek autentifikatu behar dute sistemara sartzen diren bakoitzean. Ezarpen honek ez du eraginik gailuetarako sarbidean, hala nola, egutegi harpidetzak edo REI3 bezeroak."
+      "tokenKeepEnableHint": "Desaktibatzen bada, saioa hasteko orrian 'konektatuta mantendu' aukera ezabatzen da. Aukera hori gabe, erabiltzaileek autentifikatu behar dute sistemara sartzen diren bakoitzean. Ezarpen honek ez du eraginik gailuetarako sarbidean, hala nola, egutegi harpidetzak edo Axia4 bezeroak."
     },
     "files": {
       "deleteDate": "Fitxategia ezabatuta",
@@ -197,11 +197,11 @@
       "clientId": "Bezeroaren IDa",
       "currentState": "Uneko balioak",
       "dialog": {
-        "delete": "Ziur zaude lizentzia fitxategia ezabatu nahi duzula? REI3 Professional berriro aktibatzeko, lizentzia fitxategi baliodun bat kargatu behar da."
+        "delete": "Ziur zaude lizentzia fitxategia ezabatu nahi duzula? Axia4 Professional berriro aktibatzeko, lizentzia fitxategi baliodun bat kargatu behar da."
       },
-      "extCommunity": "REI3 komunitate foroa",
-      "extLicense": "REI3 Profesional",
-      "intro": "REI3 erabat <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">kode irekia</a> da eta doan erabil daiteke.<br /><br />Enpresa-ezaugarriak edo laguntza behar dutenentzat, <b>REI3 Professional</b> dago. Edozein tamainako erakundeentzat eskuragarri izateko diseinatuta dago, eta askotan beste kode baxuko eskaintza paregabeak baino askoz merkeagoa izaten da.<br /><br />Etengabeko garapena babesten duten bitartean, REI3 Professional bezeroek Lean Softworks, REI3ren garatzaile nagusia, ezaugarri sorta osoa aktiba dezakete eta laguntza lor dezakete.",
+      "extCommunity": "Axia4 komunitate foroa",
+      "extLicense": "Axia4 Profesional",
+      "intro": "Axia4  erabat <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">kode irekia</a> da eta doan erabil daiteke.<br /><br />Enpresa-ezaugarriak edo laguntza behar dutenentzat, <b>Axia4 Professional</b> dago. Edozein tamainako erakundeentzat eskuragarri izateko diseinatuta dago, eta askotan beste kode baxuko eskaintza paregabeak baino askoz merkeagoa izaten da.<br /><br />Etengabeko garapena babesten duten bitartean, Axia4 Professional bezeroek Lean Softworks, Axia4 ren garatzaile nagusia, ezaugarri sorta osoa aktiba dezakete eta laguntza lor dezakete.",
       "introMore": "Informazio gehiago:",
       "licenseExpired": "Lizentzia iraungi da",
       "licenseId": "Lizentzia IDa",
@@ -282,7 +282,7 @@
       "noData": "Ez dago saio erabilgarrirenik",
       "option": {
         "browser": "Nabigatzailearen saioa",
-        "fatClient": "Bezero REI3"
+        "fatClient": "Bezero Axia4 "
       },
       "titles": {
         "address": "Helbidea",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Lehenetsiak: Open ID Connect"
       },
       "claimRoles": "Rolak dioak",
-      "claimRolesHint": "Erreklamazio eremuko izena, erabiltzailearen rolak edo taldeak dituena. Ezarrita badago, REI3 rolak eremuan dagoen balioei esleitu ahal izango zaizkie. Balioak JSON karaktere-kate array bat izan behar du, hala nola: [\"all-users\", \"department-it\"]",
+      "claimRolesHint": "Erreklamazio eremuko izena, erabiltzailearen rolak edo taldeak dituena. Ezarrita badago, Axia4 rolak eremuan dagoen balioei esleitu ahal izango zaizkie. Balioak JSON karaktere-kate array bat izan behar du, hala nola: [\"all-users\", \"department-it\"]",
       "claimUsername": "Erabiltzaile-izenaren aldarria",
       "claimUsernameHint": "Reklamazio eremuko izena, erabiltzailearen izena duena. Beteta egon behar du. Erabiltzaile izenak bakarra izan behar du OAuth bezero baterako.",
       "clientId": "Bezeroaren IDa",
@@ -468,7 +468,7 @@
       },
       "flow": "OAuth fluxua",
       "loginMetaMap": "Eguneratu erabiltzailearen xehetasunak erreklamazioen bidez",
-      "nameHint": "REI3-en barruan OAuth bezero hau erreferentziatzeko barne izen bat.",
+      "nameHint": "Axia4-en barruan OAuth bezero hau erreferentziatzeko barne izen bat.",
       "option": {
         "flow": {
           "authCodePkce": "PKCE-rekin Autentifikazio Kodea",

@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Wenn ein funktionierendes E-Mail-Konto vorhanden ist, verschickt das System Benachrichtigungen über wichtige Ereignisse. Diese sind derzeit:",
       "adminMailsHint": "Empfänger-E-Mail-Adresse hinzufügen",
-      "adminMailsList": [ "Bevorstehender Ablauf registrierter OAuth-Clients.", "Bevorstehender Ablauf einer aktiven Tallarin4 Professional-Lizenz." ],
+      "adminMailsList": [ "Bevorstehender Ablauf registrierter OAuth-Clients.", "Bevorstehender Ablauf einer aktiven Axia4 Professional-Lizenz." ],
       "adminMailsTitle": "Admin-Benachrichtigungen",
       "appVersion": "Plattform-Version",
       "bruteforceAttempts": "Host blocken nach Versuchen",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "In Sekunden",
       "dbTimeoutIcs": "Datenbank-Timeout: Kalender-Downloads (ICS)",
       "dialog": {
-        "builderMode": "Der Builder dient zum Erstellen oder Verändern von Anwendungen.<br /><br />Das Ändern von Anwendungen kann zum Datenverlust führen und sollte <b>NIEMALS</b> in produktiven Umgebungen getan werden.<br /><br />Um den Builder sicher zu nutzen, bitte eine dedizierte Instanz von Tallarin4 verwenden; fertige und getestete Anwendungen können dann in ein Produktivsystem transferiert werden.<br /><br />Um mehr zu lernen, steht die <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">Builder-Dokumentation</a> zur Verfügung.",
+        "builderMode": "Der Builder dient zum Erstellen oder Verändern von Anwendungen.<br /><br />Das Ändern von Anwendungen kann zum Datenverlust führen und sollte <b>NIEMALS</b> in produktiven Umgebungen getan werden.<br /><br />Um den Builder sicher zu nutzen, bitte eine dedizierte Instanz von Axia4 verwenden; fertige und getestete Anwendungen können dann in ein Produktivsystem transferiert werden.<br /><br />Um mehr zu lernen, steht die <a href=\"https://tech.eus/t4/docs.php?p=builder/\" target=\"_blank\">Builder-Dokumentation</a> zur Verfügung.",
         "pleaseRead": "Bitte vor dem Speichern lesen",
         "productionMode": "Der Wartungsmodus wird genutzt, um Anwendungen zu aktualisieren, installieren oder zu entfernen.<br /><br />Beim Aktivieren des Wartungsmodus werden <b>alle Benutzer ohne Adminrechte abgemeldet</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Instanzname",
-      "appNameHint": "Name der Tallarin4-Instanz, wird angezeigt auf der Anmeldeseite.",
+      "appNameHint": "Name der Axia4 -Instanz, wird angezeigt auf der Anmeldeseite.",
       "appNameShort": "Kurzer Name",
       "appNameShortHint": "Kurze Version des Instanznamens, wird als Seitentitel verwendet sowie als Beschriftung wenn Tallarin4 als Progressive-Web-App (PWA) installiert wird.",
       "companyColorHeader": "Titelfarbe (Hauptmenü)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Bild, welches als Icon für die Progressive-Web-App genutzt wird. Muss eine PNG-Datei mit max. 128kb und genau 512x512 Pixel groß sein.",
       "pwaDomain": "Direkter Zugriff auf Anwendungen",
       "pwaDomainHint": "Nur die Subdomäne (bspw. 'my-app' von 'my-app.my-domain.com')",
-      "pwaDomainHint1": "Auf individuelle Anwendungen kann direkt zugegriffen und diese können auch einzelnd als PWAs auf Geräten installiert werden. Anwendungen haben dann ihre eigenen Startseiten, Icons und exklusive Navigation. Hierfür muss ein Subdomänen-DNS-Eintrag für jede Anwendung gesetzt sein, damit das Tallarin4-System über verschiedene Domänen erreichbar ist. Zusätzlich wird ein Wildcard-Zertifikat benötigt, damit der Tallarin4-Server korrekt auf HTTPS-Anfragen reagieren kann.<br /><br />Sobald DNS-Einträge und Wildcard-Zertifikat gesetzt sind, muss eine Subdomäne je gewünschter Anwendung hier eingetragen werden.",
-      "pwaDomainHint2": "Bitte sicherstellen, dass eine Subdomäne existiert, die hier nicht referenziert wird, damit das allgemeine Tallarin4-System noch erreicht werden kann. Anderweitig ist kein Zugriff auf die Adminoberfläche möglich, da Subdomänen für Anwendungen nur Zugriff auf die jeweilige Anwendung selbst zulassen.",
+      "pwaDomainHint1": "Auf individuelle Anwendungen kann direkt zugegriffen und diese können auch einzelnd als PWAs auf Geräten installiert werden. Anwendungen haben dann ihre eigenen Startseiten, Icons und exklusive Navigation. Hierfür muss ein Subdomänen-DNS-Eintrag für jede Anwendung gesetzt sein, damit das Axia4 -System über verschiedene Domänen erreichbar ist. Zusätzlich wird ein Wildcard-Zertifikat benötigt, damit der Axia4 -Server korrekt auf HTTPS-Anfragen reagieren kann.<br /><br />Sobald DNS-Einträge und Wildcard-Zertifikat gesetzt sind, muss eine Subdomäne je gewünschter Anwendung hier eingetragen werden.",
+      "pwaDomainHint2": "Bitte sicherstellen, dass eine Subdomäne existiert, die hier nicht referenziert wird, damit das allgemeine Axia4 -System noch erreicht werden kann. Anderweitig ist kein Zugriff auf die Adminoberfläche möglich, da Subdomänen für Anwendungen nur Zugriff auf die jeweilige Anwendung selbst zulassen.",
       "titleCaptions": "Beschriftungen",
       "titleColors": "Farben",
       "titleCss": "CSS-Regeln",
@@ -137,7 +137,7 @@
       "titleLogos": "Logos",
       "titlePwas": "Progressive-Web-Apps (PWAs)",
       "tokenKeepEnable": "Benutzern erlauben, angemeldet zu bleiben",
-      "tokenKeepEnableHint": "Wenn deaktiviert, wird die Option \"angemeldet bleiben\" von der Anmeldeseite entfernt. Ohne diese Option werden Benutzer gezwungen, sich neu anzumelden, wenn sie auf das System zugreifen. Diese Einstellung betrifft nicht Gerätezugriffe wie Kalendar-Abonnements oder Tallarin4-Clients."
+      "tokenKeepEnableHint": "Wenn deaktiviert, wird die Option \"angemeldet bleiben\" von der Anmeldeseite entfernt. Ohne diese Option werden Benutzer gezwungen, sich neu anzumelden, wenn sie auf das System zugreifen. Diese Einstellung betrifft nicht Gerätezugriffe wie Kalendar-Abonnements oder Axia4 -Clients."
     },
     "files": {
       "deleteDate": "Datei gelöscht",
@@ -197,11 +197,11 @@
       "clientId": "Kunden-ID",
       "currentState": "Aktuelle Werte",
       "dialog": {
-        "delete": "Möchten Sie die Lizenzdatei wirklich entfernen? Um Tallarin4 Professional erneut zu aktivieren, muss eine gültige Lizenzdatei eingespielt werden."
+        "delete": "Möchten Sie die Lizenzdatei wirklich entfernen? Um Axia4 Professional erneut zu aktivieren, muss eine gültige Lizenzdatei eingespielt werden."
       },
       "extCommunity": "Tallarin4 Community Forum",
-      "extLicense": "Tallarin4 Professional",
-      "intro": "Tallarin4 ist vollständig <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">Open-Source</a> und kann kostenlos genutzt werden.<br /><br />Für Enterprise-Features oder -Support gibt es <b>Tallarin4 Professional</b>. Preislich so gestaltet, dass es für Unternehmen jeder Größe bezahlbar sein sollte, ist es oft deutlich günstiger als vergleichbare Low-Code-Produkte am Markt.<br /><br />Tallarin4 Professional-Kunden unterstützen nicht nur die kontinuierliche Weiterentwicklung, sondern können auch alle Features aktivieren und erhalten professionelle Unterstützung von Lean Softworks, dem primären Entwickler von Tallarin4.",
+      "extLicense": "Axia4 Professional",
+      "intro": "Axia4 ist vollständig <a href=\"https://github.com/EuskadiTech/tallarin\" target=\"_blank\">Open-Source</a> und kann kostenlos genutzt werden.<br /><br />Für Enterprise-Features oder -Support gibt es <b>Axia4 Professional</b>. Preislich so gestaltet, dass es für Unternehmen jeder Größe bezahlbar sein sollte, ist es oft deutlich günstiger als vergleichbare Low-Code-Produkte am Markt.<br /><br />Axia4 Professional-Kunden unterstützen nicht nur die kontinuierliche Weiterentwicklung, sondern können auch alle Features aktivieren und erhalten professionelle Unterstützung von Lean Softworks, dem primären Entwickler von Axia4 .",
       "introMore": "Mehr Informationen:",
       "licenseExpired": "Lizenz ist abgelaufen",
       "licenseId": "Lizenz-ID",
@@ -282,7 +282,7 @@
       "noData": "Keine Sitzungen verfügbar",
       "option": {
         "browser": "Browser-Sitzung",
-        "fatClient": "Tallarin4 Client"
+        "fatClient": "Axia4 Client"
       },
       "titles": {
         "address": "Adresse",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Standardwerte: Open ID Connect"
       },
       "claimRoles": "Rollen-Claim",
-      "claimRolesHint": "Name des Claim-Feldes, welches Benutzerrollen oder -gruppen beinhaltet. Wenn gesetzt, können Tallarin4-Rollen zu Werten in diesem Claim zugeordnet werden. Wert muss ein JSON-String-Array sein, wie z. B.: [\"alle-benutzer\", \"abteilung-it\"]",
+      "claimRolesHint": "Name des Claim-Feldes, welches Benutzerrollen oder -gruppen beinhaltet. Wenn gesetzt, können Axia4 -Rollen zu Werten in diesem Claim zugeordnet werden. Wert muss ein JSON-String-Array sein, wie z. B.: [\"alle-benutzer\", \"abteilung-it\"]",
       "claimUsername": "Benutzer-Claim",
       "claimUsernameHint": "Name des Claim-Feldes, welches den Benutzernamen beinhaltet. Muss gesetzt sein. Benutzernamen im jeweiligen OAuth-Client müssen einzigartig sein.",
       "clientId": "Client-ID",
@@ -468,7 +468,7 @@
       },
       "flow": "OAuth-Flow",
       "loginMetaMap": "Benutzer-Details über Claims aktualisieren",
-      "nameHint": "Ein interner Name, um auf diesen OAuth-Client innerhalb von Tallarin4 zu referenzieren.",
+      "nameHint": "Ein interner Name, um auf diesen OAuth-Client innerhalb von Axia4 zu referenzieren.",
       "option": {
         "flow": {
           "authCodePkce": "Authentication Code with PKCE",
