@@ -475,14 +475,14 @@
           "clientCreds": "Credenciales del cliente"
         },
         "flowHint": {
-          "authCodePkce": "<p>Este flujo se utiliza en REI3 para autenticar a los usuarios a través de proveedores de identidad externos, como Keycloak o Microsoft Entra ID.</p><p>'Código de autenticación con clave de prueba para intercambio de código' es un flujo de Open ID Connect. Los usuarios son redirigidos para autenticarse con un proveedor de identidad. Después de la autenticación, un usuario es redirigido de vuelta a REI3 con la verificación de identidad y los metadatos del usuario.</p>",
-          "clientCreds": "<p>Este flujo se utiliza en REI3 para autenticarse frente a un servicio, como Exchange Online.</p><p>'Credenciales del Cliente' es un flujo OAuth 2.0, con el cual REI3 se autentica contra un proveedor de servicios, para recibir acceso a recursos protegidos, como un buzón de correo. Cualquier recurso al que se acceda a través del flujo de 'Credenciales del Cliente' debería pertenecer al cliente (en este caso REI3) - no está diseñado para acceder a recursos de usuario directamente ni en su nombre.</p><p>Este flujo actualmente solo se utiliza para acceder a recursos de correo.</p>"
+          "authCodePkce": "<p>Este flujo se utiliza en Axia4 para autenticar a los usuarios a través de proveedores de identidad externos, como Keycloak o Microsoft Entra ID.</p><p>'Código de autenticación con clave de prueba para intercambio de código' es un flujo de Open ID Connect. Los usuarios son redirigidos para autenticarse con un proveedor de identidad. Después de la autenticación, un usuario es redirigido de vuelta a Axia4 con la verificación de identidad y los metadatos del usuario.</p>",
+          "clientCreds": "<p>Este flujo se utiliza en Axia4 para autenticarse frente a un servicio, como Exchange Online.</p><p>'Credenciales del Cliente' es un flujo OAuth 2.0, con el cual Axia4 se autentica contra un proveedor de servicios, para recibir acceso a recursos protegidos, como un buzón de correo. Cualquier recurso al que se acceda a través del flujo de 'Credenciales del Cliente' debería pertenecer al cliente (en este caso Axia4 ) - no está diseñado para acceder a recursos de usuario directamente ni en su nombre.</p><p>Este flujo actualmente solo se utiliza para acceder a recursos de correo.</p>"
         }
       },
       "providerUrl": "URL del proveedor",
       "providerUrlHint": "URL del proveedor elegido para el descubrimiento del servicio OAuth, a menudo llamado 'URL del Emisor'.",
       "redirectUrl": "Redirigir URL",
-      "redirectUrlHint": "Los usuarios son redirigidos aquí después de la autenticación. Debe ser la URL de inicio de sesión de REI3. También debe estar registrado en el proveedor de servicios.",
+      "redirectUrlHint": "Los usuarios son redirigidos aquí después de la autenticación. Debe ser la URL de inicio de sesión de Axia4 . También debe estar registrado en el proveedor de servicios.",
       "scopes": "Ámbitos",
       "scopesHint": "Los alcances indican al proveedor lo que un cliente OAuth desea hacer o acceder. Son definidos por el proveedor y deben asignarse al cliente para que sean utilizables; consulte la documentación del proveedor para obtener una lista de los alcances disponibles.",
       "title": "Cliente OAuth '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Funciones del frontend",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Bloquea o desbloquea todas las entradas en el formulario actual.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envía una solicitud a un cliente REI3, instalado y ejecutándose en la misma computadora que la sesión del navegador REI3, para ejecutar una lista de pulsaciones de teclas. Estas pulsaciones se definen mediante una cadena, como 'Hello World!'.<br /><br />Algunas teclas especiales (ALT-TAB, TAB, ENTER, ESCAPE) también son compatibles y se pueden usar de la siguiente manera:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envía una solicitud a un cliente Axia4 , instalado y ejecutándose en la misma computadora que la sesión del navegador Axia4 , para ejecutar una lista de pulsaciones de teclas. Estas pulsaciones se definen mediante una cadena, como 'Hello World!'.<br /><br />Algunas teclas especiales (ALT-TAB, TAB, ENTER, ESCAPE) también son compatibles y se pueden usar de la siguiente manera:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Actualiza los valores para la colección especificada.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Copia el texto al portapapeles del usuario.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Muestra un diálogo con el título y contenido especificados. El título es una cadena de texto simple, mientras que el contenido puede ser texto o HTML.<br /><br />Los botones se definen mediante una lista de cadenas. Si no se define ninguno, se muestra un simple botón de OK.<br /><br />El valor devuelto es el índice del botón pulsado. Así que si se pulsa el primer botón, el valor será 0. Si se pulsa el segundo botón, será 1 y así sucesivamente.<br /><br /><b>Ejemplo</b><br />app.dialog_show(<blockquote>'Por favor confirme',<br />'¿Realmente desea eliminar este elemento?',<br />['Sí', 'Cancelar acción']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('¡pulsó Sí!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Marcadores de posición para funciones de backend: se utilizan ya sea como expresión ('SELECT function_abc()') o directamente ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Funciones (frontend)",
       "placeholderFncInstance": "Funciones (instancia)",
-      "placeholderFncInstanceHelp": "Marcadores de posición para funciones de la instancia REI3: estos proporcionan acceso a funciones del sistema como manejo de archivos o correo.",
+      "placeholderFncInstanceHelp": "Marcadores de posición para funciones de la instancia Axia4 : estos proporcionan acceso a funciones del sistema como manejo de archivos o correo.",
       "placeholderPresets": "IDs de registro predefinidos",
       "placeholderPresetsHelp": "Marcadores de posición para el ID (como BIGINT) del registro que existe para el preajuste seleccionado.<br /><br />Si el preajuste no está protegido, podría haber sido eliminado por los usuarios. En este caso se devuelve 'null'.",
       "placeholderRelations": "Relaciones",
@@ -1275,7 +1275,7 @@
       "formOpen": "Formulario para abrir",
       "newLoginForm": "Nuevo formulario de inicio de sesión",
       "title": "Formularios de inicio de sesión",
-      "titleDepr": "Los formularios de inicio de sesión están obsoletos a partir de REI3.9. Aunque seguirán funcionando por un tiempo, por favor considere cambiar al mecanismo de sincronización de usuarios (ver documentación del Builder)."
+      "titleDepr": "Los formularios de inicio de sesión están obsoletos a partir de Axia3.9. Aunque seguirán funcionando por un tiempo, por favor considere cambiar al mecanismo de sincronización de usuarios (ver documentación del Builder)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Instalar desde el repositorio",
         "versionCreate": "Crear nueva versión"
       },
-      "clientEventsHint": "REI3 tiene una aplicación cliente, que los usuarios pueden instalar desde su configuración personal. Al ejecutarse, la aplicación cliente de REI3 puede abrir archivos subidos a REI3 con software local. También puede reaccionar a ciertos eventos, como las teclas de acceso rápido, definiendo los llamados 'eventos del cliente'. Estos se utilizan generalmente para enviar información desde el cliente a REI3, ya sea para actualizar datos usando funciones de backend o para interactuar con una sesión de navegador REI3 abierta usando funciones de frontend.",
+      "clientEventsHint": "Axia4 tiene una aplicación cliente, que los usuarios pueden instalar desde su configuración personal. Al ejecutarse, la aplicación cliente de Axia4 puede abrir archivos subidos a Axia4 con software local. También puede reaccionar a ciertos eventos, como las teclas de acceso rápido, definiendo los llamados 'eventos del cliente'. Estos se utilizan generalmente para enviar información desde el cliente a Axia4 , ya sea para actualizar datos usando funciones de backend o para interactuar con una sesión de navegador Axia4 abierta usando funciones de frontend.",
       "color": "Color",
       "colorHint": "Color primario de la aplicación: se muestra en el encabezado y el menú si no se sobrescribe mediante la personalización y/o la configuración del usuario. Los estilos del sistema están optimizados para colores apagados y oscuros (pastel oscuro).",
       "dependsOn": "Construye sobre",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Función de inicio de sesión",
       "jsFunctionIdOnLoginHint": "Esta función de frontend se llama cuando un usuario inicia sesión en el sistema. Se puede usar para inicializar variables o actualizar registros.",
       "keyCreate": "Transferir - Generar nuevo par de claves de firma",
-      "keyCreateInfo": "Asegúrate de mantener la clave privada segura en todo momento. La clave pública debe ser importada en las instancias de destino de REI3 para aceptar tus aplicaciones.",
+      "keyCreateInfo": "Asegúrate de mantener la clave privada segura en todo momento. La clave pública debe ser importada en las instancias de destino de Axia4 para aceptar tus aplicaciones.",
       "keyCreateLength": "Seleccionar longitud de clave",
       "languageCode": "Código de idioma",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

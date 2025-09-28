@@ -475,14 +475,14 @@
           "clientCreds": "Identifiants client"
         },
         "flowHint": {
-          "authCodePkce": "<p>Ce flux est utilisé dans REI3 pour authentifier les utilisateurs via des fournisseurs d'identité externes, tels que Keycloak ou Microsoft Entra ID.</p><p>'Code d'authentification avec clé de preuve pour l'échange de code' est un flux Open ID Connect. Les utilisateurs sont redirigés pour s'authentifier auprès d'un fournisseur d'identité. Après authentification, un utilisateur est redirigé vers REI3 avec vérification de l'identité et des métadonnées utilisateur.</p>",
-          "clientCreds": "<p>Ce flux est utilisé dans REI3 pour s'authentifier auprès d'un service, tel qu'Exchange Online.</p><p>'Client Credentials' est un flux OAuth 2.0, avec lequel REI3 s'authentifie auprès d'un fournisseur de services, pour recevoir l'accès à des ressources protégées telles qu'une boîte aux lettres. Toute ressource accédée via le flux 'Client Credentials' doit appartenir au client (dans ce cas REI3) - il n'est pas conçu pour accéder directement ou pour le compte de ressources utilisateur.</p><p>Ce flux est actuellement uniquement utilisé pour accéder aux ressources de messagerie.</p>"
+          "authCodePkce": "<p>Ce flux est utilisé dans Axia4 pour authentifier les utilisateurs via des fournisseurs d'identité externes, tels que Keycloak ou Microsoft Entra ID.</p><p>'Code d'authentification avec clé de preuve pour l'échange de code' est un flux Open ID Connect. Les utilisateurs sont redirigés pour s'authentifier auprès d'un fournisseur d'identité. Après authentification, un utilisateur est redirigé vers Axia4 avec vérification de l'identité et des métadonnées utilisateur.</p>",
+          "clientCreds": "<p>Ce flux est utilisé dans Axia4 pour s'authentifier auprès d'un service, tel qu'Exchange Online.</p><p>'Client Credentials' est un flux OAuth 2.0, avec lequel Axia4 s'authentifie auprès d'un fournisseur de services, pour recevoir l'accès à des ressources protégées telles qu'une boîte aux lettres. Toute ressource accédée via le flux 'Client Credentials' doit appartenir au client (dans ce cas Axia4 ) - il n'est pas conçu pour accéder directement ou pour le compte de ressources utilisateur.</p><p>Ce flux est actuellement uniquement utilisé pour accéder aux ressources de messagerie.</p>"
         }
       },
       "providerUrl": "URL du fournisseur",
       "providerUrlHint": "URL du fournisseur choisi pour la découverte de service OAuth, souvent appelée 'URL de l'émetteur'.",
       "redirectUrl": "Rediriger l'URL",
-      "redirectUrlHint": "Les utilisateurs sont redirigés ici après authentification. Devrait être l'URL de connexion de REI3. Doit également être enregistré auprès du fournisseur de services.",
+      "redirectUrlHint": "Les utilisateurs sont redirigés ici après authentification. Devrait être l'URL de connexion de Axia4 . Doit également être enregistré auprès du fournisseur de services.",
       "scopes": "Portées",
       "scopesHint": "Les scopes indiquent au fournisseur ce qu'un client OAuth souhaite faire ou accéder. Ils sont définis par le fournisseur et doivent être attribués au client pour être utilisables - veuillez vous référer à la documentation du fournisseur pour une liste des scopes disponibles.",
       "title": "Client OAuth '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Fonctions frontend",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Bloque ou débloque toutes les entrées sur le formulaire actuel.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envoie une demande à un client REI3, installé et exécuté sur le même ordinateur que la session de navigateur REI3, pour exécuter une liste de frappes. Ces frappes sont définies par une chaîne, telle que 'Hello World!'.<br /><br />Certaines touches spéciales (ALT-TAB, TAB, ENTER, ESCAPE) sont également prises en charge et peuvent être utilisées de cette manière :<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envoie une demande à un client Axia4 , installé et exécuté sur le même ordinateur que la session de navigateur Axia4 , pour exécuter une liste de frappes. Ces frappes sont définies par une chaîne, telle que 'Hello World!'.<br /><br />Certaines touches spéciales (ALT-TAB, TAB, ENTER, ESCAPE) sont également prises en charge et peuvent être utilisées de cette manière :<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Met à jour les valeurs pour la collection spécifiée.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Copie le texte dans le presse-papiers de l'utilisateur.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE\n\nAffiche une boîte de dialogue avec le titre et le contenu spécifiés. Le titre est une simple chaîne de texte, tandis que le contenu peut être du texte ou du HTML.\n\nLes boutons sont définis par une liste de chaînes. Si aucun n'est défini, un simple bouton OK est affiché.\n\nLa valeur retournée est l'indice du bouton cliqué. Donc, si le premier bouton est cliqué, la valeur sera 0. Si le deuxième bouton est cliqué, c'est 1, et ainsi de suite.\n\n<b>Exemple</b>\napp.dialog_show(<blockquote>'Veuillez confirmer',<br />'Voulez-vous vraiment supprimer cet élément ?',<br />['Oui', 'Annuler l\\'action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('cliqué sur Oui !'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Espaces réservés pour les fonctions backend - utilisés soit comme expression ('SELECT function_abc()') soit directement ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Fonctions (frontend)",
       "placeholderFncInstance": "Fonctions (instance)",
-      "placeholderFncInstanceHelp": "Espaces réservés pour les fonctions de l'instance REI3 - ceux-ci donnent accès à des fonctionnalités système telles que la gestion de fichiers ou de courriers.",
+      "placeholderFncInstanceHelp": "Espaces réservés pour les fonctions de l'instance Axia4 - ceux-ci donnent accès à des fonctionnalités système telles que la gestion de fichiers ou de courriers.",
       "placeholderPresets": "Identifiants d'enregistrement prédéfinis",
       "placeholderPresetsHelp": "Espaces réservés pour l'ID (en tant que BIGINT) de l'enregistrement qui existe pour le préréglage sélectionné.<br /><br />Si le préréglage n'est pas protégé, il pourrait avoir été supprimé par les utilisateurs. Dans ce cas, 'null' est retourné.",
       "placeholderRelations": "Relations",
@@ -1275,7 +1275,7 @@
       "formOpen": "Formulaire à ouvrir",
       "newLoginForm": "Nouveau formulaire de connexion",
       "title": "Formulaires de connexion",
-      "titleDepr": "Les formulaires de connexion sont obsolètes à partir de REI3.9. Bien qu'ils continuent à fonctionner pendant un certain temps, veuillez envisager de passer au mécanisme de synchronisation des utilisateurs (voir la documentation du constructeur)."
+      "titleDepr": "Les formulaires de connexion sont obsolètes à partir de Axia3.9. Bien qu'ils continuent à fonctionner pendant un certain temps, veuillez envisager de passer au mécanisme de synchronisation des utilisateurs (voir la documentation du constructeur)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Installer depuis le dépôt",
         "versionCreate": "Créer une nouvelle version"
       },
-      "clientEventsHint": "REI3 dispose d'une application client, que les utilisateurs peuvent installer à partir de leurs paramètres personnels. Lorsqu'elle est en cours d'exécution, l'application client REI3 peut ouvrir des fichiers téléchargés vers REI3 avec un logiciel local. Elle peut également réagir à certains événements, comme les raccourcis clavier, en définissant ce qu'on appelle des 'événements client'. Ceux-ci sont généralement utilisés pour envoyer des informations du client à REI3, soit pour mettre à jour des données en utilisant des fonctions backend, soit pour interagir avec une session de navigateur REI3 ouverte en utilisant des fonctions frontend.",
+      "clientEventsHint": "Axia4 dispose d'une application client, que les utilisateurs peuvent installer à partir de leurs paramètres personnels. Lorsqu'elle est en cours d'exécution, l'application client Axia4 peut ouvrir des fichiers téléchargés vers Axia4 avec un logiciel local. Elle peut également réagir à certains événements, comme les raccourcis clavier, en définissant ce qu'on appelle des 'événements client'. Ceux-ci sont généralement utilisés pour envoyer des informations du client à Axia4 , soit pour mettre à jour des données en utilisant des fonctions backend, soit pour interagir avec une session de navigateur Axia4 ouverte en utilisant des fonctions frontend.",
       "color": "Couleur",
       "colorHint": "Couleur principale de l'application - affichée dans l'en-tête et le menu si elle n'est pas remplacée par la personnalisation et/ou les paramètres utilisateur. Les styles du système sont optimisés pour des couleurs délavées et sombres (pastel foncé).",
       "dependsOn": "Évolue sur",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Fonction de démarrage de session",
       "jsFunctionIdOnLoginHint": "Cette fonction frontend est appelée lorsqu'un utilisateur se connecte au système. Elle peut être utilisée pour initialiser des variables ou mettre à jour des journaux.",
       "keyCreate": "Transfert - Générer une nouvelle paire de clés de signature",
-      "keyCreateInfo": "Assurez-vous de garder la clé privée en sécurité en tout temps. La clé publique doit être importée dans les instances REI3 cibles pour accepter vos applications.",
+      "keyCreateInfo": "Assurez-vous de garder la clé privée en sécurité en tout temps. La clé publique doit être importée dans les instances Axia4 cibles pour accepter vos applications.",
       "keyCreateLength": "Sélectionner la longueur de la clé",
       "languageCode": "Code de langue",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

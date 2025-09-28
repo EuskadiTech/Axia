@@ -475,8 +475,8 @@
           "clientCreds": "क्लाइंट क्रेडेंशियल्स"
         },
         "flowHint": {
-          "authCodePkce": "<p>यह प्रवाह REI3 में बाहरी पहचान प्रदाताओं, जैसे कि Keycloak या Microsoft Entra ID के माध्यम से उपयोगकर्ताओं को प्रमाणीकरण करने के लिए उपयोग किया जाता है।</p><p>'प्रमाणीकरण कोड के लिए प्रमाण कुंजी के साथ कोड एक्सचेंज' एक ओपन आईडी कनेक्ट प्रवाह है। उपयोगकर्ताओं को पहचान प्रदाता के साथ प्रमाणीकरण के लिए अग्रेषित किया जाता है। प्रमाणीकरण के बाद, एक उपयोगकर्ता को पहचान सत्यापन और उपयोगकर्ता मेटा डेटा के साथ REI3 पर वापस भेजा जाता है।</p>",
-          "clientCreds": "<p>यह प्रवाह REI3 में एक सेवा के खिलाफ खुद को प्रमाणित करने के लिए उपयोग किया जाता है, जैसे कि Exchange Online।</p><p>'क्लाइंट क्रेडेंशियल्स' एक OAuth 2.0 प्रवाह है, जिसके साथ REI3 सेवा प्रदाता के खिलाफ प्रमाणित करता है, ताकि किसी मेलबॉक्स जैसे संरक्षित संसाधनों तक पहुंच प्राप्त हो सके। 'क्लाइंट क्रेडेंशियल्स' प्रवाह के माध्यम से एक्सेस किया गया कोई भी संसाधन क्लाइंट का होना चाहिए (इस मामले में REI3) - इसे सीधे या किसी के behalf पर उपयोगकर्ता संसाधनों तक पहुंचने के लिए डिज़ाइन नहीं किया गया है।</p><p>यह प्रवाह वर्तमान में केवल मेल संसाधनों की पहुंच के लिए उपयोग किया जाता है।</p>"
+          "authCodePkce": "<p>यह प्रवाह Axia4 में बाहरी पहचान प्रदाताओं, जैसे कि Keycloak या Microsoft Entra ID के माध्यम से उपयोगकर्ताओं को प्रमाणीकरण करने के लिए उपयोग किया जाता है।</p><p>'प्रमाणीकरण कोड के लिए प्रमाण कुंजी के साथ कोड एक्सचेंज' एक ओपन आईडी कनेक्ट प्रवाह है। उपयोगकर्ताओं को पहचान प्रदाता के साथ प्रमाणीकरण के लिए अग्रेषित किया जाता है। प्रमाणीकरण के बाद, एक उपयोगकर्ता को पहचान सत्यापन और उपयोगकर्ता मेटा डेटा के साथ Axia4 पर वापस भेजा जाता है।</p>",
+          "clientCreds": "<p>यह प्रवाह Axia4 में एक सेवा के खिलाफ खुद को प्रमाणित करने के लिए उपयोग किया जाता है, जैसे कि Exchange Online।</p><p>'क्लाइंट क्रेडेंशियल्स' एक OAuth 2.0 प्रवाह है, जिसके साथ Axia4 सेवा प्रदाता के खिलाफ प्रमाणित करता है, ताकि किसी मेलबॉक्स जैसे संरक्षित संसाधनों तक पहुंच प्राप्त हो सके। 'क्लाइंट क्रेडेंशियल्स' प्रवाह के माध्यम से एक्सेस किया गया कोई भी संसाधन क्लाइंट का होना चाहिए (इस मामले में Axia4 ) - इसे सीधे या किसी के behalf पर उपयोगकर्ता संसाधनों तक पहुंचने के लिए डिज़ाइन नहीं किया गया है।</p><p>यह प्रवाह वर्तमान में केवल मेल संसाधनों की पहुंच के लिए उपयोग किया जाता है।</p>"
         }
       },
       "providerUrl": "प्रदाता URL",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "फ्रंटएंड कार्य",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />वर्तमान फॉर्म पर सभी इनपुट्स को ब्लॉक या अनब्लॉक करता है।",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />REI3 क्लाइंट को एक अनुरोध भेजता है, जो उसी कंप्यूटर पर स्थापित और चल रहा है जहाँ REI3 ब्राउज़र सत्र है, ताकि कुंजी स्ट्रोक्स की एक सूची निष्पादित की जा सके। ये कुंजी स्ट्रोक्स एक स्ट्रिंग द्वारा परिभाषित किए गए हैं, जैसे 'Hello World!'.<br /><br />कुछ विशेष कुंजियाँ (ALT-TAB, TAB, ENTER, ESCAPE) भी समर्थित हैं और इस प्रकार उपयोग की जा सकती हैं:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Axia4 क्लाइंट को एक अनुरोध भेजता है, जो उसी कंप्यूटर पर स्थापित और चल रहा है जहाँ Axia4 ब्राउज़र सत्र है, ताकि कुंजी स्ट्रोक्स की एक सूची निष्पादित की जा सके। ये कुंजी स्ट्रोक्स एक स्ट्रिंग द्वारा परिभाषित किए गए हैं, जैसे 'Hello World!'.<br /><br />कुछ विशेष कुंजियाँ (ALT-TAB, TAB, ENTER, ESCAPE) भी समर्थित हैं और इस प्रकार उपयोग की जा सकती हैं:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "ऐप.संग्रह_अद्यतन({ARGS}) => अपरिभाषित<br /><br />निर्दिष्ट संग्रह के लिए मान अद्यतन करता है।",
         "copy_to_clipboard": "ऐप.कॉपी_टू_क्लिपबोर्ड({ARGS}) => अपरिभाषित<br /><br />पाठ को उपयोगकर्ता के क्लिपबोर्ड में कॉपी करता है।",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE\n\nनिर्दिष्ट शीर्षक और सामग्री के साथ एक संवाद दिखाता है। शीर्षक एक साधारण पाठ स्ट्रिंग है, जबकि सामग्री पाठ या HTML हो सकती है।\n\nबटन स्ट्रिंग की एक सूची द्वारा परिभाषित किए जाते हैं। यदि कोई परिभाषित नहीं है, तो एक साधारण OK बटन दिखाया जाता है।\n\nलौटा हुआ मान क्लिक किए गए बटन का अनुक्रमणिका है। इसलिए यदि पहला बटन क्लिक किया जाता है, तो मान 0 होगा। यदि दूसरा बटन क्लिक किया जाता है, तो यह 1 होगा और इसी तरह।\n\nउदाहरण\napp.dialog_show(\n'कृपया पुष्टि करें',\n'क्या आप सच में इस आइटम को हटाना चाहते हैं?',\n['हाँ', 'क्रिया रद्द करें']\n).then(\nres => { if(res === 0) { console.log('हाँ क्लिक किया!'); } }\n);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "बैकएंड फ़ंक्शंस के लिए प्लेसहोल्डर्स - या तो अभिव्यक्ति के रूप में ('SELECT function_abc()') या सीधे ('PERFORM function_abc()') के रूप में उपयोग किया जाता है।",
       "placeholderFncFrontend": "फंक्शन्स (फ्रंटएंड)",
       "placeholderFncInstance": "कार्य (उदाहरण)",
-      "placeholderFncInstanceHelp": "REI3 इंस्टेंस से फ़ंक्शन्स के लिए प्लेसहोल्डर - ये फ़ाइल या मेल प्रबंधन जैसी सिस्टम सुविधाओं तक पहुंच देते हैं।",
+      "placeholderFncInstanceHelp": "Axia4 इंस्टेंस से फ़ंक्शन्स के लिए प्लेसहोल्डर - ये फ़ाइल या मेल प्रबंधन जैसी सिस्टम सुविधाओं तक पहुंच देते हैं।",
       "placeholderPresets": "Preset record IDs",
       "placeholderPresetsHelp": "चयनित प्रीसेट के लिए मौजूद रिकॉर्ड के आईडी (BIGINT के रूप में) के लिए प्लेसहोल्डर्स।<br /><br />यदि प्रीसेट सुरक्षित नहीं है, तो इसे उपयोगकर्ताओं द्वारा हटाया जा सकता है। इस स्थिति में 'null' लौटाया जाता है।",
       "placeholderRelations": "संबंध",
@@ -1275,7 +1275,7 @@
       "formOpen": "फॉर्म खोलने के लिए",
       "newLoginForm": "नया लॉगिन फॉर्म",
       "title": "लॉगिन फॉर्म्स",
-      "titleDepr": "लॉगिन फॉर्म REI3.9 से अप्रचलित हो गए हैं। हालांकि वे कुछ समय तक काम करते रहेंगे, कृपया उपयोगकर्ता सिंक तंत्र (s. बिल्डर दस्तावेज़ीकरण) में स्विच करने पर विचार करें।"
+      "titleDepr": "लॉगिन फॉर्म Axia3.9 से अप्रचलित हो गए हैं। हालांकि वे कुछ समय तक काम करते रहेंगे, कृपया उपयोगकर्ता सिंक तंत्र (s. बिल्डर दस्तावेज़ीकरण) में स्विच करने पर विचार करें।"
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "भंडार से स्थापित करें",
         "versionCreate": "Create new version"
       },
-      "clientEventsHint": "REI3 has a client application, which users can install from their personal settings. When running, the REI3 client application can open files uploaded to REI3 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to REI3, either to update data by using backend functions or to interact with an open REI3 browser session by using frontend functions.",
+      "clientEventsHint": "Axia4 has a client application, which users can install from their personal settings. When running, the Axia4 client application can open files uploaded to Axia4 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to Axia4 , either to update data by using backend functions or to interact with an open Axia4 browser session by using frontend functions.",
       "color": "रंग",
       "colorHint": "प्राथमिक एप्लिकेशन रंग - हेडर और मेनू में दिखाया गया है यदि अनुकूलन और/या उपयोगकर्ता सेटिंग्स द्वारा अधिलेखित नहीं किया गया हो। सिस्टम शैलियों को धुले हुए, गहरे रंगों (डार्क पेस्टल) के लिए अनुकूलित किया गया है।",
       "dependsOn": "पर आधारित है",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "सत्र प्रारंभ फ़ंक्शन",
       "jsFunctionIdOnLoginHint": "यह फ्रंटएंड फ़ंक्शन तब कॉल किया जाता है जब कोई उपयोगकर्ता सिस्टम में लॉगिन करता है। इसका उपयोग वेरिएबल्स को इनिशियलाइज़ करने या लॉग्स को अपडेट करने के लिए किया जा सकता है।",
       "keyCreate": "स्थानांतरण - नया साइनिंग कुंजी जोड़ी उत्पन्न करें",
-      "keyCreateInfo": "Make sure to keep the private key safe at all times. The public key must be imported in target REI3 instances to accept your applications.",
+      "keyCreateInfo": "Make sure to keep the private key safe at all times. The public key must be imported in target Axia4 instances to accept your applications.",
       "keyCreateLength": "Select key length",
       "languageCode": "भाषा कोड",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

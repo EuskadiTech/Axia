@@ -475,14 +475,14 @@
           "clientCreds": "Client credentials"
         },
         "flowHint": {
-          "authCodePkce": "<p>This flow is used in REI3 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to REI3 with verification of identity and user meta data.</p>",
-          "clientCreds": "<p>This flow is used in REI3 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
+          "authCodePkce": "<p>This flow is used in Axia4 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to Axia4 with verification of identity and user meta data.</p>",
+          "clientCreds": "<p>This flow is used in Axia4 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
         }
       },
       "providerUrl": "Provider URL",
       "providerUrlHint": "URL of the chosen provider for its OAuth service discovery, often called 'Issuer URL'.",
       "redirectUrl": "Redirect URL",
-      "redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of REI3. Must also be registered at the service provider.",
+      "redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of Axia4 . Must also be registered at the service provider.",
       "scopes": "Scopes",
       "scopesHint": "Scopes tell the provider, what an OAuth client wishes to do or access. They are defined by the provider and must be assigned to the client to be usable - please refer to the provider´s documentation for a list of available scopes.",
       "title": "OAuth client '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Frontend functions",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Blocks or unblocks all inputs on the current form.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a REI3 client, installed and running on the same computer as the REI3 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sends a request to a Axia4 client, installed and running on the same computer as the Axia4 browser session, to execute a list of keystrokes. These keystrokes are defined by a string, such as 'Hello World!'.<br /><br />Some special keys (ALT-TAB, TAB, ENTER, ESCAPE) are also supported and can be used as such:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Updates values for the specified collection.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Copies text to the users clipboard.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Shows a dialog with the specified title and content. The title is a simple text string, while the content can be text or HTML.<br /><br />Buttons are defined by a list of strings. If none are defined, a simple OK button is shown.<br /><br />The returned value is the index of the clicked button. So if the first button is clicked, the value will be 0. If the second button is clicked, it´s 1 and so on.<br /><br /><b>Example</b><br />app.dialog_show(<blockquote>'Please confirm',<br />'Do you really want to delete this item?',<br />['Yes', 'Cancel action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Placeholders for backend functions - used either as expression ('SELECT function_abc()') or directly ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Functions (frontend)",
       "placeholderFncInstance": "Functions (instance)",
-      "placeholderFncInstanceHelp": "Placeholders for functions from the REI3 instance - these give access to system features like file or mail handling.",
+      "placeholderFncInstanceHelp": "Placeholders for functions from the Axia4 instance - these give access to system features like file or mail handling.",
       "placeholderPresets": "Preset record IDs",
       "placeholderPresetsHelp": "Placeholders for the ID (as BIGINT) of the record that exists for the selected preset.<br /><br />If the preset is not protected, it could have been deleted by users. In this case 'null' is returned.",
       "placeholderRelations": "Relations",
@@ -1275,7 +1275,7 @@
       "formOpen": "Form to open",
       "newLoginForm": "New login form",
       "title": "Login forms",
-      "titleDepr": "Login forms are deprecated as of REI3.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
+      "titleDepr": "Login forms are deprecated as of Axia3.9. Though they will continue to work for a while, please consider switching to the user sync mechanism (s. Builder documentation)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Install from repository",
         "versionCreate": "Create new version"
       },
-      "clientEventsHint": "REI3 has a client application, which users can install from their personal settings. When running, the REI3 client application can open files uploaded to REI3 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to REI3, either to update data by using backend functions or to interact with an open REI3 browser session by using frontend functions.",
+      "clientEventsHint": "Axia4 has a client application, which users can install from their personal settings. When running, the Axia4 client application can open files uploaded to Axia4 with local software. It can also react to certain events, like hotkeys by defining so-called 'client events'. These are generally used to send information from the client to Axia4 , either to update data by using backend functions or to interact with an open Axia4 browser session by using frontend functions.",
       "color": "Color",
       "colorHint": "Primary application color - shown in the header and menu if not overwritten by customizing and/or user settings. The system styles are optimized for washed out, darkish colors (dark pastel).",
       "dependsOn": "Builds on",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Session start function",
       "jsFunctionIdOnLoginHint": "This frontend function is called when a user logs into the system. It can be used to initialize variables or update logs.",
       "keyCreate": "Transfer - Generate new signing key pair",
-      "keyCreateInfo": "Make sure to keep the private key safe at all times. The public key must be imported in target REI3 instances to accept your applications.",
+      "keyCreateInfo": "Make sure to keep the private key safe at all times. The public key must be imported in target Axia4 instances to accept your applications.",
       "keyCreateLength": "Select key length",
       "languageCode": "Language code",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

@@ -475,14 +475,14 @@
           "clientCreds": "Credydau cleient"
         },
         "flowHint": {
-          "authCodePkce": "<p>Defnyddir y llif hwn yn REI3 i ddilysu defnyddwyr trwy ddarparwyr hunaniaeth allanol, fel Keycloak neu Microsoft Entra ID.</p><p>'Cod Dilysu gyda Allwedd Prawf ar gyfer Cyfnewid Cod' yw llif Open ID Connect. Caiff defnyddwyr eu hanfon ymlaen i ddilysu gyda darparwr hunaniaeth. Ar ôl dilysu, caiff defnyddiwr ei ailgyfeirio yn ôl i REI3 gyda dilysu hunaniaeth a meta data defnyddiwr.</p>",
-          "clientCreds": "<p>Mae'r llif hwn yn cael ei ddefnyddio yn REI3 i ddilysu ei hun yn erbyn gwasanaeth, fel Exchange Online.</p><p>'Tystysgrifau Cleient' yw llif OAuth 2.0, y mae REI3 yn ei ddefnyddio i ddilysu yn erbyn darparwr gwasanaeth, i dderbyn mynediad i adnoddau gwarchodedig megis blwch post. Dylai unrhyw adnodd a gyrchir drwy'r llif 'Tystysgrifau Cleient' berthyn i'r cleient (yn yr achos hwn REI3) - nid yw wedi'i gynllunio i gyrchu adnoddau defnyddiwr yn uniongyrchol nac ar ran.</p><p>Ar hyn o bryd, dim ond i gael mynediad i adnoddau post y mae'r llif hwn yn cael ei ddefnyddio.</p>"
+          "authCodePkce": "<p>Defnyddir y llif hwn yn Axia4 i ddilysu defnyddwyr trwy ddarparwyr hunaniaeth allanol, fel Keycloak neu Microsoft Entra ID.</p><p>'Cod Dilysu gyda Allwedd Prawf ar gyfer Cyfnewid Cod' yw llif Open ID Connect. Caiff defnyddwyr eu hanfon ymlaen i ddilysu gyda darparwr hunaniaeth. Ar ôl dilysu, caiff defnyddiwr ei ailgyfeirio yn ôl i Axia4 gyda dilysu hunaniaeth a meta data defnyddiwr.</p>",
+          "clientCreds": "<p>Mae'r llif hwn yn cael ei ddefnyddio yn Axia4 i ddilysu ei hun yn erbyn gwasanaeth, fel Exchange Online.</p><p>'Tystysgrifau Cleient' yw llif OAuth 2.0, y mae Axia4 yn ei ddefnyddio i ddilysu yn erbyn darparwr gwasanaeth, i dderbyn mynediad i adnoddau gwarchodedig megis blwch post. Dylai unrhyw adnodd a gyrchir drwy'r llif 'Tystysgrifau Cleient' berthyn i'r cleient (yn yr achos hwn Axia4 ) - nid yw wedi'i gynllunio i gyrchu adnoddau defnyddiwr yn uniongyrchol nac ar ran.</p><p>Ar hyn o bryd, dim ond i gael mynediad i adnoddau post y mae'r llif hwn yn cael ei ddefnyddio.</p>"
         }
       },
       "providerUrl": "URL Darparwr",
       "providerUrlHint": "URL y darparwr a ddewiswyd ar gyfer ei ddarganfod gwasanaeth OAuth, a elwir yn aml yn 'URL Cyhoeddwr'.",
       "redirectUrl": "Ailgyfeirio URL",
-      "redirectUrlHint": "Mae defnyddwyr yn cael eu hailgyfeirio yma ar ôl dilysu. Dylai fod URL mewngofnodi REI3. Rhaid hefyd fod wedi'i gofrestru gyda'r darparwr gwasanaeth.",
+      "redirectUrlHint": "Mae defnyddwyr yn cael eu hailgyfeirio yma ar ôl dilysu. Dylai fod URL mewngofnodi Axia4 . Rhaid hefyd fod wedi'i gofrestru gyda'r darparwr gwasanaeth.",
       "scopes": "Cwmpasau",
       "scopesHint": "Mae cwmpasau'n dweud wrth y darparwr beth mae cleient OAuth yn dymuno ei wneud neu ei gyrchu. Maent wedi'u diffinio gan y darparwr ac mae'n rhaid eu neilltuo i'r cleient i fod yn ddefnyddiadwy - cyfeiriwch at ddogfennaeth y darparwr am restr o gwmpasau sydd ar gael.",
       "title": "Cleient OAuth '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Swyddogaethau'r blaen diwedd",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Yn blocio neu'n dadflocio pob mewnbwn ar y ffurflen gyfredol.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Anfon cais i gleient REI3, wedi'i osod a'i redeg ar yr un cyfrifiadur â'r sesiwn porwr REI3, i weithredu rhestr o wasgiad allweddi. Diffinnir y gwasgiad allweddi hyn gan linyn, megis 'Hello World!'.<br /><br />Mae rhai allweddi arbennig (ALT-TAB, TAB, ENTER, ESCAPE) hefyd yn cael eu cefnogi a gellir eu defnyddio fel hyn:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Anfon cais i gleient Axia4 , wedi'i osod a'i redeg ar yr un cyfrifiadur â'r sesiwn porwr REI3, i weithredu rhestr o wasgiad allweddi. Diffinnir y gwasgiad allweddi hyn gan linyn, megis 'Hello World!'.<br /><br />Mae rhai allweddi arbennig (ALT-TAB, TAB, ENTER, ESCAPE) hefyd yn cael eu cefnogi a gellir eu defnyddio fel hyn:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Diweddaru gwerthoedd ar gyfer y casgliad penodedig.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Yn copïo testun i glipfwrdd y defnyddwyr.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Yn dangos deialog gyda'r teitl a'r cynnwys penodedig. Mae'r teitl yn llinyn testun syml, tra gall y cynnwys fod yn destun neu HTML.<br /><br />Mae botymau wedi'u diffinio gan restr o linynnau. Os nad oes unrhyw rai wedi'u diffinio, dangosir botwm OK syml.<br /><br />Y gwerth a ddychwelir yw mynegai'r botwm a gliciwyd. Felly os clicir ar y botwm cyntaf, bydd y gwerth yn 0. Os clicir ar yr ail fotwm, mae'n 1 ac yn y blaen.<br /><br /><b>Enghraifft</b><br />app.dialog_show(<blockquote>'Cadarnhewch os gwelwch yn dda',<br />'Ydych chi wir eisiau dileu'r eitem hon?',<br />['Ie', 'Gohirio gweithred']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Daliannau ar gyfer swyddogaethau cefn - a ddefnyddir naill ai fel mynegiant ('SELECT function_abc()') neu'n uniongyrchol ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Swyddogaethau (frontend)",
       "placeholderFncInstance": "Swyddogaethau (instance)",
-      "placeholderFncInstanceHelp": "Dalfeydd ar gyfer swyddogaethau o'r enghraifft REI3 - mae'r rhain yn rhoi mynediad at nodweddion y system fel trin ffeiliau neu bost.",
+      "placeholderFncInstanceHelp": "Dalfeydd ar gyfer swyddogaethau o'r enghraifft Axia4 - mae'r rhain yn rhoi mynediad at nodweddion y system fel trin ffeiliau neu bost.",
       "placeholderPresets": "IDiau cofnod rhagosodedig",
       "placeholderPresetsHelp": "Dalfeydd ar gyfer yr ID (fel BIGINT) o'r cofnod sy'n bodoli ar gyfer y rhagosodiad a ddewiswyd.<br /><br />Os nad yw'r rhagosodiad yn cael ei ddiogelu, gallai fod wedi'i ddileu gan ddefnyddwyr. Yn yr achos hwn mae 'null' yn cael ei ddychwelyd.",
       "placeholderRelations": "Perthnasoedd",
@@ -1275,7 +1275,7 @@
       "formOpen": "Ffurflen i agor",
       "newLoginForm": "Ffurflen mewngofnodi newydd",
       "title": "Ffurflenni mewngofnodi",
-      "titleDepr": "Mae ffurflenni mewngofnodi wedi darfod ers REI3.9. Er y byddant yn parhau i weithio am ychydig, ystyriwch newid i'r mecanwaith cysoni defnyddiwr (s. dogfennaeth Adeiladydd)."
+      "titleDepr": "Mae ffurflenni mewngofnodi wedi darfod ers Axia3.9. Er y byddant yn parhau i weithio am ychydig, ystyriwch newid i'r mecanwaith cysoni defnyddiwr (s. dogfennaeth Adeiladydd)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Gosod o'r storfa",
         "versionCreate": "Creu fersiwn newydd"
       },
-      "clientEventsHint": "Mae gan REI3 gais cleient, y gall defnyddwyr ei osod o'u gosodiadau personol. Pan fydd yn rhedeg, gall cais cleient REI3 agor ffeiliau wedi'u huwchlwytho i REI3 gyda meddalwedd lleol. Gall hefyd ymateb i ddigwyddiadau penodol, fel allweddi poeth trwy ddiffinio'r hyn a elwir yn 'ddigwyddiadau cleient'. Defnyddir y rhain yn gyffredinol i anfon gwybodaeth o'r cleient i REI3, naill ai i ddiweddaru data trwy ddefnyddio swyddogaethau cefn neu i ryngweithio gyda sesiwn porwr REI3 agored trwy ddefnyddio swyddogaethau blaen.",
+      "clientEventsHint": "Mae gan Axia4 gais cleient, y gall defnyddwyr ei osod o'u gosodiadau personol. Pan fydd yn rhedeg, gall cais cleient Axia4 agor ffeiliau wedi'u huwchlwytho i Axia4 gyda meddalwedd lleol. Gall hefyd ymateb i ddigwyddiadau penodol, fel allweddi poeth trwy ddiffinio'r hyn a elwir yn 'ddigwyddiadau cleient'. Defnyddir y rhain yn gyffredinol i anfon gwybodaeth o'r cleient i Axia4 , naill ai i ddiweddaru data trwy ddefnyddio swyddogaethau cefn neu i ryngweithio gyda sesiwn porwr Axia4 agored trwy ddefnyddio swyddogaethau blaen.",
       "color": "Lliw",
       "colorHint": "Lliw cymhwysiad cynradd - dangosir yn y pennyn a'r ddewislen os nad yw wedi'i orysgrifennu gan addasu a/neu osodiadau defnyddiwr. Mae'r steiliau system wedi'u optimeiddio ar gyfer lliwiau llaith, tywyllach (pastel tywyll).",
       "dependsOn": "Adeiladau ar",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Swyddogaeth cychwyn sesiwn",
       "jsFunctionIdOnLoginHint": "Mae'r swyddogaeth frontend hon yn cael ei galw pan fydd defnyddiwr yn mewngofnodi i'r system. Gellir ei ddefnyddio i gychwyn newidynnau neu ddiweddaru logiau.",
       "keyCreate": "Trosglwyddo - Cynhyrchu pâr allweddi llofnodi newydd",
-      "keyCreateInfo": "Gwnewch yn siŵr eich bod yn cadw'r allwedd breifat yn ddiogel bob amser. Rhaid mewnforio'r allwedd gyhoeddus yn achosion REI3 targed i dderbyn eich ceisiadau.",
+      "keyCreateInfo": "Gwnewch yn siŵr eich bod yn cadw'r allwedd breifat yn ddiogel bob amser. Rhaid mewnforio'r allwedd gyhoeddus yn achosion Axia4 targed i dderbyn eich ceisiadau.",
       "keyCreateLength": "Dewiswch hyd allwedd",
       "languageCode": "Cod iaith",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

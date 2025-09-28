@@ -475,14 +475,14 @@
           "clientCreds": "Bezeroaren kredentzialak"
         },
         "flowHint": {
-          "authCodePkce": "<p>Flujo hau erabiltzen da REI3-en erabiltzaileak egiaztatzeko kanpoko nortasun hornitzaileak erabiliz, hala nola Keycloak edo Microsoft Entra ID.</p><p>'Autentifikazio Kodea Frogagaiarekin Kode Trukearentzat' Open ID Connect flow bat da. Erabiltzaileak nortasun hornitzaile batekin autentifikatzera berbideratzen dira. Autentifikazioaren ondoren, erabiltzaile bat REI3-era berbideratzen da nortasunaren egiaztapenarekin eta erabiltzailearen meta datuekin.</p>",
-          "clientCreds": "<p>Flujo hau REI3-en erabiltzen da zerbitzu batengan autentifikatzeko, Exchange Online bezalakoa, esaterako.</p><p>'Client Credentials' OAuth 2.0 flujoa da, REI3 zerbitzu emaile batengana autentifikatzen dena, baliabide babestuak lortzeko, postontzi bat bezalakoak. 'Client Credentials' flujotik atzigarri den edozein baliabide bezeroarenak izan behar dira (kasu honetan REI3) - ez dago erabiltzaile baliabideak zuzenean edo ordezketan atzitzeko diseinatuta.</p><p>Flujo hau une honetan posta baliabideetara sartzeko bakarrik erabiltzen da.</p>"
+          "authCodePkce": "<p>Flujo hau erabiltzen da Axia4 -en erabiltzaileak egiaztatzeko kanpoko nortasun hornitzaileak erabiliz, hala nola Keycloak edo Microsoft Entra ID.</p><p>'Autentifikazio Kodea Frogagaiarekin Kode Trukearentzat' Open ID Connect flow bat da. Erabiltzaileak nortasun hornitzaile batekin autentifikatzera berbideratzen dira. Autentifikazioaren ondoren, erabiltzaile bat Axia4 -era berbideratzen da nortasunaren egiaztapenarekin eta erabiltzailearen meta datuekin.</p>",
+          "clientCreds": "<p>Flujo hau Axia4 -en erabiltzen da zerbitzu batengan autentifikatzeko, Exchange Online bezalakoa, esaterako.</p><p>'Client Credentials' OAuth 2.0 flujoa da, Axia4 zerbitzu emaile batengana autentifikatzen dena, baliabide babestuak lortzeko, postontzi bat bezalakoak. 'Client Credentials' flujotik atzigarri den edozein baliabide bezeroarenak izan behar dira (kasu honetan Axia4 ) - ez dago erabiltzaile baliabideak zuzenean edo ordezketan atzitzeko diseinatuta.</p><p>Flujo hau une honetan posta baliabideetara sartzeko bakarrik erabiltzen da.</p>"
         }
       },
       "providerUrl": "Hornitzailearen URLa",
       "providerUrlHint": "OAuth zerbitzu aurkikuntzarako hautatutako hornitzailearen URL-a, sarritan 'Issuer URL' gisa deitua.",
       "redirectUrl": "Birzuzendu URLa",
-      "redirectUrlHint": "Erabiltzaileak hemen birbideratzen dira autentifikazioaren ondoren. REI3-ren saio hasiera URLa izan beharko litzateke. Horrez gain, zerbitzu hornitzailean ere erregistratu behar da.",
+      "redirectUrlHint": "Erabiltzaileak hemen birbideratzen dira autentifikazioaren ondoren. Axia4 -ren saio hasiera URLa izan beharko litzateke. Horrez gain, zerbitzu hornitzailean ere erregistratu behar da.",
       "scopes": "Eremuak",
       "scopesHint": "OAuth bezero batek zer egin edo sarbide nahi duen esaten dioten esparruak hornitzaileari. Hornitzaileak definitzen ditu eta bezeroari esleitu behar zaizkio erabilgarri izateko - kontsultatu hornitzailearen dokumentazioa eskuragarri dauden esparruen zerrenda lortzeko.",
       "title": "OAuth bezeroa '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Frontend-eko funtzioak",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Blokeatu edo desblokeatu formulario honetako sarrera guztiak.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Bidali eskaria REI3 bezero bati, instalatuta eta exekutatzen ari dena nabigatzailearen REI3 saioaren ordenagailu berean, tekla-sakatzeen zerrenda exekutatzeko. Tekla-sakatze hauek kate baten bidez definitzen dira, adibidez 'Kaixo, Mundua!'.<br /><br />Tekla berezi batzuk (ALT-TAB, TAB, SARTU, ESCAPE) ere bateragarriak dira eta hurrengo moduan erabil daitezke:<br />'Kaixo,{SARTU}Zer moduz zaude?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Bidali eskaria Axia4 bezero bati, instalatuta eta exekutatzen ari dena nabigatzailearen Axia4 saioaren ordenagailu berean, tekla-sakatzeen zerrenda exekutatzeko. Tekla-sakatze hauek kate baten bidez definitzen dira, adibidez 'Kaixo, Mundua!'.<br /><br />Tekla berezi batzuk (ALT-TAB, TAB, SARTU, ESCAPE) ere bateragarriak dira eta hurrengo moduan erabil daitezke:<br />'Kaixo,{SARTU}Zer moduz zaude?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Eguneratu balioak zehaztutako bilduman.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Kopiatu testua erabiltzailearen arbelean.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Erakusten du elkarrizketa-koadro bat izenburu eta eduki zehaztuekin. Izenburua testu-kate sinplea da, eta edukia testua edo HTML izan daiteke.<br /><br />Botoiak kate-zerrenda baten bidez definitzen dira. Ez badira definitzen, OK botoi sinplea erakusten da.<br /><br />Itzulitako balioa sakatu den botoiaren indizea da. Beraz, lehen botoian klik egiten bada, balioa 0 izango da. Bigarren botoian klik egiten bada, 1 izango da, eta abar.<br /><br /><b>Adibidea</b><br />app.dialog_show(<blockquote>'Mesedez, baieztatu',<br />'Benetan elementu hau ezabatu nahi duzu?',<br />['Bai', 'Ekintza ezeztatu']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('¡clic en Bai!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Backend funtzioetarako leku-markatzaileak: adierazpen gisa erabiltzen dira ('SELECT function_abc()') edo zuzenean ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Funtzioak (frontend)",
       "placeholderFncInstance": "Funtzioak (instantzia)",
-      "placeholderFncInstanceHelp": "REI3 instantziaren funtzioetarako lekuz aldatzeko markatzaileak: sisteman funtzioetara sartzera baimentzen dute, hala nola fitxategiak kudeatu edo posta elektronikoak.",
+      "placeholderFncInstanceHelp": "Axia4 instantziaren funtzioetarako lekuz aldatzeko markatzaileak: sisteman funtzioetara sartzera baimentzen dute, hala nola fitxategiak kudeatu edo posta elektronikoak.",
       "placeholderPresets": "Preset grabatu IDak",
       "placeholderPresetsHelp": "Erregistroaren ID-aren (BIGINT gisa) aurrez ezarritakorako bete-lekuak.<br /><br />Aurrez ezarritakoa ez bada babestuta, erabiltzaileek ezabatu egin zitekeen. Kasu honetan 'null' itzuliko da.",
       "placeholderRelations": "Harremanak",
@@ -1275,7 +1275,7 @@
       "formOpen": "Formularioa irekitzeko",
       "newLoginForm": "Sarrera berriaren formularioa",
       "title": "Sarrera formulariak",
-      "titleDepr": "Login formak zaharkituta daude REI3.9-tik aurrera. Nahiz eta denbora batzuk funtzionatzen jarraituko duten, mesedez, kontsideratu erabiltzaile sinkronizazio mekanismoa erabiltzea (ikus. Builder dokumentazioa)."
+      "titleDepr": "Login formak zaharkituta daude Axia3.9-tik aurrera. Nahiz eta denbora batzuk funtzionatzen jarraituko duten, mesedez, kontsideratu erabiltzaile sinkronizazio mekanismoa erabiltzea (ikus. Builder dokumentazioa)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Biltegiko instalatzea",
         "versionCreate": "Sortu bertsio berria"
       },
-      "clientEventsHint": "REI3-ek bezero aplikazio bat du, erabiltzaileek beren ezarpen pertsonaletatik instalatu dezakete. Exekutatzen denean, REI3 bezero aplikazioak REI3-ra igotako fitxategiak ireki ditzake software lokalarekin. Gainera, zenbait gertaeratan erantzun dezake, laster-teklen adibidez, 'bezero gertaerak' definituz. Hauek oro har erabiltzen dira informazioa bidaltzeko bezerotik REI3-ra, datuak eguneratzeko atzealde funtzioen bitartez edo REI3 nabigatzaile saio ireki batekin interaktuar egiteko aurrealde funtzioen bidez.",
+      "clientEventsHint": "Axia4 -ek bezero aplikazio bat du, erabiltzaileek beren ezarpen pertsonaletatik instalatu dezakete. Exekutatzen denean, Axia4 bezero aplikazioak Axia4 -ra igotako fitxategiak ireki ditzake software lokalarekin. Gainera, zenbait gertaeratan erantzun dezake, laster-teklen adibidez, 'bezero gertaerak' definituz. Hauek oro har erabiltzen dira informazioa bidaltzeko bezerotik Axia4 -ra, datuak eguneratzeko atzealde funtzioen bitartez edo Axia4 nabigatzaile saio ireki batekin interaktuar egiteko aurrealde funtzioen bidez.",
       "color": "Kolorea",
       "colorHint": "Aplikazioaren kolore lehenetsia - erakusten da goiburuan eta menuan, ez bada pertsonalizazioa eta/edo erabiltzailearen ezarpenek gainidatzita. Sistema estiluak optime daude kolore arreak, ilunak (pastela iluna) direla eta.",
       "dependsOn": "Oinarritzen da",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Saioa hasteko funtzioa",
       "jsFunctionIdOnLoginHint": "Frontend funtzio hau erabiltzaile batek sistema saioa hastean deitzen da. Aldagaiak hasieratzeko edo erregistroak eguneratzeko erabil daiteke.",
       "keyCreate": "Transferentzia - Sortu sinadura-gako berri pare bat",
-      "keyCreateInfo": "Ziurtatu gako pribatua segurua dela edozein unetan. Gako publikoa inportatu behar da helburuko REI3 instantzietan zure aplikazioak onartzeko.",
+      "keyCreateInfo": "Ziurtatu gako pribatua segurua dela edozein unetan. Gako publikoa inportatu behar da helburuko Axia4 instantzietan zure aplikazioak onartzeko.",
       "keyCreateLength": "Hautatu gakoaren luzera",
       "languageCode": "Hizkuntza kodea",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

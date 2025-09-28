@@ -475,14 +475,14 @@
           "clientCreds": "Credencials del client"
         },
         "flowHint": {
-          "authCodePkce": "<p>Aquest flux s'utilitza en REI3 per autenticar els usuaris a través de proveïdors d'identitat externs, com Keycloak o Microsoft Entra ID.</p><p>'Codi d'autenticació amb clau de prova per a intercanvi de codi' és un flux d'Open ID Connect. Els usuaris són redirigits per autenticatear-se amb un proveïdor d'identitat. Després de l'autenticació, un usuari és redirigit de tornada a REI3 amb la verificació d'identitat i les metadades de l'usuari.</p>",
-          "clientCreds": "<p>Aquest flux s'utilitza en REI3 per autenticar-se davant d'un servei, com Exchange Online.</p><p>'Credencials del Client' és un flux OAuth 2.0, amb el qual REI3 s'autentica contra un proveïdor de serveis, per rebre accés a recursos protegits, com una bústia de correu. Qualsevol recurs al qual s'accedeixi a través del flux de 'Credencials del Client' hauria de pertànyer al client (en aquest cas REI3) - no està dissenyat per accedir a recursos d'usuari directament ni en el seu nom.</p><p>Aquest flux actualment només s'utilitza per accedir a recursos de correu.</p>"
+          "authCodePkce": "<p>Aquest flux s'utilitza en Axia4 per autenticar els usuaris a través de proveïdors d'identitat externs, com Keycloak o Microsoft Entra ID.</p><p>'Codi d'autenticació amb clau de prova per a intercanvi de codi' és un flux d'Open ID Connect. Els usuaris són redirigits per autenticatear-se amb un proveïdor d'identitat. Després de l'autenticació, un usuari és redirigit de tornada a Axia4 amb la verificació d'identitat i les metadades de l'usuari.</p>",
+          "clientCreds": "<p>Aquest flux s'utilitza en Axia4 per autenticar-se davant d'un servei, com Exchange Online.</p><p>'Credencials del Client' és un flux OAuth 2.0, amb el qual Axia4 s'autentica contra un proveïdor de serveis, per rebre accés a recursos protegits, com una bústia de correu. Qualsevol recurs al qual s'accedeixi a través del flux de 'Credencials del Client' hauria de pertànyer al client (en aquest cas Axia4 ) - no està dissenyat per accedir a recursos d'usuari directament ni en el seu nom.</p><p>Aquest flux actualment només s'utilitza per accedir a recursos de correu.</p>"
         }
       },
       "providerUrl": "URL del proveïdor",
       "providerUrlHint": "URL del proveïdor triat per al descobriment del servei OAuth, sovint anomenat 'URL de l'Emissor'.",
       "redirectUrl": "Redirigir URL",
-      "redirectUrlHint": "Els usuaris són redirigits aquí després de l'autenticació. Ha de ser la URL d'inici de sessió de REI3. També ha d'estar registrat en el proveïdor de serveis.",
+      "redirectUrlHint": "Els usuaris són redirigits aquí després de l'autenticació. Ha de ser la URL d'inici de sessió de Axia4 . També ha d'estar registrat en el proveïdor de serveis.",
       "scopes": "Àmbits",
       "scopesHint": "Els abastos indiquen al proveïdor el que un client OAuth desitja fer o accedir. Són definits pel proveïdor i s'han d'assignar al client perquè siguin utilitzables; consulteu la documentació del proveïdor per obtenir una llista dels abastos disponibles.",
       "title": "Client OAuth '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Funcions del frontend",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Bloca o desbloqueja totes les entrades en el formulari actual.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envia una sol·licitud a un client REI3, instal·lat i executant-se al mateix ordinador que la sessió del navegador REI3, per executar una llista de pulsacions de tecles. Aquestes pulsacions es defineixen mitjançant una cadena, com 'Hello World!'.<br /><br />Algunes tecles especials (ALT-TAB, TAB, ENTER, ESCAPE) també són compatibles i es poden utilitzar de la manera següent:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envia una sol·licitud a un client Axia4 , instal·lat i executant-se al mateix ordinador que la sessió del navegador REI3, per executar una llista de pulsacions de tecles. Aquestes pulsacions es defineixen mitjançant una cadena, com 'Hello World!'.<br /><br />Algunes tecles especials (ALT-TAB, TAB, ENTER, ESCAPE) també són compatibles i es poden utilitzar de la manera següent:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Actualitza els valors per a la col·lecció especificada.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Copia el text al porta-retalls de l'usuari.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Mostra un diàleg amb el títol i contingut especificats. El títol és una cadena de text simple, mentre que el contingut pot ser text o HTML.<br /><br />Els botons es defineixen mitjançant una llista de cadenes. Si no se'n defineix cap, es mostra un simple botó d'OK.<br /><br />El valor retornat és l'índex del botó premut. Així que si es prem el primer botó, el valor serà 0. Si es prem el segon botó, serà 1 i així successivament.<br /><br /><b>Exemple</b><br />app.dialog_show(<blockquote>'Si us plau confirmi',<br />'Realment desitja eliminar aquest element?',<br />['Sí', 'Cancel·lar acció']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('va prémer Sí!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Marcadors de posició per a funcions de backend: s'utilitzen ja sigui com a expressió ('SELECT function_abc()') o directament ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Funcions (frontend)",
       "placeholderFncInstance": "Funcions (instància)",
-      "placeholderFncInstanceHelp": "Marcadors de posició per a funcions de la instància REI3: aquests proporcionen accés a funcions del sistema com la gestió d'arxius o correu.",
+      "placeholderFncInstanceHelp": "Marcadors de posició per a funcions de la instància Axia4 : aquests proporcionen accés a funcions del sistema com la gestió d'arxius o correu.",
       "placeholderPresets": "IDs de registre predefinits",
       "placeholderPresetsHelp": "Marcadors de posició per a l'ID (com BIGINT) del registre que existeix per al preajust seleccionat.<br /><br />Si el preajust no està protegit, podria haver estat eliminat pels usuaris. En aquest cas es retorna 'null'.",
       "placeholderRelations": "Relacions",
@@ -1275,7 +1275,7 @@
       "formOpen": "Formulari per obrir",
       "newLoginForm": "Nou formulari d'inici de sessió",
       "title": "Formularis d'inici de sessió",
-      "titleDepr": "Els formularis d'inici de sessió estan obsolets a partir de REI3.9. Encara que continuaran funcionant durant un temps, si us plau consideri canviar al mecanisme de sincronització d'usuaris (veure documentació del Builder)."
+      "titleDepr": "Els formularis d'inici de sessió estan obsolets a partir de Axia3.9. Encara que continuaran funcionant durant un temps, si us plau consideri canviar al mecanisme de sincronització d'usuaris (veure documentació del Builder)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Instal·lar des del repositori",
         "versionCreate": "Crear nova versió"
       },
-      "clientEventsHint": "REI3 té una aplicació client, que els usuaris poden instal·lar des de la seva configuració personal. En executar-se, l'aplicació client de REI3 pot obrir fitxers pujats a REI3 amb programari local. També pot reaccionar a certs esdeveniments, com les tecles d'accés ràpid, definint els anomenats 'esdeveniments del client'. Aquests s'utilitzen generalment per enviar informació des del client a REI3, ja sigui per actualitzar dades fent servir funcions de backend o per interactuar amb una sessió de navegador REI3 oberta fent servir funcions de frontend.",
+      "clientEventsHint": "Axia4 té una aplicació client, que els usuaris poden instal·lar des de la seva configuració personal. En executar-se, l'aplicació client de Axia4 pot obrir fitxers pujats a Axia4 amb programari local. També pot reaccionar a certs esdeveniments, com les tecles d'accés ràpid, definint els anomenats 'esdeveniments del client'. Aquests s'utilitzen generalment per enviar informació des del client a Axia4 , ja sigui per actualitzar dades fent servir funcions de backend o per interactuar amb una sessió de navegador Axia4 oberta fent servir funcions de frontend.",
       "color": "Color",
       "colorHint": "Color primari de l'aplicació: es mostra a la capçalera i el menú si no es sobreescriu mitjançant la personalització i/o la configuració de l'usuari. Els estils del sistema estan optimitzats per a colors apagats i foscos (pastís fosc).",
       "dependsOn": "Construeix sobre",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Funció d'inici de sessió",
       "jsFunctionIdOnLoginHint": "Aquesta funció de frontend es crida quan un usuari inicia sessió al sistema. Es pot utilitzar per inicialitzar variables o actualitzar registres.",
       "keyCreate": "Transferir - Generar nou parell de claus de signatura",
-      "keyCreateInfo": "Assegura't de mantenir la clau privada segura en tot moment. La clau pública ha de ser importada a les instàncies de destinació de REI3 per acceptar les teves aplicacions.",
+      "keyCreateInfo": "Assegura't de mantenir la clau privada segura en tot moment. La clau pública ha de ser importada a les instàncies de destinació de Axia4 per acceptar les teves aplicacions.",
       "keyCreateLength": "Seleccionar longitud de clau",
       "languageCode": "Codi d'idioma",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",

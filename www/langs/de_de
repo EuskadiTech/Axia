@@ -475,14 +475,14 @@
           "clientCreds": "Client credentials"
         },
         "flowHint": {
-          "authCodePkce": "<p>Dieser Flow wird in Tallarin4 verwendet, um Benutzer über einen externen Identitätsanbieter anzumelden, wie z. B. Keycloak oder Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' ist ein Open ID Connect-Flow. Benutzer werden zur Authentifizierung zu einem Identitätsanbieter weitergeleitet. Nach Authentifizierung wird der Benutzer zurück zu Tallarin4 geschickt, wobei seine Identität verifiziert und Metadaten aktualisiert werden.</p>",
-          "clientCreds": "<p>Dieser Flow wird in Tallarin4 verwendet, damit sich das System gegen einen Dienst, wie z. B. Exchange Online, authentifizieren kann.</p><p>'Client Credentials' ist ein OAuth 2.0-Flow, mit welcher sich ein Client gegen Diensteanbieter authentifzieren kann, um auf geschützte Ressourcen wie z. B. Postfächer zuzugreifen. Ressourcen, die über den 'Client Credentials'-Flow zugegriffen werden, sollten zum Client (in diesem Fall Tallarin4) gehören; dieser Flow ist nicht dafür gedacht, auf Benutzer-Ressourcen direkt oder in Namen dessen zuzugreifen.</p><p>Dieser Flow wird aktuell nur für Zugriff auf E-Mail-Ressourcen verwendet.</p>"
+          "authCodePkce": "<p>Dieser Flow wird in Axia4 verwendet, um Benutzer über einen externen Identitätsanbieter anzumelden, wie z. B. Keycloak oder Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' ist ein Open ID Connect-Flow. Benutzer werden zur Authentifizierung zu einem Identitätsanbieter weitergeleitet. Nach Authentifizierung wird der Benutzer zurück zu Axia4 geschickt, wobei seine Identität verifiziert und Metadaten aktualisiert werden.</p>",
+          "clientCreds": "<p>Dieser Flow wird in Axia4 verwendet, damit sich das System gegen einen Dienst, wie z. B. Exchange Online, authentifizieren kann.</p><p>'Client Credentials' ist ein OAuth 2.0-Flow, mit welcher sich ein Client gegen Diensteanbieter authentifzieren kann, um auf geschützte Ressourcen wie z. B. Postfächer zuzugreifen. Ressourcen, die über den 'Client Credentials'-Flow zugegriffen werden, sollten zum Client (in diesem Fall Axia4 ) gehören; dieser Flow ist nicht dafür gedacht, auf Benutzer-Ressourcen direkt oder in Namen dessen zuzugreifen.</p><p>Dieser Flow wird aktuell nur für Zugriff auf E-Mail-Ressourcen verwendet.</p>"
         }
       },
       "providerUrl": "Anbieter-URL",
       "providerUrlHint": "URL des gewählten Anbieters für OAuth-Service-Discovery, oft auch \"Issuer URL\" genannt.",
       "redirectUrl": "Weiterleitungs-URL",
-      "redirectUrlHint": "Benutzer werden hierhin weitergeleitet, nachdem sie sich authentifiziert haben. Sollte die URL der Anmeldeseite von Tallarin4 sein. Muss ebenfalls beim Anbieter registriert sein.",
+      "redirectUrlHint": "Benutzer werden hierhin weitergeleitet, nachdem sie sich authentifiziert haben. Sollte die URL der Anmeldeseite von Axia4 sein. Muss ebenfalls beim Anbieter registriert sein.",
       "scopes": "Scopes",
       "scopesHint": "Scopes teilen dem Anbieter mit, was ein OAuth-Client tun oder worauf er zugreifen möchte. Sie werden vom Anbieter definiert und müssen dem Client zugewiesen werden, um nutzbar zu sein - eine Liste der verfügbaren Scopes sollte in der Dokumentation vom Anbieter zu finden sein.",
       "title": "OAuth-Client '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Frontend-Funktionen",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Sperrt alle Eingaben auf dem aktuellen Formular oder gibt diese wieder frei.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sendet eine Anfrage an einen Tallarin4-Client, installiert und aktiv auf dem gleichen Computer wie die Tallarin4-Browser-Sitzung, eine Reihe an Tastatureingaben durchzuführen. Diese Eingaben werden durch einen String definiert, wie z. B. \"Hallo Welt!\".<br /><br />Einige Sondertasten (ALT-TAB, TAB, ENTER, ESCAPE) werden ebenfalls unterstützt und können wie folgt verwendet werden:<br />\"Hallo,{ENTER}wie geht es dir?\"",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Sendet eine Anfrage an einen Axia4 -Client, installiert und aktiv auf dem gleichen Computer wie die Tallarin4-Browser-Sitzung, eine Reihe an Tastatureingaben durchzuführen. Diese Eingaben werden durch einen String definiert, wie z. B. \"Hallo Welt!\".<br /><br />Einige Sondertasten (ALT-TAB, TAB, ENTER, ESCAPE) werden ebenfalls unterstützt und können wie folgt verwendet werden:<br />\"Hallo,{ENTER}wie geht es dir?\"",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Aktualisiert Werte für die spezifizierte Sammlung.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Kopiert Text zur Zwischenablage des Benutzers.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Zeigt einen Dialog mit den definierten Titel und Inhalt. Der Titel ist ein simpler Textstring, der Inhalt kann entweder Text oder HTML sein.<br /><br />Buttons werden mithilfe einer Liste an Textstrings definiert. Wenn keine definiert sind, wird ein simpler OK-Button angezeigt.<br /><br />Der Rückgabewert ist der Index vom gedrückten Button. Wenn also der 1. Button gedrückt wurde, ist der Wert 0. Beim 2. Button ist der Wert 1 usw.<br /><br /><b>Example</b><br />app.dialog_show(<blockquote>'Please confirm',<br />'Do you really want to delete this item?',<br />['Yes', 'Cancel action']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('clicked Yes!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Platzhalter für Backend-Funktionen - entweder als Ausdruck ('SELECT function_abc()') oder direkt aufgerufen ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Funktionen (Frontend)",
       "placeholderFncInstance": "Funktionen (Instanz)",
-      "placeholderFncInstanceHelp": "Platzhalter für Funktionen von der Tallarin4-Instanz - diese erlauben Zugriff auf System-Features wie Datei- oder Mailverarbeitung.",
+      "placeholderFncInstanceHelp": "Platzhalter für Funktionen von der Axia4 -Instanz - diese erlauben Zugriff auf System-Features wie Datei- oder Mailverarbeitung.",
       "placeholderPresets": "Vordefinierte Datensatz-IDs",
       "placeholderPresetsHelp": "Platzhalter für die ID (als BIGINT) für den Datensatz, der als vordefinierter Datensatz im System angelegt worden ist.<br /><br />Wenn der vordefinierte Datensatz nicht geschützt war, könnte dieser von Benutzern gelöscht worden sein. In diesem Fall wird 'null' zurückgegeben.",
       "placeholderRelations": "Relationen",
@@ -1275,7 +1275,7 @@
       "formOpen": "Zu öffnendes Formular",
       "newLoginForm": "Neues Anmeldeformular",
       "title": "Anmeldeformulare",
-      "titleDepr": "Anmeldeformulare sind seit Tallarin4.9 veraltet. Auch wenn sie noch für eine Weile funktionieren werden, sollte auf das Benutzer-Sync-Verfahren gewechselt werden (s. Builder-Dokumentation)."
+      "titleDepr": "Anmeldeformulare sind seit Axia3.9 veraltet. Auch wenn sie noch für eine Weile funktionieren werden, sollte auf das Benutzer-Sync-Verfahren gewechselt werden (s. Builder-Dokumentation)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Vom Repository installieren",
         "versionCreate": "Neue Version erzeugen"
       },
-      "clientEventsHint": "Tallarin4 hat eine Client-Anwendung, welche Benutzer über ihre persönlichen Einstellungen installieren können. Wenn diese läuft, kann sie in Tallarin4 hochgeladene Dateien mit lokaler Software öffnen. Sie kann auch auf bestimmte Ereignisse wie z. B. Hotkey-Eingaben reagieren, indem sogenannte 'Client-Ereignisse' definiert werden. Diese Ereignisse werden idR. genutzt, um Informationen vom Client zu Tallarin4 zu schicken - entweder um Daten zu aktualisieren mithilfe von Backend-Funktionen oder mit einer offenen Tallarin4-Browser-Sitzung zu interagieren mithilfe von Frontend-Funktionen.",
+      "clientEventsHint": "Axia4 hat eine Client-Anwendung, welche Benutzer über ihre persönlichen Einstellungen installieren können. Wenn diese läuft, kann sie in Axia4 hochgeladene Dateien mit lokaler Software öffnen. Sie kann auch auf bestimmte Ereignisse wie z. B. Hotkey-Eingaben reagieren, indem sogenannte 'Client-Ereignisse' definiert werden. Diese Ereignisse werden idR. genutzt, um Informationen vom Client zu Axia4 zu schicken - entweder um Daten zu aktualisieren mithilfe von Backend-Funktionen oder mit einer offenen Axia4 -Browser-Sitzung zu interagieren mithilfe von Frontend-Funktionen.",
       "color": "Farbe",
       "colorHint": "Primäre Anwendungsfarbe - sichtbar in der obersten Leiste und Menü, wenn nicht durch Customizing und/oder Benutzereinstellung überschrieben. Die Systemdarstellung ist optimiert für ausgewaschene, dunklere Farben (dunkles Pastell).",
       "dependsOn": "Baut auf",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Sitzungsstart-Funktion",
       "jsFunctionIdOnLoginHint": "Diese Frontendfunktion wird ausgeführt, wenn ein Benutzer sich im System einloggt. Sie kann bspw. genutzt werden, um Variablen zu initalisieren oder Logs zu schreiben.",
       "keyCreate": "Transfer - Neues Signierschlüsselpaar erzeugen",
-      "keyCreateInfo": "Stelle sicher, dass der private Schlüssel zu jeder Zeit sicher verwahrt wird. Der öffentliche Schlüssel muss in Zielinstanzen von Tallarin4 importiert werden, bevor Anwendungen installiert werden können.",
+      "keyCreateInfo": "Stelle sicher, dass der private Schlüssel zu jeder Zeit sicher verwahrt wird. Der öffentliche Schlüssel muss in Zielinstanzen von Axia4 importiert werden, bevor Anwendungen installiert werden können.",
       "keyCreateLength": "Schlüssellänge auswählen",
       "languageCode": "Sprach-Code",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",
