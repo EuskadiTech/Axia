@@ -2128,7 +2128,7 @@
     "nothingThere": "Aucun résultat disponible",
     "notice": "Avis",
     "notSaved": "Non enregistré",
-    "notShown": "I'm sorry, I can't assist with that request without having the text to translate. Please provide the English text you'd like translated into French.",
+    "notShown": "Not shown",
     "option": {
       "aggArray": "tableau",
       "aggAvg": "moyenne",
@@ -2185,7 +2185,7 @@
     "status": "Statut",
     "systemModes": "Modes du système",
     "textSearch": "Recherche de texte",
-    "threeDots": "I'm sorry, but it seems there's no text provided for translation. Could you please provide the text you would like translated from English to French?",
+    "threeDots": "...",
     "tip": "Conseil",
     "title": "Titre",
     "token": "Jeton",
@@ -2263,10 +2263,10 @@
       "dateTo": "À",
       "fullDayHint": "Sélection toute la journée",
       "inputDay": "dd",
-      "inputHour": "Votre tâche est de traduire le texte de 'English (en)' vers 'French (fr)' désigné par l'utilisateur comme 'French'\nRépondez uniquement avec le texte traduit, sans guillemets, symboles, ponctuation ou formatage supplémentaires, sauf si c'est dans le texte original.\nSi le texte contient du code, des espaces réservés, des variables ou d'autres éléments liés au code, ne les traduisez pas.\nSi le texte contient des messages ICU, traduisez-les également, mais ajustez la syntaxe pour correspondre à la langue cible.\nGardez la capitalisation des lettres si possible et corrigez les fautes d'orthographe.\nConservez les sauts de ligne, les paragraphes et le formatage du texte original.\nGardez le sens, le ton et le style du texte original.\nNe traduisez pas le code source, les espaces réservés, les variables ou tout autre élément lié au code.",
-      "inputMinute": "Votre tâche est de traduire le texte de 'English (en)' vers 'French (fr)' désigné par l'utilisateur comme 'French'\nRépondez uniquement avec le texte traduit, sans guillemets, symboles, ponctuation ou formatage supplémentaires, sauf si c'est dans le texte original.\nSi le texte contient du code, des espaces réservés, des variables ou d'autres éléments liés au code, ne les traduisez pas.\nSi le texte contient des messages ICU, traduisez-les également, mais ajustez la syntaxe pour correspondre à la langue cible.\nGardez la capitalisation des lettres si possible et corrigez les fautes d'orthographe.\nConservez les sauts de ligne, les paragraphes et le formatage du texte original.\nGardez le sens, le ton et le style du texte original.\nNe traduisez pas le code source, les espaces réservés, les variables ou tout autre élément lié au code.",
+      "inputHour": "--",
+      "inputMinute": "--",
       "inputMonth": "mm",
-      "inputSecond": "Votre tâche est de traduire le texte de 'English (en)' vers 'French (fr)' désigné par l'utilisateur comme 'French'\nRépondez uniquement avec le texte traduit, sans guillemets, symboles, ponctuation ou formatage supplémentaires, sauf si c'est dans le texte original.\nSi le texte contient du code, des espaces réservés, des variables ou d'autres éléments liés au code, ne les traduisez pas.\nSi le texte contient des messages ICU, traduisez-les également, mais ajustez la syntaxe pour correspondre à la langue cible.\nGardez la capitalisation des lettres si possible et corrigez les fautes d'orthographe.\nConservez les sauts de ligne, les paragraphes et le formatage du texte original.\nGardez le sens, le ton et le style du texte original.\nNe traduisez pas le code source, les espaces réservés, les variables ou tout autre élément lié au code.",
+      "inputSecond": "--",
       "inputYear": "aaaa"
     },
     "files": {
@@ -2445,7 +2445,7 @@
         "comma": "Virgule (,)",
         "dot": "Point (.)",
         "mdot": "Point médian (·)",
-        "none": "I'm sorry, but it seems there is no text provided for translation. Could you please provide the text that you would like translated into French?",
+        "none": "[no separator]",
         "space": "Espace ( )"
       }
     },
