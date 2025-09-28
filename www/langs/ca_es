@@ -2184,84 +2184,84 @@
     "standard": "Estàndard",
     "status": "Estat",
     "systemModes": "Modes del sistema",
-    "textSearch": "Búsqueda de texto",
-    "threeDots": "...",
-    "tip": "Consejo",
-    "title": "Título",
+    "textSearch": "Cerca de text",
+    "threeDots": "I'm sorry, I need the text you want me to translate from Spanish to Catalan. Could you please provide it?",
+    "tip": "Consell",
+    "title": "Títol",
     "token": "Token",
-    "type": "Escribe",
-    "unassigned": "No asignado",
-    "uninstall": "Desinstalar",
-    "update": "Actualizar",
-    "username": "Nombre de usuario",
+    "type": "Escriu",
+    "unassigned": "No assignat",
+    "uninstall": "Desinstal·lar",
+    "update": "Actualitzar",
+    "username": "Nom d'usuari",
     "value": "Valor",
     "variable": "Variable",
     "variables": "Variables",
-    "version": "Versión",
-    "visibility": "Visibilidad",
-    "warnings": "Advertencias",
-    "widget": "Widget",
+    "version": "Versió",
+    "visibility": "Visibilitat",
+    "warnings": "Advertiments",
+    "widget": "Giny",
     "widgets": "Widgets",
-    "wrap": "Envolver"
+    "wrap": "Embolicar"
   },
   "globalSearch": {
     "button": {
-      "dictReset": "Restablecer al idioma del usuario",
-      "fullTextSearch": "Admite búsqueda de texto completo",
-      "openAsPopUp": "Abrir como ventana emergente",
-      "openAsPopUpMobile": "Ventana emergente",
-      "showHeader": "Títulos de columnas",
-      "showHeaderMobile": "Columnas"
+      "dictReset": "Restablir a l'idioma de l'usuari",
+      "fullTextSearch": "Admet cerca de text complet",
+      "openAsPopUp": "Obrir com a finestra emergent",
+      "openAsPopUpMobile": "Finestra emergent",
+      "showHeader": "Títols de columnes",
+      "showHeaderMobile": "Columnes"
     },
     "help": {
-      "ftsDict": [ "Define en qué idioma está escrita la consulta de búsqueda.", "Esto no ayuda a encontrar palabras o nombres que contengan unos pocos caracteres; pero al conocer el idioma de la consulta de búsqueda, el sistema puede utilizar las funciones de búsqueda de texto completo.", "Cuando se admite la búsqueda de texto completo, se muestra un mensaje correspondiente en la barra de título de búsqueda; haz clic en él para obtener más detalles sobre las opciones de búsqueda." ],
-      "ftsDictTitle": "Idioma de entrada de búsqueda"
+      "ftsDict": [ "Define en quin idioma està escrita la consulta de cerca.", "Això no ajuda a trobar paraules o noms que continguin uns quants caràcters; però en conèixer la llengua de la consulta de cerca, el sistema pot utilitzar les funcions de cerca de text complet.", "Quan s'admet la cerca de text complet, es mostra un missatge corresponent a la barra de títol de cerca; fes clic a sobre per obtenir més detalls sobre les opcions de cerca." ],
+      "ftsDictTitle": "Idioma d'entrada de cerca"
     },
-    "inputPlaceholder": "Escribe nombres, palabras o direcciones de correo electrónico",
-    "modulesInactive": "Opciones de búsqueda adicionales",
-    "tips": [ "Se puede iniciar una nueva búsqueda desde cualquier lugar en REI3 presionando <b>CTRL + SHIFT + F</b>. Si hay texto seleccionado, se usará como entrada de búsqueda.", "Cuando busques nombres, palabras o direcciones de correo electrónico, escríbelos completos.", "Si se busca contenido multilingüe, es importante establecer el idioma de su consulta de búsqueda (esquina superior derecha).", "Las búsquedas específicas del idioma, como hacer coincidir 'making' con 'make', funcionan si el contenido tiene un idioma definido. Esto a menudo tiene sentido para artículos, pero generalmente no se hace para correos electrónicos." ]
+    "inputPlaceholder": "Escriu noms, paraules o adreces de correu electrònic",
+    "modulesInactive": "Opcions de cerca addicionals",
+    "tips": [ "Es pot iniciar una nova cerca des de qualsevol lloc a REI3 prement <b>CTRL + MAJ + F</b>. Si hi ha text seleccionat, s'utilitzarà com a entrada de cerca.", "Quan busquis noms, paraules o adreces de correu electrònic, escriu-los complets.", "Si es busca contingut multilingüe, és important establir la llengua de la consulta de cerca (cantonada superior dreta).", "Les cerques específiques de l'idioma, com fer coincidir 'making' amb 'make', funcionen si el contingut té un idioma definit. Això sovint té sentit per a articles, però generalment no es fa per a correus electrònics." ]
   },
   "home": {
     "button": {
-      "goToApps": "Abrir archivo de importación",
-      "goToLogins": "Asignar roles",
-      "goToRepo": "Abrir repositorio",
-      "installBundle": "Instalar Empresa Principal"
+      "goToApps": "Obrir arxiu d'importació",
+      "goToLogins": "Assignar rols",
+      "goToRepo": "Obrir repositori",
+      "installBundle": "Instal·lar Empresa Principal"
     },
-    "newVersion": "Notificación de actualización",
-    "newVersionText": "Una nueva versión de REI3 está disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descargar REI3 v{VERSION}</a>",
-    "noAccess": "Todavía no se ha concedido acceso.<br />Por favor, contacte con su administrador del sistema.",
-    "noAccessAdmin": "Para obtener acceso, asigna roles a tu usuario.",
-    "noAccessTitle": "No hay acceso a aplicaciones",
-    "title": "Página principal",
+    "newVersion": "Notificació d'actualització",
+    "newVersionText": "Una nova versió de REI3 està disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descarregar REI3 v{VERSION}</a>",
+    "noAccess": "Encara no s'ha concedit accés.<br />Si us plau, contacti amb el seu administrador del sistema.",
+    "noAccessAdmin": "Per obtenir accés, assigna rols al teu usuari.",
+    "noAccessTitle": "No hi ha accés a aplicacions",
+    "title": "Pàgina principal",
     "wizard": {
       "installBundle": "Empresa Principal",
-      "installBundleDesc": "Instale un conjunto preempaquetado de aplicaciones principales, útiles para cualquier organización. El conjunto 'Core Company' incluye:<ul><li>Gestión de ausencias</li><li>Seguimiento del tiempo</li><li>Gestión de proyectos y tareas</li><li>Manejo de solicitudes</li><li>Un gestor seguro de contraseñas</li><li>Gestión de activos de TI</li></ul>Después de la instalación, por favor consulte las páginas de ayuda de cada aplicación individual para obtener más información sobre la configuración inicial de cada una.",
-      "installFile": "Del archivo",
-      "installFileDesc": "Instale aplicaciones desde archivos REI3 locales. Para sistemas fuera de línea o aplicaciones hechas por uno mismo.<br /><br />Los archivos para las aplicaciones REI3 ofrecidas públicamente se pueden descargar del <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositorio</a> oficial.",
-      "installRepo": "Desde el repositorio",
-      "installRepoDesc": "<b>Se requiere acceso a Internet</b><br /><br />Instale aplicaciones desde el repositorio oficial de REI3. El repositorio contiene versiones actuales de las aplicaciones de REI3 ofrecidas públicamente.<br /><br />Todas las aplicaciones son revisadas y firmadas digitalmente.",
-      "intro": "Bienvenido a REI3<br /><br />Actualmente no hay aplicaciones instaladas. Para empezar a usar REI3, por favor elige una de las opciones de instalación a continuación.",
-      "title": "Configuración"
+      "installBundleDesc": "Instal·leu un conjunt preempaquetat d'aplicacions principals, útils per a qualsevol organització. El conjunt 'Core Company' inclou:<ul><li>Gestió d'absències</li><li>Seguiment del temps</li><li>Gestió de projectes i tasques</li><li>Gestió de sol·licituds</li><li>Un gestor segur de contrasenyes</li><li>Gestió d'actius de TI</li></ul>Després de la instal·lació, si us plau, consulteu les pàgines d'ajuda de cada aplicació individual per obtenir més informació sobre la configuració inicial de cadascuna.",
+      "installFile": "De l'arxiu",
+      "installFileDesc": "Instal·la aplicacions des de fitxers REI3 locals. Per a sistemes fora de línia o aplicacions fetes per un mateix.<br /><br />Els fitxers per a les aplicacions REI3 ofertes públicament es poden descarregar del <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositori</a> oficial.",
+      "installRepo": "Des del repositori",
+      "installRepoDesc": "<b>Es requereix accés a Internet</b><br /><br />Instal·leu aplicacions des del repositori oficial de REI3. El repositori conté versions actuals de les aplicacions de REI3 ofertes públicament.<br /><br />Totes les aplicacions són revisades i signades digitalment.",
+      "intro": "Benvingut a REI3<br /><br />Actualment no hi ha aplicacions instal·lades. Per començar a utilitzar REI3, si us plau, tria una de les opcions d'instal·lació a continuació.",
+      "title": "Configuració"
     }
   },
   "input": {
     "barcode": {
-      "capture": "Capturar código desde imagen de cámara",
-      "deviceMissing": "No se encontraron dispositivos de entrada del tipo 'cámara'. Por favor, inténtelo de nuevo.",
-      "deviceSelect": "Por favor seleccione un dispositivo de entrada",
-      "formatInvalidValue": "El valor no es compatible con el formato elegido.",
-      "formatMissing": "Por favor, seleccione un formato para mostrar el valor",
-      "formatResetHint": "Cambiar el formato del código para mostrar el valor en"
+      "capture": "Capturar codi des d'imatge de càmera",
+      "deviceMissing": "No es van trobar dispositius d'entrada del tipus 'càmera'. Si us plau, torneu-ho a intentar.",
+      "deviceSelect": "Si us plau seleccioneu un dispositiu d'entrada",
+      "formatInvalidValue": "El valor no és compatible amb el format triat.",
+      "formatMissing": "Si us plau, seleccioneu un format per mostrar el valor",
+      "formatResetHint": "Canviar el format del codi per mostrar el valor en"
     },
     "date": {
       "button": {
-        "todayHint": "Hoy/ahora",
-        "viewHint": "Cambiar vista"
+        "todayHint": "Avui/ara",
+        "viewHint": "Canviar vista"
       },
       "dateFrom": "De",
       "dateTo": "A",
-      "fullDayHint": "Selección todo el día",
+      "fullDayHint": "Selecció tot el dia",
       "inputDay": "dd",
       "inputHour": "--",
       "inputMinute": "--",
@@ -2271,263 +2271,263 @@
     },
     "files": {
       "button": {
-        "copyHint": "Copie los archivos seleccionados para pegarlos en otra entrada de archivo.",
-        "downloadHint": "Descargar archivo",
-        "fileRequestHint": "Edita el archivo localmente en tu computadora. Requiere la aplicación cliente R3 (instalable desde la configuración del usuario). No funciona si el sistema está en modo de mantenimiento.",
-        "pasteHint": "Pega los archivos copiados en esta entrada de archivo."
+        "copyHint": "Copia els arxius seleccionats per enganxar-los en una altra entrada d'arxiu.",
+        "downloadHint": "Descarregar arxiu",
+        "fileRequestHint": "Edita el fitxer localment a l'ordinador. Requereix l'aplicació client R3 (instalable des de la configuració de l'usuari). No funciona si el sistema està en mode de manteniment.",
+        "pasteHint": "Enganxa els arxius copiats en aquesta entrada d'arxiu."
       },
-      "dropTarget": "Suelta los archivos aquí para subirlos",
-      "fileChanged": "Cambiado",
-      "fileName": "Nombre del archivo",
-      "fileSize": "Tamaño del archivo",
-      "tooLarge": "No se puede cargar el archivo '{NAME}', el tamaño máximo permitido es {SIZE}.",
-      "unsaved": "(no guardado)"
+      "dropTarget": "Deixa els arxius aquí per pujar-los",
+      "fileChanged": "Canviat",
+      "fileName": "Nom de l'arxiu",
+      "fileSize": "Mida del fitxer",
+      "tooLarge": "No es pot carregar el fitxer '{NAME}', la mida màxima permesa és {SIZE}.",
+      "unsaved": "(no guardat)"
     },
     "hotkey": {
-      "charHint": "1 carácter (a-z, 0-9)",
+      "charHint": "1 caràcter (a-z, 0-9)",
       "modifier": {
         "ALT": "alt",
         "CMD": "win/cmd",
         "CTRL": "ctrl",
-        "SHIFT": "cambio"
+        "SHIFT": "canvi"
       }
     },
     "iframe": {
-      "empty": "No se ha establecido URL - nada que mostrar"
+      "empty": "No s'ha establert URL - res a mostrar"
     }
   },
   "list": {
-    "aggregators": "Resultados agregados",
-    "autoRenew": "Renovación automática",
-    "autoRenewInput": "Actualizar cada X segundos",
+    "aggregators": "Resultats agregats",
+    "autoRenew": "Renovació automàtica",
+    "autoRenewInput": "Actualitzar cada X segons",
     "button": {
-      "aggregatorsHint": "Resultados agregados",
-      "all": "Todos",
-      "allHint": "Seleccionar todos los resultados",
+      "aggregatorsHint": "Resultats agregats",
+      "all": "Tots",
+      "allHint": "Seleccionar tots els resultats",
       "autoRenew": "{VALUE}s",
-      "autoRenewHint": "Actualizar datos cada {VALUE} segundos",
-      "collapseHeader": "Mostrar/ocultar encabezado de la lista",
-      "columnFilters": "Mostrar filtros de columna (clic derecho para eliminar)",
-      "columnOrderFlip": "Orden inverso (clic derecho para eliminar)",
+      "autoRenewHint": "Actualitzar dades cada {VALUE} segons",
+      "collapseHeader": "Mostrar/amagar capçalera de la llista",
+      "columnFilters": "Mostrar filtres de columna (clic dret per eliminar)",
+      "columnOrderFlip": "Ordre invers (clic dret per eliminar)",
       "csv": "CSV",
-      "csvHint": "Importar/exportar registros a través de un archivo de valores separados por comas"
+      "csvHint": "Importar/exportar registres a través d'un fitxer de valors separats per comes"
     },
-    "cardsCaptions": "Mostrar etiquetas",
+    "cardsCaptions": "Mostrar etiquetes",
     "columnFilter": {
-      "contains": "Contiene"
+      "contains": "Conté"
     },
-    "csvAction": "Acción",
-    "csvBool": "Cadenas booleanas",
-    "csvCommaChar": "Delimitador de campo",
-    "csvDate": "Formato de fecha",
-    "csvDatetime": "Formato de fecha y hora",
-    "csvFile": "Archivo CSV",
-    "csvHasHeader": "Línea de encabezado",
-    "csvLineError": "Error en la línea {COUNT}:",
-    "csvLoadError": "No se pudo cargar el archivo CSV. Por favor, inténtalo de nuevo.",
-    "csvTime": "Formato de hora",
+    "csvAction": "Acció",
+    "csvBool": "Cadenes booleanes",
+    "csvCommaChar": "Delimitador de camp",
+    "csvDate": "Format de data",
+    "csvDatetime": "Format de data i hora",
+    "csvFile": "Arxiu CSV",
+    "csvHasHeader": "Línia d'encapçalament",
+    "csvLineError": "Error a la línia {COUNT}:",
+    "csvLoadError": "No es va poder carregar el fitxer CSV. Si us plau, intenta-ho de nou.",
+    "csvTime": "Format d'hora",
     "csvTimeHint": "15:04:05",
-    "csvTimezone": "Zona horaria",
-    "csvTotalLimit": "Cuenta de filas (0 = todas)",
+    "csvTimezone": "Zona horària",
+    "csvTotalLimit": "Compte de files (0 = totes)",
     "dialog": {
-      "delete": "¿Está seguro de que desea <b>eliminar</b> permanentemente los registros seleccionados?"
+      "delete": "Està segur que vol <b>eliminar</b> permanentment els registres seleccionats?"
     },
-    "displayMode": "Modo de visualización",
-    "fetching": "Se están recuperando los datos...",
-    "globalSettings": "Configuración global",
-    "inputHintCreate": "Crear nuevo registro",
-    "inputHintOpen": "Abrir registro",
-    "inputHintRemove": "Eliminar registro",
-    "inputPlaceholderAdd": "...agregar más",
+    "displayMode": "Mode de visualització",
+    "fetching": "S'estan recuperant les dades...",
+    "globalSettings": "Configuració global",
+    "inputHintCreate": "Crear nou registre",
+    "inputHintOpen": "Obrir registre",
+    "inputHintRemove": "Eliminar registre",
+    "inputPlaceholderAdd": "...afegir més",
     "message": {
-      "csvExport": "La exportación CSV utiliza filtros y ordenación de la lista actual.",
-      "csvImport": "La importación de CSV requiere el/los campo(s) {COUNT} de la lista que se muestra a continuación, en el mismo orden para cada fila.",
-      "csvImportSuccess": "Se importaron {COUNT} líneas",
-      "csvImportWarning": "¡Advertencia! Esta lista puede importar datos a través de archivos CSV. Algunas columnas podrían ser necesarias; cambiar el orden está bien, pero eliminar columnas puede causar que las importaciones fallen."
+      "csvExport": "L'exportació CSV utilitza filtres i ordenació de la llista actual.",
+      "csvImport": "La importació de CSV requereix el/s camp(s) {COUNT} de la llista que es mostra a continuació, en el mateix ordre per a cada fila.",
+      "csvImportSuccess": "Es van importar {COUNT} línies",
+      "csvImportWarning": "Advertència! Aquesta llista pot importar dades a través de fitxers CSV. Algunes columnes podrien ser necessàries; canviar-ne l'ordre està bé, però eliminar columnes pot fer que les importacions fallin."
     },
     "option": {
       "csvExport": "exportar",
       "csvImport": "import",
-      "layoutCards": "Tarjetas",
-      "layoutTable": "Mesa"
+      "layoutCards": "Targetes",
+      "layoutTable": "Taula"
     },
-    "orderBy": "Ordenar por",
-    "pageLimit": "Resultados por página",
-    "quick": "Filtrar resultados en todas las columnas"
+    "orderBy": "Ordenar per",
+    "pageLimit": "Resultats per pàgina",
+    "quick": "Filtrar resultats en totes les columnes"
   },
   "settings": {
     "account": {
       "button": {
-        "loginOptionsDel": "Restablecer todas las configuraciones de campo"
+        "loginOptionsDel": "Restablir totes les configuracions de camp"
       },
       "dialog": {
-        "loginOptionsDel": "<p>Esto restablecerá todas las configuraciones de campo, como el orden de la lista, las columnas visibles, los filtros, etc., a sus valores predeterminados.</p><p>¿Quieres continuar?</p>"
+        "loginOptionsDel": "<p>Això restablirà totes les configuracions de camp, com l'ordre de la llista, les columnes visibles, els filtres, etc., als seus valors predeterminats.</p><p>Vols continuar?</p>"
       },
-      "messagePwCurrentWrong": "La contraseña actual no es válida",
-      "messagePwDiff": "Las contraseñas no coinciden",
-      "messagePwRequiresDigit": "La contraseña debe contener un dígito",
-      "messagePwRequiresLower": "La contraseña debe contener una letra minúscula",
-      "messagePwRequiresSpecial": "La contraseña debe contener un carácter especial (!, ?, #, etc.)",
-      "messagePwRequiresUpper": "La contraseña debe contener una letra mayúscula",
-      "messagePwShort": "La contraseña es demasiado corta",
-      "nodeName": "Conectado con: {NAME}",
-      "pwChangeNotAllowed": "Los datos de inicio de sesión se gestionan externamente",
-      "pwNew0": "Nueva contraseña",
-      "pwNew1": "Nueva contraseña (repetida)",
-      "pwOld": "Contraseña actual",
-      "titlePwChange": "Cambiar contraseña"
+      "messagePwCurrentWrong": "La contrasenya actual no és vàlida",
+      "messagePwDiff": "Les contrasenyes no coincideixen",
+      "messagePwRequiresDigit": "La contrasenya ha de contenir un dígit",
+      "messagePwRequiresLower": "La contrasenya ha de contenir una lletra minúscula",
+      "messagePwRequiresSpecial": "La contrasenya ha de contenir un caràcter especial (!, ?, #, etc.)",
+      "messagePwRequiresUpper": "La contrasenya ha de contenir una lletra majúscula",
+      "messagePwShort": "La contrasenya és massa curta",
+      "nodeName": "Connectat amb: {NAME}",
+      "pwChangeNotAllowed": "Les dades d'inici de sessió es gestionen externament",
+      "pwNew0": "Nova contrasenya",
+      "pwNew1": "Nova contrasenya (repetida)",
+      "pwOld": "Contrasenya actual",
+      "titlePwChange": "Canviar contrasenya"
     },
-    "boolAsIcon": "Valores booleanos como íconos",
-    "borders": "Fronteras",
-    "bordersSquared": "Cuadrado",
+    "boolAsIcon": "Valors booleans com a icones",
+    "borders": "Fronteres",
+    "bordersSquared": "Quadrat",
     "button": {
-      "logout": "Cerrar sesión"
+      "logout": "Tancar sessió"
     },
     "clientEvents": {
-      "intro": "Si la aplicación cliente de REI3 (ver 'Dispositivos') está instalada, puedes configurar teclas de acceso rápido globales. Estas se utilizan para interactuar con REI3 mientras se ejecuta en segundo plano.",
-      "noEvents": "Actualmente no hay aplicaciones REI3 accesibles que ofrezcan teclas de acceso rápido."
+      "intro": "Si l'aplicació client de REI3 (vegeu 'Dispositius') està instal·lada, pots configurar tecles d'accés ràpid globals. Aquestes s'utilitzen per interactuar amb REI3 mentre s'executa en segon pla.",
+      "noEvents": "Actualment no hi ha aplicacions REI3 accessibles que ofereixin tecles d'accés ràpid."
     },
     "colorClassicMode": "Esquema de color",
-    "colorClassicMode0": "Moderno",
-    "colorClassicMode1": "Clásico",
-    "colorHeader": "Sobrescribir color",
-    "colorHeaderSingle": "Color de acento",
-    "colorMenu": "Sobrescribir color",
-    "dark": "Modo oscuro",
-    "dateFormat": "Formato de fecha",
+    "colorClassicMode0": "Modern",
+    "colorClassicMode1": "Clàssic",
+    "colorHeader": "Sobreescriure color",
+    "colorHeaderSingle": "Color d'accent",
+    "colorMenu": "Sobreescriure color",
+    "dark": "Mode fosc",
+    "dateFormat": "Format de data",
     "encryption": {
-      "backupCode": "Código de respaldo",
-      "backupCodeDesc": "El código de respaldo es <b>muy importante</b>; sirve para restablecer el acceso si olvidas tu contraseña.",
+      "backupCode": "Codi de suport",
+      "backupCodeDesc": "El codi de seguretat és <b>molt important</b>; serveix per restablir l'accés si oblides la teva contrasenya.",
       "button": {
-        "createKeys": "Crear llaves",
-        "resetKeys": "Restablecer claves personales",
-        "storeKeys": "Habilitar encriptación"
+        "createKeys": "Crear claus",
+        "resetKeys": "Restablir claus personals",
+        "storeKeys": "Habilitar xifratge"
       },
-      "confirmBackupCode": "He copiado el código de respaldo a una ubicación segura.",
-      "confirmEncryption": "Entiendo que si pierdo el acceso tanto a mi contraseña como a mi código de respaldo, los datos cifrados se vuelven permanentemente inaccesibles.",
-      "description": "Las aplicaciones pueden cifrar datos sensibles para acceso exclusivo de personas específicas. Antes de que se puedan cifrar los datos, cada usuario debe crear claves personales.",
-      "modulesEnc": "Aplicaciones que utilizan cifrado",
-      "newKeys": "Claves creadas con éxito",
-      "newKeysDesc": "Para completar la configuración, copia tu código de respaldo personal en un lugar seguro.",
-      "noCredMasterKey": "Contraseña de cifrado",
-      "noCredMasterKeyChoose": "Su usuario está autenticado a través de un proveedor externo. Para habilitar el cifrado de extremo a extremo, debe elegir una contraseña de cifrado personal.",
-      "noCredMasterKeyEnter": "El cifrado de extremo a extremo está protegido por tu contraseña de cifrado personal.",
-      "noCredMasterKeyFailed": "La contraseña de cifrado no fue aceptada. Por favor, inténtalo de nuevo.<br /><br />Si olvidaste tu contraseña de cifrado, consulta las opciones de recuperación a continuación.",
-      "noCredMasterKeyNew": "Nueva contraseña de cifrado",
-      "prevPassword": "Contraseña anterior",
-      "regainAccess": "Recuperar acceso a las claves personales",
-      "regainAccessDesc": "Puedes recuperar el acceso a tus claves personales ingresando tu contraseña anterior. Si no conoces tu contraseña anterior, necesitas usar tu código de respaldo personal.",
-      "resetAccess": "Restablecer claves personales",
-      "resetAccessDesc": "Si no tienes acceso ni a tu contraseña anterior ni a tu código de respaldo, has perdido permanentemente el acceso a tus datos cifrados.<br /><br />Si este es el caso, puedes decidir restablecer tus claves personales para cifrar nuevos datos - esto <b>NO</b> restablecerá el acceso a los datos cifrados previamente.",
-      "resetAccessHint": "¿Estás seguro de que deseas restablecer tus claves personales? Si haces esto, no hay vuelta atrás, incluso si encuentras tu antiguo código de respaldo más tarde.",
+      "confirmBackupCode": "He copiat el codi de seguretat en una ubicació segura.",
+      "confirmEncryption": "Entenc que si perdo l'accés tant a la meva contrasenya com al meu codi de seguretat, les dades xifrades es tornen permanentment inaccesibles.",
+      "description": "Les aplicacions poden xifrar dades sensibles per a accés exclusiu de persones específiques. Abans que es puguin xifrar les dades, cada usuari ha de crear claus personals.",
+      "modulesEnc": "Aplicacions que utilitzen xifratge",
+      "newKeys": "Claus creades amb èxit",
+      "newKeysDesc": "Per completar la configuració, copia el teu codi de suport personal en un lloc segur.",
+      "noCredMasterKey": "Contrasenya de xifratge",
+      "noCredMasterKeyChoose": "El vostre usuari està autenticat a través d'un proveïdor extern. Per habilitar el xifratge d'extrem a extrem, heu de triar una contrasenya de xifratge personal.",
+      "noCredMasterKeyEnter": "El xifratge d'extrem a extrem està protegit per la teva contrasenya de xifratge personal.",
+      "noCredMasterKeyFailed": "La contrasenya de xifratge no va ser acceptada. Si us plau, torna-ho a intentar.<br /><br />Si vas oblidar la teva contrasenya de xifratge, consulta les opcions de recuperació a continuació.",
+      "noCredMasterKeyNew": "Nova contrasenya de xifratge",
+      "prevPassword": "Contrasenya anterior",
+      "regainAccess": "Recuperar accés a les claus personals",
+      "regainAccessDesc": "Pots recuperar l'accés a les teves claus personals introduint la teva contrasenya anterior. Si no coneixes la teva contrasenya anterior, necessites utilitzar el teu codi de recuperació personal.",
+      "resetAccess": "Restablir claus personals",
+      "resetAccessDesc": "Si no tens accés ni a la teva contrasenya anterior ni al teu codi de suport, has perdut permanentment l'accés a les teves dades xifrades.<br /><br />Si aquest és el cas, pots decidir restablir les teves claus personals per xifrar noves dades - això <b>NO</b> restablirà l'accés a les dades xifrades anteriorment.",
+      "resetAccessHint": "Estàs segur que vols restablir les teves claus personals? Si fas això, no hi ha marxa enrere, fins i tot si trobes el teu antic codi de suport més tard.",
       "status": {
-        "inactive": "No habilitado",
-        "locked": "Las llaves están bloqueadas",
-        "noCryptoApi": "Esta función está actualmente deshabilitada: requiere una conexión cifrada (HTTPS) así como un navegador moderno",
-        "unlocked": "Listo para usar"
+        "inactive": "No habilitat",
+        "locked": "Les claus estan bloquejades",
+        "noCryptoApi": "Aquesta funció està actualment deshabilitada: requereix una connexió xifrada (HTTPS) així com un navegador modern",
+        "unlocked": "Llest per usar"
       }
     },
-    "fontFamily": "Fuente",
-    "fontSize": "Tamaño de fuente",
-    "formActionsAlign": "Alinear acciones del formulario",
-    "headerCaptions": "Completo",
-    "headerModules": "Mostrar aplicaciones",
+    "fontFamily": "Font",
+    "fontSize": "Mida de la font",
+    "formActionsAlign": "Alinear accions del formulari",
+    "headerCaptions": "Complet",
+    "headerModules": "Mostrar aplicacions",
     "languageCode": "Idioma",
-    "listColored": "Contraste",
-    "listRows": "Listar filas",
-    "listSpaced": "Más grande",
-    "mobileScrollForm": "Móvil: Desplazar todo el formulario",
+    "listColored": "Contrast",
+    "listRows": "Llistar files",
+    "listSpaced": "Més gran",
+    "mobileScrollForm": "Mòbil: Desplaçar tot el formulari",
     "numberSepDecimal": "Separador decimal",
-    "numberSepThousand": "Separador de miles",
+    "numberSepThousand": "Separador de milers",
     "option": {
       "numberSeparator": {
-        "apos": "Apóstrofe (')",
+        "apos": "Apòstrof (')",
         "comma": "Coma (,)",
-        "dot": "Punto (.)",
-        "mdot": "Punto medio (·)",
-        "none": "I'm sorry, I need the text that you want translated. Could you please provide it?",
-        "space": "Espacio ( )"
+        "dot": "Punt (.)",
+        "mdot": "Punt mig (·)",
+        "none": "Ho sento, necessito el text que vols traduir. El podries proporcionar, si us plau?",
+        "space": "Espai ( )"
       }
     },
-    "pageTitle": "Configuraciones",
-    "pattern": "Patrón de fondo",
-    "spacing": "Espaciado",
-    "sundayFirstDow": "El domingo es el primer día de la semana",
-    "tabRemember": "Abrir la última pestaña utilizada",
-    "titleAccount": "Cuenta",
-    "titleClientEvents": "Teclas de acceso rápido globales",
-    "titleEncryption": "Cifrado de extremo a extremo",
-    "titleFixedTokens": "Dispositivos",
+    "pageTitle": "Configuracions",
+    "pattern": "Patró de fons",
+    "spacing": "Espaiat",
+    "sundayFirstDow": "El diumenge és el primer dia de la setmana",
+    "tabRemember": "Obrir l'última pestanya utilitzada",
+    "titleAccount": "Compte",
+    "titleClientEvents": "Tecles d'accés ràpid globals",
+    "titleEncryption": "Xifratge d'extrem a extrem",
+    "titleFixedTokens": "Dispositius",
     "titleGeneral": "General",
-    "titleSubHeader": "Menú de encabezado",
-    "titleSubMenu": "Menú de la aplicación",
-    "titleSubMisc": "Varios",
-    "titleSubNumbers": "Números",
+    "titleSubHeader": "Menú d'encapçalament",
+    "titleSubMenu": "Menú de l'aplicació",
+    "titleSubMisc": "Diversos",
+    "titleSubNumbers": "Nombres",
     "titleTheme": "Tema",
     "tokensFixed": {
       "button": {
-        "loadApp": "Aplicación",
-        "loadCnf": "Archivo de configuración"
+        "loadApp": "Aplicació",
+        "loadCnf": "Arxiu de configuració"
       },
       "context": {
-        "client": "Cliente REI3",
-        "ics": "Aplicación de calendario",
+        "client": "Client REI3",
+        "ics": "Aplicació de calendari",
         "totp": "Multifactor"
       },
       "device": {
-        "adminInfo": "<b>Información para administradores:</b> La aplicación cliente REI3 no funciona mientras REI3 está en modo de mantenimiento.",
-        "installStep1": "Elige un nombre para el dispositivo:",
-        "installStep2": "Descargue la aplicación y el archivo de configuración en la misma carpeta:",
-        "installStep3": "Inicia la aplicación. Se instalará automáticamente y luego aparecerá en la bandeja del sistema.",
-        "installStep4": "Ahora puedes eliminar la aplicación descargada y los archivos de configuración.",
-        "intro0": "La aplicación cliente REI3 es un software opcional que ofrece funcionalidad adicional. Una vez instalada, las siguientes características están disponibles:",
-        "intro1": "Los archivos subidos a REI3 se pueden editar directamente con software local. Asegúrate de tener seleccionada una aplicación predeterminada para la extensión de archivo dada. En Windows puedes hacer clic con la tecla shift presionada para elegir la aplicación a utilizar.",
-        "intro2": "Se pueden usar teclas de acceso rápido globales para ejecutar acciones en las aplicaciones de REI3, mientras REI3 se ejecuta en segundo plano.",
-        "nameHint": "Mi PC de trabajo",
-        "os": "Sistema operativo",
-        "uninstallStep1": "Haga clic derecho en el icono de la bandeja del cliente REI3 y elija la opción 'desinstalar'.",
-        "uninstallStep2": "La aplicación cliente REI3 ahora está desinstalada.",
-        "updateStep1": "Descargar el nuevo archivo de la aplicación:",
-        "updateStep2": "Inicia la aplicación. Ejecutará la actualización y luego aparecerá en la bandeja del sistema.",
-        "updateStep3": "Ahora puedes eliminar el archivo de la aplicación descargada."
+        "adminInfo": "<b>Informació per a administradors:</b> L'aplicació client REI3 no funciona mentre REI3 està en mode de manteniment.",
+        "installStep1": "Tria un nom per al dispositiu:",
+        "installStep2": "Descarregueu l'aplicació i l'arxiu de configuració a la mateixa carpeta:",
+        "installStep3": "Inicia l'aplicació. S'instal·larà automàticament i després apareixerà a la safata del sistema.",
+        "installStep4": "Ara pots eliminar l'aplicació descarregada i els fitxers de configuració.",
+        "intro0": "L'aplicació client REI3 és un programari opcional que ofereix funcionalitat addicional. Un cop instal·lada, les característiques següents estan disponibles:",
+        "intro1": "Els arxius pujats a REI3 es poden editar directament amb programari local. Assegura't de tenir seleccionada una aplicació predeterminada per a l'extensió d'arxiu donada. A Windows pots fer clic amb la tecla shift premuda per triar l'aplicació a utilitzar.",
+        "intro2": "Es poden utilitzar tecles d'accés ràpid globals per executar accions en les aplicacions de REI3, mentre REI3 s'executa en segon pla.",
+        "nameHint": "El meu PC de treball",
+        "os": "Sistema operatiu",
+        "uninstallStep1": "Feu clic dret a la icona de la safata del client REI3 i trieu l'opció 'desinstal·lar'.",
+        "uninstallStep2": "L'aplicació client REI3 ara està desinstal·lada.",
+        "updateStep1": "Descarregar el nou fitxer de l'aplicació:",
+        "updateStep2": "Inicia l'aplicació. Executarà l'actualització i després apareixerà a la safata del sistema.",
+        "updateStep3": "Ara pots eliminar el fitxer de l'aplicació descarregada."
       },
       "message": {
-        "delete": "¿Está seguro de que desea eliminar esta entrada? Esto no se puede deshacer."
+        "delete": "Està segur que vol eliminar aquesta entrada? Això no es pot desfer."
       },
       "mfa": {
-        "apps": [ "Google Authenticator", "Microsoft Authenticator", "Autenticador Aegis", "...o cualquier aplicación que admita TOTP" ],
-        "appsExample": "Algunos ejemplos:",
-        "intro": "Puedes aumentar la seguridad de tu cuenta activando la autenticación multifactor (MFA). Para activar MFA, utiliza una aplicación de autenticación en un dispositivo separado (como un teléfono inteligente).",
-        "name": "Elige un nombre para tu dispositivo",
-        "nameHint": "Mi smartphone",
-        "outro": "Utiliza el código QR para agregar esta cuenta a tu aplicación de autenticación. Cuando termines, cierra esta ventana. Puedes repetir este proceso para habilitar MFA con múltiples dispositivos."
+        "apps": [ "Google Authenticator", "Microsoft Authenticator", "Autenticador Aegis", "...o qualsevol aplicació que admeti TOTP" ],
+        "appsExample": "Alguns exemples:",
+        "intro": "Pots augmentar la seguretat del teu compte activant l'autenticació multifactor (MFA). Per activar MFA, utilitza una aplicació d'autenticació en un dispositiu separat (com un telèfon intel·ligent).",
+        "name": "Tria un nom per al teu dispositiu",
+        "nameHint": "El meu telèfon intel·ligent",
+        "outro": "Utilitza el codi QR per afegir aquest compte a la teva aplicació d'autenticació. Quan acabis, tanca aquesta finestra. Pots repetir aquest procés per habilitar MFA amb múltiples dispositius."
       },
-      "titleAdd": "Administrar la aplicación cliente de REI3",
-      "titleContext": "Usar",
-      "titleDateCreate": "Creado",
-      "titleMfa": "Configurar la autenticación multifactor",
-      "titleName": "Nombre del dispositivo"
+      "titleAdd": "Administrar l'aplicació client de REI3",
+      "titleContext": "Utilitzar",
+      "titleDateCreate": "Creat",
+      "titleMfa": "Configurar l'autenticació multifactor",
+      "titleName": "Nom del dispositiu"
     },
     "translation": {
-      "community": "Traducción comunitaria",
+      "community": "Traducció comunitària",
       "official": "Oficial",
-      "other": "Solo aplicación"
+      "other": "Només aplicació"
     },
-    "warnUnsaved": "Advertencias por cambios no guardados"
+    "warnUnsaved": "Advertiments per canvis no desats"
   },
   "widgets": {
     "button": {
-      "groupAdd": "Agregar grupo"
+      "groupAdd": "Afegir grup"
     },
-    "flow": "Dirección",
-    "groupNameNew": "Nuevo grupo de widgets",
+    "flow": "Adreça",
+    "groupNameNew": "Nou grup de ginys",
     "option": {
-      "filterModule": "Widgets de la aplicación",
+      "filterModule": "Widgets de l'aplicació",
       "filterSystem": "Widgets del sistema",
-      "flowColumn": "de arriba a abajo",
-      "flowRow": "de izquierda a derecha"
+      "flowColumn": "de dalt a baix",
+      "flowRow": "d'esquerra a dreta"
     },
-    "placeholder": "Arrastra y suelta los widgets para añadirlos a este grupo",
-    "width": "Ancho"
+    "placeholder": "Arrossega i deixa anar els widgets per afegir-los a aquest grup",
+    "width": "Ample"
   }
 }
