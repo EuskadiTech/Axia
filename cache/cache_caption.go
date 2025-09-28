@@ -16,7 +16,7 @@ var (
 )
 
 func GetCaptionLanguageCodes() []string {
-	return []string{"en_us", "de", "ar", "es", "ca", "eu", "gl", "fr", "cy", "it", "hi", "pt", "uk"}
+	return []string{"en_us", "de_de", "ar", "es_es", "ca", "eu_es", "gl", "fr", "cy", "it", "hi", "pt", "uk"}
 }
 
 func GetCaptionMapCustom() types.CaptionMapsAll {
