@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "इंस्टेंस नाम",
-      "appNameHint": "REI3 उदाहरण का नाम, जो लॉगिन पृष्ठ पर दिखाया गया है।",
+      "appNameHint": "Axia4 उदाहरण का नाम, जो लॉगिन पृष्ठ पर दिखाया गया है।",
       "appNameShort": "संक्षिप्त नाम",
       "appNameShortHint": "उदाहरण नाम का संक्षिप्त संस्करण, पृष्ठ शीर्षक में दिखाया गया और प्रगतिशील वेब ऐप (PWA) के रूप में स्थापित होने पर लेबल के रूप में।",
       "companyColorHeader": "शीर्षक रंग (हेडर)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "प्रगतिशील वेब ऐप आइकन के लिए उपयोग की गई छवि। पीएनजी फ़ाइल होनी चाहिए, अधिकतम 128kb और सटीक 512x512 पिक्सल के आकार में।",
       "pwaDomain": "प्रत्यक्ष ऐप पहुंच",
       "pwaDomainHint": "केवल उप डोमेन (जैसे 'my-app' से 'my-app.my-domain.com')",
-      "pwaDomainHint1": "व्यक्तिगत अनुप्रयोगों को सीधे एक्सेस किया जा सकता है और डिवाइसों पर अलग से PWA के रूप में इंस्टॉल किया जा सकता है। उनके पास फिर अपनी स्वयं की प्रारंभ पृष्ठ, आइकन और विशेष नेविगेशन होता है। इसके लिए प्रत्येक अनुप्रयोग के लिए एक उप डोमेन DNS रिकॉर्ड की आवश्यकता होती है ताकि REI3 सिस्टम विभिन्न डोमेन के माध्यम से पहुंच योग्य हो सके। इसके अलावा, REI3 सर्वर पर HTTPS अनुरोधों का सही तरीके से जवाब देने के लिए एक वाइल्डकार्ड प्रमाणपत्र की आवश्यकता होती है।\n\nएक बार जब दोनों DNS रिकॉर्ड और वाइल्डकार्ड प्रमाणपत्र तैयार हो जाएं, तो कृपया प्रत्येक इच्छित अनुप्रयोग के लिए एक उप डोमेन दर्ज करें।",
-      "pwaDomainHint2": "सुनिश्चित करें कि आपके पास एक उप डोमेन उपलब्ध है जो इस सूची में नहीं है, ताकि सामान्य REI3 प्रणाली तक पहुंचा जा सके। अन्यथा आपके पास व्यवस्थापक उपयोगकर्ता इंटरफ़ेस तक पहुंच नहीं होगी क्योंकि प्रत्येक एप्लिकेशन उप डोमेन केवल विशिष्ट एप्लिकेशन तक ही पहुंच प्रदान करता है।",
+      "pwaDomainHint1": "व्यक्तिगत अनुप्रयोगों को सीधे एक्सेस किया जा सकता है और डिवाइसों पर अलग से PWA के रूप में इंस्टॉल किया जा सकता है। उनके पास फिर अपनी स्वयं की प्रारंभ पृष्ठ, आइकन और विशेष नेविगेशन होता है। इसके लिए प्रत्येक अनुप्रयोग के लिए एक उप डोमेन DNS रिकॉर्ड की आवश्यकता होती है ताकि REI3 सिस्टम विभिन्न डोमेन के माध्यम से पहुंच योग्य हो सके। इसके अलावा, Axia4 सर्वर पर HTTPS अनुरोधों का सही तरीके से जवाब देने के लिए एक वाइल्डकार्ड प्रमाणपत्र की आवश्यकता होती है।\n\nएक बार जब दोनों DNS रिकॉर्ड और वाइल्डकार्ड प्रमाणपत्र तैयार हो जाएं, तो कृपया प्रत्येक इच्छित अनुप्रयोग के लिए एक उप डोमेन दर्ज करें।",
+      "pwaDomainHint2": "सुनिश्चित करें कि आपके पास एक उप डोमेन उपलब्ध है जो इस सूची में नहीं है, ताकि सामान्य Axia4 प्रणाली तक पहुंचा जा सके। अन्यथा आपके पास व्यवस्थापक उपयोगकर्ता इंटरफ़ेस तक पहुंच नहीं होगी क्योंकि प्रत्येक एप्लिकेशन उप डोमेन केवल विशिष्ट एप्लिकेशन तक ही पहुंच प्रदान करता है।",
       "titleCaptions": "कैप्शन",
       "titleColors": "रंग",
       "titleCss": "कस्टम CSS नियम",
@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "निर्धारित कार्य किसी फ़ॉर्म के साथ इंटरैक्ट कर सकते हैं ताकि फ़ॉर्म फ़ील्ड्स को पढ़ा या लिखा जा सके। यदि निर्धारित किया गया है, तो यह कार्य केवल चुने गए फ़ॉर्म पर ही उपयोग किया जा सकता है और अन्य फ्रंटएंड कार्यों में पुनः उपयोग नहीं किया जा सकता। इस सेटिंग को बाद में बदला नहीं जा सकता।",
       "message": {
         "api": "<p>एपीआई नाम को एपीआई कॉल के हिस्से के रूप में उपयोग किया जाएगा। इसे बाद में बदला जा सकता है।</p>",
-        "module": "<p>कृपया अपने एप्लिकेशन के लिए एक नाम चुनें। यह नाम आपके एप्लिकेशन को REI3 सिस्टम के अंदर विशिष्ट रूप से पहचानने के लिए काम करता है। यह उपयोगकर्ताओं को दिखाई नहीं देता है।</p><h3>उदाहरण:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>क्योंकि एप्लिकेशन नाम अद्वितीय होने चाहिए, यह आपके संगठन के नाम के अनुसार एक उपसर्ग का उपयोग करना मददगार हो सकता है। यदि आपके संगठन का नाम 'मॉडर्न फैशन लिमिटेड' है, तो आप 'mfl' को उपसर्ग के रूप में उपयोग कर सकते हैं (जैसे 'mfl_shift_planner' में)।</p>",
+        "module": "<p>कृपया अपने एप्लिकेशन के लिए एक नाम चुनें। यह नाम आपके एप्लिकेशन को Axia4 सिस्टम के अंदर विशिष्ट रूप से पहचानने के लिए काम करता है। यह उपयोगकर्ताओं को दिखाई नहीं देता है।</p><h3>उदाहरण:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>क्योंकि एप्लिकेशन नाम अद्वितीय होने चाहिए, यह आपके संगठन के नाम के अनुसार एक उपसर्ग का उपयोग करना मददगार हो सकता है। यदि आपके संगठन का नाम 'मॉडर्न फैशन लिमिटेड' है, तो आप 'mfl' को उपसर्ग के रूप में उपयोग कर सकते हैं (जैसे 'mfl_shift_planner' में)।</p>",
         "relation": "<p>एक संबंध नाम को उसके अंदर संग्रहीत सामग्री को प्रतिबिंबित करना चाहिए। यह एक एप्लिकेशन के भीतर अद्वितीय होना चाहिए।</p><h3>उदाहरण:</h3><ul><li>इवेंट</li><li>इवेंट_उपस्थिति</li><li>स्थान</li><li>स्थान_इवेंट</li></ul>"
       },
       "module": "नई आवेदन",
@@ -1583,8 +1583,8 @@
       "checks": "System checks",
       "checkStartForm": "Start form is defined",
       "checkStartFormOff": "Start form is not defined",
-      "extCommunity": "REI3 forum",
-      "extDocs": "REI3 दस्तावेज़ीकरण",
+      "extCommunity": "Axia4 forum",
+      "extDocs": "Axia4 दस्तावेज़ीकरण",
       "needHelp": "Need help?",
       "title": "पहले कदम",
       "titleForms": "फॉर्म बनाएं",
@@ -1726,11 +1726,11 @@
       "moreInfo": "अधिक जानकारी"
     },
     "info": {
-      "admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a> application) to manage application releases and receive internal feedback.",
+      "admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a> application) to manage application releases and receive internal feedback.",
       "data": [ "प्रतिक्रिया श्रेणी (सामान्य, बग/समस्या, सुझाव, प्रशंसा)", "प्रतिक्रिया पाठ", "Smiley that was selected", "वर्तमान में खुला हुआ आवेदन", "आवेदन और प्रणाली संस्करण संख्या", "Whether the user giving feedback is an administrator", "A random identifier to bundle feedback from the same system" ],
       "personal": "No personal information is being sent. If you want to receive a response, you can add contact details to your feedback text.",
       "repoUrl": "प्रतिक्रिया भेजी जाएगी",
-      "repoUrlDefault": "<i>(यह प्रणाली <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a> डेवलपर्स द्वारा संचालित है)</i>",
+      "repoUrlDefault": "<i>(यह प्रणाली <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a> डेवलपर्स द्वारा संचालित है)</i>",
       "what": "What is being sent?"
     },
     "moduleRelated": "Is this feedback for the open application? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "एपीआई",
     "application": "आवेदन",
     "applications": "आवेदन",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "तर्क",
     "articles": "सहायता लेख",
     "attribute": "एट्रीब्यूट",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Write out names, words or email addresses",
     "modulesInactive": "Additional search options",
-    "tips": [ "A new search can be started from anywhere in REI3 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.", "When searching for names, words or email addresses, write them out in full.", "If multilingual content is searched, it is important to set the language of your search query (top right corner).", "Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails." ]
+    "tips": [ "A new search can be started from anywhere in Axia4 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.", "When searching for names, words or email addresses, write them out in full.", "If multilingual content is searched, it is important to set the language of your search query (top right corner).", "Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Install Core Company"
     },
     "newVersion": "Update notification",
-    "newVersionText": "A new version of REI3 is available.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Download REI3 v{VERSION}</a>",
+    "newVersionText": "A new version of Axia4 is available.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Download Axia4 v{VERSION}</a>",
     "noAccess": "अभी तक कोई पहुंच प्रदान नहीं की गई है।<br />कृपया अपने सिस्टम प्रशासक से संपर्क करें।",
     "noAccessAdmin": "To get access, assign roles to your user.",
     "noAccessTitle": "No access to applications",
@@ -2238,10 +2238,10 @@
       "installBundle": "Core Company",
       "installBundleDesc": "Install a pre-packaged set of core applications, useful for any organization. The set 'Core Company' includes:<ul><li>Absence management</li><li>Time tracking</li><li>Project & task management</li><li>Request handling</li><li>A password safe</li><li>IT asset management</li></ul>After installation, please have a look at the individual application help pages to learn more about the initial setup for each.",
       "installFile": "From file",
-      "installFileDesc": "Install applications from local REI3 files. For offline systems or self-made applications.<br /><br />Files for publicly offered REI3 applications can be downloaded from the official <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repository</a>.",
+      "installFileDesc": "Install applications from local Axia4 files. For offline systems or self-made applications.<br /><br />Files for publicly offered Axia4 applications can be downloaded from the official <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repository</a>.",
       "installRepo": "From repository",
-      "installRepoDesc": "<b>इंटरनेट पहुंच आवश्यक</b><br /><br />आधिकारिक REI3 रिपॉजिटरी से एप्लिकेशन इंस्टॉल करें। रिपॉजिटरी में सार्वजनिक रूप से पेश किए गए REI3 एप्लिकेशन के वर्तमान संस्करण शामिल हैं।<br /><br />सभी एप्लिकेशन की समीक्षा की जाती है और डिजिटल रूप से हस्ताक्षरित होते हैं।",
-      "intro": "Welcome to REI3<br /><br />There are currently no applications installed. To start using REI3, please choose one of the installation options below.",
+      "installRepoDesc": "<b>इंटरनेट पहुंच आवश्यक</b><br /><br />आधिकारिक Axia4 रिपॉजिटरी से एप्लिकेशन इंस्टॉल करें। रिपॉजिटरी में सार्वजनिक रूप से पेश किए गए Axia4 एप्लिकेशन के वर्तमान संस्करण शामिल हैं।<br /><br />सभी एप्लिकेशन की समीक्षा की जाती है और डिजिटल रूप से हस्ताक्षरित होते हैं।",
+      "intro": "Welcome to Axia4 <br /><br />There are currently no applications installed. To start using Axia4 , please choose one of the installation options below.",
       "title": "Setup"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Logout"
     },
     "clientEvents": {
-      "intro": "If the REI3 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with REI3 as it runs in the background.",
-      "noEvents": "There are currently no REI3 applications accessible that offer hotkeys."
+      "intro": "If the Axia4 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with Axia4 as it runs in the background.",
+      "noEvents": "There are currently no Axia4 applications accessible that offer hotkeys."
     },
     "colorClassicMode": "Color scheme",
     "colorClassicMode0": "Modern",
@@ -2470,23 +2470,23 @@
         "loadCnf": "Config file"
       },
       "context": {
-        "client": "REI3 client",
+        "client": "Axia4 client",
         "ics": "Calendar app",
         "totp": "Multi-factor"
       },
       "device": {
-        "adminInfo": "<b>Info for admins:</b> The REI3 client application does not work while REI3 is in maintenance mode.",
+        "adminInfo": "<b>Info for admins:</b> The Axia4 client application does not work while Axia4 is in maintenance mode.",
         "installStep1": "Choose a device name:",
         "installStep2": "Download the application & config file to the same folder:",
         "installStep3": "Start the application. It will install itself and then appear in your system tray.",
         "installStep4": "You can now delete the downloaded application & config files.",
-        "intro0": "The REI3 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
-        "intro1": "Files uploaded to REI3 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
-        "intro2": "Global hotkeys can be used to execute actions in REI3 applications, while REI3 runs in the background.",
+        "intro0": "The Axia4 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
+        "intro1": "Files uploaded to Axia4 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
+        "intro2": "Global hotkeys can be used to execute actions in Axia4 applications, while Axia4 runs in the background.",
         "nameHint": "'My Work PC'",
         "os": "Operating system:",
-        "uninstallStep1": "Right-click on the REI3 client tray icon and choose the 'uninstall' option.",
-        "uninstallStep2": "The REI3 client application is now uninstalled.",
+        "uninstallStep1": "Right-click on the Axia4 client tray icon and choose the 'uninstall' option.",
+        "uninstallStep2": "The Axia4 client application is now uninstalled.",
         "updateStep1": "Download the new application file:",
         "updateStep2": "Start the application. It will execute the update and then appear in your system tray.",
         "updateStep3": "You can now delete the downloaded application file."
@@ -2502,7 +2502,7 @@
         "nameHint": "'My smartphone'",
         "outro": "Use the QR code to add this account to your authenticator app. When you are done, close this window. You can repeat this process to enable MFA with multiple devices."
       },
-      "titleAdd": "Manage REI3 client application",
+      "titleAdd": "Manage Axia4 client application",
       "titleContext": "उपयोग करें",
       "titleDateCreate": "Created",
       "titleMfa": "Setup multi-factor authentication",

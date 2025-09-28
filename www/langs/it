@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Le funzioni assegnate possono interagire con un modulo per fare cose come leggere o scrivere nei campi del modulo. Se assegnata, la funzione può essere utilizzata solo sul modulo scelto e non può essere riutilizzata in altre funzioni frontend. Questa impostazione non può essere modificata in seguito.",
       "message": {
         "api": "<p>Il nome dell'API verrà utilizzato come parte della chiamata API. Può essere modificato in seguito.</p>",
-        "module": "<p>Si prega di scegliere un nome per la tua applicazione. Questo nome serve a identificare univocamente la tua applicazione all'interno di un sistema REI3. Non è visibile agli utenti.</p><h3>Esempi:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Poiché i nomi delle applicazioni devono essere unici, può essere utile utilizzare un prefisso che prenda il nome della tua organizzazione. Se la tua organizzazione si chiama 'Modern Fashion Limited', potresti usare 'mfl' come prefisso (come in 'mfl_shift_planner').</p>",
+        "module": "<p>Si prega di scegliere un nome per la tua applicazione. Questo nome serve a identificare univocamente la tua applicazione all'interno di un sistema Axia4 . Non è visibile agli utenti.</p><h3>Esempi:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Poiché i nomi delle applicazioni devono essere unici, può essere utile utilizzare un prefisso che prenda il nome della tua organizzazione. Se la tua organizzazione si chiama 'Modern Fashion Limited', potresti usare 'mfl' come prefisso (come in 'mfl_shift_planner').</p>",
         "relation": "<p>Il nome di una relazione dovrebbe riflettere ciò che è memorizzato al suo interno. Deve essere unico all'interno di un'applicazione.</p><h3>Esempi:</h3><ul><li>evento</li><li>partecipazione_evento</li><li>luogo</li><li>evento_luogo</li></ul>"
       },
       "module": "Nuova applicazione",
@@ -1583,8 +1583,8 @@
       "checks": "Controlli di sistema",
       "checkStartForm": "Il modulo di avvio è definito",
       "checkStartFormOff": "Il modulo iniziale non è definito",
-      "extCommunity": "Forum REI3",
-      "extDocs": "Documentazione REI3",
+      "extCommunity": "Forum Axia4 ",
+      "extDocs": "Documentazione Axia4 ",
       "needHelp": "Hai bisogno di aiuto?",
       "title": "Primi passi",
       "titleForms": "Crea moduli",
@@ -1726,11 +1726,11 @@
       "moreInfo": "Ulteriori informazioni"
     },
     "info": {
-      "admin": "<b>Informazioni per gli amministratori:</b> La funzione di feedback può essere disabilitata nel pannello di amministrazione. Se abilitata, il feedback viene inviato al repository attualmente scelto. Le organizzazioni possono gestire il proprio repository (con l'applicazione <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a>) per gestire le versioni delle applicazioni e ricevere feedback interni.",
+      "admin": "<b>Informazioni per gli amministratori:</b> La funzione di feedback può essere disabilitata nel pannello di amministrazione. Se abilitata, il feedback viene inviato al repository attualmente scelto. Le organizzazioni possono gestire il proprio repository (con l'applicazione <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a>) per gestire le versioni delle applicazioni e ricevere feedback interni.",
       "data": [ "Categoria di feedback (generale, bug/problema, suggerimento, elogio)", "Testo di feedback", "Smiley che è stato selezionato", "Applicazione attualmente aperta", "Numeri di versione dell'applicazione e del sistema", "Se l'utente che fornisce feedback è un amministratore", "Un identificatore casuale per raggruppare i feedback dallo stesso sistema" ],
       "personal": "Nessuna informazione personale viene inviata. Se desideri ricevere una risposta, puoi aggiungere i dettagli di contatto al tuo testo di feedback.",
       "repoUrl": "Il feedback verrà inviato a",
-      "repoUrlDefault": "(iI sistema è gestito dagli sviluppatori di <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>)",
+      "repoUrlDefault": "(iI sistema è gestito dagli sviluppatori di <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a>)",
       "what": "Cosa viene inviato?"
     },
     "moduleRelated": "Questo feedback è per l'applicazione aperta? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "API",
     "application": "Domanda",
     "applications": "Applicazioni",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "Argomenti",
     "articles": "Articoli di aiuto",
     "attribute": "Attributo",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Scrivi nomi, parole o indirizzi email",
     "modulesInactive": "Opzioni di ricerca aggiuntive",
-    "tips": [ "Una nuova ricerca può essere avviata ovunque in REI3 premendo <b>CTRL + SHIFT + F</b>. Se il testo è selezionato, verrà utilizzato come input di ricerca.", "Quando cerchi nomi, parole o indirizzi email, scrivili per intero.", "Se si cerca contenuto multilingue, è importante impostare la lingua della query di ricerca (angolo in alto a destra).", "Le ricerche specifiche per lingua, come l'abbinamento di 'making' con 'make', funzionano se il contenuto ha una lingua definita. Questo ha spesso senso per gli articoli, ma di solito non viene fatto per le email." ]
+    "tips": [ "Una nuova ricerca può essere avviata ovunque in Axia4 premendo <b>CTRL + SHIFT + F</b>. Se il testo è selezionato, verrà utilizzato come input di ricerca.", "Quando cerchi nomi, parole o indirizzi email, scrivili per intero.", "Se si cerca contenuto multilingue, è importante impostare la lingua della query di ricerca (angolo in alto a destra).", "Le ricerche specifiche per lingua, come l'abbinamento di 'making' con 'make', funzionano se il contenuto ha una lingua definita. Questo ha spesso senso per gli articoli, ma di solito non viene fatto per le email." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Installa Core Company"
     },
     "newVersion": "Notifica di aggiornamento",
-    "newVersionText": "Una nuova versione di REI3 è disponibile.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Scarica REI3 v{VERSION}</a>",
+    "newVersionText": "Una nuova versione di Axia4 è disponibile.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Scarica Axia4 v{VERSION}</a>",
     "noAccess": "Non è ancora stato concesso l'accesso.<br />Si prega di contattare l'amministratore di sistema.",
     "noAccessAdmin": "Per ottenere l'accesso, assegna ruoli al tuo utente.",
     "noAccessTitle": "Nessun accesso alle applicazioni",
@@ -2238,10 +2238,10 @@
       "installBundle": "Azienda Principale",
       "installBundleDesc": "Installa un set preconfezionato di applicazioni core, utili per qualsiasi organizzazione. Il set 'Core Company' include:<ul><li>Gestione delle assenze</li><li>Rilevazione del tempo</li><li>Gestione di progetti e attività</li><li>Gestione delle richieste</li><li>Un password safe</li><li>Gestione degli asset IT</li></ul>Dopo l'installazione, consulta le pagine di aiuto delle singole applicazioni per saperne di più sulla configurazione iniziale di ciascuna.",
       "installFile": "Da file",
-      "installFileDesc": "Installa applicazioni da file REI3 locali. Per sistemi offline o applicazioni fatte in casa.<br /><br />I file per le applicazioni REI3 offerte pubblicamente possono essere scaricati dal <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repository</a> ufficiale.",
+      "installFileDesc": "Installa applicazioni da file Axia4 locali. Per sistemi offline o applicazioni fatte in casa.<br /><br />I file per le applicazioni Axia4 offerte pubblicamente possono essere scaricati dal <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repository</a> ufficiale.",
       "installRepo": "Dal repository",
-      "installRepoDesc": "<b>È richiesta la connessione a Internet</b><br /><br />Installa applicazioni dal repository ufficiale REI3. Il repository contiene versioni aggiornate delle applicazioni REI3 offerte pubblicamente.<br /><br />Tutte le applicazioni sono esaminate e firmate digitalmente.",
-      "intro": "Benvenuto su REI3<br /><br />Attualmente non ci sono applicazioni installate. Per iniziare a utilizzare REI3, scegli una delle opzioni di installazione qui sotto.",
+      "installRepoDesc": "<b>È richiesta la connessione a Internet</b><br /><br />Installa applicazioni dal repository ufficiale Axia4 . Il repository contiene versioni aggiornate delle applicazioni Axia4 offerte pubblicamente.<br /><br />Tutte le applicazioni sono esaminate e firmate digitalmente.",
+      "intro": "Benvenuto su Axia4 <br /><br />Attualmente non ci sono applicazioni installate. Per iniziare a utilizzare Axia4 , scegli una delle opzioni di installazione qui sotto.",
       "title": "Configurazione"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Esci"
     },
     "clientEvents": {
-      "intro": "Se l'applicazione client REI3 (vedi 'Dispositivi') è installata, puoi impostare tasti di scelta rapida globali. Questi vengono utilizzati per interagire con REI3 mentre è in esecuzione in background.",
-      "noEvents": "Attualmente non ci sono applicazioni REI3 accessibili che offrono scorciatoie da tastiera."
+      "intro": "Se l'applicazione client Axia4 (vedi 'Dispositivi') è installata, puoi impostare tasti di scelta rapida globali. Questi vengono utilizzati per interagire con Axia4 mentre è in esecuzione in background.",
+      "noEvents": "Attualmente non ci sono applicazioni Axia4 accessibili che offrono scorciatoie da tastiera."
     },
     "colorClassicMode": "Schema dei colori",
     "colorClassicMode0": "Moderno",
@@ -2470,23 +2470,23 @@
         "loadCnf": "File di configurazione"
       },
       "context": {
-        "client": "Cliente REI3",
+        "client": "Cliente Axia4 ",
         "ics": "App calendario",
         "totp": "Multi-fattore"
       },
       "device": {
-        "adminInfo": "<b>Informazioni per gli amministratori:</b> L'applicazione client REI3 non funziona mentre REI3 è in modalità di manutenzione.",
+        "adminInfo": "<b>Informazioni per gli amministratori:</b> L'applicazione client Axia4 non funziona mentre Axia4 è in modalità di manutenzione.",
         "installStep1": "Scegli un nome per il dispositivo:",
         "installStep2": "Scarica l'applicazione e il file di configurazione nella stessa cartella:",
         "installStep3": "Avvia l'applicazione. Si installerà da sola e poi apparirà nella barra delle applicazioni.",
         "installStep4": "Puoi ora eliminare l'applicazione scaricata e i file di configurazione.",
-        "intro0": "L'applicazione client REI3 è un componente software opzionale che offre funzionalità aggiuntive. Una volta installata, le seguenti caratteristiche sono disponibili:",
-        "intro1": "I file caricati su REI3 possono essere modificati direttamente con il software locale. Assicurati di avere un'applicazione predefinita selezionata per l'estensione del file indicata. Su Windows puoi fare clic con il tasto Maiusc per scegliere l'applicazione da utilizzare.",
-        "intro2": "Le scorciatoie globali possono essere utilizzate per eseguire azioni nelle applicazioni REI3, mentre REI3 è in esecuzione in background.",
+        "intro0": "L'applicazione client Axia4 è un componente software opzionale che offre funzionalità aggiuntive. Una volta installata, le seguenti caratteristiche sono disponibili:",
+        "intro1": "I file caricati su Axia4 possono essere modificati direttamente con il software locale. Assicurati di avere un'applicazione predefinita selezionata per l'estensione del file indicata. Su Windows puoi fare clic con il tasto Maiusc per scegliere l'applicazione da utilizzare.",
+        "intro2": "Le scorciatoie globali possono essere utilizzate per eseguire azioni nelle applicazioni Axia4 , mentre Axia4 è in esecuzione in background.",
         "nameHint": "Il mio PC di lavoro",
         "os": "Sistema operativo",
-        "uninstallStep1": "Fai clic con il tasto destro sull'icona del vassoio del client REI3 e scegli l'opzione 'disinstalla'.",
-        "uninstallStep2": "L'applicazione client REI3 è ora disinstallata.",
+        "uninstallStep1": "Fai clic con il tasto destro sull'icona del vassoio del client Axia4 e scegli l'opzione 'disinstalla'.",
+        "uninstallStep2": "L'applicazione client Axia4 è ora disinstallata.",
         "updateStep1": "Scarica il nuovo file dell'applicazione:",
         "updateStep2": "Avvia l'applicazione. Eseguirà l'aggiornamento e poi apparirà nella barra delle applicazioni del tuo sistema.",
         "updateStep3": "Ora puoi eliminare il file dell'applicazione scaricato."
@@ -2502,7 +2502,7 @@
         "nameHint": "Il mio smartphone",
         "outro": "Usa il codice QR per aggiungere questo account alla tua app di autenticazione. Quando hai finito, chiudi questa finestra. Puoi ripetere questo processo per abilitare l'MFA con più dispositivi."
       },
-      "titleAdd": "Gestisci l'applicazione client REI3",
+      "titleAdd": "Gestisci l'applicazione client Axia4 ",
       "titleContext": "Usa",
       "titleDateCreate": "Creato",
       "titleMfa": "Configura l'autenticazione a più fattori",

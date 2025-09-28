@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Les funcions assignades poden interactuar amb un formulari per fer coses com llegir o escriure als camps del formulari. Si s'assigna, la funció només es pot utilitzar en el formulari triat i no es pot reutilitzar en altres funcions del frontend. Aquesta configuració no es pot canviar més tard.",
       "message": {
         "api": "<p>El nom de l'API s'utilitzarà com a part de la trucada a l'API. Es pot canviar més tard.</p>",
-        "module": "<p>Si us plau, trieu un nom per a la vostra aplicació. Aquest nom serveix per identificar de manera única la vostra aplicació dins d'un sistema REI3. No és visible per als usuaris.</p><h3>Exemples:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Atès que els noms de les aplicacions han de ser únics, pot ser útil utilitzar un prefix anomenat segons la vostra organització. Si la vostra organització es diu 'Modern Fashion Limited', podríeu utilitzar 'mfl' com a prefix (com en 'mfl_shift_planner').</p>",
+        "module": "<p>Si us plau, trieu un nom per a la vostra aplicació. Aquest nom serveix per identificar de manera única la vostra aplicació dins d'un sistema Axia4 . No és visible per als usuaris.</p><h3>Exemples:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Atès que els noms de les aplicacions han de ser únics, pot ser útil utilitzar un prefix anomenat segons la vostra organització. Si la vostra organització es diu 'Modern Fashion Limited', podríeu utilitzar 'mfl' com a prefix (com en 'mfl_shift_planner').</p>",
         "relation": "<p>El nom d'una relació ha de reflectir el que s'emmagatzema dins d'ella. Ha de ser únic dins d'una aplicació.</p><h3>Exemples:</h3><ul><li>esdeveniment</li><li>assistència_esdeveniment</li><li>ubicació</li><li>ubicació_esdeveniment</li></ul>"
       },
       "module": "Nova aplicació",
@@ -1583,8 +1583,8 @@
       "checks": "Verificacions del sistema",
       "checkStartForm": "El formulari d'inici està definit",
       "checkStartFormOff": "El formulari d'inici no està definit",
-      "extCommunity": "Fòrum de REI3",
-      "extDocs": "Documentació de REI3",
+      "extCommunity": "Fòrum de Axia4 ",
+      "extDocs": "Documentació de Axia4 ",
       "needHelp": "Necessites ajuda?",
       "title": "Primers passos",
       "titleForms": "Crear formularis",
@@ -1726,11 +1726,11 @@
       "moreInfo": "Més informació"
     },
     "info": {
-      "admin": "<b>Informació per a administradors:</b> La funció de comentaris es pot desactivar al panell d'administració. Si està habilitada, els comentaris s'envien al repositori actualment triat. Les organitzacions poden executar el seu propi repositori (amb l'aplicació <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Repositori REI3</a>) per gestionar les versions de l'aplicació i rebre comentaris interns.",
+      "admin": "<b>Informació per a administradors:</b> La funció de comentaris es pot desactivar al panell d'administració. Si està habilitada, els comentaris s'envien al repositori actualment triat. Les organitzacions poden executar el seu propi repositori (amb l'aplicació <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Repositori Axia4 </a>) per gestionar les versions de l'aplicació i rebre comentaris interns.",
       "data": [ "Categoria de comentaris (general, error/problema, suggeriment, elogi)", "Text de comentaris", "Smiley que va ser seleccionat", "Aplicació que està actualment oberta", "Números de versió de l'aplicació i del sistema", "Si l'usuari que dóna retroalimentació és un administrador", "Un identificador aleatori per agrupar comentaris del mateix sistema" ],
       "personal": "No s'envia informació personal. Si voleu rebre una resposta, podeu afegir detalls de contacte al vostre text de comentaris.",
       "repoUrl": "Els comentaris s'enviaran a",
-      "repoUrlDefault": "<i>(aquest sistema és operat pels desenvolupadors de <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>)</i>",
+      "repoUrlDefault": "<i>(aquest sistema és operat pels desenvolupadors de <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a>)</i>",
       "what": "Què s'està enviant?"
     },
     "moduleRelated": "És aquest comentari per a l'aplicació oberta? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "APIs",
     "application": "Aplicació",
     "applications": "Aplicacions",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "Arguments",
     "articles": "Articles d'ajuda",
     "attribute": "Atribut",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Escriu noms, paraules o adreces de correu electrònic",
     "modulesInactive": "Opcions de cerca addicionals",
-    "tips": [ "Es pot iniciar una nova cerca des de qualsevol lloc a REI3 prement <b>CTRL + MAJ + F</b>. Si hi ha text seleccionat, s'utilitzarà com a entrada de cerca.", "Quan busquis noms, paraules o adreces de correu electrònic, escriu-los complets.", "Si es busca contingut multilingüe, és important establir la llengua de la consulta de cerca (cantonada superior dreta).", "Les cerques específiques de l'idioma, com fer coincidir 'making' amb 'make', funcionen si el contingut té un idioma definit. Això sovint té sentit per a articles, però generalment no es fa per a correus electrònics." ]
+    "tips": [ "Es pot iniciar una nova cerca des de qualsevol lloc a Axia4 prement <b>CTRL + MAJ + F</b>. Si hi ha text seleccionat, s'utilitzarà com a entrada de cerca.", "Quan busquis noms, paraules o adreces de correu electrònic, escriu-los complets.", "Si es busca contingut multilingüe, és important establir la llengua de la consulta de cerca (cantonada superior dreta).", "Les cerques específiques de l'idioma, com fer coincidir 'making' amb 'make', funcionen si el contingut té un idioma definit. Això sovint té sentit per a articles, però generalment no es fa per a correus electrònics." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Instal·lar Empresa Principal"
     },
     "newVersion": "Notificació d'actualització",
-    "newVersionText": "Una nova versió de REI3 està disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descarregar REI3 v{VERSION}</a>",
+    "newVersionText": "Una nova versió de Axia4 està disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descarregar Axia4 v{VERSION}</a>",
     "noAccess": "Encara no s'ha concedit accés.<br />Si us plau, contacti amb el seu administrador del sistema.",
     "noAccessAdmin": "Per obtenir accés, assigna rols al teu usuari.",
     "noAccessTitle": "No hi ha accés a aplicacions",
@@ -2238,10 +2238,10 @@
       "installBundle": "Empresa Principal",
       "installBundleDesc": "Instal·leu un conjunt preempaquetat d'aplicacions principals, útils per a qualsevol organització. El conjunt 'Core Company' inclou:<ul><li>Gestió d'absències</li><li>Seguiment del temps</li><li>Gestió de projectes i tasques</li><li>Gestió de sol·licituds</li><li>Un gestor segur de contrasenyes</li><li>Gestió d'actius de TI</li></ul>Després de la instal·lació, si us plau, consulteu les pàgines d'ajuda de cada aplicació individual per obtenir més informació sobre la configuració inicial de cadascuna.",
       "installFile": "De l'arxiu",
-      "installFileDesc": "Instal·la aplicacions des de fitxers REI3 locals. Per a sistemes fora de línia o aplicacions fetes per un mateix.<br /><br />Els fitxers per a les aplicacions REI3 ofertes públicament es poden descarregar del <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositori</a> oficial.",
+      "installFileDesc": "Instal·la aplicacions des de fitxers Axia4 locals. Per a sistemes fora de línia o aplicacions fetes per un mateix.<br /><br />Els fitxers per a les aplicacions Axia4 ofertes públicament es poden descarregar del <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositori</a> oficial.",
       "installRepo": "Des del repositori",
-      "installRepoDesc": "<b>Es requereix accés a Internet</b><br /><br />Instal·leu aplicacions des del repositori oficial de REI3. El repositori conté versions actuals de les aplicacions de REI3 ofertes públicament.<br /><br />Totes les aplicacions són revisades i signades digitalment.",
-      "intro": "Benvingut a REI3<br /><br />Actualment no hi ha aplicacions instal·lades. Per començar a utilitzar REI3, si us plau, tria una de les opcions d'instal·lació a continuació.",
+      "installRepoDesc": "<b>Es requereix accés a Internet</b><br /><br />Instal·leu aplicacions des del repositori oficial de Axia4 . El repositori conté versions actuals de les aplicacions de Axia4 ofertes públicament.<br /><br />Totes les aplicacions són revisades i signades digitalment.",
+      "intro": "Benvingut a Axia4 <br /><br />Actualment no hi ha aplicacions instal·lades. Per començar a utilitzar Axia4 , si us plau, tria una de les opcions d'instal·lació a continuació.",
       "title": "Configuració"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Tancar sessió"
     },
     "clientEvents": {
-      "intro": "Si l'aplicació client de REI3 (vegeu 'Dispositius') està instal·lada, pots configurar tecles d'accés ràpid globals. Aquestes s'utilitzen per interactuar amb REI3 mentre s'executa en segon pla.",
-      "noEvents": "Actualment no hi ha aplicacions REI3 accessibles que ofereixin tecles d'accés ràpid."
+      "intro": "Si l'aplicació client de Axia4 (vegeu 'Dispositius') està instal·lada, pots configurar tecles d'accés ràpid globals. Aquestes s'utilitzen per interactuar amb Axia4 mentre s'executa en segon pla.",
+      "noEvents": "Actualment no hi ha aplicacions Axia4 accessibles que ofereixin tecles d'accés ràpid."
     },
     "colorClassicMode": "Esquema de color",
     "colorClassicMode0": "Modern",
@@ -2470,23 +2470,23 @@
         "loadCnf": "Arxiu de configuració"
       },
       "context": {
-        "client": "Client REI3",
+        "client": "Client Axia4 ",
         "ics": "Aplicació de calendari",
         "totp": "Multifactor"
       },
       "device": {
-        "adminInfo": "<b>Informació per a administradors:</b> L'aplicació client REI3 no funciona mentre REI3 està en mode de manteniment.",
+        "adminInfo": "<b>Informació per a administradors:</b> L'aplicació client Axia4 no funciona mentre Axia4 està en mode de manteniment.",
         "installStep1": "Tria un nom per al dispositiu:",
         "installStep2": "Descarregueu l'aplicació i l'arxiu de configuració a la mateixa carpeta:",
         "installStep3": "Inicia l'aplicació. S'instal·larà automàticament i després apareixerà a la safata del sistema.",
         "installStep4": "Ara pots eliminar l'aplicació descarregada i els fitxers de configuració.",
-        "intro0": "L'aplicació client REI3 és un programari opcional que ofereix funcionalitat addicional. Un cop instal·lada, les característiques següents estan disponibles:",
-        "intro1": "Els arxius pujats a REI3 es poden editar directament amb programari local. Assegura't de tenir seleccionada una aplicació predeterminada per a l'extensió d'arxiu donada. A Windows pots fer clic amb la tecla shift premuda per triar l'aplicació a utilitzar.",
-        "intro2": "Es poden utilitzar tecles d'accés ràpid globals per executar accions en les aplicacions de REI3, mentre REI3 s'executa en segon pla.",
+        "intro0": "L'aplicació client Axia4 és un programari opcional que ofereix funcionalitat addicional. Un cop instal·lada, les característiques següents estan disponibles:",
+        "intro1": "Els arxius pujats a Axia4 es poden editar directament amb programari local. Assegura't de tenir seleccionada una aplicació predeterminada per a l'extensió d'arxiu donada. A Windows pots fer clic amb la tecla shift premuda per triar l'aplicació a utilitzar.",
+        "intro2": "Es poden utilitzar tecles d'accés ràpid globals per executar accions en les aplicacions de Axia4 , mentre Axia4 s'executa en segon pla.",
         "nameHint": "El meu PC de treball",
         "os": "Sistema operatiu",
-        "uninstallStep1": "Feu clic dret a la icona de la safata del client REI3 i trieu l'opció 'desinstal·lar'.",
-        "uninstallStep2": "L'aplicació client REI3 ara està desinstal·lada.",
+        "uninstallStep1": "Feu clic dret a la icona de la safata del client Axia4 i trieu l'opció 'desinstal·lar'.",
+        "uninstallStep2": "L'aplicació client Axia4 ara està desinstal·lada.",
         "updateStep1": "Descarregar el nou fitxer de l'aplicació:",
         "updateStep2": "Inicia l'aplicació. Executarà l'actualització i després apareixerà a la safata del sistema.",
         "updateStep3": "Ara pots eliminar el fitxer de l'aplicació descarregada."
@@ -2502,7 +2502,7 @@
         "nameHint": "El meu telèfon intel·ligent",
         "outro": "Utilitza el codi QR per afegir aquest compte a la teva aplicació d'autenticació. Quan acabis, tanca aquesta finestra. Pots repetir aquest procés per habilitar MFA amb múltiples dispositius."
       },
-      "titleAdd": "Administrar l'aplicació client de REI3",
+      "titleAdd": "Administrar l'aplicació client de Axia4 ",
       "titleContext": "Utilitzar",
       "titleDateCreate": "Creat",
       "titleMfa": "Configurar l'autenticació multifactor",

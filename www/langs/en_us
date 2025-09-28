@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Assigned functions can interact with a form to do things like read or write to form fields. If assigned, the function can only be used on the chosen form and cannot be reused in other frontend functions. This setting cannot be changed later.",
       "message": {
         "api": "<p>The API name will be used as part of the API call. It can be changed later.</p>",
-        "module": "<p>Please choose a name for your application. This name serves to uniquely identify your application inside a REI3 system. It is not visible to users.</p><h3>Examples:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Because application names must be unique, it can help to use a prefix named after your organization. If your organization is called 'Modern Fashion Limited', you could use 'mfl' as prefix (as in 'mfl_shift_planner').</p>",
+        "module": "<p>Please choose a name for your application. This name serves to uniquely identify your application inside a Axia4 system. It is not visible to users.</p><h3>Examples:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Because application names must be unique, it can help to use a prefix named after your organization. If your organization is called 'Modern Fashion Limited', you could use 'mfl' as prefix (as in 'mfl_shift_planner').</p>",
         "relation": "<p>A relation name should reflect what is stored inside it. It must be unique within an application.</p><h3>Examples:</h3><ul><li>event</li><li>event_attendance</li><li>location</li><li>location_event</li></ul>"
       },
       "module": "New application",
@@ -1583,8 +1583,8 @@
       "checks": "System checks",
       "checkStartForm": "Start form is defined",
       "checkStartFormOff": "Start form is not defined",
-      "extCommunity": "REI3 forum",
-      "extDocs": "REI3 documentation",
+      "extCommunity": "Axia4 forum",
+      "extDocs": "Axia4 documentation",
       "needHelp": "Need help?",
       "title": "First steps",
       "titleForms": "Create forms",
@@ -1726,11 +1726,11 @@
       "moreInfo": "More information"
     },
     "info": {
-      "admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a> application) to manage application releases and receive internal feedback.",
+      "admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a> application) to manage application releases and receive internal feedback.",
       "data": [ "Feedback category (general, bug/issue, suggestion, praise)", "Feedback text", "Smiley that was selected", "Application that is currently open", "Application and system version numbers", "Whether the user giving feedback is an administrator", "A random identifier to bundle feedback from the same system" ],
       "personal": "No personal information is being sent. If you want to receive a response, you can add contact details to your feedback text.",
       "repoUrl": "Feedback will be sent to",
-      "repoUrlDefault": "<i>(this system is operated by the <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a> developers)</i>",
+      "repoUrlDefault": "<i>(this system is operated by the <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a> developers)</i>",
       "what": "What is being sent?"
     },
     "moduleRelated": "Is this feedback for the open application? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "APIs",
     "application": "Application",
     "applications": "Applications",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "Arguments",
     "articles": "Help articles",
     "attribute": "Attribute",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Write out names, words or email addresses",
     "modulesInactive": "Additional search options",
-    "tips": [ "A new search can be started from anywhere in REI3 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.", "When searching for names, words or email addresses, write them out in full.", "If multilingual content is searched, it is important to set the language of your search query (top right corner).", "Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails." ]
+    "tips": [ "A new search can be started from anywhere in Axia4 by pressing <b>CTRL + SHIFT + F</b>. If text is selected, it will be used as search input.", "When searching for names, words or email addresses, write them out in full.", "If multilingual content is searched, it is important to set the language of your search query (top right corner).", "Language specific searches, like matching 'making' with 'make', work if the content has a defined language. This often makes sense for articles, but is usually not done for emails." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Install Core Company"
     },
     "newVersion": "Update notification",
-    "newVersionText": "A new version of REI3 is available.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Download REI3 v{VERSION}</a>",
+    "newVersionText": "A new version of Axia4 is available.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Download Axia4 v{VERSION}</a>",
     "noAccess": "No access has been granted yet.<br />Please contact your system administrator.",
     "noAccessAdmin": "To get access, assign roles to your user.",
     "noAccessTitle": "No access to applications",
@@ -2238,10 +2238,10 @@
       "installBundle": "Core Company",
       "installBundleDesc": "Install a pre-packaged set of core applications, useful for any organization. The set 'Core Company' includes:<ul><li>Absence management</li><li>Time tracking</li><li>Project & task management</li><li>Request handling</li><li>A password safe</li><li>IT asset management</li></ul>After installation, please have a look at the individual application help pages to learn more about the initial setup for each.",
       "installFile": "From file",
-      "installFileDesc": "Install applications from local REI3 files. For offline systems or self-made applications.<br /><br />Files for publicly offered REI3 applications can be downloaded from the official <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repository</a>.",
+      "installFileDesc": "Install applications from local Axia4 files. For offline systems or self-made applications.<br /><br />Files for publicly offered Axia4 applications can be downloaded from the official <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repository</a>.",
       "installRepo": "From repository",
-      "installRepoDesc": "<b>Internet access required</b><br /><br />Install applications from the official REI3 repository. The repository contains current versions of publicly offered REI3 applications.<br /><br />All applications are reviewed and digitally signed.",
-      "intro": "Welcome to REI3<br /><br />There are currently no applications installed. To start using REI3, please choose one of the installation options below.",
+      "installRepoDesc": "<b>Internet access required</b><br /><br />Install applications from the official Axia4 repository. The repository contains current versions of publicly offered Axia4 applications.<br /><br />All applications are reviewed and digitally signed.",
+      "intro": "Welcome to Axia4 <br /><br />There are currently no applications installed. To start using Axia4 , please choose one of the installation options below.",
       "title": "Setup"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Logout"
     },
     "clientEvents": {
-      "intro": "If the REI3 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with REI3 as it runs in the background.",
-      "noEvents": "There are currently no REI3 applications accessible that offer hotkeys."
+      "intro": "If the Axia4 client application (see 'Devices') is installed, you can set global hotkeys. These are used to interact with Axia4 as it runs in the background.",
+      "noEvents": "There are currently no Axia4 applications accessible that offer hotkeys."
     },
     "colorClassicMode": "Color scheme",
     "colorClassicMode0": "Modern",
@@ -2470,23 +2470,23 @@
         "loadCnf": "Config file"
       },
       "context": {
-        "client": "REI3 client",
+        "client": "Axia4 client",
         "ics": "Calendar app",
         "totp": "Multi-factor"
       },
       "device": {
-        "adminInfo": "<b>Info for admins:</b> The REI3 client application does not work while REI3 is in maintenance mode.",
+        "adminInfo": "<b>Info for admins:</b> The Axia4 client application does not work while Axia4 is in maintenance mode.",
         "installStep1": "Choose a device name:",
         "installStep2": "Download the application & config file to the same folder:",
         "installStep3": "Start the application. It will install itself and then appear in your system tray.",
         "installStep4": "You can now delete the downloaded application & config files.",
-        "intro0": "The REI3 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
-        "intro1": "Files uploaded to REI3 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
-        "intro2": "Global hotkeys can be used to execute actions in REI3 applications, while REI3 runs in the background.",
+        "intro0": "The Axia4 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
+        "intro1": "Files uploaded to Axia4 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
+        "intro2": "Global hotkeys can be used to execute actions in Axia4 applications, while Axia4 runs in the background.",
         "nameHint": "'My Work PC'",
         "os": "Operating system:",
-        "uninstallStep1": "Right-click on the REI3 client tray icon and choose the 'uninstall' option.",
-        "uninstallStep2": "The REI3 client application is now uninstalled.",
+        "uninstallStep1": "Right-click on the Axia4 client tray icon and choose the 'uninstall' option.",
+        "uninstallStep2": "The Axia4 client application is now uninstalled.",
         "updateStep1": "Download the new application file:",
         "updateStep2": "Start the application. It will execute the update and then appear in your system tray.",
         "updateStep3": "You can now delete the downloaded application file."
@@ -2502,7 +2502,7 @@
         "nameHint": "'My smartphone'",
         "outro": "Use the QR code to add this account to your authenticator app. When you are done, close this window. You can repeat this process to enable MFA with multiple devices."
       },
-      "titleAdd": "Manage REI3 client application",
+      "titleAdd": "Manage Axia4 client application",
       "titleContext": "Use",
       "titleDateCreate": "Created",
       "titleMfa": "Setup multi-factor authentication",

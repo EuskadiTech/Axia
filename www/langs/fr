@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Les fonctions assignées peuvent interagir avec un formulaire pour effectuer des actions telles que lire ou écrire dans les champs du formulaire. Si elle est assignée, la fonction ne peut être utilisée que sur le formulaire choisi et ne peut pas être réutilisée dans d'autres fonctions frontales. Ce paramètre ne peut pas être modifié ultérieurement.",
       "message": {
         "api": "<p>Le nom de l'API sera utilisé dans l'appel de l'API. Il peut être modifié ultérieurement.</p>",
-        "module": "<p>Veuillez choisir un nom pour votre application. Ce nom sert à identifier de manière unique votre application au sein d'un système REI3. Il n'est pas visible par les utilisateurs.</p><h3>Exemples :</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Comme les noms d'application doivent être uniques, il peut être utile d'utiliser un préfixe portant le nom de votre organisation. Si votre organisation s'appelle 'Modern Fashion Limited', vous pourriez utiliser 'mfl' comme préfixe (comme dans 'mfl_shift_planner').</p>",
+        "module": "<p>Veuillez choisir un nom pour votre application. Ce nom sert à identifier de manière unique votre application au sein d'un système Axia4 . Il n'est pas visible par les utilisateurs.</p><h3>Exemples :</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Comme les noms d'application doivent être uniques, il peut être utile d'utiliser un préfixe portant le nom de votre organisation. Si votre organisation s'appelle 'Modern Fashion Limited', vous pourriez utiliser 'mfl' comme préfixe (comme dans 'mfl_shift_planner').</p>",
         "relation": "<p>Un nom de relation doit refléter ce qui est stocké à l'intérieur. Il doit être unique au sein d'une application.</p><h3>Exemples :</h3><ul><li>événement</li><li>participation_à_un_événement</li><li>lieu</li><li>lieu_événement</li></ul>"
       },
       "module": "Nouvelle application",
@@ -1583,8 +1583,8 @@
       "checks": "Vérifications du système",
       "checkStartForm": "Le formulaire de départ est défini",
       "checkStartFormOff": "Le formulaire de démarrage n'est pas défini",
-      "extCommunity": "Forum REI3",
-      "extDocs": "Documentation REI3",
+      "extCommunity": "Forum Axia4 ",
+      "extDocs": "Documentation Axia4 ",
       "needHelp": "Besoin d'aide ?",
       "title": "Premiers pas",
       "titleForms": "Créer des formulaires",
@@ -1726,11 +1726,11 @@
       "moreInfo": "Plus d'informations"
     },
     "info": {
-      "admin": "<b>Info pour les administrateurs :</b> La fonction de retour d'information peut être désactivée dans le panneau d'administration. Si elle est activée, les retours d'information sont envoyés au dépôt actuellement choisi. Les organisations peuvent gérer leur propre dépôt (avec l'application <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">REI3 Repository</a>) pour gérer les versions des applications et recevoir des retours internes.",
+      "admin": "<b>Info pour les administrateurs :</b> La fonction de retour d'information peut être désactivée dans le panneau d'administration. Si elle est activée, les retours d'information sont envoyés au dépôt actuellement choisi. Les organisations peuvent gérer leur propre dépôt (avec l'application <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a>) pour gérer les versions des applications et recevoir des retours internes.",
       "data": [ "Catégorie de retour (général, bug/problème, suggestion, éloge)", "Texte de retour", "Smiley qui a été sélectionné", "Application actuellement ouverte", "Numéros de version de l'application et du système", "Que l'utilisateur donnant son avis soit un administrateur", "Un identifiant aléatoire pour regrouper les retours du même système" ],
       "personal": "Aucune information personnelle n'est envoyée. Si vous souhaitez recevoir une réponse, vous pouvez ajouter des coordonnées à votre texte de retour.",
       "repoUrl": "Les commentaires seront envoyés à",
-      "repoUrlDefault": "<i>(ce système est exploité par les développeurs de <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>)</i>",
+      "repoUrlDefault": "<i>(ce système est exploité par les développeurs de <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a>)</i>",
       "what": "Qu'est-ce qui est envoyé ?"
     },
     "moduleRelated": "S'agit-il de commentaires pour l'application ouverte ? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "API",
     "application": "Application",
     "applications": "Applications",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "Arguments",
     "articles": "Articles d'aide",
     "attribute": "Attribut",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Écrire les noms, mots ou adresses e-mail",
     "modulesInactive": "Options de recherche supplémentaires",
-    "tips": [ "Une nouvelle recherche peut être lancée depuis n'importe où dans REI3 en appuyant sur <b>CTRL + SHIFT + F</b>. Si du texte est sélectionné, il sera utilisé comme entrée de recherche.", "Lors de la recherche de noms, de mots ou d'adresses e-mail, écrivez-les en entier.", "Si du contenu multilingue est recherché, il est important de définir la langue de votre requête de recherche (coin supérieur droit).", "Les recherches spécifiques à une langue, comme faire correspondre 'making' avec 'make', fonctionnent si le contenu a une langue définie. Cela a souvent du sens pour les articles, mais ce n'est généralement pas fait pour les e-mails." ]
+    "tips": [ "Une nouvelle recherche peut être lancée depuis n'importe où dans Axia4 en appuyant sur <b>CTRL + SHIFT + F</b>. Si du texte est sélectionné, il sera utilisé comme entrée de recherche.", "Lors de la recherche de noms, de mots ou d'adresses e-mail, écrivez-les en entier.", "Si du contenu multilingue est recherché, il est important de définir la langue de votre requête de recherche (coin supérieur droit).", "Les recherches spécifiques à une langue, comme faire correspondre 'making' avec 'make', fonctionnent si le contenu a une langue définie. Cela a souvent du sens pour les articles, mais ce n'est généralement pas fait pour les e-mails." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Installer Core Company"
     },
     "newVersion": "Notification de mise à jour",
-    "newVersionText": "Une nouvelle version de REI3 est disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Télécharger REI3 v{VERSION}</a>",
+    "newVersionText": "Une nouvelle version de Axia4 est disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Télécharger Axia4 v{VERSION}</a>",
     "noAccess": "Aucun accès n'a encore été accordé.<br />Veuillez contacter votre administrateur système.",
     "noAccessAdmin": "Pour obtenir l'accès, attribuez des rôles à votre utilisateur.",
     "noAccessTitle": "Pas d'accès aux applications",
@@ -2238,10 +2238,10 @@
       "installBundle": "Entreprise principale",
       "installBundleDesc": "Installez un ensemble préemballé d'applications de base, utiles pour toute organisation. L'ensemble 'Core Company' comprend :\n\n- Gestion des absences\n- Suivi du temps\n- Gestion de projets et de tâches\n- Gestion des demandes\n- Un coffre-fort de mots de passe\n- Gestion des actifs informatiques\n\nAprès l'installation, veuillez consulter les pages d'aide des applications individuelles pour en savoir plus sur la configuration initiale de chacune.",
       "installFile": "À partir de fichier",
-      "installFileDesc": "Installez des applications à partir de fichiers REI3 locaux. Pour les systèmes hors ligne ou les applications faites maison.<br /><br />Les fichiers pour les applications REI3 proposées publiquement peuvent être téléchargés depuis le <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">répertoire</a> officiel.",
+      "installFileDesc": "Installez des applications à partir de fichiers Axia4 locaux. Pour les systèmes hors ligne ou les applications faites maison.<br /><br />Les fichiers pour les applications Axia4 proposées publiquement peuvent être téléchargés depuis le <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">répertoire</a> officiel.",
       "installRepo": "Du dépôt",
-      "installRepoDesc": "<b>Accès Internet requis</b><br /><br />Installez des applications à partir du dépôt officiel REI3. Le dépôt contient les versions actuelles des applications REI3 proposées publiquement.<br /><br />Toutes les applications sont examinées et signées numériquement.",
-      "intro": "Bienvenue sur REI3<br /><br />Aucune application n'est actuellement installée. Pour commencer à utiliser REI3, veuillez choisir l'une des options d'installation ci-dessous.",
+      "installRepoDesc": "<b>Accès Internet requis</b><br /><br />Installez des applications à partir du dépôt officiel Axia4 . Le dépôt contient les versions actuelles des applications Axia4 proposées publiquement.<br /><br />Toutes les applications sont examinées et signées numériquement.",
+      "intro": "Bienvenue sur Axia4 <br /><br />Aucune application n'est actuellement installée. Pour commencer à utiliser Axia4 , veuillez choisir l'une des options d'installation ci-dessous.",
       "title": "Installation"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Déconnexion"
     },
     "clientEvents": {
-      "intro": "Si l'application client REI3 (voir 'Devices') est installée, vous pouvez définir des raccourcis globaux. Ceux-ci sont utilisés pour interagir avec REI3 lorsqu'il s'exécute en arrière-plan.",
-      "noEvents": "Il n'y a actuellement aucune application REI3 accessible offrant des raccourcis clavier."
+      "intro": "Si l'application client Axia4 (voir 'Devices') est installée, vous pouvez définir des raccourcis globaux. Ceux-ci sont utilisés pour interagir avec Axia4 lorsqu'il s'exécute en arrière-plan.",
+      "noEvents": "Il n'y a actuellement aucune application Axia4 accessible offrant des raccourcis clavier."
     },
     "colorClassicMode": "Schéma de couleurs",
     "colorClassicMode0": "Moderne",
@@ -2470,23 +2470,23 @@
         "loadCnf": "Fichier de configuration"
       },
       "context": {
-        "client": "Client REI3",
+        "client": "Client Axia4 ",
         "ics": "Application calendrier",
         "totp": "Multifactorielle"
       },
       "device": {
-        "adminInfo": "<b>Info pour les administrateurs :</b> L'application cliente REI3 ne fonctionne pas lorsque REI3 est en mode maintenance.",
+        "adminInfo": "<b>Info pour les administrateurs :</b> L'application cliente Axia4 ne fonctionne pas lorsque Axia4 est en mode maintenance.",
         "installStep1": "Choisissez un nom d'appareil :",
         "installStep2": "Téléchargez l'application et le fichier de configuration dans le même dossier :",
         "installStep3": "Démarrez l'application. Elle s'installera automatiquement puis apparaîtra dans votre barre des tâches.",
         "installStep4": "Vous pouvez maintenant supprimer l'application téléchargée et les fichiers de configuration.",
-        "intro0": "L'application cliente REI3 est un logiciel optionnel qui offre des fonctionnalités supplémentaires. Une fois installée, les fonctionnalités suivantes sont disponibles :",
-        "intro1": "Les fichiers téléchargés sur REI3 peuvent être modifiés directement avec un logiciel local. Assurez-vous d'avoir une application par défaut sélectionnée pour l'extension de fichier donnée. Sous Windows, vous pouvez maintenir la touche Maj enfoncée et cliquer pour choisir l'application à utiliser.",
-        "intro2": "Les raccourcis globaux peuvent être utilisés pour exécuter des actions dans les applications REI3, tandis que REI3 s'exécute en arrière-plan.",
+        "intro0": "L'application cliente Axia4 est un logiciel optionnel qui offre des fonctionnalités supplémentaires. Une fois installée, les fonctionnalités suivantes sont disponibles :",
+        "intro1": "Les fichiers téléchargés sur Axia4 EI3 peuvent être modifiés directement avec un logiciel local. Assurez-vous d'avoir une application par défaut sélectionnée pour l'extension de fichier donnée. Sous Windows, vous pouvez maintenir la touche Maj enfoncée et cliquer pour choisir l'application à utiliser.",
+        "intro2": "Les raccourcis globaux peuvent être utilisés pour exécuter des actions dans les applications Axia4 , tandis que Axia4 s'exécute en arrière-plan.",
         "nameHint": "Mon PC de travail",
         "os": "Système d'exploitation",
-        "uninstallStep1": "Cliquez avec le bouton droit de la souris sur l'icône de la barre d'état système du client REI3 et choisissez l'option 'désinstaller'.",
-        "uninstallStep2": "L'application cliente REI3 est maintenant désinstallée.",
+        "uninstallStep1": "Cliquez avec le bouton droit de la souris sur l'icône de la barre d'état système du client Axia4 et choisissez l'option 'désinstaller'.",
+        "uninstallStep2": "L'application cliente Axia4 est maintenant désinstallée.",
         "updateStep1": "Téléchargez le nouveau fichier de l'application :",
         "updateStep2": "Démarrez l'application. Elle exécutera la mise à jour puis apparaîtra dans votre barre d'état système.",
         "updateStep3": "Vous pouvez maintenant supprimer le fichier de l'application téléchargée."
@@ -2502,7 +2502,7 @@
         "nameHint": "Mon smartphone",
         "outro": "Utilisez le code QR pour ajouter ce compte à votre application d'authentification. Une fois que vous avez terminé, fermez cette fenêtre. Vous pouvez répéter ce processus pour activer l'authentification multifacteur sur plusieurs appareils."
       },
-      "titleAdd": "Gérer l'application client REI3",
+      "titleAdd": "Gérer l'application client Axia4 ",
       "titleContext": "Utiliser",
       "titleDateCreate": "Créé",
       "titleMfa": "Configurer l'authentification multifacteur",
