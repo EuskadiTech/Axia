@@ -36,7 +36,7 @@
     "config": {
       "adminMailsDesc": "Si hay una cuenta de correo electrónico activa disponible, el sistema enviará notificaciones sobre eventos importantes. Actualmente, estos son:",
       "adminMailsHint": "Agregar dirección de correo electrónico del destinatario",
-      "adminMailsList": [ "Próxima expiración de clientes OAuth registrados.", "Próxima expiración de una licencia activa de REI3 Professional." ],
+      "adminMailsList": [ "Próxima expiración de clientes OAuth registrados.", "Próxima expiración de una licencia activa de Axia4 Professional." ],
       "adminMailsTitle": "Notificaciones de administración",
       "appVersion": "Versión de la plataforma",
       "bruteforceAttempts": "Bloquear hosts después de intentos",
@@ -55,7 +55,7 @@
       "dbTimeoutHint": "En segundos",
       "dbTimeoutIcs": "Tiempo de espera de la base de datos: Descargas de calendario (ICS)",
       "dialog": {
-        "builderMode": "El Builder se utiliza para crear o cambiar aplicaciones.<br /><br />Cambiar aplicaciones puede resultar en la pérdida de datos y <b>NUNCA</b> debería hacerse en entornos de producción.<br /><br />Para usar el Builder de manera segura, utilice una instancia dedicada de REI3; las aplicaciones listas y probadas pueden luego transferirse a un sistema de producción.<br /><br />Por favor, consulte la <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">documentación del Builder</a> para aprender más.",
+        "builderMode": "El Builder se utiliza para crear o cambiar aplicaciones.<br /><br />Cambiar aplicaciones puede resultar en la pérdida de datos y <b>NUNCA</b> debería hacerse en entornos de producción.<br /><br />Para usar el Builder de manera segura, utilice una instancia dedicada de Axia4; las aplicaciones listas y probadas pueden luego transferirse a un sistema de producción.<br /><br />Por favor, consulte la <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">documentación del Builder</a> para aprender más.",
         "pleaseRead": "Por favor, lea antes de guardar",
         "productionMode": "El modo de mantenimiento se utiliza para actualizar, instalar o eliminar aplicaciones del sistema.<br /><br />Cambiar al modo de mantenimiento <b>cerrará la sesión de todos los usuarios sin permisos de administrador</b>."
       },
@@ -101,7 +101,7 @@
     },
     "customizing": {
       "appName": "Nombre de la instancia",
-      "appNameHint": "Nombre de la instancia REI3, mostrado en la página de inicio de sesión.",
+      "appNameHint": "Nombre de la instancia Axia4 , mostrado en la página de inicio de sesión.",
       "appNameShort": "Nombre corto",
       "appNameShortHint": "Versión corta del nombre de la instancia, mostrada en el título de la página y como etiqueta si se instala como aplicación web progresiva (PWA).",
       "companyColorHeader": "Color del título (encabezado)",
@@ -128,8 +128,8 @@
       "iconPwa2Hint": "Imagen utilizada para iconos de aplicaciones web progresivas. Debe ser un archivo PNG, máximo 128kb y precisamente de 512x512 píxeles de tamaño.",
       "pwaDomain": "Acceso directo a la aplicación",
       "pwaDomainHint": "Solo el subdominio (como en 'my-app' de 'my-app.my-domain.com')",
-      "pwaDomainHint1": "Las aplicaciones individuales se pueden acceder directamente e instalar por separado en dispositivos como PWAs. Luego tienen su propia página de inicio, iconos y navegación exclusiva. Esto requiere un registro DNS de subdominio para cada aplicación para que el sistema REI3 sea accesible a través de diferentes dominios. También se requiere un certificado comodín en el servidor REI3 para responder correctamente a las solicitudes HTTPS.<br /><br />Una vez que tanto los registros DNS como el certificado comodín estén listos, por favor ingrese un subdominio para cada aplicación deseada.",
-      "pwaDomainHint2": "Asegúrate de tener un subdominio disponible que no esté en esta lista, para acceder al sistema general de REI3. De lo contrario, no tendrás acceso a la interfaz de usuario de administración, ya que cada subdominio de aplicación solo da acceso a la aplicación específica.",
+      "pwaDomainHint1": "Las aplicaciones individuales se pueden acceder directamente e instalar por separado en dispositivos como PWAs. Luego tienen su propia página de inicio, iconos y navegación exclusiva. Esto requiere un registro DNS de subdominio para cada aplicación para que el sistema Axia4 sea accesible a través de diferentes dominios. También se requiere un certificado comodín en el servidor Axia4 para responder correctamente a las solicitudes HTTPS.<br /><br />Una vez que tanto los registros DNS como el certificado comodín estén listos, por favor ingrese un subdominio para cada aplicación deseada.",
+      "pwaDomainHint2": "Asegúrate de tener un subdominio disponible que no esté en esta lista, para acceder al sistema general de Axia4 . De lo contrario, no tendrás acceso a la interfaz de usuario de administración, ya que cada subdominio de aplicación solo da acceso a la aplicación específica.",
       "titleCaptions": "Subtítulos",
       "titleColors": "Colores",
       "titleCss": "Reglas CSS personalizadas",
@@ -137,7 +137,7 @@
       "titleLogos": "Logotipos",
       "titlePwas": "Aplicaciones web progresivas (PWAs)",
       "tokenKeepEnable": "Permitir que los usuarios permanezcan conectados",
-      "tokenKeepEnableHint": "Si se desactiva, la opción 'mantener la sesión iniciada' en la página de inicio de sesión se elimina. Sin esta opción, los usuarios están obligados a autenticarse cada vez que acceden al sistema. Esta configuración no afecta el acceso desde dispositivos, como las suscripciones de calendario o los clientes de REI3."
+      "tokenKeepEnableHint": "Si se desactiva, la opción 'mantener la sesión iniciada' en la página de inicio de sesión se elimina. Sin esta opción, los usuarios están obligados a autenticarse cada vez que acceden al sistema. Esta configuración no afecta el acceso desde dispositivos, como las suscripciones de calendario o los clientes de Axia4 ."
     },
     "files": {
       "deleteDate": "Archivo eliminado",
@@ -197,11 +197,11 @@
       "clientId": "ID del cliente",
       "currentState": "Valores actuales",
       "dialog": {
-        "delete": "¿Está seguro de que desea eliminar el archivo de licencia? Para reactivar REI3 Professional, se debe cargar un archivo de licencia válido."
+        "delete": "¿Está seguro de que desea eliminar el archivo de licencia? Para reactivar Axia4 Professional, se debe cargar un archivo de licencia válido."
       },
-      "extCommunity": "Foro de la Comunidad REI3",
-      "extLicense": "REI3 Profesional",
-      "intro": "REI3 es completamente <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">de código abierto</a> y se puede usar de forma gratuita.<br /><br />Para aquellos que necesiten funciones empresariales o soporte, existe <b>REI3 Professional</b>. Su precio está diseñado para ser accesible para organizaciones de cualquier tamaño, a menudo costando mucho menos que otras ofertas de bajo código comparables.<br /><br />Mientras apoyan el desarrollo continuo, los clientes de REI3 Professional también pueden activar toda la gama de funciones y obtener soporte de Lean Softworks, el desarrollador principal de REI3.",
+      "extCommunity": "Foro de la Comunidad Axia4 ",
+      "extLicense": "Axia4 Profesional",
+      "intro": "Axia4 es completamente <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">de código abierto</a> y se puede usar de forma gratuita.<br /><br />Para aquellos que necesiten funciones empresariales o soporte, existe <b>Axia4 Professional</b>. Su precio está diseñado para ser accesible para organizaciones de cualquier tamaño, a menudo costando mucho menos que otras ofertas de bajo código comparables.<br /><br />Mientras apoyan el desarrollo continuo, los clientes de Axia4 Professional también pueden activar toda la gama de funciones y obtener soporte de Lean Softworks, el desarrollador principal de Axia4 .",
       "introMore": "Más información:",
       "licenseExpired": "La licencia ha expirado",
       "licenseId": "ID de licencia",
@@ -282,7 +282,7 @@
       "noData": "No hay sesiones disponibles",
       "option": {
         "browser": "Sesión del navegador",
-        "fatClient": "Cliente REI3"
+        "fatClient": "Cliente Axia4 "
       },
       "titles": {
         "address": "Dirección",
@@ -454,7 +454,7 @@
         "defaultOpenId": "Predeterminados: Open ID Connect"
       },
       "claimRoles": "Reclamación de roles",
-      "claimRolesHint": "Nombre del campo de reclamación, que contiene roles o grupos de usuario. Si se establece, los roles de REI3 pueden asignarse a valores en esta reclamación. El valor debe ser un array de cadenas JSON, como: [\"all-users\", \"department-it\"]",
+      "claimRolesHint": "Nombre del campo de reclamación, que contiene roles o grupos de usuario. Si se establece, los roles de Axia4 pueden asignarse a valores en esta reclamación. El valor debe ser un array de cadenas JSON, como: [\"all-users\", \"department-it\"]",
       "claimUsername": "Reclamación de nombre de usuario",
       "claimUsernameHint": "Nombre del campo de reclamación, que contiene el nombre de usuario. Debe completarse. Los nombres de usuario deben ser únicos para un cliente OAuth.",
       "clientId": "ID del cliente",
@@ -468,21 +468,21 @@
       },
       "flow": "Flujo de OAuth",
       "loginMetaMap": "Actualizar detalles del usuario a través de reclamaciones",
-      "nameHint": "Un nombre interno para referenciar este cliente OAuth dentro de REI3.",
+      "nameHint": "Un nombre interno para referenciar este cliente OAuth dentro de Axia4 .",
       "option": {
         "flow": {
           "authCodePkce": "Código de autenticación con PKCE",
           "clientCreds": "Credenciales del cliente"
         },
         "flowHint": {
-          "authCodePkce": "<p>Este flujo se utiliza en REI3 para autenticar a los usuarios a través de proveedores de identidad externos, como Keycloak o Microsoft Entra ID.</p><p>'Código de autenticación con clave de prueba para intercambio de código' es un flujo de Open ID Connect. Los usuarios son redirigidos para autenticarse con un proveedor de identidad. Después de la autenticación, un usuario es redirigido de vuelta a REI3 con la verificación de identidad y los metadatos del usuario.</p>",
-          "clientCreds": "<p>Este flujo se utiliza en REI3 para autenticarse frente a un servicio, como Exchange Online.</p><p>'Credenciales del Cliente' es un flujo OAuth 2.0, con el cual REI3 se autentica contra un proveedor de servicios, para recibir acceso a recursos protegidos, como un buzón de correo. Cualquier recurso al que se acceda a través del flujo de 'Credenciales del Cliente' debería pertenecer al cliente (en este caso REI3) - no está diseñado para acceder a recursos de usuario directamente ni en su nombre.</p><p>Este flujo actualmente solo se utiliza para acceder a recursos de correo.</p>"
+          "authCodePkce": "<p>Este flujo se utiliza en Axia4 para autenticar a los usuarios a través de proveedores de identidad externos, como Keycloak o Microsoft Entra ID.</p><p>'Código de autenticación con clave de prueba para intercambio de código' es un flujo de Open ID Connect. Los usuarios son redirigidos para autenticarse con un proveedor de identidad. Después de la autenticación, un usuario es redirigido de vuelta a Axia4 con la verificación de identidad y los metadatos del usuario.</p>",
+          "clientCreds": "<p>Este flujo se utiliza en Axia4 para autenticarse frente a un servicio, como Exchange Online.</p><p>'Credenciales del Cliente' es un flujo OAuth 2.0, con el cual Axia4 se autentica contra un proveedor de servicios, para recibir acceso a recursos protegidos, como un buzón de correo. Cualquier recurso al que se acceda a través del flujo de 'Credenciales del Cliente' debería pertenecer al cliente (en este caso Axia4 ) - no está diseñado para acceder a recursos de usuario directamente ni en su nombre.</p><p>Este flujo actualmente solo se utiliza para acceder a recursos de correo.</p>"
         }
       },
       "providerUrl": "URL del proveedor",
       "providerUrlHint": "URL del proveedor elegido para el descubrimiento del servicio OAuth, a menudo llamado 'URL del Emisor'.",
       "redirectUrl": "Redirigir URL",
-      "redirectUrlHint": "Los usuarios son redirigidos aquí después de la autenticación. Debe ser la URL de inicio de sesión de REI3. También debe estar registrado en el proveedor de servicios.",
+      "redirectUrlHint": "Los usuarios son redirigidos aquí después de la autenticación. Debe ser la URL de inicio de sesión de Axia4 . También debe estar registrado en el proveedor de servicios.",
       "scopes": "Ámbitos",
       "scopesHint": "Los alcances indican al proveedor lo que un cliente OAuth desea hacer o acceder. Son definidos por el proveedor y deben asignarse al cliente para que sean utilizables; consulte la documentación del proveedor para obtener una lista de los alcances disponibles.",
       "title": "Cliente OAuth '{NAME}'",
@@ -1087,7 +1087,7 @@
       "functionsFrontend": "Funciones del frontend",
       "helpJs": {
         "block_inputs": "app.block_inputs({ARGS}) => UNDEFINED<br /><br />Bloquea o desbloquea todas las entradas en el formulario actual.",
-        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envía una solicitud a un cliente REI3, instalado y ejecutándose en la misma computadora que la sesión del navegador REI3, para ejecutar una lista de pulsaciones de teclas. Estas pulsaciones se definen mediante una cadena, como 'Hello World!'.<br /><br />Algunas teclas especiales (ALT-TAB, TAB, ENTER, ESCAPE) también son compatibles y se pueden usar de la siguiente manera:<br />'Hello,{ENTER}How are you?'",
+        "client_execute_keystrokes": "app.client_execute_keystrokes({ARGS}) => UNDEFINED<br /><br />Envía una solicitud a un cliente Axia4 , instalado y ejecutándose en la misma computadora que la sesión del navegador Axia4 , para ejecutar una lista de pulsaciones de teclas. Estas pulsaciones se definen mediante una cadena, como 'Hello World!'.<br /><br />Algunas teclas especiales (ALT-TAB, TAB, ENTER, ESCAPE) también son compatibles y se pueden usar de la siguiente manera:<br />'Hello,{ENTER}How are you?'",
         "collection_update": "app.collection_update({ARGS}) => UNDEFINED<br /><br />Actualiza los valores para la colección especificada.",
         "copy_to_clipboard": "app.copy_to_clipboard({ARGS}) => UNDEFINED<br /><br />Copia el texto al portapapeles del usuario.",
         "dialog_show": "app.dialog_show({ARGS}) => PROMISE<br /><br />Muestra un diálogo con el título y contenido especificados. El título es una cadena de texto simple, mientras que el contenido puede ser texto o HTML.<br /><br />Los botones se definen mediante una lista de cadenas. Si no se define ninguno, se muestra un simple botón de OK.<br /><br />El valor devuelto es el índice del botón pulsado. Así que si se pulsa el primer botón, el valor será 0. Si se pulsa el segundo botón, será 1 y así sucesivamente.<br /><br /><b>Ejemplo</b><br />app.dialog_show(<blockquote>'Por favor confirme',<br />'¿Realmente desea eliminar este elemento?',<br />['Sí', 'Cancelar acción']</blockquote>).then(<blockquote>res => { if(res === 0) { console.log('¡pulsó Sí!'); } }</blockquote>);",
@@ -1237,7 +1237,7 @@
       "placeholderFncBackendHelp": "Marcadores de posición para funciones de backend: se utilizan ya sea como expresión ('SELECT function_abc()') o directamente ('PERFORM function_abc()').",
       "placeholderFncFrontend": "Funciones (frontend)",
       "placeholderFncInstance": "Funciones (instancia)",
-      "placeholderFncInstanceHelp": "Marcadores de posición para funciones de la instancia REI3: estos proporcionan acceso a funciones del sistema como manejo de archivos o correo.",
+      "placeholderFncInstanceHelp": "Marcadores de posición para funciones de la instancia Axia4 : estos proporcionan acceso a funciones del sistema como manejo de archivos o correo.",
       "placeholderPresets": "IDs de registro predefinidos",
       "placeholderPresetsHelp": "Marcadores de posición para el ID (como BIGINT) del registro que existe para el preajuste seleccionado.<br /><br />Si el preajuste no está protegido, podría haber sido eliminado por los usuarios. En este caso se devuelve 'null'.",
       "placeholderRelations": "Relaciones",
@@ -1275,7 +1275,7 @@
       "formOpen": "Formulario para abrir",
       "newLoginForm": "Nuevo formulario de inicio de sesión",
       "title": "Formularios de inicio de sesión",
-      "titleDepr": "Los formularios de inicio de sesión están obsoletos a partir de REI3.9. Aunque seguirán funcionando por un tiempo, por favor considere cambiar al mecanismo de sincronización de usuarios (ver documentación del Builder)."
+      "titleDepr": "Los formularios de inicio de sesión están obsoletos a partir de Axia3.9. Aunque seguirán funcionando por un tiempo, por favor considere cambiar al mecanismo de sincronización de usuarios (ver documentación del Builder)."
     },
     "menu": {
       "button": {
@@ -1302,7 +1302,7 @@
         "repo": "Instalar desde el repositorio",
         "versionCreate": "Crear nueva versión"
       },
-      "clientEventsHint": "REI3 tiene una aplicación cliente, que los usuarios pueden instalar desde su configuración personal. Al ejecutarse, la aplicación cliente de REI3 puede abrir archivos subidos a REI3 con software local. También puede reaccionar a ciertos eventos, como las teclas de acceso rápido, definiendo los llamados 'eventos del cliente'. Estos se utilizan generalmente para enviar información desde el cliente a REI3, ya sea para actualizar datos usando funciones de backend o para interactuar con una sesión de navegador REI3 abierta usando funciones de frontend.",
+      "clientEventsHint": "Axia4 tiene una aplicación cliente, que los usuarios pueden instalar desde su configuración personal. Al ejecutarse, la aplicación cliente de Axia4 puede abrir archivos subidos a Axia4 con software local. También puede reaccionar a ciertos eventos, como las teclas de acceso rápido, definiendo los llamados 'eventos del cliente'. Estos se utilizan generalmente para enviar información desde el cliente a Axia4 , ya sea para actualizar datos usando funciones de backend o para interactuar con una sesión de navegador Axia4 abierta usando funciones de frontend.",
       "color": "Color",
       "colorHint": "Color primario de la aplicación: se muestra en el encabezado y el menú si no se sobrescribe mediante la personalización y/o la configuración del usuario. Los estilos del sistema están optimizados para colores apagados y oscuros (pastel oscuro).",
       "dependsOn": "Construye sobre",
@@ -1324,7 +1324,7 @@
       "jsFunctionIdOnLogin": "Función de inicio de sesión",
       "jsFunctionIdOnLoginHint": "Esta función de frontend se llama cuando un usuario inicia sesión en el sistema. Se puede usar para inicializar variables o actualizar registros.",
       "keyCreate": "Transferir - Generar nuevo par de claves de firma",
-      "keyCreateInfo": "Asegúrate de mantener la clave privada segura en todo momento. La clave pública debe ser importada en las instancias de destino de REI3 para aceptar tus aplicaciones.",
+      "keyCreateInfo": "Asegúrate de mantener la clave privada segura en todo momento. La clave pública debe ser importada en las instancias de destino de Axia4 para aceptar tus aplicaciones.",
       "keyCreateLength": "Seleccionar longitud de clave",
       "languageCode": "Código de idioma",
       "languageCodeHint": "en_us, zh_cn, de_de, ...",
@@ -1332,7 +1332,7 @@
       "languageMainHint": "Se utiliza si el idioma del usuario elegido no es ofrecido por su aplicación.",
       "languages": "Idiomas de la aplicación",
       "languagesHint": "Idiomas en los que está disponible la aplicación.",
-      "nameHint": "Nombre de referencia para esta aplicación. El nombre debe ser único dentro de un sistema REI3, por lo que considera usar un prefijo basado en el nombre de tu organización.",
+      "nameHint": "Nombre de referencia para esta aplicación. El nombre debe ser único dentro de un sistema Axia4 , por lo que considera usar un prefijo basado en el nombre de tu organización.",
       "nameHolder": "planificador_de_trabajo, planificador_de_inventario, ...",
       "namePwa": "Título de la aplicación",
       "namePwaHint": "El título completo de la aplicación que se muestra en la lista de aplicaciones instaladas. Puede tener hasta 60 caracteres. No es posible traducir.",
@@ -1345,7 +1345,7 @@
       "position": "Posición predeterminada",
       "positionHint": "Posición de la aplicación en el encabezado (las más pequeñas primero). Puede ser sobrescrito por los administradores del sistema.",
       "pwa": "Aplicación web progresiva (PWA)",
-      "pwaHint": "Las aplicaciones REI3 se pueden instalar en computadoras de escritorio y dispositivos móviles como aplicaciones web progresivas (PWA) desde navegadores modernos. Luego se enumeran como aplicaciones instaladas, obtienen sus propios iconos y accesos directos y se comportan de manera similar a las aplicaciones nativas.",
+      "pwaHint": "Las aplicaciones Axia4 se pueden instalar en computadoras de escritorio y dispositivos móviles como aplicaciones web progresivas (PWA) desde navegadores modernos. Luego se enumeran como aplicaciones instaladas, obtienen sus propios iconos y accesos directos y se comportan de manera similar a las aplicaciones nativas.",
       "release": "Despliegue",
       "releaseBuild": "Versión de la aplicación",
       "releaseBuildApp": "Versión de la plataforma",
@@ -1371,7 +1371,7 @@
       "jsFunctionFormIdHint": "Las funciones asignadas pueden interactuar con un formulario para hacer cosas como leer o escribir en los campos del formulario. Si se asigna, la función solo se puede usar en el formulario elegido y no se puede reutilizar en otras funciones del frontend. Esta configuración no se puede cambiar más tarde.",
       "message": {
         "api": "<p>El nombre de la API se utilizará como parte de la llamada a la API. Se puede cambiar más tarde.</p>",
-        "module": "<p>Por favor, elija un nombre para su aplicación. Este nombre sirve para identificar de manera única su aplicación dentro de un sistema REI3. No es visible para los usuarios.</p><h3>Ejemplos:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Debido a que los nombres de las aplicaciones deben ser únicos, puede ser útil usar un prefijo nombrado según su organización. Si su organización se llama 'Modern Fashion Limited', podría usar 'mfl' como prefijo (como en 'mfl_shift_planner').</p>",
+        "module": "<p>Por favor, elija un nombre para su aplicación. Este nombre sirve para identificar de manera única su aplicación dentro de un sistema Axia4 . No es visible para los usuarios.</p><h3>Ejemplos:</h3><ul><li>shift_planner</li><li>inventory_flow</li><li>time_tracker</li></ul><p>Debido a que los nombres de las aplicaciones deben ser únicos, puede ser útil usar un prefijo nombrado según su organización. Si su organización se llama 'Modern Fashion Limited', podría usar 'mfl' como prefijo (como en 'mfl_shift_planner').</p>",
         "relation": "<p>El nombre de una relación debe reflejar lo que se almacena dentro de ella. Debe ser único dentro de una aplicación.</p><h3>Ejemplos:</h3><ul><li>evento</li><li>asistencia_evento</li><li>ubicación</li><li>ubicación_evento</li></ul>"
       },
       "module": "Nueva aplicación",
@@ -1583,8 +1583,8 @@
       "checks": "Verificaciones del sistema",
       "checkStartForm": "El formulario de inicio está definido",
       "checkStartFormOff": "El formulario de inicio no está definido",
-      "extCommunity": "Foro de REI3",
-      "extDocs": "Documentación de REI3",
+      "extCommunity": "Foro de Axia4 ",
+      "extDocs": "Documentación de Axia4 ",
       "needHelp": "¿Necesitas ayuda?",
       "title": "Primeros pasos",
       "titleForms": "Crear formularios",
@@ -1726,11 +1726,11 @@
       "moreInfo": "Más información"
     },
     "info": {
-      "admin": "<b>Información para administradores:</b> La función de comentarios se puede desactivar en el panel de administración. Si está habilitada, los comentarios se envían al repositorio actualmente elegido. Las organizaciones pueden ejecutar su propio repositorio (con la aplicación <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Repositorio REI3</a>) para gestionar las versiones de la aplicación y recibir comentarios internos.",
+      "admin": "<b>Información para administradores:</b> La función de comentarios se puede desactivar en el panel de administración. Si está habilitada, los comentarios se envían al repositorio actualmente elegido. Las organizaciones pueden ejecutar su propio repositorio (con la aplicación <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Repositorio Axia4 </a>) para gestionar las versiones de la aplicación y recibir comentarios internos.",
       "data": [ "Categoría de comentarios (general, error/problema, sugerencia, elogio)", "Texto de comentarios", "Smiley que fue seleccionado", "Aplicación que está actualmente abierta", "Números de versión de la aplicación y del sistema", "Si el usuario que da retroalimentación es un administrador", "Un identificador aleatorio para agrupar comentarios del mismo sistema" ],
       "personal": "No se envía información personal. Si desea recibir una respuesta, puede agregar detalles de contacto a su texto de comentarios.",
       "repoUrl": "Los comentarios se enviarán a",
-      "repoUrlDefault": "<i>(este sistema es operado por los desarrolladores de <a href=\"https://rei3.de/\" target=\"_blank\">REI3</a>)</i>",
+      "repoUrlDefault": "<i>(este sistema es operado por los desarrolladores de <a href=\"https://rei3.de/\" target=\"_blank\">Axia4 </a>)</i>",
       "what": "¿Qué se está enviando?"
     },
     "moduleRelated": "¿Es este comentario para la aplicación abierta? ({NAME})",
@@ -1953,8 +1953,8 @@
     "apis": "APIs",
     "application": "Aplicación",
     "applications": "Aplicaciones",
-    "appName": "REI3",
-    "appWebsite": "https://rei3.de",
+    "appName": "Axia4",
+    "appWebsite": "https://axia4.com",
     "arguments": "Argumentos",
     "articles": "Artículos de ayuda",
     "attribute": "Atributo",
@@ -2219,7 +2219,7 @@
     },
     "inputPlaceholder": "Escribe nombres, palabras o direcciones de correo electrónico",
     "modulesInactive": "Opciones de búsqueda adicionales",
-    "tips": [ "Se puede iniciar una nueva búsqueda desde cualquier lugar en REI3 presionando <b>CTRL + SHIFT + F</b>. Si hay texto seleccionado, se usará como entrada de búsqueda.", "Cuando busques nombres, palabras o direcciones de correo electrónico, escríbelos completos.", "Si se busca contenido multilingüe, es importante establecer el idioma de su consulta de búsqueda (esquina superior derecha).", "Las búsquedas específicas del idioma, como hacer coincidir 'making' con 'make', funcionan si el contenido tiene un idioma definido. Esto a menudo tiene sentido para artículos, pero generalmente no se hace para correos electrónicos." ]
+    "tips": [ "Se puede iniciar una nueva búsqueda desde cualquier lugar en Axia4 presionando <b>CTRL + SHIFT + F</b>. Si hay texto seleccionado, se usará como entrada de búsqueda.", "Cuando busques nombres, palabras o direcciones de correo electrónico, escríbelos completos.", "Si se busca contenido multilingüe, es importante establecer el idioma de su consulta de búsqueda (esquina superior derecha).", "Las búsquedas específicas del idioma, como hacer coincidir 'making' con 'make', funcionan si el contenido tiene un idioma definido. Esto a menudo tiene sentido para artículos, pero generalmente no se hace para correos electrónicos." ]
   },
   "home": {
     "button": {
@@ -2229,7 +2229,7 @@
       "installBundle": "Instalar Empresa Principal"
     },
     "newVersion": "Notificación de actualización",
-    "newVersionText": "Una nueva versión de REI3 está disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descargar REI3 v{VERSION}</a>",
+    "newVersionText": "Una nueva versión de Axia4 está disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descargar Axia4 v{VERSION}</a>",
     "noAccess": "Todavía no se ha concedido acceso.<br />Por favor, contacte con su administrador del sistema.",
     "noAccessAdmin": "Para obtener acceso, asigna roles a tu usuario.",
     "noAccessTitle": "No hay acceso a aplicaciones",
@@ -2238,10 +2238,10 @@
       "installBundle": "Empresa Principal",
       "installBundleDesc": "Instale un conjunto preempaquetado de aplicaciones principales, útiles para cualquier organización. El conjunto 'Core Company' incluye:<ul><li>Gestión de ausencias</li><li>Seguimiento del tiempo</li><li>Gestión de proyectos y tareas</li><li>Manejo de solicitudes</li><li>Un gestor seguro de contraseñas</li><li>Gestión de activos de TI</li></ul>Después de la instalación, por favor consulte las páginas de ayuda de cada aplicación individual para obtener más información sobre la configuración inicial de cada una.",
       "installFile": "Del archivo",
-      "installFileDesc": "Instale aplicaciones desde archivos REI3 locales. Para sistemas fuera de línea o aplicaciones hechas por uno mismo.<br /><br />Los archivos para las aplicaciones REI3 ofrecidas públicamente se pueden descargar del <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositorio</a> oficial.",
+      "installFileDesc": "Instale aplicaciones desde archivos Axia4 locales. Para sistemas fuera de línea o aplicaciones hechas por uno mismo.<br /><br />Los archivos para las aplicaciones Axia4 ofrecidas públicamente se pueden descargar del <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositorio</a> oficial.",
       "installRepo": "Desde el repositorio",
-      "installRepoDesc": "<b>Se requiere acceso a Internet</b><br /><br />Instale aplicaciones desde el repositorio oficial de REI3. El repositorio contiene versiones actuales de las aplicaciones de REI3 ofrecidas públicamente.<br /><br />Todas las aplicaciones son revisadas y firmadas digitalmente.",
-      "intro": "Bienvenido a REI3<br /><br />Actualmente no hay aplicaciones instaladas. Para empezar a usar REI3, por favor elige una de las opciones de instalación a continuación.",
+      "installRepoDesc": "<b>Se requiere acceso a Internet</b><br /><br />Instale aplicaciones desde el repositorio oficial de Axia4 . El repositorio contiene versiones actuales de las aplicaciones de Axia4 ofrecidas públicamente.<br /><br />Todas las aplicaciones son revisadas y firmadas digitalmente.",
+      "intro": "Bienvenido a Axia4 <br /><br />Actualmente no hay aplicaciones instaladas. Para empezar a usar Axia4 , por favor elige una de las opciones de instalación a continuación.",
       "title": "Configuración"
     }
   },
@@ -2384,8 +2384,8 @@
       "logout": "Cerrar sesión"
     },
     "clientEvents": {
-      "intro": "Si la aplicación cliente de REI3 (ver 'Dispositivos') está instalada, puedes configurar teclas de acceso rápido globales. Estas se utilizan para interactuar con REI3 mientras se ejecuta en segundo plano.",
-      "noEvents": "Actualmente no hay aplicaciones REI3 accesibles que ofrezcan teclas de acceso rápido."
+      "intro": "Si la aplicación cliente de Axia4 (ver 'Dispositivos') está instalada, puedes configurar teclas de acceso rápido globales. Estas se utilizan para interactuar con Axia4 mientras se ejecuta en segundo plano.",
+      "noEvents": "Actualmente no hay aplicaciones Axia4 accesibles que ofrezcan teclas de acceso rápido."
     },
     "colorClassicMode": "Esquema de color",
     "colorClassicMode0": "Moderno",
@@ -2470,23 +2470,23 @@
         "loadCnf": "Archivo de configuración"
       },
       "context": {
-        "client": "Cliente REI3",
+        "client": "Cliente Axia4 ",
         "ics": "Aplicación de calendario",
         "totp": "Multifactor"
       },
       "device": {
-        "adminInfo": "<b>Información para administradores:</b> La aplicación cliente REI3 no funciona mientras REI3 está en modo de mantenimiento.",
+        "adminInfo": "<b>Información para administradores:</b> La aplicación cliente Axia4 no funciona mientras Axia4 está en modo de mantenimiento.",
         "installStep1": "Elige un nombre para el dispositivo:",
         "installStep2": "Descargue la aplicación y el archivo de configuración en la misma carpeta:",
         "installStep3": "Inicia la aplicación. Se instalará automáticamente y luego aparecerá en la bandeja del sistema.",
         "installStep4": "Ahora puedes eliminar la aplicación descargada y los archivos de configuración.",
-        "intro0": "La aplicación cliente REI3 es un software opcional que ofrece funcionalidad adicional. Una vez instalada, las siguientes características están disponibles:",
-        "intro1": "Los archivos subidos a REI3 se pueden editar directamente con software local. Asegúrate de tener seleccionada una aplicación predeterminada para la extensión de archivo dada. En Windows puedes hacer clic con la tecla shift presionada para elegir la aplicación a utilizar.",
-        "intro2": "Se pueden usar teclas de acceso rápido globales para ejecutar acciones en las aplicaciones de REI3, mientras REI3 se ejecuta en segundo plano.",
+        "intro0": "La aplicación cliente Axia4 es un software opcional que ofrece funcionalidad adicional. Una vez instalada, las siguientes características están disponibles:",
+        "intro1": "Los archivos subidos a Axia4 se pueden editar directamente con software local. Asegúrate de tener seleccionada una aplicación predeterminada para la extensión de archivo dada. En Windows puedes hacer clic con la tecla shift presionada para elegir la aplicación a utilizar.",
+        "intro2": "Se pueden usar teclas de acceso rápido globales para ejecutar acciones en las aplicaciones de Axia4 , mientras Axia4 se ejecuta en segundo plano.",
         "nameHint": "Mi PC de trabajo",
         "os": "Sistema operativo",
-        "uninstallStep1": "Haga clic derecho en el icono de la bandeja del cliente REI3 y elija la opción 'desinstalar'.",
-        "uninstallStep2": "La aplicación cliente REI3 ahora está desinstalada.",
+        "uninstallStep1": "Haga clic derecho en el icono de la bandeja del cliente Axia4 y elija la opción 'desinstalar'.",
+        "uninstallStep2": "La aplicación cliente Axia4 ahora está desinstalada.",
         "updateStep1": "Descargar el nuevo archivo de la aplicación:",
         "updateStep2": "Inicia la aplicación. Ejecutará la actualización y luego aparecerá en la bandeja del sistema.",
         "updateStep3": "Ahora puedes eliminar el archivo de la aplicación descargada."
@@ -2502,7 +2502,7 @@
         "nameHint": "Mi smartphone",
         "outro": "Utiliza el código QR para agregar esta cuenta a tu aplicación de autenticación. Cuando termines, cierra esta ventana. Puedes repetir este proceso para habilitar MFA con múltiples dispositivos."
       },
-      "titleAdd": "Administrar la aplicación cliente de REI3",
+      "titleAdd": "Administrar la aplicación cliente de Axia4 ",
       "titleContext": "Usar",
       "titleDateCreate": "Creado",
       "titleMfa": "Configurar la autenticación multifactor",
