@@ -2263,10 +2263,10 @@
       "dateTo": "Para",
       "fullDayHint": "Seleção o dia todo",
       "inputDay": "dd",
-      "inputHour": "I'm sorry, I need you to provide the text you want translated from English to Portuguese.",
-      "inputMinute": "I'm sorry, I need you to provide the text you want translated from English to Portuguese.",
+      "inputHour": "--",
+      "inputMinute": "--",
       "inputMonth": "mm",
-      "inputSecond": "I'm sorry, I need you to provide the text you want translated from English to Portuguese.",
+      "inputSecond": "--",
       "inputYear": "yyyy"
     },
     "files": {
