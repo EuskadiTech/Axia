@@ -471,125 +471,125 @@
       "nameHint": "اسم داخلي للإشارة إلى عميل OAuth هذا داخل REI3.",
       "option": {
         "flow": {
-          "authCodePkce": "Authentication Code with PKCE",
-          "clientCreds": "Client credentials"
+          "authCodePkce": "رمز المصادقة مع PKCE",
+          "clientCreds": "أوراق اعتماد العميل"
         },
         "flowHint": {
-          "authCodePkce": "<p>This flow is used in REI3 to authenticate users via external identity providers, such as Keycloak or Microsoft Entra ID.</p><p>'Authentication Code with Proof Key for Code Exchange' is an Open ID Connect flow. Users are forwarded to authenticate with an identity provider. After authentication, a user is redirected back to REI3 with verification of identity and user meta data.</p>",
-          "clientCreds": "<p>This flow is used in REI3 to authenticate itself against a service, such as Exchange Online.</p><p>'Client Credentials' is an OAuth 2.0 flow, with which REI3 authenticates against a service provider, to receive access to protected resources such as a mailbox. Any resource accessed via the 'Client Credentials' flow should belong to the client (in this case REI3) - it is not designed to access user resources directly or on behalf.</p><p>This flow is currently only used for access to mail resources.</p>"
+          "authCodePkce": "<p>يُستخدم هذا التدفق في REI3 لمصادقة المستخدمين عبر موفري الهوية الخارجيين، مثل Keycloak أو Microsoft Entra ID.</p><p>'رمز المصادقة مع مفتاح إثبات لتبادل الرمز' هو تدفق Open ID Connect. يتم توجيه المستخدمين للمصادقة مع موفر هوية. بعد المصادقة، يُعاد توجيه المستخدم إلى REI3 مع التحقق من الهوية وبيانات المستخدم الوصفية.</p>",
+          "clientCreds": "<p>يُستخدم هذا التدفق في REI3 للمصادقة ضد خدمة، مثل Exchange Online.</p><p>'اعتمادات العميل' هو تدفق OAuth 2.0، والذي من خلاله تصادق REI3 ضد مزود الخدمة، للحصول على الوصول إلى الموارد المحمية مثل صندوق البريد. يجب أن تنتمي أي موارد يتم الوصول إليها عبر تدفق 'اعتمادات العميل' إلى العميل (في هذه الحالة REI3) - لم يتم تصميمه للوصول إلى موارد المستخدم مباشرة أو نيابة عنه.</p><p>يُستخدم هذا التدفق حاليًا فقط للوصول إلى موارد البريد.</p>"
         }
       },
-      "providerUrl": "Provider URL",
-      "providerUrlHint": "URL of the chosen provider for its OAuth service discovery, often called 'Issuer URL'.",
-      "redirectUrl": "Redirect URL",
-      "redirectUrlHint": "Users are redirected here after authentication. Should be the login URL of REI3. Must also be registered at the service provider.",
-      "scopes": "Scopes",
-      "scopesHint": "Scopes tell the provider, what an OAuth client wishes to do or access. They are defined by the provider and must be assigned to the client to be usable - please refer to the provider´s documentation for a list of available scopes.",
-      "title": "OAuth client '{NAME}'",
-      "titleNew": "New OAuth client",
-      "tokenUrl": "Token URL",
-      "tokenUrlExample": "Example for Exchange Online: https://login.microsoftonline.com/YOUR_TENANT_NAME/oauth2/v2.0/token",
-      "tokenUrlHint": "URL of where OAuth2 tokens are generated. These are documented by your provider."
+      "providerUrl": "عنوان URL لمزود",
+      "providerUrlHint": "عنوان URL لمزود الخدمة المختار لاكتشاف خدمة OAuth الخاصة به، وغالبًا ما يُسمى \"عنوان URL الخاص بالجهة المصدرة\".",
+      "redirectUrl": "إعادة توجيه URL",
+      "redirectUrlHint": "يتم توجيه المستخدمين إلى هنا بعد المصادقة. يجب أن يكون عنوان URL لتسجيل الدخول لـ REI3. يجب أيضًا تسجيله لدى مزود الخدمة.",
+      "scopes": "النطاقات",
+      "scopesHint": "النطاقات تخبر المزود بما يرغب عميل OAuth في القيام به أو الوصول إليه. يتم تعريفها بواسطة المزود ويجب تخصيصها للعميل لتكون قابلة للاستخدام - يرجى الرجوع إلى وثائق المزود للحصول على قائمة بالنطاقات المتاحة.",
+      "title": "عميل OAuth '{NAME}'",
+      "titleNew": "عميل OAuth جديد",
+      "tokenUrl": "عنوان URL للرمز",
+      "tokenUrlExample": "مثال لخدمة Exchange Online: https://login.microsoftonline.com/YOUR_TENANT_NAME/oauth2/v2.0/token",
+      "tokenUrlHint": "عنوان URL حيث يتم إنشاء رموز OAuth2. يتم توثيق هذه من قبل مزود الخدمة الخاص بك."
     },
     "repo": {
-      "author": "by {NAME}",
+      "author": "بواسطة {NAME}",
       "button": {
-        "install": "Install",
-        "installed": "Installed",
-        "showInstalled": "Show installed"
+        "install": "تثبيت",
+        "installed": "مثبت",
+        "showInstalled": "إظهار المثبت"
       },
-      "fetchDone": "Application was successfully installed.<br /><br />To get access, roles have to be assigned.",
-      "maintenanceBlock": "Installation only in maintenance mode",
-      "notCompatible": "Platform upgrade required",
-      "supportPage": "Website"
+      "fetchDone": "تم تثبيت التطبيق بنجاح.<br /><br />للحصول على الوصول، يجب تعيين الأدوار.",
+      "maintenanceBlock": "التثبيت فقط في وضع الصيانة",
+      "notCompatible": "مطلوب ترقية المنصة",
+      "supportPage": "موقع ويب"
     },
     "roles": {
-      "addLogin": "Add user",
+      "addLogin": "إضافة مستخدم",
       "button": {
-        "all": "Show all",
-        "descriptions": "Descriptions"
+        "all": "عرض الكل",
+        "descriptions": "الأوصاف"
       },
-      "descriptionEmpty": "No description available"
+      "descriptionEmpty": "لا يوجد وصف متاح"
     },
     "scheduler": {
       "button": {
-        "runNow": "Schedule immediate execution",
-        "runNowHint": "Task will be executed as soon as possible."
+        "runNow": "جدولة التنفيذ الفوري",
+        "runNowHint": "سيتم تنفيذ المهمة في أقرب وقت ممكن."
       },
-      "dateAttempt": "Last start",
-      "dateSuccess": "Last successful completion",
-      "functions": "Application tasks",
-      "interval": "Execution interval",
-      "intervalSeconds": "Execution interval (in seconds)",
-      "intervalTypeDays": "day(s)",
-      "intervalTypeHours": "hour(s)",
-      "intervalTypeMinutes": "minute(s)",
-      "intervalTypeMonths": "month(s)",
-      "intervalTypeSeconds": "second(s)",
-      "intervalTypeWeeks": "week(s)",
-      "intervalTypeYears": "year(s)",
-      "mirrorMode": "Mirror mode is active for this instance. Selected system tasks are disabled.",
+      "dateAttempt": "آخر بداية",
+      "dateSuccess": "آخر إتمام ناجح",
+      "functions": "مهام التطبيق",
+      "interval": "فترة التنفيذ",
+      "intervalSeconds": "فترة التنفيذ (بالثواني)",
+      "intervalTypeDays": "يوم(أيام)",
+      "intervalTypeHours": "ساعة/ساعات",
+      "intervalTypeMinutes": "دقيقة(دقائق)",
+      "intervalTypeMonths": "شهر/أشهر",
+      "intervalTypeSeconds": "ثانية/ثوانٍ",
+      "intervalTypeWeeks": "أسبوع(أسابيع)",
+      "intervalTypeYears": "سنة/سنوات",
+      "mirrorMode": "وضع المرآة نشط لهذه الحالة. يتم تعطيل المهام النظامية المحددة.",
       "names": {
-        "adminMails": "Admin notification mails",
-        "backupRun": "Manage integrated backups",
-        "cleanupBruteforce": "Cleanup bruteforce cache",
-        "cleanupDataLogs": "Cleanup expired change logs",
-        "cleanupFiles": "Cleanup expired file uploads",
-        "cleanupLogs": "Cleanup expired system logs",
-        "cleanupMailTraffic": "Cleanup expired email traffic entries",
-        "cleanupTempDir": "Cleanup temporary directory",
-        "clusterCheckIn": "Cluster check-in",
-        "clusterProcessEvents": "Cluster event processing",
-        "dbOptimize": "Database optimization",
-        "filesProcess": "File job processing",
-        "httpCertRenew": "Reload SSL certificate if updated",
-        "importLdapLogins": "Import users via LDAP",
-        "mailAttach": "Email attachment transfer",
-        "mailRetrieve": "Email retrieval",
-        "mailSend": "Email dispatch",
-        "repoCheck": "Execute repository update",
-        "restExecute": "Execute REST calls",
-        "systemMsgMaintenance": "Enable maintenance mode after system message",
-        "updateCheck": "Check for platform updates"
+        "adminMails": "رسائل إشعارات المشرف",
+        "backupRun": "إدارة النسخ الاحتياطية المتكاملة",
+        "cleanupBruteforce": "تنظيف ذاكرة التخزين المؤقت للقوة الغاشمة",
+        "cleanupDataLogs": "تنظيف سجلات التغييرات المنتهية الصلاحية",
+        "cleanupFiles": "تنظيف تحميلات الملفات المنتهية الصلاحية",
+        "cleanupLogs": "تنظيف سجلات النظام المنتهية الصلاحية",
+        "cleanupMailTraffic": "تنظيف إدخالات حركة المرور البريدية المنتهية الصلاحية",
+        "cleanupTempDir": "تنظيف الدليل المؤقت",
+        "clusterCheckIn": "تسجيل الدخول إلى المجموعة",
+        "clusterProcessEvents": "معالجة أحداث الكتلة",
+        "dbOptimize": "تحسين قاعدة البيانات",
+        "filesProcess": "معالجة وظيفة الملف",
+        "httpCertRenew": "أعد تحميل شهادة SSL إذا تم تحديثها",
+        "importLdapLogins": "استيراد المستخدمين عبر LDAP",
+        "mailAttach": "نقل مرفقات البريد الإلكتروني",
+        "mailRetrieve": "استرجاع البريد الإلكتروني",
+        "mailSend": "إرسال البريد الإلكتروني",
+        "repoCheck": "تنفيذ تحديث المستودع",
+        "restExecute": "تنفيذ مكالمات REST",
+        "systemMsgMaintenance": "تمكين وضع الصيانة بعد رسالة النظام",
+        "updateCheck": "تحقق من تحديثات المنصة"
       },
-      "scheduleLine": "Every {VALUE} {TYPE}",
-      "scheduleLineDayMonths": "on the {DAY}.",
-      "scheduleLineDayWeeks": "on the {DAY}. weekday",
-      "scheduleLineDayYears": "on the {DAY}. of the year",
-      "scheduleLineTime": "at {HH}:{MM}:{SS}",
-      "systemTasks": "System tasks (global)",
-      "systemTasksNode": "System tasks (cluster nodes)"
+      "scheduleLine": "كل {VALUE} {TYPE}",
+      "scheduleLineDayMonths": "في {DAY}.",
+      "scheduleLineDayWeeks": "في يوم {DAY}. يوم من أيام الأسبوع",
+      "scheduleLineDayYears": "في اليوم {DAY} من السنة",
+      "scheduleLineTime": "عند {HH}:{MM}:{SS}",
+      "systemTasks": "المهام النظامية (العالمية)",
+      "systemTasksNode": "مهام النظام (عقد العناقيد)"
     },
     "systemMsg": {
-      "date0": "Show from",
-      "date1": "Show until",
-      "description": "Administrators can use this feature to inform users about events such as planned downtimes. Both logged in, as well as users starting new sessions, will receive the message.<br /><br />If the message is changed while the time period is active, the updated version will again be shown to users.",
-      "maintenance": "Switch to maintenance",
-      "maintenanceHint": "If enabled, the system will switch to maintenance mode once 'show until' is reached. 30 minutes before the switch to maintenance mode occurs, a countdown timer will be visible to users.",
+      "date0": "عرض من",
+      "date1": "عرض حتى",
+      "description": "يمكن للمسؤولين استخدام هذه الميزة لإبلاغ المستخدمين بالأحداث مثل فترات التوقف المخطط لها. سيستلم الرسالة كل من المستخدمين الذين قاموا بتسجيل الدخول وكذلك المستخدمين الذين يبدأون جلسات جديدة.<br /><br />إذا تم تغيير الرسالة أثناء الفترة الزمنية النشطة، فسيتم عرض النسخة المحدثة للمستخدمين مرة أخرى.",
+      "maintenance": "التحول إلى الصيانة",
+      "maintenanceHint": "إذا تم التمكين، سيتحول النظام إلى وضع الصيانة بمجرد الوصول إلى \"عرض حتى\". قبل 30 دقيقة من التحول إلى وضع الصيانة، سيكون هناك عداد تنازلي مرئي للمستخدمين.",
       "state": {
-        "date0Set": "Message will be shown starting <b>{DATE}</b>.",
-        "date1Set": "Message will be shown until <b>{DATE}</b>.",
-        "datesSet": "Message will be shown between <b>{DATE0}</b> and <b>{DATE1}</b>.",
-        "unset": "<b>Message is not active</b>"
+        "date0Set": "سيتم عرض الرسالة بدءًا من <b>{DATE}</b>.",
+        "date1Set": "سيتم عرض الرسالة حتى <b>{DATE}</b>.",
+        "datesSet": "سيتم عرض الرسالة بين <b>{DATE0}</b> و <b>{DATE1}</b>.",
+        "unset": "<b>الرسالة غير نشطة</b>"
       },
-      "text": "Message"
+      "text": "رسالة"
     },
-    "title": "Admin",
-    "titleDocs": "Admin documentation"
+    "title": "مسؤول",
+    "titleDocs": "وثائق المسؤول"
   },
   "articles": {
     "button": {
-      "pdf": "PDF"
+      "pdf": "بي دي إف"
     },
-    "form": "Form help",
-    "module": "Application help",
-    "title": "Help pages",
-    "toc": "Table of contents"
+    "form": "مساعدة النموذج",
+    "module": "مساعدة التطبيق",
+    "title": "صفحات المساعدة",
+    "toc": "جدول المحتويات"
   },
   "builder": {
     "api": {
       "button": {
-        "versionNew": "New version",
+        "versionNew": "نسخة جديدة",
         "versionNewHint": "Duplicates this API with a new version number."
       },
       "calls": "Calls",
