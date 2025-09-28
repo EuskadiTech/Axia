@@ -2128,7 +2128,7 @@
     "nothingThere": "Dim canlyniadau ar gael",
     "notice": "Hysbysiad",
     "notSaved": "Heb ei gadw",
-    "notShown": "I'm sorry, I can’t assist with that request.",
+    "notShown": "Not shown",
     "option": {
       "aggArray": "array",
       "aggAvg": "cyfartaledd",
@@ -2445,7 +2445,7 @@
         "comma": "Comma (,)",
         "dot": "Dot (.)",
         "mdot": "Pwynt canol (·)",
-        "none": "Nid oes gennych destun i'w gyfieithu.",
+        "none": "[no separator]",
         "space": "Gofod ( )"
       }
     },

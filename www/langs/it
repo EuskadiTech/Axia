@@ -2411,123 +2411,123 @@
       "newKeysDesc": "Per completare la configurazione, copia il tuo codice di backup personale in un luogo sicuro.",
       "noCredMasterKey": "Password di crittografia",
       "noCredMasterKeyChoose": "Il tuo utente è autenticato tramite un provider esterno. Per abilitare la crittografia end-to-end, devi scegliere una password di crittografia personale.",
-      "noCredMasterKeyEnter": "End-to-end-encryption is protected by your personal encryption password.",
-      "noCredMasterKeyFailed": "Encryption password was not accepted. Please try again.<br /><br />If you forgot your encryption password, please see below for recovery options.",
-      "noCredMasterKeyNew": "New encryption password",
-      "prevPassword": "Previous password",
-      "regainAccess": "Regain access to personal keys",
-      "regainAccessDesc": "You can regain access to your personal keys by entering your previous password. If you do not know your previous password, you need to use your personal backup code.",
-      "resetAccess": "Reset personal keys",
-      "resetAccessDesc": "If you do not have access to either your previous password nor your backup code, you permanently lost access to your encrypted data.<br /><br />If this is the case, you can decide to reset your personal keys to encrypt new data - this will <b>NOT</b> re-establish access to previously encrypted data.",
-      "resetAccessHint": "Are you sure you want to reset your personal keys? If you do this, there is no going back even if you find your old backup code later.",
+      "noCredMasterKeyEnter": "La crittografia end-to-end è protetta dalla tua password di crittografia personale.",
+      "noCredMasterKeyFailed": "La password di crittografia non è stata accettata. Riprova.<br /><br />Se hai dimenticato la tua password di crittografia, consulta le opzioni di recupero riportate di seguito.",
+      "noCredMasterKeyNew": "Nuova password di crittografia",
+      "prevPassword": "Password precedente",
+      "regainAccess": "Riacquistare l'accesso alle chiavi personali",
+      "regainAccessDesc": "Puoi recuperare l'accesso alle tue chiavi personali inserendo la tua password precedente. Se non conosci la tua password precedente, devi utilizzare il tuo codice di backup personale.",
+      "resetAccess": "Reimposta chiavi personali",
+      "resetAccessDesc": "Se non hai accesso né alla tua password precedente né al tuo codice di backup, hai perso definitivamente l'accesso ai tuoi dati criptati.<br /><br />Se questo è il caso, puoi decidere di reimpostare le tue chiavi personali per crittografare nuovi dati - questo <b>NON</b> ristabilirà l'accesso ai dati precedentemente criptati.",
+      "resetAccessHint": "Sei sicuro di voler reimpostare le tue chiavi personali? Se lo fai, non si può tornare indietro, anche se in seguito trovi il tuo vecchio codice di backup.",
       "status": {
-        "inactive": "Not enabled",
-        "locked": "Keys are locked",
-        "noCryptoApi": "This feature is currently disabled - it requires an encrypted connection (HTTPS) as well as a modern browser",
-        "unlocked": "Ready for use"
+        "inactive": "Non abilitato",
+        "locked": "Le chiavi sono bloccate",
+        "noCryptoApi": "Questa funzione è attualmente disabilitata - richiede una connessione crittografata (HTTPS) e un browser moderno",
+        "unlocked": "Pronto per l'uso"
       }
     },
-    "fontFamily": "Font",
-    "fontSize": "Font size",
-    "formActionsAlign": "Align form actions",
-    "headerCaptions": "Full",
-    "headerModules": "Show applications",
-    "languageCode": "Language",
-    "listColored": "Contrast",
-    "listRows": "List rows",
-    "listSpaced": "Larger",
-    "mobileScrollForm": "Mobile: Scroll entire form",
-    "numberSepDecimal": "Decimal separator",
-    "numberSepThousand": "Thousands separator",
+    "fontFamily": "Carattere",
+    "fontSize": "Dimensione carattere",
+    "formActionsAlign": "Allinea le azioni del modulo",
+    "headerCaptions": "Pieno",
+    "headerModules": "Mostra applicazioni",
+    "languageCode": "Lingua",
+    "listColored": "Contrasto",
+    "listRows": "Elenca righe",
+    "listSpaced": "Più grande",
+    "mobileScrollForm": "Mobile: Scorri l'intero modulo",
+    "numberSepDecimal": "Separatore decimale",
+    "numberSepThousand": "Separatore delle migliaia",
     "option": {
       "numberSeparator": {
-        "apos": "Apostrophe (')",
-        "comma": "Comma (,)",
-        "dot": "Dot (.)",
-        "mdot": "Middle dot (·)",
-        "none": "[no separator]",
-        "space": "Space ( )"
+        "apos": "Apostrofo (')",
+        "comma": "Virgola (,)",
+        "dot": "Punto (.)",
+        "mdot": "Punto medio (·)",
+        "none": "Il tuo compito è tradurre il testo dall''inglese (en)' all''italiano (it)' indicato dall'utente come 'italiano'. Rispondi solo con il testo tradotto, senza ulteriori virgolette, simboli, punteggiatura o formattazione a meno che non siano nel testo originale. Se il testo contiene codice, segnaposto, variabili o altri elementi correlati al codice, non tradurli. Se il testo contiene messaggi ICU, traducili anche, ma adatta la sintassi per adattarla alla lingua di destinazione. Mantieni la maiuscolizzazione delle lettere se possibile e correggi eventuali errori di ortografia. Mantieni le interruzioni di riga, i paragrafi e la formattazione del testo originale. Mantieni il significato, il tono e lo stile del testo originale. Non tradurre codice sorgente, segnaposto, variabili o qualsiasi altro elemento correlato al codice.",
+        "space": "Spazio ( )"
       }
     },
-    "pageTitle": "Settings",
-    "pattern": "Background pattern",
-    "spacing": "Spacing",
-    "sundayFirstDow": "Sunday is 1st weekday",
-    "tabRemember": "Open last used tab",
+    "pageTitle": "Impostazioni",
+    "pattern": "Motivo di sfondo",
+    "spacing": "Spaziatura",
+    "sundayFirstDow": "La domenica è il primo giorno della settimana",
+    "tabRemember": "Apri l'ultima scheda utilizzata",
     "titleAccount": "Account",
-    "titleClientEvents": "Global hotkeys",
-    "titleEncryption": "End-to-end encryption",
-    "titleFixedTokens": "Devices",
-    "titleGeneral": "General",
-    "titleSubHeader": "Header menu",
-    "titleSubMenu": "Application menu",
-    "titleSubMisc": "Miscellaneous",
-    "titleSubNumbers": "Numbers",
-    "titleTheme": "Theme",
+    "titleClientEvents": "Tasti di scelta rapida globali",
+    "titleEncryption": "Crittografia end-to-end",
+    "titleFixedTokens": "Dispositivi",
+    "titleGeneral": "Generale",
+    "titleSubHeader": "Menu intestazione",
+    "titleSubMenu": "Menu dell'applicazione",
+    "titleSubMisc": "Varie",
+    "titleSubNumbers": "Numeri",
+    "titleTheme": "Tema",
     "tokensFixed": {
       "button": {
-        "loadApp": "Application",
-        "loadCnf": "Config file"
+        "loadApp": "Domanda",
+        "loadCnf": "File di configurazione"
       },
       "context": {
-        "client": "REI3 client",
-        "ics": "Calendar app",
-        "totp": "Multi-factor"
+        "client": "Cliente REI3",
+        "ics": "App calendario",
+        "totp": "Multi-fattore"
       },
       "device": {
-        "adminInfo": "<b>Info for admins:</b> The REI3 client application does not work while REI3 is in maintenance mode.",
-        "installStep1": "Choose a device name:",
-        "installStep2": "Download the application & config file to the same folder:",
-        "installStep3": "Start the application. It will install itself and then appear in your system tray.",
-        "installStep4": "You can now delete the downloaded application & config files.",
-        "intro0": "The REI3 client application is an optional piece of software that offers additional functionality. Once installed, the following features are available:",
-        "intro1": "Files uploaded to REI3 can be edited directly with local software. Make sure that you have a default application selected for the given file extension. On Windows you can shift-click to choose the application to use.",
-        "intro2": "Global hotkeys can be used to execute actions in REI3 applications, while REI3 runs in the background.",
-        "nameHint": "'My Work PC'",
-        "os": "Operating system:",
-        "uninstallStep1": "Right-click on the REI3 client tray icon and choose the 'uninstall' option.",
-        "uninstallStep2": "The REI3 client application is now uninstalled.",
-        "updateStep1": "Download the new application file:",
-        "updateStep2": "Start the application. It will execute the update and then appear in your system tray.",
-        "updateStep3": "You can now delete the downloaded application file."
+        "adminInfo": "<b>Informazioni per gli amministratori:</b> L'applicazione client REI3 non funziona mentre REI3 è in modalità di manutenzione.",
+        "installStep1": "Scegli un nome per il dispositivo:",
+        "installStep2": "Scarica l'applicazione e il file di configurazione nella stessa cartella:",
+        "installStep3": "Avvia l'applicazione. Si installerà da sola e poi apparirà nella barra delle applicazioni.",
+        "installStep4": "Puoi ora eliminare l'applicazione scaricata e i file di configurazione.",
+        "intro0": "L'applicazione client REI3 è un componente software opzionale che offre funzionalità aggiuntive. Una volta installata, le seguenti caratteristiche sono disponibili:",
+        "intro1": "I file caricati su REI3 possono essere modificati direttamente con il software locale. Assicurati di avere un'applicazione predefinita selezionata per l'estensione del file indicata. Su Windows puoi fare clic con il tasto Maiusc per scegliere l'applicazione da utilizzare.",
+        "intro2": "Le scorciatoie globali possono essere utilizzate per eseguire azioni nelle applicazioni REI3, mentre REI3 è in esecuzione in background.",
+        "nameHint": "Il mio PC di lavoro",
+        "os": "Sistema operativo",
+        "uninstallStep1": "Fai clic con il tasto destro sull'icona del vassoio del client REI3 e scegli l'opzione 'disinstalla'.",
+        "uninstallStep2": "L'applicazione client REI3 è ora disinstallata.",
+        "updateStep1": "Scarica il nuovo file dell'applicazione:",
+        "updateStep2": "Avvia l'applicazione. Eseguirà l'aggiornamento e poi apparirà nella barra delle applicazioni del tuo sistema.",
+        "updateStep3": "Ora puoi eliminare il file dell'applicazione scaricato."
       },
       "message": {
-        "delete": "Are you sure you want to delete this entry? This cannot be undone."
+        "delete": "Sei sicuro di voler eliminare questa voce? Questa azione non può essere annullata."
       },
       "mfa": {
-        "apps": [ "Google Authenticator", "Microsoft Authenticator", "Aegis Authenticator", "...or any application that supports TOTP" ],
-        "appsExample": "Some examples:",
-        "intro": "You can increase your account security by enabling multi-factor authentication (MFA). To enable MFA, please use an authenticator app on a separate device (like a smartphone).",
-        "name": "Choose a name for your device",
-        "nameHint": "'My smartphone'",
-        "outro": "Use the QR code to add this account to your authenticator app. When you are done, close this window. You can repeat this process to enable MFA with multiple devices."
+        "apps": [ "Google Authenticator", "Microsoft Authenticator", "Aegis Autenticatore", "...o qualsiasi applicazione che supporta TOTP" ],
+        "appsExample": "Alcuni esempi:",
+        "intro": "Puoi aumentare la sicurezza del tuo account attivando l'autenticazione a più fattori (MFA). Per abilitare MFA, utilizza un'app di autenticazione su un dispositivo separato (come uno smartphone).",
+        "name": "Scegli un nome per il tuo dispositivo",
+        "nameHint": "Il mio smartphone",
+        "outro": "Usa il codice QR per aggiungere questo account alla tua app di autenticazione. Quando hai finito, chiudi questa finestra. Puoi ripetere questo processo per abilitare l'MFA con più dispositivi."
       },
-      "titleAdd": "Manage REI3 client application",
-      "titleContext": "Use",
-      "titleDateCreate": "Created",
-      "titleMfa": "Setup multi-factor authentication",
-      "titleName": "Device name"
+      "titleAdd": "Gestisci l'applicazione client REI3",
+      "titleContext": "Usa",
+      "titleDateCreate": "Creato",
+      "titleMfa": "Configura l'autenticazione a più fattori",
+      "titleName": "Nome del dispositivo"
     },
     "translation": {
-      "community": "Community translation",
-      "official": "Official",
-      "other": "Only application"
+      "community": "Traduzione della comunità",
+      "official": "Ufficiale",
+      "other": "Solo applicazione"
     },
-    "warnUnsaved": "Warnings for unsaved changes"
+    "warnUnsaved": "Avvertenze per modifiche non salvate"
   },
   "widgets": {
     "button": {
-      "groupAdd": "Add group"
+      "groupAdd": "Aggiungi gruppo"
     },
-    "flow": "Direction",
-    "groupNameNew": "New widget group",
+    "flow": "Direzione",
+    "groupNameNew": "Nuovo gruppo di widget",
     "option": {
-      "filterModule": "Application widgets",
-      "filterSystem": "System widgets",
-      "flowColumn": "top-to-bottom",
-      "flowRow": "left-to-right"
+      "filterModule": "Widget dell'applicazione",
+      "filterSystem": "Widget di sistema",
+      "flowColumn": "dall'alto verso il basso",
+      "flowRow": "da sinistra a destra"
     },
-    "placeholder": "Drag & drop widgets to add to this group",
-    "width": "Width"
+    "placeholder": "Trascina e rilascia i widget per aggiungerli a questo gruppo",
+    "width": "Larghezza"
   }
 }

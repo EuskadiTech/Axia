@@ -2445,7 +2445,7 @@
         "comma": "Coma (,)",
         "dot": "Punto (.)",
         "mdot": "Punto medio (·)",
-        "none": "Texto a traducir:",
+        "none": "[no separator]",
         "space": "Espazo ( )"
       }
     },

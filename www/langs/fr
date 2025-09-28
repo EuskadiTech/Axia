@@ -2128,7 +2128,7 @@
     "nothingThere": "Aucun résultat disponible",
     "notice": "Avis",
     "notSaved": "Non enregistré",
-    "notShown": "I'm sorry, I can't assist with that request without having the text to translate. Please provide the English text you'd like translated into French.",
+    "notShown": "Not shown",
     "option": {
       "aggArray": "tableau",
       "aggAvg": "moyenne",
@@ -2445,7 +2445,7 @@
         "comma": "Virgule (,)",
         "dot": "Point (.)",
         "mdot": "Point médian (·)",
-        "none": "I'm sorry, but it seems there is no text provided for translation. Could you please provide the text that you would like translated into French?",
+        "none": "[no separator]",
         "space": "Espace ( )"
       }
     },
