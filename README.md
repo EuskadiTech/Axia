@@ -1,4 +1,4 @@
-![r3_logo_git](https://github.com/EuskadiTech/tallarin/assets/91060542/a759e7ec-e1a0-4a4e-a426-509abc764352)
+![r3_logo_git](www/images/logo.png)
 <h1 align="center">Axia</h1>
 <p align="center"><strong>Free and open low code</strong><br />Build and host powerful applications with full control and ownership</p>
 
