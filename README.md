@@ -120,7 +120,7 @@ If you want to build Axia itself, you can fork this repo or download the source 
 1. You can now start your own Axia version. Make sure to clear all browser caches after creating/updating your own version.
 
 ## :page_with_curl: Copyright, license & trademark
-Axia<sup>©</sup> 2019-2025 Gabriel Victor Herbert
+Axia (C) 2025 EuskadiTech (TM)
 
 The Axia source code is released under the [MIT license](https://opensource.org/license/mit).
 
