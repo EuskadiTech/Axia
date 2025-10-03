@@ -309,6 +309,12 @@ func (prg *program) Start(svc service.Service) error {
 // execute the application logic
 func (prg *program) execute(svc service.Service) {
 
+	// create required data directories
+	if err := createRequiredDirectories(); err != nil {
+		prg.executeAborted(svc, fmt.Errorf("failed to create required directories, %v", err))
+		return
+	}
+
 	// start embedded database
 	if config.File.Db.Embedded {
 		prg.logger.Infof("start embedded database at '%s'", config.File.Paths.EmbeddedDbData)
@@ -583,6 +589,31 @@ func initCachesOptional(ctx context.Context) error {
 		return tx.Rollback(ctx)
 	}
 	return tx.Commit(ctx)
+}
+
+// createRequiredDirectories creates all required data directories recursively if they don't exist
+func createRequiredDirectories() error {
+	directories := []string{
+		config.File.Paths.Certificates,
+		config.File.Paths.Files,
+		config.File.Paths.Temp,
+		config.File.Paths.Transfer,
+	}
+	
+	// Add embedded database data path only if embedded DB is enabled
+	if config.File.Db.Embedded {
+		directories = append(directories, config.File.Paths.EmbeddedDbData)
+	}
+	
+	for _, dir := range directories {
+		if dir == "" {
+			continue
+		}
+		if err := tools.PathCreateIfNotExists(dir, 0700); err != nil {
+			return fmt.Errorf("failed to create directory '%s': %v", dir, err)
+		}
+	}
+	return nil
 }
 
 // properly shuts down application, if execution is aborted prematurely
