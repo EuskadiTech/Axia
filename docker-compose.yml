@@ -30,13 +30,8 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./config_template.json:/app/config.json:ro
-    environment:
-      - REI3_DB_HOST=postgres
-      - REI3_DB_PORT=5432
-      - REI3_DB_NAME=rei3
-      - REI3_DB_USER=rei3
-      - REI3_DB_PASS=rei3
+      - ./config_docker.json:/app/config.json:ro
+      - tallarin_data:/DATA
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:80/"]
       interval: 30s
@@ -46,3 +41,4 @@ services:
 
 volumes:
   postgres_data:
+  tallarin_data:

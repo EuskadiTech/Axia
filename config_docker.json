@@ -1,0 +1,36 @@
+{
+	"cluster": {
+		"nodeId": ""
+	},
+	"db": {
+		"embedded": false,
+		"host": "postgres",
+		"port": 5432,
+		"name": "rei3",
+		"user": "rei3",
+		"pass": "rei3",
+		"ssl": false,
+		"sslSkipVerify": false,
+		"connsMax": 0,
+		"connsMin": 0
+	},
+	"mirror": false,
+	"paths": {
+		"certificates": "/DATA/certificates/",
+		"embeddedDbBin": "pgsql16/bin/",
+		"embeddedDbData": "/DATA/database/",
+		"files": "/DATA/files/",
+		"fileExport": "",
+		"fileImport": "",
+		"temp": "/DATA/temp/",
+		"transfer": "/DATA/transfer/"
+	},
+	"portable": false,
+	"web": {
+		"cert": "cert.crt",
+		"key": "cert.key",
+		"listen": "0.0.0.0",
+		"port": 80,
+		"tlsMinVersion":"1.2"
+	}
+}

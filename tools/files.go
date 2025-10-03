@@ -166,5 +166,5 @@ func PathCreateIfNotExists(path string, perm fs.FileMode) error {
 	if !os.IsNotExist(err) {
 		return err
 	}
-	return os.Mkdir(path, perm)
+	return os.MkdirAll(path, perm)
 }

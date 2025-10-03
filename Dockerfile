@@ -36,6 +36,7 @@ COPY --from=builder /app/r3 /app/
 COPY --from=builder /app/config_template.json /app/
 COPY --from=builder /app/config_dedicated.json /app/
 COPY --from=builder /app/config_portable.json /app/
+COPY --from=builder /app/config_docker.json /app/
 
 # Set permissions
 RUN chmod +x /app/r3
