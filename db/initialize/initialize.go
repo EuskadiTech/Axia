@@ -104,7 +104,7 @@ func renewDbUserPw_tx(ctx context.Context, tx pgx.Tx) error {
 func initInstanceValues_tx(ctx context.Context, tx pgx.Tx) error {
 
 	appName, appNameShort := config.GetAppName()
-	dbVersionCut := config.GetAppVersion().Cut
+	dbVersionCut := "3.10"
 
 	_, err := tx.Exec(ctx, fmt.Sprintf(`
 		-- default login template
