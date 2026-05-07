@@ -612,7 +612,7 @@ export default {
 				name:s.relation.name,
 				category:0,
 				label:{ show:true },
-				r3:{ relationId:null },
+				axia4:{ relationId:null },
 				symbolSize:50,
 				value:''
 			}];
@@ -641,7 +641,7 @@ export default {
 					name:external ? `${s.moduleIdMap[rTarget.moduleId].name}.${rTarget.name}` : rTarget.name,
 					category:category,
 					label:{ show:true },
-					r3:{ relationId:rTarget.id },
+					axia4:{ relationId:rTarget.id },
 					symbolSize:30,
 					value:relIn ? a.name : `${rSource.name}: ${a.name}`
 				});
@@ -750,8 +750,8 @@ export default {
 			}
 		},
 		graphClicked(ev) {
-			if(typeof ev.data.r3.relationId !== 'undefined' && ev.data.r3.relationId !== null)
-				this.$router.push('/builder/relation/'+ev.data.r3.relationId);
+			if(typeof ev.data.axia4.relationId !== 'undefined' && ev.data.axia4.relationId !== null)
+				this.$router.push('/builder/relation/'+ev.data.axia4.relationId);
 		},
 		previewReload() {
 			this.previewOffset = 0;

@@ -1,9 +1,9 @@
 package relation
 
 import (
+	"axia4/schema"
 	"context"
 	"fmt"
-	"r3/schema"
 	"strings"
 
 	"github.com/gofrs/uuid"

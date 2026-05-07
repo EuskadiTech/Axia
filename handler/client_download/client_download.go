@@ -1,13 +1,13 @@
 package client_download
 
 import (
+	"axia4/bruteforce"
+	"axia4/cache"
+	"axia4/config"
+	"axia4/handler"
+	"axia4/login/login_auth"
 	"context"
 	"net/http"
-	"r3/bruteforce"
-	"r3/cache"
-	"r3/config"
-	"r3/handler"
-	"r3/login/login_auth"
 	"time"
 )
 
@@ -48,16 +48,16 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 	switch requestedOs {
 	case "amd64_windows":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.exe")
+		w.Header().Set("Content-Disposition", "attachment; filename=axia4_client.exe")
 		_, err = w.Write(cache.Client_amd64_win)
 	case "amd64_linux":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.bin")
+		w.Header().Set("Content-Disposition", "attachment; filename=axia4_client.bin")
 		_, err = w.Write(cache.Client_amd64_linux)
 	case "arm64_linux":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.bin")
+		w.Header().Set("Content-Disposition", "attachment; filename=axia4_client.bin")
 		_, err = w.Write(cache.Client_arm64_linux)
 	case "amd64_mac":
-		w.Header().Set("Content-Disposition", "attachment; filename=r3_client.dmg")
+		w.Header().Set("Content-Disposition", "attachment; filename=axia4_client.dmg")
 		_, err = w.Write(cache.Client_amd64_mac)
 	default:
 		handler.AbortRequest(w, handler.ContextClientDownload, err, handler.ErrGeneral)

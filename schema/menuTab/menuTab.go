@@ -1,12 +1,12 @@
 package menuTab
 
 import (
+	"axia4/schema"
+	"axia4/schema/caption"
+	"axia4/schema/collection/consumer"
+	"axia4/types"
 	"context"
 	"fmt"
-	"r3/schema"
-	"r3/schema/caption"
-	"r3/schema/collection/consumer"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

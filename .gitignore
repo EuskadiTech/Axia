@@ -1,10 +1,10 @@
-r3_arm64_linux.bin
-r3_amd64_linux.bin
-r3_amd64_win.exe
+axia4_arm64_linux.bin
+axia4_amd64_linux.bin
+axia4_amd64_win.exe
 
 # Distribution files and executables
-r3
-r3.exe
+axia4
+axia4.exe
 *.bin
 *.exe
 *.dmg
@@ -12,9 +12,9 @@ cache/clients/
 !cache/.gitkeep
 
 # Release build artifacts
-r3_linux_amd64
-r3_linux_arm64
-r3_windows_amd64.exe
+axia4_linux_amd64
+axia4_linux_arm64
+axia4_windows_amd64.exe
 *.tar.gz
 *.zip
 release_package/

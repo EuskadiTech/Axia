@@ -1,13 +1,13 @@
 package client_download
 
 import (
+	"axia4/bruteforce"
+	"axia4/config"
+	"axia4/handler"
+	"axia4/login/login_auth"
 	"context"
 	"encoding/json"
 	"net/http"
-	"r3/bruteforce"
-	"r3/config"
-	"r3/handler"
-	"r3/login/login_auth"
 	"time"
 
 	"github.com/gofrs/uuid"
@@ -73,7 +73,7 @@ func HandlerConfig(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Content-Disposition", "attachment; filename=r3_client.conf")
+	w.Header().Set("Content-Disposition", "attachment; filename=axia4_client.conf")
 
 	type instance struct {
 		DeviceName string `json:"deviceName"`

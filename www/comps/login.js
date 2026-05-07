@@ -326,7 +326,7 @@ export default {
 			// check for Open ID authentication redirect
 			const params = new URLSearchParams(window.location.search);
 			if(params.has('state') && params.has('code')) {
-				// attempt Open ID authentication against r3 backend, if local state matches
+				// attempt Open ID authentication against axia4 backend, if local state matches
 				if(this.openIdAuthDetails.state === atob(params.get('state'))) {
 					this.authenticateByOpenId(
 						this.openIdAuthDetails.oauthClientId,

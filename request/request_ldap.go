@@ -1,11 +1,11 @@
 package request
 
 import (
+	"axia4/ldap"
+	"axia4/ldap/ldap_check"
+	"axia4/types"
 	"context"
 	"encoding/json"
-	"r3/ldap"
-	"r3/ldap/ldap_check"
-	"r3/types"
 
 	"github.com/jackc/pgx/v5"
 )

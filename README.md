@@ -1,4 +1,4 @@
-<h1 align="center"><img align="center" width="128" src="www/images/icon_fav512.png" alt="Logo Axia4"><br> Axia</h1>
+<h1 align="center"><img align="center" width="128" src="www/images/icon_fav512.png" alt="Logo Axia4"><br> Axia4</h1>
 <p align="center"><strong>Free and open low code platform</strong><br />Build and host powerful applications with full control</p>
 
 <p align="center">
@@ -7,9 +7,9 @@
 	<a href="https://github.com/EuskadiTech/tallarin/blob/main/LICENSE"><img src="https://img.shields.io/github/license/EuskadiTech/tallarin" alt="License" /></a>
 </p>
 <p align="center">
-	<a href="https://tech.eus/t4/downloads.php">Downloads</a> · 
-	<a href="https://tech.eus/t4/docs.php">Documentation</a> · 
-	<a href="https://tech.eus/t4/apps.php">Applications</a>
+	<a href="https://axia4.net/downloads">Downloads</a> · 
+	<a href="https://axia4.net/docs">Documentation</a> · 
+	<a href="https://axia4.net/apps">Applications</a>
 </p>
 
 **Axia** is a self-hosted low code platform for building multi-user applications. Break free from cloud-only SaaS and walled gardens - create, use, share, or sell your applications with complete ownership.
@@ -48,10 +48,10 @@
 
 ### Installation
 
-**Linux** ([x64](https://tech.eus/t4/downloads.php) / [arm64](https://tech.eus/t4/downloads.php))
+**Linux** ([x64](https://axia4.net/downloads) / [arm64](https://axia4.net/downloads))
 ```bash
 # 1. Extract and make executable
-chmod u+x r3
+chmod u+x axia4
 
 # 2. Configure database
 cp config_template.json config.json
@@ -61,8 +61,8 @@ cp config_template.json config.json
 sudo apt install imagemagick ghostscript postgresql-client
 
 # 4. Register and start
-sudo ./r3 -install
-sudo systemctl start rei3
+sudo ./axia4 -install
+sudo systemctl start axia4
 ```
 
 **Windows**
@@ -70,21 +70,21 @@ sudo systemctl start rei3
 - Optionally install [Ghostscript](https://www.ghostscript.com/) for PDF thumbnails
 
 **Docker**
-- Docker Compose files available: [x64](https://rei3.de/docker_x64) / [arm64](https://rei3.de/docker_arm64)
+- Docker Compose files available: [x64](https://axia4.net/docker_x64) / [arm64](https://axia4.net/docker_arm64)
 - **Performance**: Docker instances automatically skip fsync operations for better performance with container storage drivers
 - To manually control this behavior, set the `REI3_SKIP_FSYNC` environment variable to `true` or `false`
 
 ### First Login
 Access Axia at `https://localhost:6129` (default credentials: `admin` / `admin`)
 
-**Important**: If running behind a proxy, disable client timeouts for websockets. See [proxy documentation](https://rei3.de/en/docs/admin#proxies).
+**Important**: If running behind a proxy, disable client timeouts for websockets. See [proxy documentation](https://axia4.net/docs/admin#proxies).
 
-Full documentation: [tech.eus/t4/docs.php](https://tech.eus/t4/docs.php)
+Full documentation: [axia4.net/docs](https://axia4.net/docs)
 
 ## Resources
 
-- **Documentation**: [tech.eus/t4/docs.php](https://tech.eus/t4/docs.php) - [Admin Guide](https://rei3.de/en/docs/admin) - [Builder Guide](https://rei3.de/en/docs/builder)
-- **Community Forum**: [community.rei3.de](https://community.rei3.de)
+- **Documentation**: [axia4.net/docs](https://axia4.net/docs) - [Admin Guide](https://axia4.net/docs/admin) - [Builder Guide](https://axia4.net/docs/builder)
+- **Community Forum**: [community.axia4.net](https://community.axia4.net)
 - **Video Tutorials**: [YouTube Channel](https://www.youtube.com/channel/UCKb1YPyUV-O4GxcCdHc4Csw)
 
 ## Contributing
@@ -125,7 +125,7 @@ Copyright (c) 2025 EuskadiTech (TM)
 
 Released under the [MIT License](https://opensource.org/license/mit).
 
-Axia is based on r3_team/r3. For trademark issues, open an issue or email: soporte (at) tech (dot) eus.
+Axia is based on axia4_team/axia4. For trademark issues, open an issue or email: soporte (at) tech (dot) eus.
 
 The original license permits modifications & commercial versions of the program.
 ---

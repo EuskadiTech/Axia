@@ -129,7 +129,7 @@ export default {
 		// simple
 		form:           s => typeof s.$route.params.formId === 'undefined' ? false : s.formIdMap[s.$route.params.formId],
 		isMultipleRepos:s => s.reposFeedback.length > 1,
-		isRepoDefault:  s => s.feedbackUrl === 'https://store.rei3.de',
+		isRepoDefault:  s => s.feedbackUrl === 'https://store.axia4.net',
 		module:         s => !s.form ? false : s.moduleIdMap[s.form.moduleId],
 		
 		// stores

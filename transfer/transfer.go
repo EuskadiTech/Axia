@@ -5,6 +5,12 @@ package transfer
 
 import (
 	"archive/zip"
+	"axia4/cache"
+	"axia4/config"
+	"axia4/config/module_meta"
+	"axia4/handler"
+	"axia4/tools"
+	"axia4/types"
 	"context"
 	"crypto"
 	"crypto/rsa"
@@ -18,12 +24,6 @@ import (
 	"io"
 	"os"
 	"path/filepath"
-	"r3/cache"
-	"r3/config"
-	"r3/config/module_meta"
-	"r3/handler"
-	"r3/tools"
-	"r3/types"
 	"sync"
 
 	"github.com/gofrs/uuid"

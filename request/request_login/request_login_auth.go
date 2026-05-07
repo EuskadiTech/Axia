@@ -1,10 +1,10 @@
 package request_login
 
 import (
+	"axia4/login/login_auth"
+	"axia4/types"
 	"context"
 	"encoding/json"
-	"r3/login/login_auth"
-	"r3/types"
 
 	"github.com/jackc/pgx/v5/pgtype"
 )

@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "Másodpercben",
 			"dbTimeoutIcs": "Adatbázis időtúllépés: Naptárfájl letöltés (ICS)",
 			"dialog": {
-				"builderMode": "A Builder a műveletek létrehozásához vagy módosításához szolgál.<br /><br />Az alkalmazások módosítása adatveszteséghez vezethet, és soha ne legyen <b>TERMELÉSIBEN</b> használva.<br /><br />A Builder biztonságos használatához használjon egy külön Axia4 példányt; a kész és tesztelt alkalmazásokat később áthelyezheti a termelő rendszerbe.<br /><br />További információért olvassa el a <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">Builder dokumentációját</a>.",
+				"builderMode": "A Builder a műveletek létrehozásához vagy módosításához szolgál.<br /><br />Az alkalmazások módosítása adatveszteséghez vezethet, és soha ne legyen <b>TERMELÉSIBEN</b> használva.<br /><br />A Builder biztonságos használatához használjon egy külön Axia4 példányt; a kész és tesztelt alkalmazásokat később áthelyezheti a termelő rendszerbe.<br /><br />További információért olvassa el a <a href=\"https://axia4.net/docs/builder/\" target=\"_blank\">Builder dokumentációját</a>.",
 				"pleaseRead": "Kérjük, olvassa el a mentés előtt",
 				"productionMode": "A karbantartási mód az alkalmazások frissítéséhez, telepítéséhez vagy eltávolításához szolgál.<br /><br />A karbantartási mód aktiválásakor <b>MINDEN nem adminisztrátor felhasználót kijelentkeztet</b>."
 			},
@@ -197,7 +197,7 @@
 			},
 			"extCommunity": "Axia4 Közösségi Fórum",
 			"extLicense": "Axia4 Professional",
-			"intro": "A Axia4 teljes mértékben <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">Open Source</a> és ingyenesen használható.<br /><br />Az Enterprise funkciókhoz vagy támogatáshoz elérhető a <b>Axia4 Professional</b>. Árak oly módon alakítva, hogy minden méretű vállalat számára megfizethető legyen, gyakran jóval olcsóbb, mint a piacon elérhető hasonló Low-Code termékek.<br /><br />A Axia4 Professional ügyfelek nem csak a folyamatos fejlesztést támogatják, hanem aktiválhatják az összes funkciót és professzionális támogatást kapnak a Axia4 fő fejlesztőjétől, a Lean Softworks-től.",
+			"intro": "A Axia4 teljes mértékben <a href=\"https://github.com/axia4/hyper\" target=\"_blank\">Open Source</a> és ingyenesen használható.<br /><br />Az Enterprise funkciókhoz vagy támogatáshoz elérhető a <b>Axia4 Professional</b>. Árak oly módon alakítva, hogy minden méretű vállalat számára megfizethető legyen, gyakran jóval olcsóbb, mint a piacon elérhető hasonló Low-Code termékek.<br /><br />A Axia4 Professional ügyfelek nem csak a folyamatos fejlesztést támogatják, hanem aktiválhatják az összes funkciót és professzionális támogatást kapnak a Axia4 fő fejlesztőjétől, a Lean Softworks-től.",
 			"introMore": "További információk:",
 			"licenseExpired": "A licenc lejárt",
 			"licenseId": "Licencazonosító",
@@ -2069,7 +2069,7 @@
 			"moreInfo": "More information"
 		},
 		"info": {
-			"admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a> application) to manage application releases and receive internal feedback.",
+			"admin": "<b>Info for admins:</b> The feedback function can be disabled in the admin panel. If enabled, feedback is sent to the currently chosen repository. Organizations can run their own repository (with the <a href=\"https://store.axia4.net/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a> application) to manage application releases and receive internal feedback.",
 			"data": [
 				"Feedback category (general, bug/issue, suggestion, praise)",
 				"Feedback text",
@@ -2081,7 +2081,7 @@
 			],
 			"personal": "No personal information is being sent. If you want to receive a response, you can add contact details to your feedback text.",
 			"repoUrl": "Feedback will be sent to",
-			"repoUrlDefault": "<i>(this system is operated by the <a href=\"https://rei3.de/\" target=\"_blank\">Axia4</a> developers)</i>",
+			"repoUrlDefault": "<i>(this system is operated by the <a href=\"https://axia4.net/\" target=\"_blank\">Axia4</a> developers)</i>",
 			"what": "What is being sent?"
 		},
 		"moduleRelated": "Igényelt visszajelzés az aktuális alkalmazáshoz? ({NAME})",
@@ -2321,7 +2321,7 @@
 		"api": "API",
 		"apis": "API-k",
 		"appName": "Axia4",
-		"appWebsite": "https://rei3.de",
+		"appWebsite": "https://axia4.net",
 		"application": "Alkalmazás",
 		"applications": "Alkalmazások",
 		"arguments": "Arguments",
@@ -2699,7 +2699,7 @@
 			"installBundle": "Alapvállalat telepítése"
 		},
 		"newVersion": "Frissítési értesítés",
-		"newVersionText": "Elérhető a Axia4 új verziója.<br /><br /><a href=\"https://rei3.de/de/downloads\" target=\"_blank\">Axia4 v{VERSION} letöltése</a>",
+		"newVersionText": "Elérhető a Axia4 új verziója.<br /><br /><a href=\"https://axia4.net/downloads\" target=\"_blank\">Axia4 v{VERSION} letöltése</a>",
 		"noAccess": "Még nincs hozzáférés beállítva.<br />Kérjük, vegye fel a kapcsolatot rendszergazdájával.",
 		"noAccessAdmin": "To get access, assign roles to your user.",
 		"noAccessTitle": "Nincs hozzáférés az alkalmazásokhoz",
@@ -2707,10 +2707,10 @@
 			"installBundle": "Alapvállalat",
 			"installBundleDesc": "Telepítse az alapvállalat előre kiválasztott alkalmazásainak gyűjteményét szervezetek számára. Az „Alapvállalat” gyűjtemény tartalmazza a következőket:<ul><li>Hiányzáskezelés</li><li>Időkövetés</li><li>Projekt- és feladatkezelés</li><li>Levélkéréskezelés</li><li>Jelszókezelő</li><li>IT-eszközkezelés</li></ul>A telepítés után az egyes alkalmazások első beállítását segítik az alkalmazások saját súgó oldalai.",
 			"installFile": "Fájlból",
-			"installFileDesc": "Telepítse a helyi Axia4-fájlokból. Offline rendszerekhez vagy saját alkalmazásokhoz.<br /><br />A nyilvános Axia4-alkalmazások fájljait hivatalos <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Repository</a> oldalról lehet letölteni.",
+			"installFileDesc": "Telepítse a helyi Axia4-fájlokból. Offline rendszerekhez vagy saját alkalmazásokhoz.<br /><br />A nyilvános Axia4-alkalmazások fájljait hivatalos <a href=\"https://axia4.net/downloads\" target=\"_blank\">Repository</a> oldalról lehet letölteni.",
 			"installRepo": "Repositoryból",
 			"installRepoDesc": "<b>Internet-hozzáférés szükséges</b><br /><br />Telepítse az alkalmazásokat a hivatalos Axia4 Repositoryból. A Repository friss verziókat kínál a nyilvános Axia4-alkalmazásokhoz.<br /><br />Minden alkalmazás ellenőrzött és digitálisan aláírt.",
-			"intro": "Üdvözöljük a Axia4-ban<br /><br />Jelenleg nincsenek telepített alkalmazások. A Axia4 használatához válasszon az alábbi telepítési lehetőségek közül.<br /><br />Or visit <a href=\"https://rei3.de/en/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
+			"intro": "Üdvözöljük a Axia4-ban<br /><br />Jelenleg nincsenek telepített alkalmazások. A Axia4 használatához válasszon az alábbi telepítési lehetőségek közül.<br /><br />Or visit <a href=\"https://axia4.net/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
 			"title": "Beállítás"
 		}
 	},

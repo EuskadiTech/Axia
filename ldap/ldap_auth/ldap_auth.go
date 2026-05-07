@@ -1,10 +1,10 @@
 package ldap_auth
 
 import (
+	"axia4/ldap/ldap_conn"
+	"axia4/log"
 	"errors"
 	"fmt"
-	"r3/ldap/ldap_conn"
-	"r3/log"
 
 	goldap "github.com/go-ldap/ldap/v3"
 )

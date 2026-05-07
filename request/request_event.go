@@ -1,11 +1,11 @@
 package request
 
 import (
+	"axia4/cluster"
+	"axia4/schema"
 	"context"
 	"encoding/json"
 	"fmt"
-	"r3/cluster"
-	"r3/schema"
 	"strings"
 
 	"github.com/gofrs/uuid"
@@ -63,7 +63,7 @@ func eventFileRequested_tx(ctx context.Context, tx pgx.Tx, reqJson json.RawMessa
 
 	// compatibility fix
 	// we currently allow many special characters in file names, some are invalid in general (? & @), others are valid but must be escaped in URL (like #)
-	// file names are not escaped by r3 client in the download URL, this will cause download to fail
+	// file names are not escaped by axia4 client in the download URL, this will cause download to fail
 	name = strings.NewReplacer(
 		"#", "",
 		"=", "",

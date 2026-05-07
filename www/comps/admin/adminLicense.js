@@ -22,13 +22,8 @@ export default {
 				<h2>{{ capApp.introMore }}</h2>
 				<div class="row gap">
 					<my-button image="globe.png"
-						@trigger="open('https://rei3.de/en/services')"
+						@trigger="open('https://axia4.net/services')"
 						:caption="capApp.extLicense"
-						:large="true"
-					/>
-					<my-button image="globe.png"
-						@trigger="open('https://community.rei3.de/')"
-						:caption="capApp.extCommunity"
 						:large="true"
 					/>
 				</div>

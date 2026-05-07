@@ -1,6 +1,13 @@
 package transfer_import
 
 import (
+	"axia4/config"
+	"axia4/db"
+	"axia4/handler"
+	"axia4/log"
+	"axia4/login/login_auth"
+	"axia4/tools"
+	"axia4/transfer"
 	"bytes"
 	"context"
 	"encoding/json"
@@ -8,13 +15,6 @@ import (
 	"io"
 	"net/http"
 	"os"
-	"r3/config"
-	"r3/db"
-	"r3/handler"
-	"r3/log"
-	"r3/login/login_auth"
-	"r3/tools"
-	"r3/transfer"
 )
 
 func Handler(res http.ResponseWriter, req *http.Request) {

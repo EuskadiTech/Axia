@@ -1,12 +1,12 @@
 package db
 
 import (
+	"axia4/tools"
+	"axia4/types"
 	"context"
 	"crypto/tls"
 	"fmt"
 	"net/url"
-	"r3/tools"
-	"r3/types"
 	"strconv"
 	"time"
 
@@ -92,7 +92,7 @@ func Open(config types.FileTypeDb) error {
 // set transaction config parameters
 // these are used by system functions, such as instance.get_login_id()
 func SetSessionConfig_tx(ctx context.Context, tx pgx.Tx, loginId int64) error {
-	_, err := tx.Exec(ctx, `SELECT SET_CONFIG('r3.login_id',$1,TRUE)`, strconv.FormatInt(loginId, 10))
+	_, err := tx.Exec(ctx, `SELECT SET_CONFIG('axia4.login_id',$1,TRUE)`, strconv.FormatInt(loginId, 10))
 	return err
 }
 

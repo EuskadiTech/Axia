@@ -1,17 +1,17 @@
 package form
 
 import (
+	"axia4/schema"
+	"axia4/schema/article"
+	"axia4/schema/caption"
+	"axia4/schema/compatible"
+	"axia4/schema/field"
+	"axia4/schema/query"
+	"axia4/types"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"r3/schema"
-	"r3/schema/article"
-	"r3/schema/caption"
-	"r3/schema/compatible"
-	"r3/schema/field"
-	"r3/schema/query"
-	"r3/types"
 	"strings"
 
 	"github.com/gofrs/uuid"

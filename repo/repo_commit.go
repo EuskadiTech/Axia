@@ -1,6 +1,12 @@
 package repo
 
 import (
+	"axia4/cache"
+	"axia4/config"
+	"axia4/handler"
+	"axia4/tools"
+	"axia4/transfer"
+	"axia4/types"
 	"bytes"
 	"context"
 	"encoding/json"
@@ -10,12 +16,6 @@ import (
 	"net/http"
 	"net/url"
 	"os"
-	"r3/cache"
-	"r3/config"
-	"r3/handler"
-	"r3/tools"
-	"r3/transfer"
-	"r3/types"
 	"strings"
 
 	"github.com/gofrs/uuid"
@@ -238,7 +238,7 @@ func repoCommitUploadFile(baseUrl string, skipVerify bool, token, filePath, file
 	if err != nil {
 		return uuid.Nil, err
 	}
-	httpReq.Header.Set("User-Agent", "r3-application")
+	httpReq.Header.Set("User-Agent", "axia4-application")
 	httpReq.Header.Add("Content-Type", writer.FormDataContentType())
 
 	httpClient, err := config.GetHttpClient(skipVerify, 10)

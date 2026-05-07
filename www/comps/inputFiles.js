@@ -523,7 +523,7 @@ const MyInputFiles = {
 				if(['avi','flv','m4v','mp4','mov','mpg','mpeg','mkv','ogv','webm','wmv'].includes(ext))
 					return 'images/fileVideo.png';
 				
-				if(ext === 'rei3')
+				if(ext === 'rei3' || ext === 'axia4')
 					return 'images/fileRei3.png';
 			}
 			return 'images/noPic.png';

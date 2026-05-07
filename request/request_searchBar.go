@@ -1,10 +1,10 @@
 package request
 
 import (
+	"axia4/schema/searchBar"
+	"axia4/types"
 	"context"
 	"encoding/json"
-	"r3/schema/searchBar"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

@@ -1,15 +1,15 @@
 package data
 
 import (
+	"axia4/cache"
+	"axia4/data/data_enc"
+	"axia4/data/data_sql"
+	"axia4/handler"
+	"axia4/schema"
+	"axia4/types"
 	"context"
 	"errors"
 	"fmt"
-	"r3/cache"
-	"r3/data/data_enc"
-	"r3/data/data_sql"
-	"r3/handler"
-	"r3/schema"
-	"r3/types"
 	"regexp"
 	"slices"
 	"strconv"
@@ -26,7 +26,7 @@ const (
 )
 
 var (
-	regexRelId = regexp.MustCompile(`^\_r(\d+)id`) // finds: _r3id
+	regexRelId = regexp.MustCompile(`^\_r(\d+)id`) // finds: _axia4id
 )
 
 // get data
@@ -862,7 +862,7 @@ func getTupleIdCode(relationIndex int, nestingLevel int) string {
 
 // an attribute is referenced by the relation code + the attribute name
 // due to the relation code, this will always uniquely identify an attribute from a specific index
-// example: _r3.surname maps to person.surname from index 3
+// example: _axia4.surname maps to person.surname from index 3
 func getAttributeCode(relationCode string, attributeName string) string {
 	return fmt.Sprintf(`"%s"."%s"`, relationCode, attributeName)
 }

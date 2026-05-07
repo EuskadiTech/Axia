@@ -1,8 +1,8 @@
 package request
 
 import (
+	"axia4/bruteforce"
 	"encoding/json"
-	"r3/bruteforce"
 )
 
 func BruteforceGet(reqJson json.RawMessage) (any, error) {

@@ -1,17 +1,17 @@
 package doc_field
 
 import (
+	"axia4/schema"
+	"axia4/schema/caption"
+	"axia4/schema/doc_border"
+	"axia4/schema/doc_column"
+	"axia4/schema/doc_set"
+	"axia4/schema/query"
+	"axia4/types"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"r3/schema"
-	"r3/schema/caption"
-	"r3/schema/doc_border"
-	"r3/schema/doc_column"
-	"r3/schema/doc_set"
-	"r3/schema/query"
-	"r3/types"
 	"strings"
 
 	"github.com/gofrs/uuid"

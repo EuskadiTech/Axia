@@ -1,16 +1,16 @@
 package data_download_thumb
 
 import (
+	"axia4/bruteforce"
+	"axia4/config"
+	"axia4/data"
+	"axia4/data/data_image"
+	"axia4/handler"
+	"axia4/login/login_auth"
 	"context"
 	"net/http"
 	"os"
 	"path/filepath"
-	"r3/bruteforce"
-	"r3/config"
-	"r3/data"
-	"r3/data/data_image"
-	"r3/handler"
-	"r3/login/login_auth"
 	"strings"
 	"time"
 )

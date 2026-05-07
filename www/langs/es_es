@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "En segundos",
 			"dbTimeoutIcs": "Tiempo de espera de la base de datos: Descargas de calendario (ICS)",
 			"dialog": {
-				"builderMode": "El Constructor se utiliza para crear o cambiar aplicaciones.<br /><br />Cambiar aplicaciones puede resultar en pérdida de datos y <b>NUNCA</b> debe hacerse en entornos de producción.<br /><br />Para usar el Constructor de manera segura, utiliza una instancia dedicada de Axia4; las aplicaciones listas y probadas pueden transferirse a un sistema de producción.<br /><br />Consulta la <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">documentación del Constructor</a> para obtener más información.",
+				"builderMode": "El Constructor se utiliza para crear o cambiar aplicaciones.<br /><br />Cambiar aplicaciones puede resultar en pérdida de datos y <b>NUNCA</b> debe hacerse en entornos de producción.<br /><br />Para usar el Constructor de manera segura, utiliza una instancia dedicada de Axia4; las aplicaciones listas y probadas pueden transferirse a un sistema de producción.<br /><br />Consulta la <a href=\"https://axia4.net/docs/builder/\" target=\"_blank\">documentación del Constructor</a> para obtener más información.",
 				"pleaseRead": "Por favor, lee antes de guardar",
 				"productionMode": "El modo de mantenimiento se utiliza para actualizar, instalar o eliminar aplicaciones del sistema.<br /><br />Cambiar al modo de mantenimiento <b>cerrará la sesión de todos los usuarios sin permisos de administrador</b>."
 			},
@@ -197,7 +197,7 @@
 			},
 			"extCommunity": "Foro de la comunidad Axia4",
 			"extLicense": "Axia4 Professional",
-			"intro": "Axia4 es completamente <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">código abierto</a> y se puede usar de forma gratuita.<br /><br />Para aquellos que necesitan características empresariales o soporte, existe <b>Axia4 Professional</b>. Está diseñado para ser asequible para organizaciones de cualquier tamaño, a menudo costando mucho menos que otras ofertas de bajo código comparables.<br /><br />Mientras apoyan el desarrollo continuo, los clientes de Axia4 Professional también pueden activar la gama completa de características y obtener soporte de Lean Softworks, el desarrollador principal de Axia4.",
+			"intro": "Axia4 es completamente <a href=\"https://github.com/axia4/hyper\" target=\"_blank\">código abierto</a> y se puede usar de forma gratuita.<br /><br />Para aquellos que necesitan características empresariales o soporte, existe <b>Axia4 Professional</b>. Está diseñado para ser asequible para organizaciones de cualquier tamaño, a menudo costando mucho menos que otras ofertas de bajo código comparables.<br /><br />Mientras apoyan el desarrollo continuo, los clientes de Axia4 Professional también pueden activar la gama completa de características y obtener soporte de Lean Softworks, el desarrollador principal de Axia4.",
 			"introMore": "Más información:",
 			"licenseExpired": "La licencia ha expirado",
 			"licenseId": "ID de la licencia",
@@ -2069,7 +2069,7 @@
 			"moreInfo": "Más información"
 		},
 		"info": {
-			"admin": "<b>Información para administradores:</b> La función de comentarios puede deshabilitarse en el panel de administración. Si está habilitada, los comentarios se envían al repositorio actualmente elegido. Las organizaciones pueden ejecutar su propio repositorio (con la aplicación <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a>) para gestionar versiones de aplicaciones y recibir comentarios internos.",
+			"admin": "<b>Información para administradores:</b> La función de comentarios puede deshabilitarse en el panel de administración. Si está habilitada, los comentarios se envían al repositorio actualmente elegido. Las organizaciones pueden ejecutar su propio repositorio (con la aplicación <a href=\"https://store.axia4.net/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a>) para gestionar versiones de aplicaciones y recibir comentarios internos.",
 			"data": [
 				"Categoría de comentario (general, error/problema, sugerencia, elogio)",
 				"Texto del comentario",
@@ -2081,7 +2081,7 @@
 			],
 			"personal": "No se envía información personal. Si desea recibir una respuesta, puede añadir detalles de contacto en el texto de su comentario.",
 			"repoUrl": "Los comentarios se enviarán a",
-			"repoUrlDefault": "<i>(este sistema es operado por los desarrolladores de <a href=\"https://rei3.de/\" target=\"_blank\">Axia4</a>)</i>",
+			"repoUrlDefault": "<i>(este sistema es operado por los desarrolladores de <a href=\"https://axia4.net/\" target=\"_blank\">Axia4</a>)</i>",
 			"what": "¿Qué se está enviando?"
 		},
 		"moduleRelated": "¿Es este comentario para la aplicación abierta? ({NAME})",
@@ -2321,7 +2321,7 @@
 		"api": "API",
 		"apis": "APIs",
 		"appName": "REI4",
-		"appWebsite": "https://rei3.de",
+		"appWebsite": "https://axia4.net",
 		"application": "Aplicación",
 		"applications": "Aplicaciones",
 		"arguments": "Argumentos",
@@ -2699,7 +2699,7 @@
 			"installBundle": "Instalar Core Company"
 		},
 		"newVersion": "Notificación de actualización",
-		"newVersionText": "Hay una nueva versión de Axia4 disponible.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">Descargar Axia4 v{VERSION}</a>",
+		"newVersionText": "Hay una nueva versión de Axia4 disponible.<br /><br /><a href=\"https://axia4.net/downloads\" target=\"_blank\">Descargar Axia4 v{VERSION}</a>",
 		"noAccess": "Aún no se ha concedido acceso.<br />Por favor, contacta a tu administrador del sistema.",
 		"noAccessAdmin": "Para obtener acceso, asigna roles a tu usuario.",
 		"noAccessTitle": "Sin acceso a aplicaciones",
@@ -2707,10 +2707,10 @@
 			"installBundle": "Core Company",
 			"installBundleDesc": "Instala un conjunto preempaquetado de aplicaciones básicas, útiles para cualquier organización. El conjunto 'Core Company' incluye:<ul><li>Gestión de ausencias</li><li>Seguimiento de tiempo</li><li>Gestión de proyectos y tareas</li><li>Manejo de solicitudes</li><li>Un gestor de contraseñas</li><li>Gestión de activos de TI</li></ul>Después de la instalación, consulta las páginas de ayuda de cada aplicación individual para obtener más información sobre la configuración inicial de cada una.",
 			"installFile": "Desde archivo",
-			"installFileDesc": "Instala aplicaciones desde archivos locales de Axia4. Para sistemas sin conexión o aplicaciones autogeneradas.<br /><br />Los archivos de las aplicaciones públicas de Axia4 se pueden descargar desde el <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">repositorio oficial</a>.",
+			"installFileDesc": "Instala aplicaciones desde archivos locales de Axia4. Para sistemas sin conexión o aplicaciones autogeneradas.<br /><br />Los archivos de las aplicaciones públicas de Axia4 se pueden descargar desde el <a href=\"https://axia4.net/downloads\" target=\"_blank\">repositorio oficial</a>.",
 			"installRepo": "Desde repositorio",
 			"installRepoDesc": "<b>Se requiere acceso a Internet</b><br /><br />Instala aplicaciones desde el repositorio oficial de Axia4. El repositorio contiene versiones actuales de las aplicaciones públicas de Axia4.<br /><br />Todas las aplicaciones son revisadas y firmadas digitalmente.",
-			"intro": "Bienvenido a Axia4<br /><br />Actualmente no hay aplicaciones instaladas. Para comenzar a usar Axia4, elige una de las opciones de instalación a continuación.<br /><br />Or visit <a href=\"https://rei3.de/en/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
+			"intro": "Bienvenido a Axia4<br /><br />Actualmente no hay aplicaciones instaladas. Para comenzar a usar Axia4, elige una de las opciones de instalación a continuación.<br /><br />Or visit <a href=\"https://axia4.net/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
 			"title": "Configuración"
 		}
 	},

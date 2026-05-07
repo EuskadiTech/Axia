@@ -1,14 +1,14 @@
 package scheduler
 
 import (
+	"axia4/config"
+	"axia4/db"
+	"axia4/log"
 	"context"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
-	"r3/config"
-	"r3/db"
-	"r3/log"
 )
 
 func updateCheck() error {
@@ -29,7 +29,7 @@ func updateCheck() error {
 	if err != nil {
 		return err
 	}
-	httpReq.Header.Set("User-Agent", "r3-application")
+	httpReq.Header.Set("User-Agent", "axia4-application")
 
 	httpRes, err := httpClient.Do(httpReq)
 	if err != nil {

@@ -1,12 +1,12 @@
 package config
 
 import (
+	"axia4/log"
+	"axia4/types"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
-	"r3/log"
-	"r3/types"
 	"sort"
 	"strings"
 	"time"
@@ -32,19 +32,19 @@ func marshalLicenseJSON(license types.License) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	
+
 	var jsonObj map[string]interface{}
 	if err := json.Unmarshal(data, &jsonObj); err != nil {
 		return nil, err
 	}
-	
+
 	// Get sorted keys
 	keys := make([]string, 0, len(jsonObj))
 	for k := range jsonObj {
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
-	
+
 	// Build JSON with sorted keys and compact format (no spaces after separators)
 	var parts []string
 	for _, k := range keys {
@@ -55,7 +55,7 @@ func marshalLicenseJSON(license types.License) ([]byte, error) {
 		}
 		parts = append(parts, fmt.Sprintf(`"%s":%s`, k, strings.TrimSpace(string(vBytes))))
 	}
-	
+
 	return []byte("{" + strings.Join(parts, ",") + "}"), nil
 }
 
@@ -64,22 +64,22 @@ func fetchLicenseFromServer(licenseId string) (*types.License, error) {
 	client := &http.Client{
 		Timeout: 10 * time.Second,
 	}
-	
+
 	resp, err := client.Get(activationServerURL + "/_lic.php?key=" + licenseId)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch license: %v", err)
 	}
 	defer resp.Body.Close()
-	
+
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("server returned status %d", resp.StatusCode)
 	}
-	
+
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read response body: %v", err)
 	}
-	
+
 	// The server returns a structure with "license" field containing the license data
 	var response struct {
 		License types.License `json:"license"`
@@ -87,7 +87,7 @@ func fetchLicenseFromServer(licenseId string) (*types.License, error) {
 	if err := json.Unmarshal(body, &response); err != nil {
 		return nil, fmt.Errorf("failed to parse license response: %v", err)
 	}
-	
+
 	return &response.License, nil
 }
 
@@ -123,7 +123,7 @@ func ActivateLicense() {
 		log.Error(log.ContextServer, "failed to fetch license from server", err)
 		return
 	}
-	
+
 	// Set license from fetched data
 	license = *fetchedLicense
 

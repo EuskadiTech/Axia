@@ -1,9 +1,9 @@
 package attribute
 
 import (
+	"axia4/schema"
 	"context"
 	"fmt"
-	"r3/schema"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

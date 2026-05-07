@@ -3,18 +3,18 @@
 package rest_send
 
 import (
+	"axia4/cache"
+	"axia4/config"
+	"axia4/data"
+	"axia4/db"
+	"axia4/handler"
+	"axia4/log"
 	"context"
 	"encoding/base64"
 	"fmt"
 	"io"
 	"net/http"
 	"os"
-	"r3/cache"
-	"r3/config"
-	"r3/data"
-	"r3/db"
-	"r3/handler"
-	"r3/log"
 	"regexp"
 	"strconv"
 	"strings"
@@ -109,7 +109,7 @@ func callExecute(c restCall) error {
 		return fmt.Errorf("could not prepare request, %s", err)
 	}
 
-	httpReq.Header.Set("User-Agent", "r3-application")
+	httpReq.Header.Set("User-Agent", "axia4-application")
 	for k, v := range c.headers {
 		httpReq.Header.Set(k, v)
 	}

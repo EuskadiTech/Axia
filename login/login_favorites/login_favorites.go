@@ -1,9 +1,9 @@
 package login_favorites
 
 import (
+	"axia4/tools"
+	"axia4/types"
 	"context"
-	"r3/tools"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

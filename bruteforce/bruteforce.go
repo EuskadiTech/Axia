@@ -1,10 +1,10 @@
 package bruteforce
 
 import (
+	"axia4/config"
+	"axia4/types"
 	"net"
 	"net/http"
-	"r3/config"
-	"r3/types"
 	"sync"
 )
 

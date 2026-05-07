@@ -1,13 +1,13 @@
 package searchBar
 
 import (
+	"axia4/schema"
+	"axia4/schema/caption"
+	"axia4/schema/column"
+	"axia4/schema/openForm"
+	"axia4/schema/query"
+	"axia4/types"
 	"context"
-	"r3/schema"
-	"r3/schema/caption"
-	"r3/schema/column"
-	"r3/schema/openForm"
-	"r3/schema/query"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

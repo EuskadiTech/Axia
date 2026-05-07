@@ -1,11 +1,11 @@
 package config
 
 import (
+	"axia4/db"
+	"axia4/log"
 	"context"
 	"encoding/json"
 	"fmt"
-	"r3/db"
-	"r3/log"
 	"strconv"
 
 	"github.com/jackc/pgx/v5"

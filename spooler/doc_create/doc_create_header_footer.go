@@ -1,9 +1,9 @@
 package doc_create
 
 import (
+	"axia4/log"
+	"axia4/types"
 	"context"
-	"r3/log"
-	"r3/types"
 )
 
 func addHeaderFooter(ctx context.Context, doc *doc, loginId, recordIdDoc int64, f types.DocFieldGrid, font types.DocFont, posY, sizeX, sizeY float64) {

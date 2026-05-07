@@ -1,9 +1,9 @@
 package login_auth
 
 import (
+	"axia4/config"
+	"axia4/login/login_session"
 	"errors"
-	"r3/config"
-	"r3/login/login_session"
 	"time"
 
 	"github.com/gbrlsnchs/jwt/v3"
@@ -40,7 +40,7 @@ func createToken(loginId int64, name string, admin bool, loginType loginType, to
 
 	token, err := jwt.Sign(tokenPayload{
 		Payload: jwt.Payload{
-			Issuer:         "r3 application",
+			Issuer:         "axia4 application",
 			Subject:        name,
 			ExpirationTime: jwt.NumericDate(now.Add(expiryHoursTime * time.Hour)),
 			IssuedAt:       jwt.NumericDate(now),

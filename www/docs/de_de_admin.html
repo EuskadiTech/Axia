@@ -98,7 +98,7 @@
 <h2 id="portable">Portable</h2>
 <p>Für Entwicklungs- und Testinstanzen - die portable Version von Axia kann auf Windows-Clients ohne jegliche Einrichtung gestartet werden. Wie das eigenständige Modell verfügt auch die portable Version über eine eigene Datenbank. Es wird nicht empfohlen, eine portable Instanz produktiv zu nutzen.</p>
 <h2 id="docker">Docker</h2>
-<p>Für Entwicklungs- und Testinstanzen steht eine <a href="https://tech.eus/t4/downloads.php">Docker Compose-Datei</a> zur Verfügung, um schnell eine Axia-Instanz zu starten. Diese Datei ist jedoch nicht für den produktiven Einsatz konfiguriert. Um Axia produktiv mit Docker zu betreiben, können die bereitgestellten Dateien als Vorlagen verwendet und an die Zielumgebung angepasst werden. Weitere Details finden sich auf der <a href="https://github.com/EuskadiTech/tallarin">Repository-Seite</a>.</p>
+<p>Für Entwicklungs- und Testinstanzen steht eine <a href="https://axia4.net/downloads">Docker Compose-Datei</a> zur Verfügung, um schnell eine Axia-Instanz zu starten. Diese Datei ist jedoch nicht für den produktiven Einsatz konfiguriert. Um Axia produktiv mit Docker zu betreiben, können die bereitgestellten Dateien als Vorlagen verwendet und an die Zielumgebung angepasst werden. Weitere Details finden sich auf der <a href="https://github.com/EuskadiTech/tallarin">Repository-Seite</a>.</p>
 <h1 id="technische-anforderungen">Technische Anforderungen</h1>
 <h2 id="server">Server</h2>
 <p>Um Axia ausführen zu können, müssen folgende Anforderungen erfüllt sein:</p>
@@ -157,12 +157,12 @@
 <p>Für Linux-Server ist Axia als komprimiertes Archiv mit vorkompilierten Binärdateien verfügbar. Die Installationsschritte sind:</p>
 <ol type="1">
 <li>Extrahieren Sie das Axia-Archiv in ein Verzeichnis Ihrer Wahl (<code>/opt/rei3/</code> zum Beispiel).</li>
-<li>Machen Sie die Datei <code>r3</code> ausführbar (<code>chmod u+x r3</code>).</li>
-<li>Kopieren Sie die Datei <code>config_template.json</code> zu <code>config.json</code> - die Datei muss im gleichen Verzeichnis sein wie die ausführbare Datei <code>r3</code>.</li>
+<li>Machen Sie die Datei <code>axia4</code> ausführbar (<code>chmod u+x axia4</code>).</li>
+<li>Kopieren Sie die Datei <code>config_template.json</code> zu <code>config.json</code> - die Datei muss im gleichen Verzeichnis sein wie die ausführbare Datei <code>axia4</code>.</li>
 <li>Fügen Sie der Datei <code>config.json</code> Verbindungsdetails zu einer leeren, UTF8-enkodierten <a href="#vorbereiten-einer-neuen-postgresql-datenbank">PostgreSQL-Datenbank</a> (13.0 oder neuer) hinzu. Der Datenbankbenutzer muss volle Berechtigungen für die gewählte Datenbank haben.</li>
 <li>Optional: Installieren Sie ImageMagick und Ghostscript falls Thumbnails erwünscht sind (<code>sudo apt install imagemagick ghostscript</code>).</li>
 <li>Optional: Installieren Sie PostgreSQL-Client-Werkzeuge falls Sie die integrierte Backup-Funktion nutzen möchten (<code>sudo apt install postgresql-client</code>).</li>
-<li>Registrieren Sie Axia im Service-Manager (<code>sudo ./r3 -install</code>).</li>
+<li>Registrieren Sie Axia im Service-Manager (<code>sudo ./axia4 -install</code>).</li>
 <li>Starten Sie den Axia-Dienst (<code>systemctl start rei3</code> zum Beispiel).</li>
 </ol>
 <p>Falls Axia hinter einem Proxy betrieben werden soll, bitte sicherstellen, dass die Sitzungszeit für Websocket-Clients nicht zeitlich limitiert wird. Mehr details <a href="#proxies">hier</a>.</p>

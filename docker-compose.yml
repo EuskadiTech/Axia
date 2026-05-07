@@ -4,16 +4,16 @@ services:
   postgres:
     image: postgres:15-alpine
     environment:
-      POSTGRES_DB: rei3
-      POSTGRES_USER: rei3
-      POSTGRES_PASSWORD: rei3
+      POSTGRES_DB: axia4
+      POSTGRES_USER: axia4
+      POSTGRES_PASSWORD: axia4
       POSTGRES_ENCODING: UTF8
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U rei3"]
+      test: ["CMD-SHELL", "pg_isready -U axia4"]
       interval: 30s
       timeout: 10s
       retries: 3

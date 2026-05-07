@@ -1,16 +1,16 @@
 package login_auth
 
 import (
+	"axia4/cache"
+	"axia4/db"
+	"axia4/handler"
+	"axia4/ldap/ldap_auth"
+	"axia4/tools"
+	"axia4/types"
 	"context"
 	"database/sql"
 	"encoding/base32"
 	"errors"
-	"r3/cache"
-	"r3/db"
-	"r3/handler"
-	"r3/ldap/ldap_auth"
-	"r3/tools"
-	"r3/types"
 	"strings"
 
 	"github.com/jackc/pgx/v5"

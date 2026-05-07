@@ -1,15 +1,15 @@
 package data_auth
 
 import (
+	"axia4/bruteforce"
+	"axia4/config"
+	"axia4/handler"
+	"axia4/login/login_auth"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"net/http"
-	"r3/bruteforce"
-	"r3/config"
-	"r3/handler"
-	"r3/login/login_auth"
 	"time"
 
 	"github.com/jackc/pgx/v5/pgtype"

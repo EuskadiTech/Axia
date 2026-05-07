@@ -1,18 +1,18 @@
 package mail_receive
 
 import (
+	"axia4/cache"
+	"axia4/config"
+	"axia4/db"
+	"axia4/log"
+	"axia4/tools"
+	"axia4/types"
 	"context"
 	"crypto/tls"
 	"encoding/base64"
 	"errors"
 	"fmt"
 	"io"
-	"r3/cache"
-	"r3/config"
-	"r3/db"
-	"r3/log"
-	"r3/tools"
-	"r3/types"
 	"regexp"
 	"strings"
 	"time"
@@ -317,11 +317,11 @@ func processMessage(mailAccountId int32, msg *imap.Message, section *imap.BodySe
 		}
 	}
 	// look for CID links in text body
-	// example: <img src="cid:part1.rDMcVMnB.49OoxErI@rei3.de" alt="">
+	// example: <img src="cid:part1.rDMcVMnB.49OoxErI@axia4.net" alt="">
 	for _, matches := range regexCid.FindAllStringSubmatch(body, -1) {
 
-		// match 0: img tag until CID end (<img src="cid:part1.rDMcVMnB.49OoxErI@rei3.de)
-		// match 1: CID                   (part1.rDMcVMnB.49OoxErI@rei3.de)
+		// match 0: img tag until CID end (<img src="cid:part1.rDMcVMnB.49OoxErI@axia4.net)
+		// match 1: CID                   (part1.rDMcVMnB.49OoxErI@axia4.net)
 		if len(matches) != 2 {
 			continue
 		}

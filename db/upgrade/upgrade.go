@@ -1,17 +1,17 @@
 package upgrade
 
 import (
+	"axia4/config"
+	"axia4/db"
+	"axia4/log"
+	"axia4/schema"
+	"axia4/schema/pgIndex"
+	"axia4/tools"
+	"axia4/types"
 	"context"
 	"fmt"
 	"os"
 	"path/filepath"
-	"r3/config"
-	"r3/db"
-	"r3/log"
-	"r3/schema"
-	"r3/schema/pgIndex"
-	"r3/tools"
-	"r3/types"
 	"strconv"
 	"strings"
 
@@ -720,7 +720,7 @@ var upgradeFunctions = map[string]func(ctx context.Context, tx pgx.Tx) (string, 
 			INSERT INTO instance.repo(name,url,fetch_user_name,fetch_user_pass,skip_verify,feedback_enable,date_checked,active)
 			VALUES (
 				CASE (SELECT value FROM instance.config WHERE name = 'repoUrl')
-					WHEN 'https://store.rei3.de' THEN 'Official REI3 Repository'
+					WHEN 'https://store.axia4.net' THEN 'Official REI3 Repository'
 					ELSE 'Standard'
 				END,
 				(SELECT value FROM instance.config WHERE name = 'repoUrl'),
@@ -6421,7 +6421,7 @@ var upgradeFunctions = map[string]func(ctx context.Context, tx pgx.Tx) (string, 
 			DECLARE
 				setting text;
 			BEGIN
-				SELECT CURRENT_SETTING('r3.login_id',TRUE) INTO setting;
+				SELECT CURRENT_SETTING('axia4.login_id',TRUE) INTO setting;
 				
 				IF setting IS NULL OR setting = '' THEN
 					RETURN NULL;
@@ -6439,7 +6439,7 @@ var upgradeFunctions = map[string]func(ctx context.Context, tx pgx.Tx) (string, 
 				code text;
 				setting text;
 			BEGIN
-				SELECT CURRENT_SETTING('r3.login_id',TRUE) INTO setting;
+				SELECT CURRENT_SETTING('axia4.login_id',TRUE) INTO setting;
 				
 				IF setting IS NULL OR setting = '' THEN
 					RETURN NULL;
@@ -7140,7 +7140,7 @@ var upgradeFunctions = map[string]func(ctx context.Context, tx pgx.Tx) (string, 
 	"0.91": func(ctx context.Context, tx pgx.Tx) (string, error) {
 		_, err := tx.Exec(ctx, `
 			INSERT INTO instance.config (name,value)
-				VALUES ('updateCheckUrl','https://tech.eus/t4/version.json');
+				VALUES ('updateCheckUrl','https://github.com/Axia4/Hyper/releases/latest/download/version.json');
 			
 			INSERT INTO instance.config (name,value)
 				VALUES ('updateCheckVersion','');

@@ -5,8 +5,8 @@ sets locale for messages (LC_MESSAGES) for parsing call outputs
 package embedded
 
 import (
+	"axia4/config"
 	"path/filepath"
-	"r3/config"
 )
 
 var (

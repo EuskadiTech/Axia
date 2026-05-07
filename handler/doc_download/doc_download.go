@@ -1,18 +1,18 @@
 package doc_download
 
 import (
+	"axia4/config"
+	"axia4/db"
+	"axia4/handler"
+	"axia4/log"
+	"axia4/login/login_auth"
+	"axia4/spooler/doc_create"
+	"axia4/tools"
 	"context"
 	"errors"
 	"fmt"
 	"net/http"
 	"os"
-	"r3/config"
-	"r3/db"
-	"r3/handler"
-	"r3/log"
-	"r3/login/login_auth"
-	"r3/spooler/doc_create"
-	"r3/tools"
 )
 
 var genErr = "could not finish document preview download"

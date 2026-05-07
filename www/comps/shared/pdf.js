@@ -46,8 +46,8 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 		const win        = window.open('');
 		const marginYMin = 50;
 		
-		win.r3_callbackResult = callbackResult;
-		win.r3_closeWhenDone  = uploadFile;
+		win.axia4_callbackResult = callbackResult;
+		win.axia4_closeWhenDone  = uploadFile;
 	
 		let marginLeft   = Array.isArray(marginX) && marginX.length === 2 ? marginX[0] : marginX;
 		let marginRight  = Array.isArray(marginX) && marginX.length === 2 ? marginX[1] : marginX;
@@ -76,7 +76,7 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 						<img id="pdf-download-icon" src="images/load.gif" style="height:24px;margin-right:8px;" />
 						<span>${capGen.button.save}</span>
 					</button>
-					<button onclick="r3_close()" style="cursor:pointer;display:flex;align-items:center;line-height:24px;box-shadow:1px 1px 3px #666;">
+					<button onclick="axia4_close()" style="cursor:pointer;display:flex;align-items:center;line-height:24px;box-shadow:1px 1px 3px #666;">
 						<img src="images/cancel.png" style="height:24px;margin-right:8px;" />
 						<span>${capGen.button.close}</span>
 					</button>
@@ -94,15 +94,15 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 			<script type="text/javascript" src="externals/jspdf.js"><\/script>
 			<script type="text/javascript" src="externals/transliteration.js"><\/script>
 			<script type="text/javascript">
-				const r3_close = (doc) => {
-					if(window.r3_callbackResult !== undefined) {
-						if(doc !== undefined) window.r3_callbackResult(doc.output('blob'));
-						else                  window.r3_callbackResult();
+				const axia4_close = (doc) => {
+					if(window.axia4_callbackResult !== undefined) {
+						if(doc !== undefined) window.axia4_callbackResult(doc.output('blob'));
+						else                  window.axia4_callbackResult();
 					}
 					window.close();
 				};
 				
-				const r3_replace_fonts = async (doc,fontNamesAll) => {
+				const axia4_replace_fonts = async (doc,fontNamesAll) => {
 					const convertFontBase64 = async (font) => {
 						const buf        = await font.arrayBuffer();
 						const uint8Array = new Uint8Array(buf);
@@ -160,7 +160,7 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 				let footer = document.getElementById('pdf-footer').getHTML();
 	
 				// generate new PDF document
-				const r3_genDoc = async () => {
+				const axia4_genDoc = async () => {
 					const addPageMeta = async (element,elementPosY,pageCur,pageCount) => {
 						// replace placeholders in HTML
 						const content = element
@@ -220,7 +220,7 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 							// jsPDF has 3 WinAnsiEncoding fonts that are used for .html() calls (Courier New, Helvetica, Times New Roman) with 4 styles each (normal, bold, bolditalic, italic)
 							// Cousine, NotoSans, Tinos are large UTF8 fonts that support a wide range of characters
 							// more direct replacements like Courier Prime (for Courier New) could be used, but they often have a tiny range of characters
-							await r3_replace_fonts(doc,[
+							await axia4_replace_fonts(doc,[
 								'Cousine_','Cousine_B','Cousine_BI','Cousine_I',
 								'NotoSans_','NotoSans_B','NotoSans_BI','NotoSans_I',
 								'Tinos_','Tinos_B','Tinos_BI','Tinos_I'
@@ -230,35 +230,35 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 						// for large character languages, replace all 12 jsPDF standard font variants with one UTF8 font
 						// not perfect, but finding replacement font families for large languages is tricky + it blows up PDF size as they all need to be included (.html() can use any font at any time)
 						case 'arabic':
-							await r3_replace_fonts(doc,[
+							await axia4_replace_fonts(doc,[
 								'NotoSansArabic_','NotoSansArabic_B','NotoSansArabic_B','NotoSansArabic_',
 								'NotoSansArabic_','NotoSansArabic_B','NotoSansArabic_B','NotoSansArabic_',
 								'NotoSansArabic_','NotoSansArabic_B','NotoSansArabic_B','NotoSansArabic_'
 							]);
 						break;
 						case 'japanese':
-							await r3_replace_fonts(doc,[
+							await axia4_replace_fonts(doc,[
 								'NotoSansJP_','NotoSansJP_B','NotoSansJP_B','NotoSansJP_',
 								'NotoSansJP_','NotoSansJP_B','NotoSansJP_B','NotoSansJP_',
 								'NotoSansJP_','NotoSansJP_B','NotoSansJP_B','NotoSansJP_'
 							]);
 						break;
 						case 'korean':
-							await r3_replace_fonts(doc,[
+							await axia4_replace_fonts(doc,[
 								'NotoSansKR_','NotoSansKR_B','NotoSansKR_B','NotoSansKR_',
 								'NotoSansKR_','NotoSansKR_B','NotoSansKR_B','NotoSansKR_',
 								'NotoSansKR_','NotoSansKR_B','NotoSansKR_B','NotoSansKR_'
 							]);
 						break;
 						case 'simplified_chinese':
-							await r3_replace_fonts(doc,[
+							await axia4_replace_fonts(doc,[
 								'NotoSansSC_','NotoSansSC_B','NotoSansSC_B','NotoSansSC_',
 								'NotoSansSC_','NotoSansSC_B','NotoSansSC_B','NotoSansSC_',
 								'NotoSansSC_','NotoSansSC_B','NotoSansSC_B','NotoSansSC_'
 							]);
 						break;
 						case 'thai':
-							await r3_replace_fonts(doc,[
+							await axia4_replace_fonts(doc,[
 								'NotoSansThai_','NotoSansThai_B','NotoSansThai_B','NotoSansThai_',
 								'NotoSansThai_','NotoSansThai_B','NotoSansThai_B','NotoSansThai_',
 								'NotoSansThai_','NotoSansThai_B','NotoSansThai_B','NotoSansThai_'
@@ -302,7 +302,7 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 					}
 	
 					if(firstRun)
-						return r3_genDoc();
+						return axia4_genDoc();
 					
 					// add headers & footers on each page
 					for(let i = 1, j = doc.getNumberOfPages(); i <= j; i++) {
@@ -312,14 +312,14 @@ export function generatePdf(utf8_mode,filename,format,orientation,marginX,
 					}
 					
 					// document done
-					if(window.r3_closeWhenDone)
-						return r3_close(doc);
+					if(window.axia4_closeWhenDone)
+						return axia4_close(doc);
 					
 					// enable document save action
 					document.getElementById('pdf-download').onclick  = () => doc.save('${filename}');
 					document.getElementById('pdf-download-icon').src = 'images/download.png';
 				};
-				r3_genDoc();
+				axia4_genDoc();
 			<\/script>
 		`);
 	});

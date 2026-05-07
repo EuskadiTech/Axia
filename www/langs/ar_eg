@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "في ثواني",
 			"dbTimeoutIcs": "مهلة قاعدة البيانات: تنزيلات التقويم (ICS)",
 			"dialog": {
-				"builderMode": "يتم استخدام Builder لإنشاء التطبيقات أو تغييرها.<br /><br />يمكن أن يؤدي تغيير التطبيقات إلى فقدان البيانات ويجب أن يحدث ذلك <b>أبداً</b> يمكن القيام بها في بيئات الإنتاج.<br /><br />لاستخدام Builder بأمان، يرجى استخدام نسخة مخصصة من Axia4؛ <br /><br />يرجى الرجوع إلى <a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">وثائق البناء</a> لمعرفة المزيد.",
+				"builderMode": "يتم استخدام Builder لإنشاء التطبيقات أو تغييرها.<br /><br />يمكن أن يؤدي تغيير التطبيقات إلى فقدان البيانات ويجب أن يحدث ذلك <b>أبداً</b> يمكن القيام بها في بيئات الإنتاج.<br /><br />لاستخدام Builder بأمان، يرجى استخدام نسخة مخصصة من Axia4؛ <br /><br />يرجى الرجوع إلى <a href=\"https://axia4.net/docs/builder/\" target=\"_blank\">وثائق البناء</a> لمعرفة المزيد.",
 				"pleaseRead": "يرجى القراءة قبل الحفظ",
 				"productionMode": "يتم استخدام وضع الصيانة لتحديث التطبيقات أو تثبيتها أو إزالتها من النظام.<br /><br />التبديل إلى وضع الصيانة سوف <b>تسجيل الخروج لجميع المستخدمين دون أذونات المسؤول</b>."
 			},
@@ -197,7 +197,7 @@
 			},
 			"extCommunity": "منتدى مجتمع Axia4",
 			"extLicense": "Axia4 محترف",
-			"intro": "Axia4 بالكامل <a href=\"https://github.com/r3-team/r3\" target=\"_blank\">مفتوح المصدر</a> ويمكن استخدامها مجانا.<br /><br />بالنسبة لأولئك الذين يحتاجون إلى ميزات أو دعم مؤسسي، هناك <b>Axia4 محترف</b>. <br /><br />أثناء دعم التطوير المستمر، يمكن لعملاء Axia4 Professional أيضًا تنشيط مجموعة كاملة من الميزات والحصول على الدعم من Lean Softworks، المطور الرئيسي لـ Axia4.",
+			"intro": "Axia4 بالكامل <a href=\"https://github.com/axia4/hyper\" target=\"_blank\">مفتوح المصدر</a> ويمكن استخدامها مجانا.<br /><br />بالنسبة لأولئك الذين يحتاجون إلى ميزات أو دعم مؤسسي، هناك <b>Axia4 محترف</b>. <br /><br />أثناء دعم التطوير المستمر، يمكن لعملاء Axia4 Professional أيضًا تنشيط مجموعة كاملة من الميزات والحصول على الدعم من Lean Softworks، المطور الرئيسي لـ Axia4.",
 			"introMore": "مزيد من المعلومات:",
 			"licenseExpired": "انتهت صلاحية الترخيص",
 			"licenseId": "معرف الترخيص",
@@ -2069,7 +2069,7 @@
 			"moreInfo": "مزيد من المعلومات"
 		},
 		"info": {
-			"admin": "<b>معلومات للمسؤولين:</b> يمكن تعطيل وظيفة التعليقات في لوحة الإدارة. <a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">مستودع Axia4</a> application) لإدارة إصدارات التطبيقات وتلقي التعليقات الداخلية.",
+			"admin": "<b>معلومات للمسؤولين:</b> يمكن تعطيل وظيفة التعليقات في لوحة الإدارة. <a href=\"https://store.axia4.net/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">مستودع Axia4</a> application) لإدارة إصدارات التطبيقات وتلقي التعليقات الداخلية.",
 			"data": [
 				"فئة التعليقات (عام، خطأ/مشكلة، اقتراح، مديح)",
 				"نص ردود الفعل",
@@ -2081,7 +2081,7 @@
 			],
 			"personal": "لا يتم إرسال أي معلومات شخصية. ",
 			"repoUrl": "سيتم إرسال ردود الفعل إلى",
-			"repoUrlDefault": "<i>(يتم تشغيل هذا النظام بواسطة <a href=\"https://rei3.de/\" target=\"_blank\">Axia4</a> المطورين)</i>",
+			"repoUrlDefault": "<i>(يتم تشغيل هذا النظام بواسطة <a href=\"https://axia4.net/\" target=\"_blank\">Axia4</a> المطورين)</i>",
 			"what": "ما الذي يتم إرساله؟"
 		},
 		"moduleRelated": "هل هذه التعليقات للتطبيق المفتوح؟ ",
@@ -2321,7 +2321,7 @@
 		"api": "واجهة برمجة التطبيقات",
 		"apis": "واجهات برمجة التطبيقات",
 		"appName": "Axia4",
-		"appWebsite": "https://rei3.de",
+		"appWebsite": "https://axia4.net",
 		"application": "طلب",
 		"applications": "التطبيقات",
 		"arguments": "الحجج",
@@ -2699,7 +2699,7 @@
 			"installBundle": "تثبيت الشركة الأساسية"
 		},
 		"newVersion": "تحديث الإخطار",
-		"newVersionText": "يتوفر إصدار جديد من Axia4.<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">تنزيل Axia4 الإصدار {VERSION}</a>",
+		"newVersionText": "يتوفر إصدار جديد من Axia4.<br /><br /><a href=\"https://axia4.net/downloads\" target=\"_blank\">تنزيل Axia4 الإصدار {VERSION}</a>",
 		"noAccess": "لم يتم منح حق الوصول بعد.<br />الرجاء الاتصال بمسؤول النظام الخاص بك.",
 		"noAccessAdmin": "للحصول على حق الوصول، قم بتعيين الأدوار لتسجيل الدخول الخاص بك.",
 		"noAccessTitle": "لا يمكن الوصول إلى التطبيقات",
@@ -2707,10 +2707,10 @@
 			"installBundle": "الشركة الأساسية",
 			"installBundleDesc": "قم بتثبيت مجموعة معدة مسبقًا من التطبيقات الأساسية، المفيدة لأي مؤسسة. <ul><li>إدارة الغياب</li><li>تتبع الوقت</li><li>إدارة المشاريع والمهام</li><li>معالجة الطلب</li><li>كلمة مرور آمنة</li><li>إدارة أصول تكنولوجيا المعلومات</li></ul>بعد التثبيت، يرجى إلقاء نظرة على صفحات تعليمات التطبيق الفردية لمعرفة المزيد حول الإعداد الأولي لكل منها.",
 			"installFile": "من الملف",
-			"installFileDesc": "تثبيت التطبيقات من ملفات Axia4 المحلية. <br /><br />يمكن تنزيل ملفات تطبيقات Axia4 المعروضة للعامة من الموقع الرسمي <a href=\"https://rei3.de/en/downloads\" target=\"_blank\">مستودع</a>.",
+			"installFileDesc": "تثبيت التطبيقات من ملفات Axia4 المحلية. <br /><br />يمكن تنزيل ملفات تطبيقات Axia4 المعروضة للعامة من الموقع الرسمي <a href=\"https://axia4.net/downloads\" target=\"_blank\">مستودع</a>.",
 			"installRepo": "من المستودع",
 			"installRepoDesc": "<b>الوصول إلى الإنترنت مطلوب</b><br /><br />قم بتثبيت التطبيقات من مستودع Axia4 الرسمي. <br /><br />تتم مراجعة كافة الطلبات وتوقيعها رقميا.",
-			"intro": "مرحبا بكم في Axia4<br /><br />لا يوجد حاليا أي تطبيقات مثبتة.<br /><br />Or visit <a href=\"https://rei3.de/en/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
+			"intro": "مرحبا بكم في Axia4<br /><br />لا يوجد حاليا أي تطبيقات مثبتة.<br /><br />Or visit <a href=\"https://axia4.net/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
 			"title": "يثبت"
 		}
 	},

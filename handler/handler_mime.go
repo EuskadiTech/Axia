@@ -536,7 +536,8 @@ var mimeTypes = map[string]string{
 	".wasm":      "application/wasm",
 
 	// custom
-	".rei3": "application/rei3-transfer",
+	".rei3":  "application/rei3-transfer",
+	".axia4": "application/rei3-transfer",
 }
 
 func init() {

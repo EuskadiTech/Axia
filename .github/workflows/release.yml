@@ -18,15 +18,15 @@ jobs:
           - goos: linux
             goarch: amd64
             suffix: linux_amd64
-            binary_name: r3_linux_amd64
+            binary_name: axia4_linux_amd64
           - goos: linux
             goarch: arm64
             suffix: linux_arm64
-            binary_name: r3_linux_arm64
+            binary_name: axia4_linux_arm64
           - goos: windows
             goarch: amd64
             suffix: windows_amd64
-            binary_name: r3_windows_amd64.exe
+            binary_name: axia4_windows_amd64.exe
 
     steps:
       - name: Checkout code

@@ -11,9 +11,9 @@ The workflow is triggered when a new GitHub release is created (not just tagged)
 
 #### 1. Build Release Binaries
 - Builds cross-platform binaries for:
-  - Linux AMD64 (`r3_linux_amd64.tar.gz`)
-  - Linux ARM64 (`r3_linux_arm64.tar.gz`) 
-  - Windows AMD64 (`r3_windows_amd64.zip`)
+  - Linux AMD64 (`axia4_linux_amd64.tar.gz`)
+  - Linux ARM64 (`axia4_linux_arm64.tar.gz`) 
+  - Windows AMD64 (`axia4_windows_amd64.zip`)
 - Each binary is built with the release version injected via `-ldflags`
 - Archives include configuration templates and documentation
 - Automatically uploads all artifacts to the GitHub release

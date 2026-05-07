@@ -1,10 +1,10 @@
 package login_template
 
 import (
+	"axia4/login/login_setting"
+	"axia4/types"
 	"context"
 	"fmt"
-	"r3/login/login_setting"
-	"r3/types"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgtype"

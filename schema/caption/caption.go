@@ -1,11 +1,11 @@
 package caption
 
 import (
+	"axia4/schema"
+	"axia4/types"
 	"context"
 	"errors"
 	"fmt"
-	"r3/schema"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

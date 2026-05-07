@@ -1,17 +1,17 @@
 package icon_upload
 
 import (
+	"axia4/bruteforce"
+	"axia4/config"
+	"axia4/db"
+	"axia4/handler"
+	"axia4/login/login_auth"
+	"axia4/schema/icon"
 	"bytes"
 	"context"
 	"errors"
 	"io"
 	"net/http"
-	"r3/bruteforce"
-	"r3/config"
-	"r3/db"
-	"r3/handler"
-	"r3/login/login_auth"
-	"r3/schema/icon"
 	"time"
 
 	"github.com/gofrs/uuid"

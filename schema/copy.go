@@ -1,8 +1,8 @@
 package schema
 
 import (
+	"axia4/types"
 	"errors"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 )

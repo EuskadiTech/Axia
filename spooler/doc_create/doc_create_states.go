@@ -1,10 +1,10 @@
 package doc_create
 
 import (
+	"axia4/cache"
+	"axia4/types"
 	"context"
 	"fmt"
-	"r3/cache"
-	"r3/types"
 	"strings"
 
 	"github.com/PaesslerAG/gval"
@@ -65,7 +65,7 @@ func getConditionsResult(ctx context.Context, doc *doc, recordIdDoc int64, condi
 			strings.Repeat(")", c.Side1.Brackets))
 	}
 
-	// ( expr0 < expr1 ) || ( expr2 == expr3 && expr4 == expr5 )
+	// ( expr0 < expr1 ) || ( expr2 == expaxia4 && expr4 == expr5 )
 	eval, err := gval.Full().NewEvaluable(evalString)
 	if err != nil {
 		return false, err

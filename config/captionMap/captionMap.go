@@ -1,10 +1,10 @@
 package captionMap
 
 import (
+	"axia4/schema/caption"
+	"axia4/types"
 	"context"
 	"fmt"
-	"r3/schema/caption"
-	"r3/types"
 	"slices"
 
 	"github.com/gofrs/uuid"

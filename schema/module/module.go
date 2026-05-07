@@ -1,18 +1,18 @@
 package module
 
 import (
+	"axia4/config/module_meta"
+	"axia4/db/check"
+	"axia4/schema"
+	"axia4/schema/article"
+	"axia4/schema/caption"
+	"axia4/schema/compatible"
+	"axia4/schema/pgFunction"
+	"axia4/schema/relation"
+	"axia4/types"
 	"context"
 	"errors"
 	"fmt"
-	"r3/config/module_meta"
-	"r3/db/check"
-	"r3/schema"
-	"r3/schema/article"
-	"r3/schema/caption"
-	"r3/schema/compatible"
-	"r3/schema/pgFunction"
-	"r3/schema/relation"
-	"r3/types"
 	"slices"
 	"strings"
 

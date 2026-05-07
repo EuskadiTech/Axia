@@ -134,12 +134,7 @@ export default {
 			<h1>{{ capApp.needHelp }}</h1>
 			<div class="builder-start-box builder-start-resources">
 				<my-button image="globe.png"
-					@trigger="open('https://community.rei3.de/')"
-					:caption="capApp.extCommunity"
-					:large="true"
-				/>
-				<my-button image="globe.png"
-					@trigger="open('https://rei3.de/en/docs')"
+					@trigger="open('https://axia4.net/docs')"
 					:caption="capApp.extDocs"
 					:large="true"
 				/>

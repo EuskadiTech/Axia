@@ -1,10 +1,10 @@
 package login_setting
 
 import (
+	"axia4/types"
 	"context"
 	"errors"
 	"fmt"
-	"r3/types"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgtype"

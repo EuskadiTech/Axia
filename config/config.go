@@ -1,13 +1,13 @@
 package config
 
 import (
+	"axia4/log"
+	"axia4/tools"
+	"axia4/types"
 	"context"
 	"encoding/json"
 	"math/rand"
 	"os"
-	"r3/log"
-	"r3/tools"
-	"r3/types"
 	"regexp"
 	"strconv"
 	"sync"
@@ -25,8 +25,8 @@ var (
 	appNameShort string
 
 	// application versions
-	appVersion       types.Version // r3
-	appVersionClient types.Version // r3 fat client
+	appVersion       types.Version // axia4
+	appVersionClient types.Version // axia4 fat client
 
 	// configuration file location
 	filePath      string // location of configuration file in JSON format

@@ -1,14 +1,14 @@
 package relation
 
 import (
+	"axia4/db/check"
+	"axia4/schema"
+	"axia4/schema/attribute"
+	"axia4/schema/caption"
+	"axia4/schema/pgFunction"
+	"axia4/types"
 	"context"
 	"fmt"
-	"r3/db/check"
-	"r3/schema"
-	"r3/schema/attribute"
-	"r3/schema/caption"
-	"r3/schema/pgFunction"
-	"r3/types"
 
 	"github.com/gofrs/uuid"
 	"github.com/jackc/pgx/v5"

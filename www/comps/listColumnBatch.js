@@ -360,7 +360,7 @@ export default {
 			this.set();
 		},
 
-		// migrate filter (< r3.10.3) from outdated '= ANY' filter to current '<> ALL' filter
+		// migrate filter (< axia4.10.3) from outdated '= ANY' filter to current '<> ALL' filter
 		migrateFilter(valuesIncl) {
 			ws.send('data','get',this.prepareDataGet(),false).then(
 				res => {

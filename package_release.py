@@ -67,7 +67,7 @@ def package_linux(binary_path, output_name):
         os.makedirs(package_dir)
         
         # Copy binary
-        binary_dest = os.path.join(package_dir, "r3")
+        binary_dest = os.path.join(package_dir, "axia4")
         shutil.copy2(binary_path, binary_dest)
         os.chmod(binary_dest, 0o755)  # Make executable
         print(f"Added binary: {binary_dest}")
@@ -110,7 +110,7 @@ def package_windows(binary_path, output_name):
         os.makedirs(package_dir)
         
         # Copy binary
-        binary_dest = os.path.join(package_dir, "r3.exe")
+        binary_dest = os.path.join(package_dir, "axia4.exe")
         shutil.copy2(binary_path, binary_dest)
         print(f"Added binary: {binary_dest}")
         

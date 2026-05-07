@@ -2,10 +2,10 @@
 package compatible
 
 import (
+	"axia4/types"
 	"context"
 	"encoding/json"
 	"fmt"
-	"r3/types"
 	"slices"
 	"strings"
 

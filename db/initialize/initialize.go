@@ -1,14 +1,14 @@
 package initialize
 
 import (
+	"axia4/bruteforce"
+	"axia4/config"
+	"axia4/db"
+	"axia4/db/upgrade"
+	"axia4/login"
+	"axia4/tools"
 	"context"
 	"fmt"
-	"r3/bruteforce"
-	"r3/config"
-	"r3/db"
-	"r3/db/upgrade"
-	"r3/login"
-	"r3/tools"
 
 	"github.com/jackc/pgx/v5"
 )
@@ -192,7 +192,7 @@ func initInstanceValues_tx(ctx context.Context, tx pgx.Tx) error {
 			('repoChecked','0'),
 			('repoFeedback','1'),
 			('repoPass','Shadow6-Pictured-Tail-Percent'),
-			('repoPublicKeys','{"REI3 official (2020)":"-----BEGIN RSA PUBLIC KEY-----\n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\n-----END RSA PUBLIC KEY-----","Axia4 (EuskadiTech 2025)":"-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEArGu9vNFK5PyIUOtC7CiFeYx5fbensgOsipKgAN5E3xFZ2vvnmTk7\nDQUFDD5CFWy9DkBr+Ehe4hL3gH2plG8zjhW2dWaIJ6WJSI/B35xq5ZSCQxPONU5w\nq2rQrZfGRbjdfzo7sc62uZRmKVza9lsVYY7JwSltqWbR2QlKj1ggpMhEtJyLvRuJ\np5QWfHapbf86dp9cYMkZvQNAYGpFt6uQAQZRAdemc6WPZJqQN0y2xp8yexTUmI+h\nTk+Y8KEqq4+ZxUshKJojBIcstlFkNw/NKmKFbYJrgitSOTR5vZ5MGHRay6ks/Z7o\nP1GZCirnEiAIX+0BKvyCnSa7BfkjU17fUZ2eCPFi7JIP020HspboolGNgMZzoz4n\nu5Lg9Pim5+yqmt8mv2HBtZjLMgC6Bv6KPCl57qWyYjDffc8oITKsv0CPb5vMhWH1\nOLczXrE+d8RUsWoKay1SeCRIA6B6K+zdqfTKkt2kZLtZpd2FNOKP8fpF7P2Mvrf6\n5iuVcD1PNo7SXzbpaRn0Wvd49HyJVE8H9pcCo+fA/RO99s6cQUHqbCIK1tpcFeCE\nLxu3FStPs9967voH8uG+5iQB/IkjXEstCJRLPE2JO7+kVZ2J2V5Jm7rokEX0IPyL\npyelUMQvbH/0RIHiRkSwfouLc8EFGiUk5iAuIVgmr1q+bZgzmHtT6h0CAwEAAQ==\n-----END RSA PUBLIC KEY-----\n"}'),
+			('repoPublicKeys','{"REI3 official (2020)":"-----BEGIN RSA PUBLIC KEY-----\n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\n-----END RSA PUBLIC KEY-----","Axia4 (EuskadiTech 2025)":"-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEArGu9vNFK5PyIUOtC7CiFeYx5fbensgOsipKgAN5E3xFZ2vvnmTk7\nDQUFDD5CFWy9DkBr+Ehe4hL3gH2plG8zjhW2dWaIJ6WJSI/B35xq5ZSCQxPONU5w\nq2rQrZfGRbjdfzo7sc62uZRmKVza9lsVYY7JwSltqWbR2QlKj1ggpMhEtJyLvRuJ\np5QWfHapbf86dp9cYMkZvQNAYGpFt6uQAQZRAdemc6WPZJqQN0y2xp8yexTUmI+h\nTk+Y8KEqq4+ZxUshKJojBIcstlFkNw/NKmKFbYJrgitSOTR5vZ5MGHRay6ks/Z7o\nP1GZCirnEiAIX+0BKvyCnSa7BfkjU17fUZ2eCPFi7JIP020HspboolGNgMZzoz4n\nu5Lg9Pim5+yqmt8mv2HBtZjLMgC6Bv6KPCl57qWyYjDffc8oITKsv0CPb5vMhWH1\nOLczXrE+d8RUsWoKay1SeCRIA6B6K+zdqfTKkt2kZLtZpd2FNOKP8fpF7P2Mvrf6\n5iuVcD1PNo7SXzbpaRn0Wvd49HyJVE8H9pcCo+fA/RO99s6cQUHqbCIK1tpcFeCE\nLxu3FStPs9967voH8uG+5iQB/IkjXEstCJRLPE2JO7+kVZ2J2V5Jm7rokEX0IPyL\npyelUMQvbH/0RIHiRkSwfouLc8EFGiUk5iAuIVgmr1q+bZgzmHtT6h0CAwEAAQ==\n-----END RSA PUBLIC KEY-----\n"}'),
 			('repoSkipVerify','0'),
 			('repoUrl','http://store.axia4.net'),
 			('repoUser','t4_repo_guest'),
@@ -203,7 +203,7 @@ func initInstanceValues_tx(ctx context.Context, tx pgx.Tx) error {
 			('tokenExpiryHours','168'),
 			('tokenKeepEnable','1'),
 			('tokenSecret',''),
-			('updateCheckUrl','https://github.com/EuskadiTech/Hyper/releases/latest/download/version.json'),
+			('updateCheckUrl','https://github.com/Axia4/Hyper/releases/latest/download/version.json'),
 			('updateCheckVersion','');
 		
 		-- tasks
@@ -1311,7 +1311,7 @@ CREATE FUNCTION instance.get_login_id() RETURNS integer
 	DECLARE
 		setting text;
 	BEGIN
-		SELECT CURRENT_SETTING('r3.login_id',TRUE) INTO setting;
+		SELECT CURRENT_SETTING('axia4.login_id',TRUE) INTO setting;
 		
 		IF setting IS NULL OR setting = '' THEN
 			RETURN NULL;
@@ -1334,7 +1334,7 @@ CREATE FUNCTION instance.get_login_language_code() RETURNS text
 		code text;
 		setting text;
 	BEGIN
-		SELECT CURRENT_SETTING('r3.login_id',TRUE) INTO setting;
+		SELECT CURRENT_SETTING('axia4.login_id',TRUE) INTO setting;
 		
 		IF setting IS NULL OR setting = '' THEN
 			RETURN NULL;

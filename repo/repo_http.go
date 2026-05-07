@@ -1,13 +1,13 @@
 package repo
 
 import (
+	"axia4/config"
+	"axia4/handler"
 	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
-	"r3/config"
-	"r3/handler"
 )
 
 func httpCallGet(token string, url string, skipVerify bool, reqIf any, resIf any) error {
@@ -32,7 +32,7 @@ func httpCall(method string, token string, url string, skipVerify bool, reqIf an
 		return err
 	}
 
-	httpReq.Header.Set("User-Agent", "r3-application")
+	httpReq.Header.Set("User-Agent", "axia4-application")
 
 	if token != "" {
 		httpReq.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))

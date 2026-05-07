@@ -20,12 +20,12 @@ This document explains how to use the new GitHub release workflow for the Tallar
 ## What Gets Built
 
 ### Binary Releases
-- **Linux AMD64**: `r3_linux_amd64.tar.gz` - Standard x64 Linux systems
-- **Linux ARM64**: `r3_linux_arm64.tar.gz` - ARM64 systems (Raspberry Pi 4, Apple Silicon, etc.)
-- **Windows AMD64**: `r3_windows_amd64.zip` - Windows 64-bit systems
+- **Linux AMD64**: `axia4_linux_amd64.tar.gz` - Standard x64 Linux systems
+- **Linux ARM64**: `axia4_linux_arm64.tar.gz` - ARM64 systems (Raspberry Pi 4, Apple Silicon, etc.)
+- **Windows AMD64**: `axia4_windows_amd64.zip` - Windows 64-bit systems
 
 Each archive contains:
-- The compiled binary (`r3` or `r3.exe`)
+- The compiled binary (`axia4` or `axia4.exe`)
 - Configuration template (`config_template.json`)
   - **Note for Windows**: Uses portable configuration by default
 - LICENSE file
@@ -61,12 +61,12 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 ### Local Testing
 ```bash
 # Test cross-compilation
-GOOS=linux GOARCH=amd64 go build -o r3_linux_amd64
-GOOS=windows GOARCH=amd64 go build -o r3_windows_amd64.exe
+GOOS=linux GOARCH=amd64 go build -o axia4_linux_amd64
+GOOS=windows GOARCH=amd64 go build -o axia4_windows_amd64.exe
 
 # Test packaging with the distribution script
-python3 package_release.py r3_linux_amd64 linux --output r3_linux_amd64
-python3 package_release.py r3_windows_amd64.exe windows --output r3_windows_amd64
+python3 package_release.py axia4_linux_amd64 linux --output axia4_linux_amd64
+python3 package_release.py axia4_windows_amd64.exe windows --output axia4_windows_amd64
 
 # Test Docker build
 docker build -t tallarin:test .
@@ -84,8 +84,8 @@ python3 package_release.py <binary_path> windows [--output <name>]
 ```
 
 The script will:
-- **Linux**: Create a tar.gz with the binary (renamed to `r3`), `config_template.json`, and `LICENSE`
-- **Windows**: Create a zip with the binary (renamed to `r3.exe`), `config_template.json` (using portable config), `LICENSE`, and PostgreSQL 16 dependencies in `pgsql16/` folder
+- **Linux**: Create a tar.gz with the binary (renamed to `axia4`), `config_template.json`, and `LICENSE`
+- **Windows**: Create a zip with the binary (renamed to `axia4.exe`), `config_template.json` (using portable config), `LICENSE`, and PostgreSQL 16 dependencies in `pgsql16/` folder
 
 ### Version Management
 The workflow automatically injects the release tag into the binary:
@@ -125,7 +125,7 @@ The workflow automatically injects the release tag into the binary:
 
 ## Security Notes
 
-- Docker images run as non-root user `rei3` (UID 1000)
+- Docker images run as non-root user `axia4` (UID 1000)
 - Static binaries with CGO disabled for security and portability
 - Builds use official Go and Alpine base images
 - Container registry uses GitHub's GHCR with repository permissions

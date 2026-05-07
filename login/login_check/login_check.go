@@ -1,10 +1,10 @@
 package login_check
 
 import (
+	"axia4/config"
+	"axia4/tools"
 	"context"
 	"fmt"
-	"r3/config"
-	"r3/tools"
 	"regexp"
 
 	"github.com/jackc/pgx/v5"

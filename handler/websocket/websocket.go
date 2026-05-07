@@ -1,21 +1,21 @@
 package websocket
 
 import (
+	"axia4/bruteforce"
+	"axia4/cache"
+	"axia4/cluster"
+	"axia4/config"
+	"axia4/handler"
+	"axia4/log"
+	"axia4/login/login_session"
+	"axia4/request"
+	"axia4/request/request_login"
+	"axia4/types"
 	"context"
 	"encoding/json"
 	"fmt"
 	"net"
 	"net/http"
-	"r3/bruteforce"
-	"r3/cache"
-	"r3/cluster"
-	"r3/config"
-	"r3/handler"
-	"r3/log"
-	"r3/login/login_session"
-	"r3/request"
-	"r3/request/request_login"
-	"r3/types"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -121,7 +121,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		ws:          ws,
 	}
 
-	if r.Header.Get("User-Agent") == "r3-client-fat" {
+	if r.Header.Get("User-Agent") == "axia4-client-fat" {
 		client.device = types.WebsocketClientDeviceFatClient
 	}
 

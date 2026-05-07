@@ -45,7 +45,7 @@ export default {
 								{{ updateCheckText }}
 							</td>
 							<td v-else>
-								<a href="https://rei3.de/download" target="_blank">{{ updateCheckText }}</a>
+								<a href="https://axia4.net/download" target="_blank">{{ updateCheckText }}</a>
 							</td>
 						</tr>
 						<tr>

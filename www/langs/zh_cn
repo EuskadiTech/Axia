@@ -58,7 +58,7 @@
 			"dbTimeoutHint": "以秒为单位",
 			"dbTimeoutIcs": "数据库超时：日历下载（ICS）",
 			"dialog": {
-				"builderMode": "构建器用于创建或更改应用程序。<br /><br />更改应用程序可能导致数据丢失，因此在生产环境中<b>绝对不应该</b>这样做。<br /><br />要安全地使用构建器，请使用专用的 Axia4 实例；然后可以将准备好并经过测试的应用程序传输到生产系统。<br /><br />请参阅<a href=\"https://rei3.de/en/docs/builder/\" target=\"_blank\">构建器文档</a>以了解更多信息。",
+				"builderMode": "构建器用于创建或更改应用程序。<br /><br />更改应用程序可能导致数据丢失，因此在生产环境中<b>绝对不应该</b>这样做。<br /><br />要安全地使用构建器，请使用专用的 Axia4 实例；然后可以将准备好并经过测试的应用程序传输到生产系统。<br /><br />请参阅<a href=\"https://axia4.net/docs/builder/\" target=\"_blank\">构建器文档</a>以了解更多信息。",
 				"pleaseRead": "保存前请阅读",
 				"productionMode": "维护模式用于更新、安装或删除系统中的应用程序。<br /><br />切换到维护模式将<b>注销所有没有管理员权限的用户</b>。"
 			},
@@ -197,7 +197,7 @@
 			},
 			"extCommunity": "Axia4 社区论坛",
 			"extLicense": "Axia4 专业版",
-			"intro": "Axia4 是完全<a href=\"https://github.com/r3-team/r3\" target=\"_blank\">开源</a>，可免费使用。<br /><br />对于需要企业功能或支持的用户，有<b>Axia4 专业版</b>。其价格定位是负担得起的，适用于任何规模的组织，通常比其他低代码产品的价格低得多。<br /><br />在支持持续发展的同时，Axia4 专业版客户还可以激活完整的功能范围，并获得 Lean Softworks（Axia4 的主要开发者）的支持。",
+			"intro": "Axia4 是完全<a href=\"https://github.com/axia4/hyper\" target=\"_blank\">开源</a>，可免费使用。<br /><br />对于需要企业功能或支持的用户，有<b>Axia4 专业版</b>。其价格定位是负担得起的，适用于任何规模的组织，通常比其他低代码产品的价格低得多。<br /><br />在支持持续发展的同时，Axia4 专业版客户还可以激活完整的功能范围，并获得 Lean Softworks（Axia4 的主要开发者）的支持。",
 			"introMore": "更多信息：",
 			"licenseExpired": "许可已过期",
 			"licenseId": "许可 ID",
@@ -2069,7 +2069,7 @@
 			"moreInfo": "更多信息"
 		},
 		"info": {
-			"admin": "<b>管理员信息：</b> 反馈功能可以在管理员面板中禁用。如果启用了反馈功能，则反馈将发送到当前选择的存储库。组织可以运行自己的存储库（使用<a href=\"https://store.rei3.de/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a>应用程序）来管理应用程序发布并接收内部反馈。",
+			"admin": "<b>管理员信息：</b> 反馈功能可以在管理员面板中禁用。如果启用了反馈功能，则反馈将发送到当前选择的存储库。组织可以运行自己的存储库（使用<a href=\"https://store.axia4.net/#/app/lsw_repo/form/31231ad0-71c6-4396-9685-102b414a6bfb/11?login=public\" target=\"_blank\">Axia4 Repository</a>应用程序）来管理应用程序发布并接收内部反馈。",
 			"data": [
 				"反馈类别（常规、错误/问题、建议、赞扬）",
 				"反馈文本",
@@ -2081,7 +2081,7 @@
 			],
 			"personal": "不会发送个人信息。如果您想收到回复，可以在反馈文本中添加联系方式。",
 			"repoUrl": "反馈将发送至",
-			"repoUrlDefault": "<i>（此系统由<a href=\"https://rei3.de/\" target=\"_blank\">Axia4</a>开发人员运营）</i>",
+			"repoUrlDefault": "<i>（此系统由<a href=\"https://axia4.net/\" target=\"_blank\">Axia4</a>开发人员运营）</i>",
 			"what": "正在发送什么？"
 		},
 		"moduleRelated": "此反馈是否针对当前打开的应用程序？（{NAME}）",
@@ -2321,7 +2321,7 @@
 		"api": "API",
 		"apis": "API接口",
 		"appName": "Axia4",
-		"appWebsite": "https://rei3.de",
+		"appWebsite": "https://axia4.net",
 		"application": "应用程序",
 		"applications": "应用程序",
 		"arguments": "Arguments",
@@ -2699,7 +2699,7 @@
 			"installBundle": "安装核心应用程序"
 		},
 		"newVersion": "更新通知",
-		"newVersionText": "Axia4 有新版本可用。<br /><br /><a href=\"https://rei3.de/en/downloads\" target=\"_blank\">下载 Axia4 v{VERSION}</a>",
+		"newVersionText": "Axia4 有新版本可用。<br /><br /><a href=\"https://axia4.net/downloads\" target=\"_blank\">下载 Axia4 v{VERSION}</a>",
 		"noAccess": "尚未授予访问权限。<br />请联系您的系统管理员。",
 		"noAccessAdmin": "To get access, assign roles to your user.",
 		"noAccessTitle": "无法访问应用程序",
@@ -2707,10 +2707,10 @@
 			"installBundle": "核心应用程序",
 			"installBundleDesc": "安装预打包的核心应用程序集，适用于任何组织。'核心应用程序'套件包括：<ul><li>缺勤管理</li><li>时间跟踪</li><li>项目和任务管理</li><li>请求处理</li><li>密码保险柜</li><li>IT 资产管理</li></ul>安装后，请查看各个应用程序的帮助页面，了解每个应用程序的初始设置。",
 			"installFile": "从文件安装",
-			"installFileDesc": "从本地 Axia4 文件安装应用程序。适用于离线系统或自制应用程序。<br /><br />可从官方<a href=\"https://rei3.de/en/downloads\" target=\"_blank\">存储库</a>下载公开提供的 Axia4 应用程序的文件。",
+			"installFileDesc": "从本地 Axia4 文件安装应用程序。适用于离线系统或自制应用程序。<br /><br />可从官方<a href=\"https://axia4.net/downloads\" target=\"_blank\">存储库</a>下载公开提供的 Axia4 应用程序的文件。",
 			"installRepo": "从存储库安装",
 			"installRepoDesc": "<b>需要互联网访问</b><br /><br />从官方 Axia4 存储库安装应用程序。存储库包含公开提供的 Axia4 应用程序的当前版本。<br /><br />所有应用程序均经过审查并进行数字签名。",
-			"intro": "欢迎来到 Axia4<br /><br />当前尚未安装任何应用程序。要开始使用 Axia4，请从下面的安装选项中选择一个。<br /><br />Or visit <a href=\"https://rei3.de/en/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
+			"intro": "欢迎来到 Axia4<br /><br />当前尚未安装任何应用程序。要开始使用 Axia4，请从下面的安装选项中选择一个。<br /><br />Or visit <a href=\"https://axia4.net/docs/builder\" target=\"_blank\">our docs</a> to learn how to build your own Axia4 applications.",
 			"title": "设置"
 		}
 	},

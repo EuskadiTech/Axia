@@ -298,7 +298,7 @@ export default {
 
 		// simple
 		changesOk:  s => s.moduleIdsChanged.length === 0,
-		exportName: s => `${s.module.name}_${s.module.releaseBuild}.rei3`,
+		exportName: s => `${s.module.name}_${s.module.releaseBuild}.axia4`,
 		exportUrl:  s => !s.isExportKeySet || !s.changesOk ? null : `/export/${s.exportName}?token=${s.token}&module_id=${s.moduleId}&date=${Math.floor(new Date().getTime() / 1000)}`,
 		isE2eeReady:s => s.loginEncEnabled && !s.loginEncLocked,
 		repoId:     s => s.transferTarget === 'fileDownload' ? null : s.transferTarget,
