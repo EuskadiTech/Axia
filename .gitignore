@@ -5,9 +5,6 @@ axia4_amd64_win.exe
 # Distribution files and executables
 axia4
 axia4.exe
-*.bin
-*.exe
-*.dmg
 # cache/clients/
 !cache/.gitkeep
 
