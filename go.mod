@@ -31,6 +31,7 @@ require (
 	golang.org/x/exp v0.0.0-20260312153236-7ab1446f8b90
 	golang.org/x/net v0.52.0
 	golang.org/x/oauth2 v0.36.0
+    github.com/keygen-sh/keygen-go/v3 v3.3.0
 )
 
 require (
