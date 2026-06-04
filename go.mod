@@ -26,22 +26,27 @@ require (
 	github.com/emersion/go-sasl v0.0.0-20241020182733-b788ff22d5a6
 	github.com/jackc/pgx-gofrs-uuid v0.0.0-20230224015001-1d428863c2e2
 	github.com/jackc/pgx/v5 v5.9.1
+	github.com/keygen-sh/keygen-go/v3 v3.3.0
 	github.com/wneessen/go-mail v0.7.2
 	github.com/xlzd/gotp v0.1.0
 	golang.org/x/exp v0.0.0-20260312153236-7ab1446f8b90
 	golang.org/x/net v0.52.0
 	golang.org/x/oauth2 v0.36.0
-    github.com/keygen-sh/keygen-go/v3 v3.3.0
 )
 
 require (
 	github.com/Azure/go-ntlmssp v0.1.0 // indirect
 	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
 	github.com/gofrs/uuid/v5 v5.4.0 // indirect
+	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
+	github.com/hashicorp/go-cleanhttp v0.5.1 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
+	github.com/keygen-sh/go-update v1.0.0 // indirect
+	github.com/keygen-sh/jsonapi-go v1.2.1 // indirect
+	github.com/oasisprotocol/curve25519-voi v0.0.0-20211102120939-d5a936accd94 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	golang.org/x/sync v0.20.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da // indirect

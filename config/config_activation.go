@@ -8,7 +8,7 @@ import (
 	"axia4/log"
 	"axia4/types"
 
-	keygen "github.com/keygen-sh/keygen-go/v3"
+	"github.com/keygen-sh/keygen-go/v3"
 )
 
 const (
