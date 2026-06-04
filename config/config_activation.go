@@ -89,12 +89,46 @@ func convertKeygenLicense(
 		validUntil = kg.Expiry.Unix()
 	}
 
+	var (
+		clientID      string
+		registeredFor string
+		loginCount    int64
+		extensions    []string
+	)
+
+	if kg.Metadata != nil {
+		if v, ok := kg.Metadata["clientId"].(string); ok {
+			clientID = v
+		}
+
+		if v, ok := kg.Metadata["registeredFor"].(string); ok {
+			registeredFor = v
+		}
+
+		switch v := kg.Metadata["loginCount"].(type) {
+		case int:
+			loginCount = int64(v)
+		case int64:
+			loginCount = v
+		case float64:
+			loginCount = int64(v)
+		}
+
+		if raw, ok := kg.Metadata["extensions"].([]interface{}); ok {
+			for _, ext := range raw {
+				if s, ok := ext.(string); ok {
+					extensions = append(extensions, s)
+				}
+			}
+		}
+	}
+
 	return types.License{
 		LicenseId:     kg.ID,
-		ClientId:      "",
-		Extensions:    []string{},
-		LoginCount:    int64(kg.Uses),
-		RegisteredFor: kg.Name,
+		ClientId:      clientID,
+		Extensions:    extensions,
+		LoginCount:    loginCount,
+		RegisteredFor: registeredFor,
 		ValidUntil:    validUntil,
 	}
 }
