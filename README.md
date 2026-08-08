@@ -125,7 +125,7 @@ Copyright (c) 2025 EuskadiTech (TM)
 
 Released under the [MIT License](https://opensource.org/license/mit).
 
-Axia is based on axia4_team/axia4. For trademark issues, open an issue or email: soporte (at) tech (dot) eus.
+Axia is based on r3_team/r3. For trademark issues, open an issue or email: soporte (at) tech (dot) eus.
 
 The original license permits modifications & commercial versions of the program.
 ---
